@@ -8,6 +8,8 @@ import {
   type Settings,
 } from "../domain/study";
 import type { Question } from "../domain/content-schema";
+import { mockQuestionAccess } from "../domain/mock-access";
+import { mockScore } from "../domain/training";
 import type {
   CaseDraft,
   CaseAttempt,
@@ -49,6 +51,7 @@ export type LearningDraft = {
   updatedAt: string;
 };
 export type PracticeSession = {
+  mockKind?: "first-independent" | "same-paper-practice";
   contentVersion?: string;
   id: string;
   set: "chapter" | "mock";
@@ -186,8 +189,24 @@ export async function submitQuestion(
   q: Question,
   selectedOption: string,
 ): Promise<QuestionAttempt> {
+  const canonical = content.questions.find((item) => item.id === q.id);
+  if (!canonical) throw new Error("题目不存在");
   if (!["A", "B", "C", "D"].includes(selectedOption))
     throw new Error("请选择一个选项");
+  return db.transaction("rw", db.questionAttempts, db.cards, db.sessions, async () => {
+    if (canonical.set === "mock") {
+      const access = mockQuestionAccess(await db.sessions.where("set").equals("mock").toArray(), canonical.id);
+      if (access !== "review")
+        throw new Error(access === "active-paper"
+          ? "本场模考须整卷交卷后才能单题重练；历史交卷不能解锁正在作答的同卷训练。"
+          : "模考题须整卷交卷后才能单题重练。");
+    }
+    return saveQuestionAttempt(canonical, selectedOption);
+  });
+}
+
+// Private writer: callers must validate their own transaction boundary first.
+async function saveQuestionAttempt(q: Question, selectedOption: string): Promise<QuestionAttempt> {
   const attempt: QuestionAttempt = {
     contentVersion: content.contentVersion,
     id: recordId(),
@@ -198,39 +217,43 @@ export async function submitQuestion(
     submittedAt: new Date().toISOString(),
     order: 0,
   };
-  await db.transaction(
-    "rw",
-    db.questionAttempts,
-    db.cards,
-    db.sessions,
-    async () => {
-      if (
-        q.set === "mock" &&
-        !(await db.sessions
-          .where("set")
-          .equals("mock")
-          .filter((s) => !!s.submittedAt && s.questionIds.includes(q.id))
-          .first())
-      )
-        throw new Error("模考题须整卷交卷后才能单题重练。");
-      attempt.order =
-        ((await db.questionAttempts.orderBy("order").last())?.order ?? 0) + 1;
-      await db.questionAttempts.add(attempt);
-      if (!attempt.correct)
-        for (const cardId of q.relatedKnowledgeIds) {
-          const p = await db.cards.get(cardId);
-          if (p?.firstPassAt)
-            await db.cards.put({
-              ...p,
-              status: "needs-review",
-              consolidatedAt: undefined,
-              reviewDueAt: attempt.submittedAt,
-              updatedAt: attempt.submittedAt,
-            });
-        }
-    },
-  );
+  attempt.order =
+    ((await db.questionAttempts.orderBy("order").last())?.order ?? 0) + 1;
+  await db.questionAttempts.add(attempt);
+  if (!attempt.correct)
+    for (const cardId of q.relatedKnowledgeIds) {
+      const p = await db.cards.get(cardId);
+      if (p?.firstPassAt)
+        await db.cards.put({
+          ...p,
+          status: "needs-review",
+          consolidatedAt: undefined,
+          reviewDueAt: attempt.submittedAt,
+          updatedAt: attempt.submittedAt,
+        });
+    }
   return attempt;
+}
+
+export async function submitMock(sessionId: string) {
+  return db.transaction("rw", db.sessions, db.questionAttempts, db.cards, async () => {
+    const s = await db.sessions.get(sessionId);
+    if (!s || s.set !== "mock" || s.questionIds.length !== 75 ||
+      new Set(s.questionIds).size !== 75 ||
+      !s.questionIds.every((id) => content.questions.some((q) => q.id === id && q.set === "mock")) ||
+      !Object.entries(s.answers).every(([id, option]) => s.questionIds.includes(id) && ["A", "B", "C", "D"].includes(option)))
+      throw new Error("试卷无效");
+    if (s.submittedAt) return s;
+    const result = {
+      ...s, contentVersion: content.contentVersion, submittedAt: new Date().toISOString(),
+      submittedQuestionIds: s.questionIds, correctCount: mockScore(s.answers),
+    };
+    await db.sessions.put(result);
+    for (const id of s.questionIds) {
+      if (s.answers[id]) await saveQuestionAttempt(content.questions.find((q) => q.id === id)!, s.answers[id]);
+    }
+    return result;
+  });
 }
 export async function validateCard(cardId: string) {
   const card = content.knowledge.find((k) => k.id === cardId);

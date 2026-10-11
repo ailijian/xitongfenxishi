@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { answerCase, downloadBackup, questions, records, selfTest } from "./helpers";
+const screenshots = process.env.AUDIT_SCREENSHOTS || "docs/audit/screenshots";
 
 test("重复模考时，正常收藏入口不能在本场交卷前打开同卷答案", async ({ page }) => {
   await page.goto("/mock");
@@ -81,7 +82,7 @@ test("单选错题全过程，75题计分，案例采分及论文快照，12类J
   expect(attempts.filter((a) => a.set === "mock")).toHaveLength(75);
   expect(attempts.filter((a) => a.set === "mock" && a.correct)).toHaveLength(50);
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.screenshot({ path: "docs/audit/screenshots/mock-390.png" });
+  await page.screenshot({ path: `${screenshots}/mock-390.png` });
 
   for (const id of ["C01", "C04", "C06"]) {
     await page.goto(`/cases/${id}?exam=${run}`);
@@ -92,7 +93,7 @@ test("单选错题全过程，75题计分，案例采分及论文快照，12类J
     expect(record.selfScore).toBe(score);
     if (id === "C01") {
       await page.getByRole("heading", { name: `本次自评 ${score} / 25 分` }).scrollIntoViewIfNeeded();
-      await page.screenshot({ path: "docs/audit/screenshots/case-390.png" });
+      await page.screenshot({ path: `${screenshots}/case-390.png` });
     }
   }
   await page.goto(`/essays/E01?exam=${run}`);
@@ -112,7 +113,7 @@ test("单选错题全过程，75题计分，案例采分及论文快照，12类J
   await expect.poll(async () => (await records(page, "essayDrafts"))[0]?.body).toBe(`${body}提交后编辑保留。`);
   expect((await records(page, "exams"))[0].essaySnapshot.body).toBe(body);
   await page.getByRole("heading", { name: "正文草稿" }).scrollIntoViewIfNeeded();
-  await page.screenshot({ path: "docs/audit/screenshots/essay-390.png" });
+  await page.screenshot({ path: `${screenshots}/essay-390.png` });
   await page.goto("/learn/K002");
   await page.getByRole("button", { name: /开始闭卷自测/ }).click();
   await page.getByRole("textbox", { name: "闭卷回答" }).fill("未提交闭卷回答也应随备份恢复");
@@ -141,5 +142,5 @@ test("单选错题全过程，75题计分，案例采分及论文快照，12类J
   await page.getByLabel("选择备份 JSON（最多20MB）").setInputFiles({ name: "damaged.json", mimeType: "application/json", buffer: Buffer.from("{invalid") });
   await expect(page.getByRole("alert")).toContainText("原数据未改动");
   expect((await downloadBackup(page)).backup.data).toEqual(before.backup.data);
-  await page.screenshot({ path: "docs/audit/screenshots/progress-390.png" });
+  await page.screenshot({ path: `${screenshots}/progress-390.png` });
 });

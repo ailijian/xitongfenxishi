@@ -1,8 +1,8 @@
-import { db, recordId, submitQuestion, type PracticeSession } from "./db";
+import { db, recordId, type PracticeSession } from "./db";
+export { submitMock } from "./db";
 import { content } from "../data/content";
 import {
   caseScore,
-  mockScore,
   type CaseDraft,
   type EssayDraft,
   type ProjectFacts,
@@ -151,7 +151,12 @@ export async function startExam(
     startedAt: now(),
     timed,
   };
-  await db.transaction("rw", db.sessions, db.exams, async () => {
+  await db.transaction("rw", db.sessions, db.exams, db.questionAttempts, async () => {
+    const priorSessions = await db.sessions.where("set").equals("mock").toArray();
+    const priorAttempts = await db.questionAttempts.where("set").equals("mock").toArray();
+    s.mockKind = priorSessions.some((p) => p.questionIds.some((qid) => s.questionIds.includes(qid))) ||
+      priorAttempts.some((a) => s.questionIds.includes(a.questionId))
+      ? "same-paper-practice" : "first-independent";
     await db.sessions.add(s);
     await db.exams.add({
       id,
@@ -184,33 +189,6 @@ export async function chooseMock(
       answers: { ...s.answers, [questionId]: option },
     });
   });
-}
-export async function submitMock(sessionId: string) {
-  return db.transaction(
-    "rw",
-    db.sessions,
-    db.questionAttempts,
-    db.cards,
-    async () => {
-      const s = await db.sessions.get(sessionId);
-      if (!s || s.set !== "mock" || s.questionIds.length !== 75)
-        throw new Error("试卷无效");
-      if (s.submittedAt) return s;
-      const result = {
-        ...s,
-        contentVersion: content.contentVersion,
-        submittedAt: now(),
-        submittedQuestionIds: s.questionIds,
-        correctCount: mockScore(s.answers),
-      };
-      await db.sessions.put(result);
-      for (const id of s.questionIds) {
-        const q = content.questions.find((q) => q.id === id)!;
-        if (s.answers[id]) await submitQuestion(q, s.answers[id]);
-      }
-      return result;
-    },
-  );
 }
 export async function submitExamEssay(examId: string) {
   await db.transaction(

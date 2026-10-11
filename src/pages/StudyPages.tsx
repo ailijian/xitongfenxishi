@@ -28,9 +28,12 @@ import {
   type PracticeSession,
 } from "../storage/db";
 import type { KnowledgeCard } from "../domain/content-schema";
+import { useStudyClock } from "../hooks/useStudyClock";
+import { mockQuestionAccess } from "../domain/mock-access";
 
 export function Today() {
   const data = useStudyData();
+  const now = useStudyClock(data?.cards);
   const training = useLiveQuery(
     async () => ({
       cases: await db.caseAttempts.toArray(),
@@ -40,10 +43,11 @@ export function Today() {
     [],
   );
   if (!data) return <p role="status">正在载入本设备学习记录…</p>;
-  const plan = getDailyPlan(data.cards, data.settings),
+  const today = localDate(new Date(now));
+  const plan = getDailyPlan(data.cards, data.settings, today, now),
     examDays = Math.max(
       0,
-      dateOrdinal("2026-10-24") - dateOrdinal(localDate()),
+      dateOrdinal("2026-10-24") - dateOrdinal(today),
     );
   const next = plan.queue[0];
   return (
@@ -172,6 +176,12 @@ export function Today() {
           完整模考已完成{" "}
           {training?.exams.filter((e) => e.essaySubmittedAt).length ?? 0}场
         </p>
+        <p className="subtle">重复同一试卷记为同卷复练，不代表新题独立模拟成绩。</p>
+        <p className="subtle">
+          首次独立 {training?.exams.filter((e) => e.essaySubmittedAt && data.sessions.find((s) => s.id === e.sessionId)?.mockKind === "first-independent").length ?? 0} 场 ·
+          同卷复练 {training?.exams.filter((e) => e.essaySubmittedAt && data.sessions.find((s) => s.id === e.sessionId)?.mockKind === "same-paper-practice").length ?? 0} 场 ·
+          历史类型未记录 {training?.exams.filter((e) => e.essaySubmittedAt && !data.sessions.find((s) => s.id === e.sessionId)?.mockKind).length ?? 0} 场
+        </p>
         <Link
           className="primary"
           to={
@@ -217,12 +227,13 @@ export function Learn() {
     [priority, setPriority] = useState(""),
     [module, setModule] = useState(""),
     [status, setStatus] = useState("");
+  const now = useStudyClock(data?.cards);
   const cards = content.knowledge.filter(
     (k) =>
       (!priority || k.priority === priority) &&
       (!module || k.module === module) &&
       (!status ||
-        statusLabel(data?.cards.find((p) => p.cardId === k.id)) === status) &&
+        statusLabel(data?.cards.find((p) => p.cardId === k.id), now) === status) &&
       `${k.title}${k.essentials}${k.pitfalls}`
         .toLowerCase()
         .includes(search.toLowerCase()),
@@ -285,7 +296,7 @@ export function Learn() {
                 {k.id} · {k.priority}级
               </span>
               <Badge>
-                {statusLabel(data?.cards.find((p) => p.cardId === k.id))}
+                {statusLabel(data?.cards.find((p) => p.cardId === k.id), now)}
               </Badge>
             </div>
             <h2>{k.title}</h2>
@@ -321,6 +332,7 @@ function LearningCard({ card: k }: { card: KnowledgeCard }) {
       () => db.cardAttempts.where("cardId").equals(k.id).toArray(),
       [k.id],
     );
+  const now = useStudyClock(progress ? [progress] : undefined);
   const question = content.questions.find(
     (q) => q.id === (draft?.questionId ?? k.relatedQuestionIds[0]),
   );
@@ -380,7 +392,7 @@ function LearningCard({ card: k }: { card: KnowledgeCard }) {
         ← 知识通关
       </Link>
       <PageTitle
-        eyebrow={`${k.id} / ${k.priority} 级 / ${statusLabel(progress)}`}
+        eyebrow={`${k.id} / ${k.priority} 级 / ${statusLabel(progress, now)}`}
         title={k.title}
         description={k.module}
       />
@@ -600,18 +612,13 @@ function PracticeFlow({ search }: { search: string }) {
     [busy, setBusy] = useState(false);
   const wrong = unresolvedWrong(data?.questionAttempts ?? []),
     favorites = data?.bookmarks.map((b) => b.questionId) ?? [];
-  const completedMockIds = new Set(
-    data?.sessions
-      .filter((s) => s.set === "mock" && s.submittedAt)
-      .flatMap((s) => s.questionIds) ?? [],
-  );
+  const canReview = (questionId: string) => mockQuestionAccess(data?.sessions ?? [], questionId) === "review";
   const eligible = content.questions.filter(
     (q) =>
       (mode === "wrong"
         ? wrong.includes(q.id)
         : mode === "favorites"
-          ? favorites.includes(q.id) &&
-            (q.set === "chapter" || completedMockIds.has(q.id))
+          ? favorites.includes(q.id)
           : mode === "daily"
             ? q.set === "chapter" && dailyIds.has(q.id)
             : q.set === "chapter") &&
@@ -619,7 +626,7 @@ function PracticeFlow({ search }: { search: string }) {
   );
   const questions = (session?.questionIds ?? eligible.map((q) => q.id))
     .map((id) => content.questions.find((q) => q.id === id)!)
-    .filter((q) => !!q && (q.set === "chapter" || completedMockIds.has(q.id)));
+    .filter((q) => !!q);
   useEffect(() => {
     if (!data || session !== null) return;
     const index = Math.max(
@@ -662,6 +669,7 @@ function PracticeFlow({ search }: { search: string }) {
     context = q?.contextQuestionId
       ? content.questions.find((v) => v.id === q.contextQuestionId)
       : undefined;
+  const locked = !!q && q.set === "mock" && !canReview(q.id);
   async function grade() {
     if (!q || !session?.answers[q.id]) return;
     setBusy(true);
@@ -752,15 +760,13 @@ function PracticeFlow({ search }: { search: string }) {
       <ErrorMessage message={error} />
       {!session ? (
         <p role="status">正在载入本轮答题记录…</p>
-      ) : mode === "favorites" &&
-        favorites.some(
+      ) : locked || (!q && mode === "favorites" && favorites.some(
           (id) =>
             content.questions.find((q) => q.id === id)?.set === "mock" &&
-            !completedMockIds.has(id),
-        ) &&
-        !q ? (
+            !canReview(id),
+        )) ? (
         <section className="paper">
-          <p>模考收藏题在整卷交卷后开放单题练习。请先返回完整模考继续作答。</p>
+          <p>模考收藏题在整卷交卷后开放单题练习。正在进行的同卷训练必须先交卷；历史成绩、错题和已提交的单题记录不会解锁本场答案。</p>
           <Link className="primary" to="/mock">
             继续完整模考 →
           </Link>
@@ -775,6 +781,7 @@ function PracticeFlow({ search }: { search: string }) {
         <>
           <div className="question-toolbar">
             <Badge>{q.id}</Badge>
+            {q.set === "mock" && <Badge>同卷复练 · 已交卷题目复习</Badge>}
             <span>
               {(session?.index ?? 0) + 1} / {questions.length}
             </span>

@@ -104,6 +104,18 @@ it("导出→清空→JSON恢复全部12类数据、尝试、草稿和模考快�
   const after = await exportBackup();
   expect(JSON.parse(JSON.stringify(after.data))).toEqual(JSON.parse(json).data);
 });
+it("schema2旧12类备份缺少新mockKind时原样恢复，新标记也可往返保存", async () => {
+  await seed();
+  const current = await exportBackup();
+  expect(current.data.sessions.find((s) => s.set === "mock")?.mockKind).toBe("first-independent");
+  const legacy = structuredClone(current);
+  for (const s of legacy.data.sessions) delete s.mockKind;
+  await clearUserData();
+  await restoreBackup(legacy);
+  expect((await exportBackup()).data).toEqual(legacy.data);
+  await restoreBackup(current);
+  expect((await exportBackup()).data).toEqual(current.data);
+});
 it("题卡关联升级后，旧版K014/RK027历史仍可备份恢复且不重判成绩", async () => {
   await seed();
   const backup = await exportBackup();

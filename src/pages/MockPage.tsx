@@ -5,6 +5,7 @@ import { db } from "../storage/db";
 import { content } from "../data/content";
 import { startExam, chooseMock, submitMock } from "../storage/training";
 import { characterCount } from "../domain/training";
+import { mockQuestionAccess, mockKindLabel } from "../domain/mock-access";
 import {
   PageTitle,
   Badge,
@@ -19,6 +20,8 @@ export function MockPage() {
     () => db.exams.orderBy("createdAt").reverse().toArray(),
     [],
   );
+  const sessions = useLiveQuery(() => db.sessions.where("set").equals("mock").toArray(), []);
+  const priorMockAttempts = useLiveQuery(() => db.questionAttempts.where("set").equals("mock").count(), []);
   const [cases, setCases] = useState(["C01", "C04", "C06"]),
     [essay, setEssay] = useState("E01"),
     [timed, setTimed] = useState(false),
@@ -38,11 +41,12 @@ export function MockPage() {
       <PageTitle
         eyebrow="FULL MOCK EXAM"
         title="完整综合模考"
-        description="75道独立单选 + 任选3套案例 + 1篇论文。原创模拟训练。"
+        description="75道单选（独立于章节题池）+ 任选3套案例 + 1篇论文。原创模拟；再次开始同卷记为复练。"
       />
       <ErrorMessage message={error} />
       <section className="paper">
         <h2>创建本场训练</h2>
+        <p className="notice">{sessions?.length || priorMockAttempts ? "同卷复练：已接触本题池，新场成绩用于重复训练，不代表新题独立验证。" : "首次独立模考：完成本场后，再做同一题池会标记为同卷复练。"}</p>
         <p>
           选择卷整卷交卷后才显示答案，未答题计0分；离开页面可随时继续。案例与论文由本人对照原文自评。
         </p>
@@ -85,7 +89,7 @@ export function MockPage() {
         </label>
         <button
           className="primary"
-          disabled={cases.length !== 3}
+          disabled={cases.length !== 3 || sessions === undefined || priorMockAttempts === undefined}
           onClick={() => void create()}
         >
           开始本场完整模考
@@ -96,6 +100,7 @@ export function MockPage() {
         {runs?.map((r) => (
           <Link className="list-card" to={`/mock?run=${r.id}`} key={r.id}>
             <h3>{new Date(r.createdAt).toLocaleString("zh-CN")}</h3>
+            <p>{mockKindLabel(sessions?.find((s) => s.id === r.sessionId))}</p>
             <p>
               {r.caseIds.join(" / ")} · {r.essayId}
             </p>
@@ -115,6 +120,7 @@ function Exam({ id }: { id: string }) {
     ),
     attempts = useLiveQuery(() => db.caseAttempts.toArray(), []),
     bookmarks = useLiveQuery(() => db.bookmarks.toArray(), []);
+  const sessions = useLiveQuery(() => db.sessions.where("set").equals("mock").toArray(), []);
   const [error, setError] = useState(""),
     [confirm, setConfirm] = useState(false),
     [busy, setBusy] = useState(false),
@@ -143,6 +149,7 @@ function Exam({ id }: { id: string }) {
     )!,
     selected = session.answers[q.id],
     submitted = !!session.submittedAt;
+  const showAnswers = submitted && !!sessions && mockQuestionAccess(sessions, q.id) === "review";
   const completedCases = exam.caseIds.filter(
       (id) => exam.caseAttemptIds[id],
     ).length,
@@ -178,6 +185,7 @@ function Exam({ id }: { id: string }) {
         }
       />
       <ErrorMessage message={error} />
+      <p className="notice">{mockKindLabel(session)}{session.mockKind === "same-paper-practice" ? "：沿用已接触过的题池，成绩不代表新题独立验证。" : " · 原创模拟训练"}</p>
       <section className="paper">
         <h2>
           选择卷 ·{" "}
@@ -263,7 +271,10 @@ function Exam({ id }: { id: string }) {
             ? "取消收藏"
             : "收藏本题"}
         </button>
-        {submitted && (
+        {submitted && !showAnswers && (
+          <p className="notice">有尚未交卷的同卷训练，历史试卷解析暂时锁定。完成所有进行中的同卷选择卷后恢复。</p>
+        )}
+        {showAnswers && (
           <div className="answer">
             <h3>
               {session.contentVersion !== content.contentVersion

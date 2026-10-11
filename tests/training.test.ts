@@ -160,3 +160,38 @@ it("未交模考卷时收藏或单题入口不能提前判分；整卷后可以�
     correct: true,
   });
 });
+it("重复卷在数据层锁定历史二刷，交本场后恢复，且旧成绩和记录不变", async () => {
+  const { submitQuestion } = await import("../src/storage/db");
+  const q = content.questions.find((q) => q.id === "RK076")!;
+  const first = (await db.exams.get(await startExam(["C01", "C04", "C06"], "E01", false)))!;
+  expect((await db.sessions.get(first.sessionId))?.mockKind).toBe("first-independent");
+  await chooseMock(first.sessionId, q.id, q.answer);
+  const firstSubmitted = await submitMock(first.sessionId);
+  const previousAttempts = await db.questionAttempts.toArray();
+  const repeat = (await db.exams.get(await startExam(["C01", "C04", "C06"], "E01", false)))!;
+  expect((await db.sessions.get(repeat.sessionId))?.mockKind).toBe("same-paper-practice");
+  await expect(submitQuestion(q, q.answer)).rejects.toThrow("历史交卷不能解锁");
+  // Identity is authoritative even if a caller supplies a forged chapter flag/answer.
+  await expect(submitQuestion({ ...q, set: "chapter", answer: "A" }, q.answer)).rejects.toThrow("本场模考");
+  expect(await db.questionAttempts.toArray()).toEqual(previousAttempts);
+  await chooseMock(repeat.sessionId, q.id, q.answer);
+  await submitMock(repeat.sessionId);
+  await expect(submitQuestion(q, q.answer)).resolves.toMatchObject({ correct: true });
+  expect(await db.sessions.get(first.sessionId)).toEqual(firstSubmitted);
+});
+it("多场未交卷不会阻断整卷原子提交；所有活动卷交完前仍锁单题答案", async () => {
+  const { submitQuestion } = await import("../src/storage/db");
+  const q = content.questions.find((q) => q.id === "RK076")!;
+  const first = (await db.exams.get(await startExam(["C01", "C04", "C06"], "E01", false)))!;
+  const second = (await db.exams.get(await startExam(["C01", "C04", "C06"], "E01", false)))!;
+  await chooseMock(first.sessionId, q.id, q.answer);
+  expect((await submitMock(first.sessionId)).correctCount).toBe(1);
+  await expect(submitQuestion(q, q.answer)).rejects.toThrow("本场模考");
+  await submitMock(second.sessionId);
+  await expect(submitQuestion(q, q.answer)).resolves.toMatchObject({ correct: true });
+});
+it("仅有旧模考尝试也不能冒称新题独立考试；旧 session 不补造分类", async () => {
+  await db.questionAttempts.put({ id: "legacy", questionId: "RK076", set: "mock", selectedOption: "D", correct: true, order: 1, submittedAt: "2026-10-10T02:00:00Z" });
+  const e = (await db.exams.get(await startExam(["C01", "C04", "C06"], "E01", false)))!;
+  expect((await db.sessions.get(e.sessionId))?.mockKind).toBe("same-paper-practice");
+});

@@ -7,6 +7,8 @@ import { dateOrdinal, statusLabel } from "../domain/study";
 import { useLiveQuery } from "dexie-react-hooks";
 import { characterCount } from "../domain/training";
 import { BackupPanel } from "../components/BackupPanel";
+import { useStudyClock } from "../hooks/useStudyClock";
+import { mockKindLabel } from "../domain/mock-access";
 
 export function ProgressPage() {
   const training = useLiveQuery(
@@ -23,6 +25,7 @@ export function ProgressPage() {
     [day, setDay] = useState(1),
     [error, setError] = useState(""),
     [saved, setSaved] = useState("");
+  const now = useStudyClock(data?.cards);
   useEffect(() => {
     if (data) setDate(data.settings.studyStartDate);
   }, [data?.settings.studyStartDate]);
@@ -30,7 +33,7 @@ export function ProgressPage() {
   const chapter = data.questionAttempts.filter((a) => a.set === "chapter"),
     counts = new Map<string, number>();
   for (const k of content.knowledge) {
-    const label = statusLabel(data.cards.find((p) => p.cardId === k.id));
+    const label = statusLabel(data.cards.find((p) => p.cardId === k.id), now);
     counts.set(label, (counts.get(label) ?? 0) + 1);
   }
   async function saveDate() {
@@ -146,6 +149,7 @@ export function ProgressPage() {
           return (
             <Link className="list-card" key={e.id} to={`/mock?run=${e.id}`}>
               <h3>{new Date(e.createdAt).toLocaleDateString("zh-CN")}</h3>
+              <p>{mockKindLabel(s)}</p>
               <p>
                 选择卷 {s?.submittedAt ? `${s.correctCount}/75分` : "未交卷"} ·
                 案例 {Object.keys(e.caseAttemptIds).length}/3 · 论文{" "}

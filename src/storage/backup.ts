@@ -70,6 +70,7 @@ const learningDraft = z
   .strict();
 const session = z
   .object({
+    mockKind: z.enum(["first-independent", "same-paper-practice"]).optional(),
     contentVersion: z.string().min(1).optional(),
     id: rid,
     set: z.enum(["chapter", "mock"]),
@@ -306,7 +307,7 @@ export function validateBackup(input: unknown): Backup {
           : s.correctCount === undefined && s.submittedQuestionIds.length === 0,
         "模考交卷与成绩状态异常",
       );
-    }
+    } else requireValid(!s.mockKind, "章节练习包含模考类型");
   }
   for (const a of [...d.caseDrafts, ...d.caseAttempts]) {
     const c = content.cases.find((c) => c.id === a.caseId)!;

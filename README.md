@@ -85,6 +85,8 @@ python3 scripts/audit-content.py
 
 ## 部署
 
+第二轮先修复响应式日期/复习时钟和重复模考答案隔离；新场区分首次独立模考与同卷复练，旧记录不补造分类。[知识验证 v2 方案](docs/knowledge-validation-v2.md)包含显式 checkpoints、三项指标、内容包规范和考场仿真设计，尚未接入应用，不包含新题库。
+
 上线功能审计见 [audit-report.md](audit-report.md)，包括 P0 题卡关联整改、内容来源、逐项验收、实际失败日志和手机视口截图。复现审计：
 
 ```sh

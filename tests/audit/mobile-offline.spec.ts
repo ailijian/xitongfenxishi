@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync, writeFileSync } from "node:fs";
 import { questions, records } from "./helpers";
+const screenshots = process.env.AUDIT_SCREENSHOTS || "docs/audit/screenshots";
 
 for (const width of [320, 375, 390, 430]) {
   test(`${width}px：长题干换行、点击热区、底部导航和缩小视口输入滚动`, async ({ page }, info) => {
@@ -20,11 +21,11 @@ for (const width of [320, 375, 390, 430]) {
       expect(bounds.footer, `${route}: footer clears bottom navigation`).toBeLessThanOrEqual(bounds.nav + 1);
       if (route === "/" && width === 375) {
         await page.evaluate(() => window.scrollTo(0, 0));
-        await page.screenshot({ path: "docs/audit/screenshots/today-375.png" });
+        await page.screenshot({ path: `${screenshots}/today-375.png` });
       }
       if (route === "/learn/K075" && width === 390) {
         await page.evaluate(() => window.scrollTo(0, 0));
-        await page.screenshot({ path: "docs/audit/screenshots/knowledge-390.png" });
+        await page.screenshot({ path: `${screenshots}/knowledge-390.png` });
       }
     }
     await info.attach(`touch-targets-${width}`, { body: JSON.stringify(targetIssues, null, 2), contentType: "application/json" });
