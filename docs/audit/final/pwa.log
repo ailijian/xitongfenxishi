@@ -1,0 +1,11 @@
+[WebServer] (node:61011) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:61044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/production/offline.spec.ts:3:1 › 构建版PWA缓存全部核心资料，断网关闭再打开仍可读、答题和保存论文 (5.3s)
+  ✓  2 tests/production/offline.spec.ts:51:1 › JSON导出、二次确认清空、校验预览与二次恢复，草稿和错题完全保留 (3.5s)
+
+  2 passed (16.8s)

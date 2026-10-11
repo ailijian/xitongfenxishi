@@ -1,0 +1,196 @@
+{
+  "config": {
+    "argv": [
+      "/Users/lijian/.local/share/fnm/node-versions/v24.20.0/installation/bin/node",
+      "/Users/lijian/Documents/projects/xitongfenxishi/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.audit.config.ts",
+      "tests/audit/exam-backup.spec.ts",
+      "-g",
+      "重复模考"
+    ],
+    "configFile": "/Users/lijian/Documents/projects/xitongfenxishi/playwright.audit.config.ts",
+    "rootDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/lijian/Documents/projects/xitongfenxishi/docs/audit/baseline/repeat-confirmed/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/lijian/Documents/projects/xitongfenxishi/docs/audit/baseline/repeat-confirmed/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "snapshotDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://ruankao.staging.haaboo.com",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "timezoneId": "Asia/Shanghai",
+          "locale": "zh-CN",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/audit/baseline/repeat-confirmed/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "exam-backup.spec.ts",
+      "file": "exam-backup.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "重复模考时，正常收藏入口不能在本场交卷前打开同卷答案",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3160,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText(/正确答案 D/)\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  2000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByText(/正确答案 D/) with timeout 2000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/正确答案 D/)\u001b[22m\n\u001b[2m    21 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText(/正确答案 D/)\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  2000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByText(/正确答案 D/) with timeout 2000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/正确答案 D/)\u001b[22m\n\u001b[2m    21 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts:27:42",
+                    "location": {
+                      "file": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts",
+                      "column": 42,
+                      "line": 27
+                    },
+                    "snippet": "  25 |   await page.getByRole(\"button\", { name: \"提交答案\", exact: true }).click();\n  26 |   await expect(page.locator(\".answer\")).toBeVisible();\n> 27 |   await expect(page.getByText(/正确答案 D/)).toHaveCount(0, { timeout: 2000 });\n     |                                          ^\n  28 | });\n  29 |\n  30 | test(\"单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致\", async ({ page }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts",
+                        "column": 42,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText(/正确答案 D/)\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  2000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByText(/正确答案 D/) with timeout 2000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/正确答案 D/)\u001b[22m\n\u001b[2m    21 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  25 |   await page.getByRole(\"button\", { name: \"提交答案\", exact: true }).click();\n  26 |   await expect(page.locator(\".answer\")).toBeVisible();\n> 27 |   await expect(page.getByText(/正确答案 D/)).toHaveCount(0, { timeout: 2000 });\n     |                                          ^\n  28 | });\n  29 |\n  30 | test(\"单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致\", async ({ page }) => {\n    at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts:27:42"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T09:28:31.032Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/lijian/Documents/projects/xitongfenxishi/docs/audit/baseline/repeat-confirmed/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lijian/Documents/projects/xitongfenxishi/docs/audit/baseline/repeat-confirmed/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lijian/Documents/projects/xitongfenxishi/docs/audit/baseline/repeat-confirmed/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts",
+                    "column": 42,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8bca2855ab238ba1a4f2-6fb535be92bf81492d0d",
+          "file": "exam-backup.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-11T09:28:30.419Z",
+    "duration": 4108.071,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

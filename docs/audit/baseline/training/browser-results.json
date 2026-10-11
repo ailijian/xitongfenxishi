@@ -1,0 +1,188 @@
+{
+  "config": {
+    "argv": [
+      "/Users/lijian/.local/share/fnm/node-versions/v24.20.0/installation/bin/node",
+      "/Users/lijian/Documents/projects/xitongfenxishi/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.audit.config.ts",
+      "tests/audit/training-content.spec.ts"
+    ],
+    "configFile": "/Users/lijian/Documents/projects/xitongfenxishi/playwright.audit.config.ts",
+    "rootDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/lijian/Documents/projects/xitongfenxishi/docs/audit/baseline/training/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/lijian/Documents/projects/xitongfenxishi/docs/audit/baseline/training/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "snapshotDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://ruankao.staging.haaboo.com",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "timezoneId": "Asia/Shanghai",
+          "locale": "zh-CN",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/audit/baseline/training/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "training-content.spec.ts",
+      "file": "training-content.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "全部9套案例：三问作答、采分自评、刷新和多次训练历史互不覆盖",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9468,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T09:35:54.075Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4808180d620fcff236f7-244e7220941cf89edced",
+          "file": "training-content.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "全部10个论文专题：草稿分别保存，刷新及重开无串题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T09:36:03.972Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4808180d620fcff236f7-43a24cd6f4a43afa2808",
+          "file": "training-content.spec.ts",
+          "line": 25,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-11T09:35:53.461Z",
+    "duration": 13890.177,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,18 @@
+source.tar.gz: OK
+web-image.tar.gz: OK
+compose.yml: OK
+Caddyfile.proxy-site: OK
+activate-web.sh: OK
+connect-proxy.sh: OK
+release.env: OK
+image-platform.txt: OK
+manifest.txt: OK
+Loaded image: ruankao-web:staging-20261011T093420Z-497df7be0303
+ Container ruankao-staging-web-1 Recreate 
+ Container ruankao-staging-web-1 Recreated 
+ Container ruankao-staging-web-1 Starting 
+ Container ruankao-staging-web-1 Started 
+ Container ruankao-staging-web-1 Waiting 
+ Container ruankao-staging-web-1 Healthy 
+NAME                    IMAGE                                               COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+ruankao-staging-web-1   ruankao-web:staging-20261011T093420Z-497df7be0303   "caddy run --config …"   web       6 seconds ago   Up 5 seconds (healthy)   80/tcp, 443/tcp, 2019/tcp, 8080/tcp, 443/udp

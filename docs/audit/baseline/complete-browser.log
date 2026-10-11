@@ -1,0 +1,106 @@
+
+Running 13 tests using 1 worker
+
+(node:60068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/audit/exam-backup.spec.ts:4:1 › 单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致 (15.3s)
+  ✓   2 tests/audit/mobile-offline.spec.ts:6:3 › 320px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.3s)
+  ✓   3 tests/audit/mobile-offline.spec.ts:6:3 › 375px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.3s)
+  ✓   4 tests/audit/mobile-offline.spec.ts:6:3 › 390px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.3s)
+  ✓   5 tests/audit/mobile-offline.spec.ts:6:3 › 430px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.4s)
+  ✓   6 tests/audit/mobile-offline.spec.ts:57:1 › 首次联网缓存后，断网关页重开可学习、答题、案例自评、论文保存与创建模考 (2.4s)
+  ✓   7 tests/audit/mobile-offline.spec.ts:106:1 › 线上资源版本与当前构建文件逐字节一致 (882ms)
+  ✓   8 tests/audit/state.spec.ts:7:1 › K001：阅读、首轮、24h前边界、24h巩固、失败复测及刷新 (3.8s)
+  ✓   9 tests/audit/state.spec.ts:41:1 › 跨日欠账、超前完成和修改启动日保留全部学习记录 (1.4s)
+  ✓  10 tests/audit/state.spec.ts:66:1 › 亚洲上海午夜：刷新后进入D2并携带15条欠账 (623ms)
+  ✘  11 tests/audit/state.spec.ts:77:1 › 亚洲上海午夜：停留首页时任务自动更新 (3.8s)
+(node:60245) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  12 tests/audit/state.spec.ts:87:1 › K014的客观通关题直接验证Scrum职责，而非仅敏捷模块 (5.8s)
+(node:60260) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 tests/audit/state.spec.ts:96:1 › 真实关闭并重启Chromium：论文及案例逐字输入后仍可恢复 (3.9s)
+
+
+  1) tests/audit/state.spec.ts:77:1 › 亚洲上海午夜：停留首页时任务自动更新 ───────────────────────────────────────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.page-title')
+    Expected substring: "DAY 2 / 7"
+    Received string:    "DAY 1 / 7 · 13 天后考试首日今天，掌握一个再向前。考试窗口2026-10-24/25，具体日期与批次以准考证为准。"
+    Timeout: 2000ms
+
+    Call log:
+      - Expect "toContainText" locator('.page-title') with timeout 2000ms
+      - waiting for locator('.page-title')
+        21 × locator resolved to <header class="page-title">…</header>
+           - unexpected value "DAY 1 / 7 · 13 天后考试首日今天，掌握一个再向前。考试窗口2026-10-24/25，具体日期与批次以准考证为准。"
+
+
+      82 |   await page.clock.setFixedTime(new Date("2026-10-11T16:00:01Z"));
+      83 |   await page.clock.runFor(2000);
+    > 84 |   await expect(page.locator(".page-title")).toContainText("DAY 2 / 7", { timeout: 2000 });
+         |                                             ^
+      85 | });
+      86 |
+      87 | test("K014的客观通关题直接验证Scrum职责，而非仅敏捷模块", async ({ page }) => {
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/state.spec.ts:84:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/audit/baseline/complete/artifacts/state-亚洲上海午夜：停留首页时任务自动更新/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/audit/baseline/complete/artifacts/state-亚洲上海午夜：停留首页时任务自动更新/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/audit/baseline/complete/artifacts/state-亚洲上海午夜：停留首页时任务自动更新/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/audit/baseline/complete/artifacts/state-亚洲上海午夜：停留首页时任务自动更新/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/audit/state.spec.ts:87:1 › K014的客观通关题直接验证Scrum职责，而非仅敏捷模块 ────────────────────────────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.answer h2')
+    Expected substring: "RK039"
+    Received string:    "关联选择题 · RK027"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('.answer h2') with timeout 5000ms
+      - waiting for locator('.answer h2')
+        14 × locator resolved to <h2>关联选择题 · RK027</h2>
+           - unexpected value "关联选择题 · RK027"
+
+
+      90 |   await page.getByRole("textbox", { name: "闭卷回答" }).fill("PO管理待办优先级；Scrum Master促进流程；团队交付增量。");
+      91 |   await page.getByRole("button", { name: "揭示对照要点" }).click();
+    > 92 |   await expect(page.locator(".answer h2")).toContainText("RK039");
+         |                                            ^
+      93 |   await expect(page.locator(".answer")).toContainText("负责管理产品待办列表优先级");
+      94 | });
+      95 |
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/state.spec.ts:92:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/audit/baseline/complete/artifacts/state-K014的客观通关题直接验证Scrum职责，而非仅敏捷模块/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/audit/baseline/complete/artifacts/state-K014的客观通关题直接验证Scrum职责，而非仅敏捷模块/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/audit/baseline/complete/artifacts/state-K014的客观通关题直接验证Scrum职责，而非仅敏捷模块/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/audit/baseline/complete/artifacts/state-K014的客观通关题直接验证Scrum职责，而非仅敏捷模块/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests/audit/state.spec.ts:77:1 › 亚洲上海午夜：停留首页时任务自动更新 ────────────────────────────────────────────
+    tests/audit/state.spec.ts:87:1 › K014的客观通关题直接验证Scrum职责，而非仅敏捷模块 ─────────────────────────────────
+  11 passed (46.5s)

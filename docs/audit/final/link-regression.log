@@ -1,0 +1,9 @@
+
+ RUN  v5.0.3 /Users/lijian/Documents/projects/xitongfenxishi
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  17:24:17
+   Duration  288ms (transform 67%, import 24%, tests 5%, worker 3%)
+

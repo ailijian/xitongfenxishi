@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:63903) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/production/offline.spec.ts:3:1 › 构建版PWA缓存全部核心资料，断网关闭再打开仍可读、答题和保存论文 (1.8s)
+  ✓  2 tests/production/offline.spec.ts:51:1 › JSON导出、二次确认清空、校验预览与二次恢复，草稿和错题完全保留 (1.4s)
+  ✓  3 tests/staging/hosting.spec.ts:3:1 › 静态服务健康、深层路由和PWA入口正确，缺失资源返回404 (148ms)
+  ✓  4 tests/staging/hosting.spec.ts:31:1 › 构建JS和CSS可访问、MIME正确、使用长期不可变缓存 (65ms)
+  ✓  5 tests/staging/hosting.spec.ts:43:1 › 手机端线上页面加载正常，无脚本异常并留存截图 (788ms)
+
+  5 passed (5.1s)

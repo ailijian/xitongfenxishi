@@ -1,0 +1,49 @@
+
+Running 1 test using 1 worker
+
+(node:61988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/audit/exam-backup.spec.ts:4:1 › 重复模考时，正常收藏入口不能在本场交卷前打开同卷答案 (3.2s)
+
+
+  1) tests/audit/exam-backup.spec.ts:4:1 › 重复模考时，正常收藏入口不能在本场交卷前打开同卷答案 ──────────────────────────────
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByText(/正确答案 D/)
+    Expected: 0
+    Received: 1
+    Timeout:  2000ms
+
+    Call log:
+      - Expect "toHaveCount" getByText(/正确答案 D/) with timeout 2000ms
+      - waiting for getByText(/正确答案 D/)
+        21 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      25 |   await page.getByRole("button", { name: "提交答案", exact: true }).click();
+      26 |   await expect(page.locator(".answer")).toBeVisible();
+    > 27 |   await expect(page.getByText(/正确答案 D/)).toHaveCount(0, { timeout: 2000 });
+         |                                          ^
+      28 | });
+      29 |
+      30 | test("单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致", async ({ page }) => {
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts:27:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/audit/baseline/repeat-confirmed/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/audit/baseline/repeat-confirmed/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/audit/baseline/repeat-confirmed/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/audit/baseline/repeat-confirmed/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/audit/exam-backup.spec.ts:4:1 › 重复模考时，正常收藏入口不能在本场交卷前打开同卷答案 ───────────────────────────────

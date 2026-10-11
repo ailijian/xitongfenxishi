@@ -3,7 +3,26 @@
 已上线：<https://ruankao.staging.haaboo.com/>。这是无账号的静态 H5/PWA；
 用户进度、错题和草稿保存在当前浏览器 IndexedDB，服务器不保存学习数据。
 
-## 发布身份
+## 当前发布：P0 审计整改
+
+2026-10-11 已更新为内容版本 `2026.10.11.1`，修复 5 组偏宽题卡关联；原始资料与用户记录保持完整。详细验收、失败日志和手机截图见 [audit-report.md](../audit-report.md)。
+
+| 项目 | 当前值 |
+| --- | --- |
+| release | `staging-20261011T093420Z-497df7be0303` |
+| 修复提交 | `09dc54b06bae6fb2c7ce65546c284cb9ab357eac` |
+| 源码快照 SHA-256 | `497df7be03032b1b9dd79b0dcacca8fdc180ca4486ff089f4365d3d7f13cfd6f` |
+| 镜像 ID | `sha256:cf78da5d37eb995c56fb4328e639ba94f518c63f3c18ffa973589587b92721e4` |
+| current 链接 | `/opt/azao-staging/projects/ruankao/releases/staging-20261011T093420Z-497df7be0303` |
+| 最终线上专项审计 | 17 项：15 PASS / 2 FAIL；跨午夜停留刷新、重复卷答案隔离两项 P1 未整改 |
+| 其他验证 | 49 单元、14 原有流程、2 PWA、3 线上托管检查全部通过；17 个线上资源与构建逐字节相同 |
+| 用户数据升级 | 真实旧 profile 经 PWA 更新，12 类数据逐字段一致；无需清空浏览器数据 |
+
+当前发布包为显式工作区快照，包含当时 README 的未提交文档变更；完整身份以归档 SHA-256 与 [manifest](audit/final/release-manifest.txt) 为准。本次仅更新本项目 Web 容器，没有重启共享代理；原 release 保留供回滚。实体 iPhone 验收仍为 NOT TESTED。
+
+下文是首次发布的历史记录，不代表最新审计结论。其机器记录和截图仍保留；本次结果见 [最终服务器状态](audit/final/server-state.json)、[线上专项结果](audit/final/staging/browser-results.json)。
+
+## 首次发布身份（历史）
 
 | 项目 | 实际值 |
 | --- | --- |
@@ -21,7 +40,7 @@
 不能视为应用源版本。部署前比对 73 个代码、配置及资料文件，无差异。
 全部构建在本机完成；镜像只包含网页产物和静态服务配置。服务器上传包全部校验通过。
 
-## 实际验证
+## 首次发布实际验证（历史）
 
 | 检查 | 结果 |
 | --- | --- |
@@ -42,7 +61,7 @@
 详细浏览器结果：`staging-browser-tests.json`、`staging-local-tests.json`。
 线上截图：`screenshots/staging-today.png`、`screenshots/staging-knowledge.png`。
 
-## 共享代理及回滚
+## 首次发布共享代理及回滚（历史）
 
 本次只在原完整 Caddyfile 后追加独立域名站点；原有规则保持逐字一致。
 候选配置及实际挂载配置校验通过，宿主机和容器哈希一致后重启同一代理容器。

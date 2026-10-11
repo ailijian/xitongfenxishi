@@ -85,6 +85,16 @@ python3 scripts/audit-content.py
 
 ## 部署
 
+上线功能审计见 [audit-report.md](audit-report.md)，包括 P0 题卡关联整改、内容来源、逐项验收、实际失败日志和手机视口截图。复现审计：
+
+```sh
+npm run build
+npx playwright test --config playwright.audit.config.ts
+AUDIT_BASE_URL=https://ruankao.staging.haaboo.com AUDIT_EVIDENCE_DIR=docs/audit/recheck npx playwright test --config playwright.audit.config.ts
+```
+
+专项审计保留未整改 P1 的失败断言；完整结果和退出码以审计报告为准。普通单元及原有流程回归仍分别使用 `npm run test`、`npm run test:e2e` 和 `npm run test:pwa`。
+
 腾讯云 staging 已上线：<https://ruankao.staging.haaboo.com/>。实际发布身份、测试和回滚记录见 [staging 发布记录](docs/staging-deployment.md)，后续更新步骤见 [staging 操作说明](ops/staging/README.md)。
 
 Sites私有预览的最终结果见 `docs/deployment.md`。私有托管入口需要当前所有者的ChatGPT登录；应用本身没有账号系统。Sites同步使用独立发布副本，不改动工作区现有GitHub远端或推送该远端。

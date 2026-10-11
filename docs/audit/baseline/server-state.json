@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-11T09:31:43.965727+00:00",
+  "release": "/opt/azao-staging/projects/ruankao/releases/staging-20261011T041333Z-a7b9ec9f3fb6",
+  "image": "sha256:59f9c85883b60c0781d21176e11fd1a2749b912aa38d305e777437375795265e",
+  "healthy": "healthy",
+  "proxyId": "30efcd415242a5d18b36582738e40414023cfe75e92e0c1a2614cab893ad4a68",
+  "proxyStartedAt": "2026-10-11T04:21:14.275293109Z",
+  "webNetworks": [
+    "ruankao-staging_edge"
+  ],
+  "proxyNetworks": [
+    "ai-judgment-d3-staging_edge",
+    "azao-staging_edge",
+    "ruankao-staging_edge"
+  ],
+  "free": "total        used        free      shared  buff/cache   available\nMem:           3.6Gi       1.6Gi       229Mi        69Mi       2.2Gi       2.0Gi\nSwap:          1.9Gi       278Mi       1.7Gi",
+  "disk": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/vda2        40G   21G   17G  56% /"
+}

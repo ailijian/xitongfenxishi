@@ -1,0 +1,26 @@
+
+ RUN  v5.0.3 /Users/lijian/Documents/projects/xitongfenxishi
+
+ ❯ tests/audit-content.test.ts (2 tests | 1 failed) 12ms
+   × 不以敏捷宣言、OAuth等宽泛同主题题目验证更窄的知识要点 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/audit-content.test.ts > 不以敏捷宣言、OAuth等宽泛同主题题目验证更窄的知识要点
+AssertionError: 题目只检验敏捷宣言响应变化，不检验PO、Scrum Master或团队职责。卡片另有直接可信章节题RK039。: expected [ 'K014' ] to not include 'K014'
+ ❯ tests/audit-content.test.ts:20:118
+     18| it("不以敏捷宣言、OAuth等宽泛同主题题目验证更窄的知识要点", () => {
+     19|   for (const rejected of review.rejected) {
+     20|     expect(content.questions.find((q) => q.id === rejected.questionId)…
+       |                                                                                                                      ^
+     21|     expect(content.knowledge.find((k) => k.id === rejected.knowledgeId…
+     22|   }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 passed (2)
+   Start at  17:23:00
+   Duration  335ms (transform 67%, import 23%, tests 7%, worker 3%)
+

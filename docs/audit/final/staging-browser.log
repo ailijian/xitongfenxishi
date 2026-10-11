@@ -1,0 +1,110 @@
+
+Running 17 tests using 1 worker
+
+(node:65772) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 tests/audit/exam-backup.spec.ts:4:1 › 重复模考时，正常收藏入口不能在本场交卷前打开同卷答案 (3.6s)
+(node:65869) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 tests/audit/exam-backup.spec.ts:30:1 › 单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致 (20.8s)
+  ✓   3 tests/audit/mobile-offline.spec.ts:6:3 › 320px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.7s)
+  ✓   4 tests/audit/mobile-offline.spec.ts:6:3 › 375px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.7s)
+  ✓   5 tests/audit/mobile-offline.spec.ts:6:3 › 390px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.7s)
+  ✓   6 tests/audit/mobile-offline.spec.ts:6:3 › 430px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.7s)
+  ✓   7 tests/audit/mobile-offline.spec.ts:57:1 › 首次联网缓存后，断网关页重开可学习、答题、案例自评、论文保存与创建模考 (2.5s)
+  ✓   8 tests/audit/mobile-offline.spec.ts:106:1 › 线上资源版本与当前构建文件逐字节一致 (861ms)
+  ✓   9 tests/audit/state.spec.ts:7:1 › K001：阅读、首轮、24h前边界、24h巩固、失败复测及刷新 (4.3s)
+  ✓  10 tests/audit/state.spec.ts:41:1 › 跨日欠账、超前完成和修改启动日保留全部学习记录 (1.8s)
+  ✓  11 tests/audit/state.spec.ts:66:1 › 亚洲上海午夜：刷新后进入D2并携带15条欠账 (551ms)
+  ✘  12 tests/audit/state.spec.ts:77:1 › 亚洲上海午夜：停留首页时任务自动更新 (3.6s)
+(node:66145) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 tests/audit/state.spec.ts:87:1 › K014的客观通关题直接验证Scrum职责，而非仅敏捷模块 (679ms)
+  ✓  14 tests/audit/state.spec.ts:96:1 › 真实关闭并重启Chromium：论文及案例逐字输入后仍可恢复 (7.2s)
+  ✓  15 tests/audit/training-content.spec.ts:4:1 › 论文专题的30段Word提示与元数据一致，并能在正常页面读取 (3.2s)
+  ✓  16 tests/audit/training-content.spec.ts:17:1 › 全部9套案例：三问作答、采分自评、刷新和多次训练历史互不覆盖 (9.4s)
+  ✓  17 tests/audit/training-content.spec.ts:38:1 › 全部10个论文专题：草稿分别保存，刷新及重开无串题 (3.2s)
+
+
+  1) tests/audit/exam-backup.spec.ts:4:1 › 重复模考时，正常收藏入口不能在本场交卷前打开同卷答案 ──────────────────────────────
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByText(/正确答案 D/)
+    Expected: 0
+    Received: 1
+    Timeout:  2000ms
+
+    Call log:
+      - Expect "toHaveCount" getByText(/正确答案 D/) with timeout 2000ms
+      - waiting for getByText(/正确答案 D/)
+        21 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      25 |   await page.getByRole("button", { name: "提交答案", exact: true }).click();
+      26 |   await expect(page.locator(".answer")).toBeVisible();
+    > 27 |   await expect(page.getByText(/正确答案 D/)).toHaveCount(0, { timeout: 2000 });
+         |                                          ^
+      28 | });
+      29 |
+      30 | test("单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致", async ({ page }) => {
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts:27:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/audit/final/staging/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/audit/final/staging/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/audit/final/staging/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/audit/final/staging/artifacts/exam-backup-重复模考时，正常收藏入口不能在本场交卷前打开同卷答案/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/audit/state.spec.ts:77:1 › 亚洲上海午夜：停留首页时任务自动更新 ───────────────────────────────────────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.page-title')
+    Expected substring: "DAY 2 / 7"
+    Received string:    "DAY 1 / 7 · 13 天后考试首日今天，掌握一个再向前。考试窗口2026-10-24/25，具体日期与批次以准考证为准。"
+    Timeout: 2000ms
+
+    Call log:
+      - Expect "toContainText" locator('.page-title') with timeout 2000ms
+      - waiting for locator('.page-title')
+        20 × locator resolved to <header class="page-title">…</header>
+           - unexpected value "DAY 1 / 7 · 13 天后考试首日今天，掌握一个再向前。考试窗口2026-10-24/25，具体日期与批次以准考证为准。"
+
+
+      82 |   await page.clock.setFixedTime(new Date("2026-10-11T16:00:01Z"));
+      83 |   await page.clock.runFor(2000);
+    > 84 |   await expect(page.locator(".page-title")).toContainText("DAY 2 / 7", { timeout: 2000 });
+         |                                             ^
+      85 | });
+      86 |
+      87 | test("K014的客观通关题直接验证Scrum职责，而非仅敏捷模块", async ({ page }) => {
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/state.spec.ts:84:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/audit/final/staging/artifacts/state-亚洲上海午夜：停留首页时任务自动更新/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/audit/final/staging/artifacts/state-亚洲上海午夜：停留首页时任务自动更新/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/audit/final/staging/artifacts/state-亚洲上海午夜：停留首页时任务自动更新/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/audit/final/staging/artifacts/state-亚洲上海午夜：停留首页时任务自动更新/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests/audit/exam-backup.spec.ts:4:1 › 重复模考时，正常收藏入口不能在本场交卷前打开同卷答案 ───────────────────────────────
+    tests/audit/state.spec.ts:77:1 › 亚洲上海午夜：停留首页时任务自动更新 ────────────────────────────────────────────
+  15 passed (1.2m)

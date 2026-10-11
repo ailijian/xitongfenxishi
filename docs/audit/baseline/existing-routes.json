@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-11T09:31:44.177Z",
+  "results": [
+    {
+      "url": "https://staging.haaboo.com/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/judgment/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/api/judgment/bootstrap",
+      "status": 200
+    }
+  ]
+}

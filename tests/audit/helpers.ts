@@ -5,6 +5,7 @@ import type { Content } from "../../src/domain/content-schema";
 export const knowledge = JSON.parse(readFileSync(new URL("../../src/data/knowledge.json", import.meta.url), "utf8")) as Content["knowledge"];
 export const questions = JSON.parse(readFileSync(new URL("../../src/data/questions.json", import.meta.url), "utf8")) as Content["questions"];
 export const cases = JSON.parse(readFileSync(new URL("../../src/data/cases.json", import.meta.url), "utf8")) as Content["cases"];
+export const essays = JSON.parse(readFileSync(new URL("../../src/data/essays.json", import.meta.url), "utf8")) as Content["essays"];
 
 // Read committed browser data without importing application code or changing records.
 export async function records(page: Page, table: string) {
