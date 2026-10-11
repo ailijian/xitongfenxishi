@@ -1,0 +1,33 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:full-course
+> playwright test --config playwright.full-course.config.ts
+
+[WebServer] (node:97215) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 20 tests using 1 worker
+
+(node:97216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/full-course/course.spec.ts:12:29 › K030 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.1s)
+  ✓   2 tests/full-course/course.spec.ts:12:29 › K031 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.7s)
+  ✓   3 tests/full-course/course.spec.ts:12:29 › K032 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.6s)
+  ✓   4 tests/full-course/course.spec.ts:12:29 › K033 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.5s)
+  ✓   5 tests/full-course/course.spec.ts:12:29 › K034 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.8s)
+  ✓   6 tests/full-course/course.spec.ts:12:29 › K035 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.8s)
+  ✓   7 tests/full-course/course.spec.ts:12:29 › K036 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.3s)
+  ✓   8 tests/full-course/course.spec.ts:12:29 › K037 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.9s)
+  ✓   9 tests/full-course/course.spec.ts:12:29 › K038 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (4.2s)
+  ✓  10 tests/full-course/course.spec.ts:12:29 › K039 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (5.1s)
+  ✓  11 tests/full-course/course.spec.ts:12:29 › K040 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (5.3s)
+  ✓  12 tests/full-course/course.spec.ts:12:29 › K041 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (3.4s)
+  ✓  13 tests/full-course/course.spec.ts:12:29 › K069 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (4.4s)
+  ✓  14 tests/full-course/course.spec.ts:12:29 › K070 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (3.6s)
+  ✓  15 tests/full-course/course.spec.ts:12:29 › K071 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (3.5s)
+  ✓  16 tests/full-course/course.spec.ts:64:38 › 320px 新课程长文/图示/SQL局部滚动/底部导航与缩小视口 (5.4s)
+  ✓  17 tests/full-course/course.spec.ts:64:38 › 375px 新课程长文/图示/SQL局部滚动/底部导航与缩小视口 (4.4s)
+  ✓  18 tests/full-course/course.spec.ts:64:38 › 390px 新课程长文/图示/SQL局部滚动/底部导航与缩小视口 (3.6s)
+  ✓  19 tests/full-course/course.spec.ts:64:38 › 430px 新课程长文/图示/SQL局部滚动/底部导航与缩小视口 (3.8s)
+  ✓  20 tests/full-course/course.spec.ts:86:18 › K037 SQL复制逐字符一致，不执行查询 (950ms)
+
+  20 passed (1.1m)

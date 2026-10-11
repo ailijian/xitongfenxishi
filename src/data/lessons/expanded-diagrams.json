@@ -62,5 +62,69 @@
     "svgSha256": "f1b1f0bce3cdaa3987a3ace05a6e4add6d1c6e1d93d357be1c3f0aafe825ae78",
     "renderer": "mermaid@12.1.0",
     "sourceUnmodified": true
+  },
+  "K030": {
+    "src": "lesson-diagrams/K030.svg",
+    "alt": "患者表的 patient_id 主键、号源表的 slot_id 主键，分别被预约表的同名外键引用；预约表另有 status 状态字段。箭头是引用关系。",
+    "sourceSha256": "399dfbaf6b45241b5b4874895a32eb451ed29a009eab85a0cadcd7a27db3d1e3",
+    "svgSha256": "1243eb26a14bfb0ed4a5fffc47a6c05bca16a26974ac05a1381b671373d22eda",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K035": {
+    "src": "lesson-diagrams/K035.svg",
+    "alt": "开启事务→条件扣减号源。余量不足则回滚；足够则插入预约单。插入成功才提交，失败回滚。",
+    "sourceSha256": "5c3048662825ab4e8b88b4879fc92eeb9039cfdf75524160e209612dddbeff8f",
+    "svgSha256": "5e84fcd2fb46134d71a1b5258765094de1dd8a1dec255a48257f0ed36a6493bc",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K036": {
+    "src": "lesson-diagrams/K036.svg",
+    "alt": "财务事务 T1 第一次查到周一预约80条；预约事务 T2 插入5条并提交；T1 用同一条件再查到85条。在允许该行为的隔离下，这是幻读。",
+    "sourceSha256": "4883fed92aee6a37355f299a1bfa5b0b5d5fd1bd32f9d5e63b15fc72a8434d14",
+    "svgSha256": "8d6a5c9906a1bd572b3d04f136fefeecbe622f009b810ce366284347dd9a44ae",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K037": {
+    "src": "lesson-diagrams/K037.svg",
+    "alt": "教学用逻辑顺序：FROM/JOIN 取表→WHERE 筛明细→GROUP BY 分组→HAVING 筛组→SELECT/ORDER 输出。引擎可以使用等价优化计划。",
+    "sourceSha256": "4c16640fc6070b8472defabbb200cdb049f4cb4bcd8a1225d1182a6c8c466ecc",
+    "svgSha256": "c77150ab6a81c3265bffe4c0102adf490b8e0b97c21e03c3ab14c1dc3dec2615",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K040": {
+    "src": "lesson-diagrams/K040.svg",
+    "alt": "读号源：缓存命中则返回；未命中则查数据库、回填缓存再返回。修改排班：更新数据库，再删除相关缓存键。",
+    "sourceSha256": "45f450913b6281fe2f7fe24a39e6e34cd359e6c0c22e539e4b215a066b9acf91",
+    "svgSha256": "08a376ba8a26839158cb54c81f2fb38ca2e11db5facdbc08fee71b5eb6f32e0b",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K069": {
+    "src": "lesson-diagrams/K069.svg",
+    "alt": "第0年投入100万元，第1年收55万元折现为50万元，第2年收66万元折现约54.55万元。r=10%，NPV≈4.55万元。",
+    "sourceSha256": "324eb7f6898f31b5c037848c0660b1ff7f981719ece7f6a4c1229b9645a43c0b",
+    "svgSha256": "2584ed426ea9449e59358bebc031a072bafaa1869b541feabab59214578f60c0",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K070": {
+    "src": "lesson-diagrams/K070.svg",
+    "alt": "选择方案A：60%概率收益20万元、40%概率损失10万元。EMV=0.6×20+0.4×(-10)=8万元，期望值不是单次结果。",
+    "sourceSha256": "23f24ae41413adf469c07d3a0133716701e7f190a39ead3a7bfabd145c0101ee",
+    "svgSha256": "b90e2e8fd2d83b42a93b019ff9e5abcbc65cd3c2f1c992438dad0001e8264258",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K071": {
+    "src": "lesson-diagrams/K071.svg",
+    "alt": "PV计划价值100、EV完工价值80、AC实际成本90万元。SV=EV-PV=-20，CV=EV-AC=-10。此处PV不是折现现值。",
+    "sourceSha256": "cb604ad5effef10130732143da266d3d729b6cb98c9ff95ce651bd7530d3f5e5",
+    "svgSha256": "4951d2a745fd01e227d4060b780683450dd263096bed52a39728ff5593a8de91",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
   }
 }
