@@ -19,7 +19,7 @@ for(const lesson of lessons)test(`${lesson.cardId} 全文/带做/两题门禁解
  await expect(page.locator(".lesson-step")).toHaveCount(1);
  for(let i=1;i<lesson.explanationSteps.length;i++){
   await page.getByRole("button",{name:"懂了，下一步",exact:true}).click();
-  await expect(page.getByRole("heading",{name:lesson.explanationSteps[i].heading,exact:true})).toBeFocused();
+  await expect(page.locator(".lesson-step").getByRole("heading",{name:lesson.explanationSteps[i].heading,exact:true})).toBeFocused();
  }
  await page.getByRole("button",{name:"看全部",exact:true}).click();
  for(const step of lesson.explanationSteps)await expect(page.getByText(step.body,{exact:true})).toBeVisible();

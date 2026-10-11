@@ -1,0 +1,76 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:full-course
+> playwright test --config playwright.full-course.config.ts course.spec.ts
+
+[WebServer] (node:99737) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 20 tests using 1 worker
+
+(node:99738) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/full-course/course.spec.ts:12:29 › K056 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.2s)
+  ✓   2 tests/full-course/course.spec.ts:12:29 › K057 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.6s)
+  ✓   3 tests/full-course/course.spec.ts:12:29 › K058 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.4s)
+  ✓   4 tests/full-course/course.spec.ts:12:29 › K059 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.5s)
+  ✓   5 tests/full-course/course.spec.ts:12:29 › K060 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.6s)
+  ✓   6 tests/full-course/course.spec.ts:12:29 › K061 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.7s)
+  ✓   7 tests/full-course/course.spec.ts:12:29 › K062 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.7s)
+  ✓   8 tests/full-course/course.spec.ts:12:29 › K063 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.7s)
+  ✓   9 tests/full-course/course.spec.ts:12:29 › K064 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.7s)
+  ✓  10 tests/full-course/course.spec.ts:12:29 › K065 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.0s)
+  ✓  11 tests/full-course/course.spec.ts:12:29 › K066 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.2s)
+  ✓  12 tests/full-course/course.spec.ts:12:29 › K067 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.1s)
+  ✓  13 tests/full-course/course.spec.ts:12:29 › K068 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.9s)
+  ✘  14 tests/full-course/course.spec.ts:12:29 › K072 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (1.3s)
+(node:99814) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 tests/full-course/course.spec.ts:12:29 › K073 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.5s)
+  ✓  16 tests/full-course/course.spec.ts:12:29 › K076 全文/带做/两题门禁解析重做/闭卷/原卡隔离 (2.8s)
+  ✓  17 tests/full-course/course.spec.ts:64:38 › 320px 新课程长文/图示/SQL局部滚动/底部导航与缩小视口 (7.9s)
+  ✓  18 tests/full-course/course.spec.ts:64:38 › 375px 新课程长文/图示/SQL局部滚动/底部导航与缩小视口 (6.1s)
+  ✓  19 tests/full-course/course.spec.ts:64:38 › 390px 新课程长文/图示/SQL局部滚动/底部导航与缩小视口 (5.6s)
+  ✓  20 tests/full-course/course.spec.ts:64:38 › 430px 新课程长文/图示/SQL局部滚动/底部导航与缩小视口 (4.3s)
+
+
+  1) tests/full-course/course.spec.ts:12:29 › K072 全文/带做/两题门禁解析重做/闭卷/原卡隔离 ──────────────────────────
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: getByRole('heading', { name: '关键路径', exact: true })
+    Expected: focused
+    Error: strict mode violation: getByRole('heading', { name: '关键路径', exact: true }) resolved to 2 elements:
+        1) <h1>关键路径</h1> aka locator('h1')
+        2) <h3 tabindex="-1">关键路径</h3> aka getByRole('region', { name: '循序讲解' }).locator('h3')
+
+    Call log:
+      - Expect "toBeFocused" getByRole('heading', { name: '关键路径', exact: true }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: '关键路径', exact: true })
+
+
+      20 |  for(let i=1;i<lesson.explanationSteps.length;i++){
+      21 |   await page.getByRole("button",{name:"懂了，下一步",exact:true}).click();
+    > 22 |   await expect(page.getByRole("heading",{name:lesson.explanationSteps[i].heading,exact:true})).toBeFocused();
+         |                                                                                                ^
+      23 |  }
+      24 |  await page.getByRole("button",{name:"看全部",exact:true}).click();
+      25 |  for(const step of lesson.explanationSteps)await expect(page.getByText(step.body,{exact:true})).toBeVisible();
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/full-course/course.spec.ts:22:96
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    tmp/full-course/d5/artifacts/course-K072-全文-带做-两题门禁解析重做-闭卷-原卡隔离/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: tmp/full-course/d5/artifacts/course-K072-全文-带做-两题门禁解析重做-闭卷-原卡隔离/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/full-course/d5/artifacts/course-K072-全文-带做-两题门禁解析重做-闭卷-原卡隔离/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/full-course/d5/artifacts/course-K072-全文-带做-两题门禁解析重做-闭卷-原卡隔离/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/full-course/course.spec.ts:12:29 › K072 全文/带做/两题门禁解析重做/闭卷/原卡隔离 ───────────────────────────
+  19 passed (58.2s)

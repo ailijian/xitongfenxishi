@@ -174,5 +174,93 @@
     "svgSha256": "814243d5cd63bc5947a3f52dbb66c66fa141938e33bdf39c6c53749728dcd0fa",
     "renderer": "mermaid@12.1.0",
     "sourceUnmodified": true
+  },
+  "K058": {
+    "src": "lesson-diagrams/K058.svg",
+    "alt": "负载均衡向健康实例A和C分流；实例B健康检查失败，不分流。A和C连接共享数据库，该数据库仍可能是瓶颈。",
+    "sourceSha256": "960f70eddfdd6d27dddcd0c9779e9e8aeb81990a31a5d40691830634b061256f",
+    "svgSha256": "dc94a8e47910aada1511dd6f37fa3a06635feb056d8010cf8e2cf8325629c188",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K059": {
+    "src": "lesson-diagrams/K059.svg",
+    "alt": "高峰流量→入口限流→核心预约服务。下游故障率高时熔断并返回可控错误，否则有限调用支付；非核心服务可以按需降级。",
+    "sourceSha256": "9458178a8f3e98537ccfe755ef5318912c7589f697d007ef6d8a6b47cd7dc81a",
+    "svgSha256": "93f7eda527287ea2917d3b7854f4802182a86a725e270f1d8de4cdccddd2e948",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K060": {
+    "src": "lesson-diagrams/K060.svg",
+    "alt": "机房A和B网络分区，双方都有最后一个号源的副本且分别收到预约请求。若无法协调唯一写入，为保持一致性，无仲裁的一侧拒绝写入。",
+    "sourceSha256": "ec8a8e65eb31bb69e002433b1563b8cda6b2cd230d9b6434ca7acb14cd741b0e",
+    "svgSha256": "a61e1edb1244f0595f69db5b68a4bf55cf23ab87e0799481606cd95b31f72a12",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K061": {
+    "src": "lesson-diagrams/K061.svg",
+    "alt": "请求携带唯一幂等键；已有成功记录则返回原结果；否则在事务内处理并记录、提交返回。响应丢失后用同一键重试。依靠持久化唯一约束和事务。",
+    "sourceSha256": "be95a3de5451cc8b001178b898227a9b98ad0a2d5308f831e0c08a5805ddd2d1",
+    "svgSha256": "d1c015f69c80e8d94c995822941ee91065eb77649fb6138fcb505fd586c543ca",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K063": {
+    "src": "lesson-diagrams/K063.svg",
+    "alt": "完整30天共有43200分钟。99.9%的停机预算为43.2分钟，99.99%为4.32分钟，相差10倍。",
+    "sourceSha256": "354c23e25e4d967583a0ee2cc7c3e9b09ecdbbd093208e524a44077c8571befe",
+    "svgSha256": "8554b603823a8017c5b821acc962ac15176d37a05177fd6618c94e05d0724e6e",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K064": {
+    "src": "lesson-diagrams/K064.svg",
+    "alt": "一次预约请求的 traceId 关联链路追踪（各服务耗时）、日志（错误事件）和指标（P95、错误率、流量），共同定位瓶颈。",
+    "sourceSha256": "7bfe44dcf942674800b96c71cc27f775f1783db1843ea8ab2768f2daeb184133",
+    "svgSha256": "1f702e31513b37cacedfc05f146f6553c38717b284110aae88f788636ad1d3ed",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K065": {
+    "src": "lesson-diagrams/K065.svg",
+    "alt": "Pod启动后 readiness 未通过则不接业务流量，通过才进入 Service 后端。liveness 长期失败则按策略重启，否则继续服务。",
+    "sourceSha256": "dfd4e3e76e5e2bf683809ced20fd8fab4c07842fc48eff933c63c49ae0bd989d",
+    "svgSha256": "d2db22f300b55d627494dd63f5254c7e87ef723973ac6afb815abb83b6884b5f",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K067": {
+    "src": "lesson-diagrams/K067.svg",
+    "alt": "患者问题→检索文档→权限和时效过滤→带来源的可信片段→模型生成→引用检查或拒答→返回患者。RAG不保证零幻觉。",
+    "sourceSha256": "71e0ff7f94d904a1c77c0ed1849d266b396402e86bea9b5174ebb1694e5706ee",
+    "svgSha256": "b9892d7055db6d5739a7dc98a5e9caa4b72af840b5b9b8bb8aa27adcb22d9c14",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K068": {
+    "src": "lesson-diagrams/K068.svg",
+    "alt": "真实用户请求→Agent拟定工具调用；外部网页和文档仅作不可信参考。工具白名单与服务端鉴权→判断风险。高风险操作先确认，其他操作执行工具，均记录审计。",
+    "sourceSha256": "00c139dff3640e2aa301bc892d24e8d2691ee5e193bf9b334cbdc84647b9f456",
+    "svgSha256": "1a87ea1d40cafc9ea8a41452f59f17fb394721eb5316be391e0cd7082aacdd49",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K072": {
+    "src": "lesson-diagrams/K072.svg",
+    "alt": "A需求2天后，B开发5天与C环境3天并行。D联调4天必须等待B和C都完成，关键路径A-B-D，总工期11天。",
+    "sourceSha256": "c7c03d9333be57e92409625e21673f34a9c8c3c0731404ef4dc1be31aaebc75d",
+    "svgSha256": "d52cea9ec4ad91a1b47eeff0177cda322236bd4fe794cb48cfd7a08ca0afbaff",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K073": {
+    "src": "lesson-diagrams/K073.svg",
+    "alt": "医院A-B边权2、B-C边权3、A-C边权10。A到C经B的最短路径为5；连接全部点的最小生成树可选AB和BC，总权重5。",
+    "sourceSha256": "6db0166df6def7e6ab9ec4b553435df121a8cf0e5c6ea34a37eb8c68723ae3d6",
+    "svgSha256": "f6f83ba5c2a236c20fb1d488fc17a9362e8dc0d99b805d74b8674cec6c3c4197",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
   }
 }

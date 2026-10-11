@@ -6,7 +6,7 @@ import diagrams from "./diagrams.json";
 import expandedDiagrams from "./expanded-diagrams.json";
 
 export const teachingContentVersion = "2026.10.11.beginner.2";
-export const integratedCourseDays = [1, 2, 3, 4];
+export const integratedCourseDays = [1, 2, 3, 4, 5];
 export const beginnerPackage = validateBeginnerPackage(raw, content.knowledge);
 export const expandedPackage = validateExpandedPackage(expandedRaw, content.knowledge, content.plan);
 export const courseCardIds = content.plan.filter((d) => integratedCourseDays.includes(d.day)).flatMap((d) => d.knowledgeIds);
