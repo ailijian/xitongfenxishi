@@ -6,3 +6,4 @@ playwright-report/
 .DS_Store
 *.local
 docs/beginner-course/**/artifacts/
+docs/full-course/**/artifacts/

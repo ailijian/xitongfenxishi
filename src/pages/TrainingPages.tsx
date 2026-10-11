@@ -27,6 +27,8 @@ import {
   ErrorMessage,
   friendlyError,
 } from "../components/ui";
+import { caseCoaches, essayCoaches } from "../data/lessons/coaching";
+import { CaseCoaching, EssayCoaching } from "../components/PracticalCoaching";
 import { copyText, downloadText } from "../components/download";
 export function TrainingList({ essays = false }: { essays?: boolean }) {
   const records = useLiveQuery(
@@ -147,6 +149,7 @@ function CaseEditor({ caseId }: { caseId: string }) {
         <p className="reading">{c.scenario}</p>
         <Source source={c.sourceRef} />
       </section>
+      <CaseCoaching coach={caseCoaches.get(caseId)!} revealed={!!draft?.revealed} />
       {draft && (
         <div key={draft.id}>
           {c.questions.map((q) => (
@@ -355,6 +358,7 @@ function EssayEditor({ essayId }: { essayId: string }) {
           <Source source={content.essayGuide.sourceRef} />
         </details>
       </section>
+      <EssayCoaching coach={essayCoaches.get(essayId)!} />
       {draft && (
         <>
           <section className="paper">

@@ -907,3 +907,8 @@ input[type="file"] {
 .lesson-sql pre { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; padding: 16px; background: #173c36; color: #f5f9f6; border-radius: 12px; font-size: 15px; line-height: 1.7; tab-size: 2; }
 .lesson-sql pre:focus-visible { outline: 3px solid #c69b38; }
 .lesson-sql code { white-space: pre; }
+
+.practical-coach { min-width: 0; }
+.practical-coach summary { min-height: 48px; padding: 10px 0; cursor: pointer; }
+.practical-coach li { margin: 14px 0; overflow-wrap: anywhere; }
+.coach-related .text-link { justify-content: flex-start; }

@@ -5,7 +5,7 @@ import { isDeepStrictEqual } from "node:util";
 import { XMLValidator } from "fast-xml-parser";
 import { content } from "../src/data/content";
 import { beginnerPackage, expandedPackage, beginnerLessons, integratedCourseDays, teachingContentVersion, lessonDiagrams } from "../src/data/lessons";
-import coaching from "../src/data/lessons/case_paper_beginner_coaching.json";
+import { coachingPackage as coaching } from "../src/data/lessons/coaching";
 const sha=(s:string|Buffer)=>createHash("sha256").update(s).digest("hex");
 const assert=(ok:unknown,message:string)=>{if(!ok)throw Error(message);};
 const lessons=[...beginnerPackage.lessons,...expandedPackage.lessons];

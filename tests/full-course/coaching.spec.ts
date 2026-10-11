@@ -1,0 +1,43 @@
+import {test,expect} from "@playwright/test";
+import {readFileSync} from "node:fs";
+import type {CaseCoach,EssayCoach} from "../../src/domain/coaching-schema";
+import {cases,essays,records,answerCase} from "../audit/helpers";
+const raw=JSON.parse(readFileSync('src/data/lessons/case_paper_beginner_coaching.json','utf8')) as {caseWalkthroughs:CaseCoach[];essayCoaches:EssayCoach[]};
+for(const coach of raw.caseWalkthroughs)test(`${coach.caseId} 原题/拆题全文/答案示例门禁/25分及历史`,async({page})=>{
+ const c=cases.find(c=>c.id===coach.caseId)!;await page.goto(`/cases/${coach.caseId}`);
+ const box=page.locator(`[data-coach-id="${coach.caseId}"]`);await expect(page.getByText(c.scenario,{exact:true})).toBeVisible();
+ await expect(page.getByRole('textbox')).toHaveCount(3);await expect.poll(async()=>(await records(page,'caseDrafts')).length).toBe(1);
+ const before=await records(page,'caseDrafts');await box.locator('summary').click();
+ await expect(box.getByText(coach.primer,{exact:true})).toBeVisible();await expect(box.locator('.lesson-worked li')).toHaveText(coach.solveSteps);
+ for(const text of [coach.commonMistakes,coach.transferPractice,coach.note,...coach.selfCheck])await expect(box.getByText(text,{exact:true})).toBeVisible();
+ for(const id of coach.relatedCardIds)await expect(box.getByRole('link',{name:new RegExp(id)})).toHaveAttribute('href',`/learn/${id}`);
+ await expect(box.getByTestId('coach-answer-examples')).toHaveCount(0);
+ for(const s of coach.answerPointExamples)await expect(box.getByText(s,{exact:true})).toHaveCount(0);
+ expect(await records(page,'caseDrafts')).toEqual(before);expect(await records(page,'caseAttempts')).toEqual([]);
+ await page.getByRole('button',{name:'作答完成，揭示参考答案',exact:true}).click();await expect(page.getByRole('alert')).toContainText('请先独立回答全部三个分问');
+ await expect(box.getByTestId('coach-answer-examples')).toHaveCount(0);
+ await answerCase(page,coach.caseId);await expect(box.getByTestId('coach-answer-examples')).toBeVisible();
+ await expect(box.getByTestId('coach-answer-examples').locator('li')).toHaveText(coach.answerPointExamples);
+ const checks=await page.locator('main input[type=checkbox]').count();expect(checks).toBe(c.questions.flatMap(q=>q.scoringRubric).length);
+ const attempt=(await records(page,'caseAttempts'))[0];expect(attempt.selfScore).toBe(25);
+ for(const q of c.questions)await expect(page.getByText(q.referenceAnswer,{exact:true})).toBeVisible();
+ await page.reload();await box.locator('summary').click();await expect(box.getByTestId('coach-answer-examples')).toBeVisible();
+ expect((await records(page,'caseAttempts'))[0]).toEqual(attempt);
+ await page.getByRole('button',{name:'开始新一次作答',exact:true}).click();await expect(box.getByTestId('coach-answer-examples')).toHaveCount(0);
+ expect((await records(page,'caseAttempts'))[0]).toEqual(attempt);
+});
+for(const coach of raw.essayCoaches)test(`${coach.essayId} 写作教练全文/无自动填充/草稿刷新/真实素材`,async({page})=>{
+ const e=essays.find(e=>e.id===coach.essayId)!;await page.goto(`/essays/${coach.essayId}`);
+ await expect(page.getByText(e.outline,{exact:true})).toBeVisible();await expect(page.getByText(e.scenario,{exact:true})).toBeVisible();
+ const outline=page.getByRole('textbox',{name:'我的论文提纲',exact:true});const body=page.getByRole('textbox',{name:'我的论文正文',exact:true});
+ await expect(outline).toHaveValue('');await expect(body).toHaveValue('');await expect.poll(async()=>(await records(page,'essayDrafts')).length).toBe(1);
+ const before=await records(page,'essayDrafts');const box=page.locator(`[data-coach-id="${coach.essayId}"]`);await box.locator('summary').click();
+ for(const s of [coach.focus,coach.avoid,coach.starterExercise,coach.note,...coach.requiredRealProjectEvidence])await expect(box.getByText(s,{exact:true})).toBeVisible();
+ for(const s of coach.sectionOutline){await expect(box.getByText(s.heading,{exact:true})).toBeVisible();await expect(box.getByText(s.prompt,{exact:true})).toBeVisible();}
+ for(const id of coach.relatedCardIds)await expect(box.getByRole('link',{name:new RegExp(id)})).toHaveAttribute('href',`/learn/${id}`);
+ expect(await records(page,'essayDrafts')).toEqual(before);expect(await records(page,'projects')).toEqual([]);
+ await outline.fill(`${coach.essayId} 真实经历提纲`);await body.fill(`${coach.essayId} 我的正文📝未被教练改写`);
+ await expect.poll(async()=>(await records(page,'essayDrafts'))[0]?.body).toBe(`${coach.essayId} 我的正文📝未被教练改写`);
+ const saved=await records(page,'essayDrafts');await page.reload();await expect(body).toHaveValue(saved[0].body);await expect(outline).toHaveValue(saved[0].outline);
+ await box.locator('summary').click();expect(await records(page,'essayDrafts')).toEqual(saved);expect(await records(page,'projects')).toEqual([]);
+});

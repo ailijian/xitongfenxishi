@@ -1,0 +1,30 @@
+PASS K015 visible text inside SVG viewBox (9 text elements)
+PASS K017 visible text inside SVG viewBox (6 text elements)
+PASS K018 visible text inside SVG viewBox (5 text elements)
+PASS K019 visible text inside SVG viewBox (4 text elements)
+PASS K020 visible text inside SVG viewBox (7 text elements)
+PASS K021 visible text inside SVG viewBox (6 text elements)
+PASS K024 visible text inside SVG viewBox (6 text elements)
+PASS K029 visible text inside SVG viewBox (5 text elements)
+PASS K030 visible text inside SVG viewBox (4 text elements)
+PASS K035 visible text inside SVG viewBox (11 text elements)
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.screenshot: Timeout 30000ms exceeded.
+Call log:
+[2m  - taking page screenshot[22m
+[2m  - waiting for fonts to load...[22m
+[2m  - fonts loaded[22m
+
+    at /Users/lijian/Documents/projects/xitongfenxishi/scripts/check-rendered-diagram-layout.mjs:24:67 {
+  log: [
+    '  - taking page screenshot',
+    '  - waiting for fonts to load...',
+    '  - fonts loaded'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.20.0

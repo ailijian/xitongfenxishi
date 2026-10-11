@@ -1,0 +1,269 @@
+{
+  "result": "PASS",
+  "rows": [
+    {
+      "id": "K015",
+      "width": 1208,
+      "height": 186,
+      "texts": 9,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K017",
+      "width": 168,
+      "height": 519.6000366210938,
+      "texts": 6,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K018",
+      "width": 744,
+      "height": 164,
+      "texts": 5,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K019",
+      "width": 168,
+      "height": 411.5487060546875,
+      "texts": 4,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K020",
+      "width": 744,
+      "height": 298.79742431640625,
+      "texts": 7,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K021",
+      "width": 761.1357421875,
+      "height": 228,
+      "texts": 6,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K024",
+      "width": 874,
+      "height": 79.80000305175781,
+      "texts": 6,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K029",
+      "width": 168,
+      "height": 475.20001220703125,
+      "texts": 5,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K030",
+      "width": 552,
+      "height": 183.60000610351562,
+      "texts": 4,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K035",
+      "width": 360,
+      "height": 879.7999877929688,
+      "texts": 11,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K036",
+      "width": 651,
+      "height": 436,
+      "texts": 10,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K037",
+      "width": 936,
+      "height": 79.80000305175781,
+      "texts": 5,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K040",
+      "width": 391.5,
+      "height": 625.7999877929688,
+      "texts": 10,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K069",
+      "width": 744,
+      "height": 79.80000305175781,
+      "texts": 4,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K070",
+      "width": 360,
+      "height": 247.8000030517578,
+      "texts": 4,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K071",
+      "width": 360,
+      "height": 307.20001220703125,
+      "texts": 5,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K043",
+      "width": 360,
+      "height": 502,
+      "texts": 7,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K044",
+      "width": 565.5,
+      "height": 882,
+      "texts": 13,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K047",
+      "width": 744,
+      "height": 287.79998779296875,
+      "texts": 6,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K050",
+      "width": 168,
+      "height": 415.79998779296875,
+      "texts": 5,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K054",
+      "width": 828.421875,
+      "height": 79.80000305175781,
+      "texts": 5,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K055",
+      "width": 1128,
+      "height": 79.80000305175781,
+      "texts": 6,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K058",
+      "width": 566,
+      "height": 268.148681640625,
+      "texts": 6,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K059",
+      "width": 465,
+      "height": 605.7999877929688,
+      "texts": 9,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K060",
+      "width": 1165.800048828125,
+      "height": 205.8000030517578,
+      "texts": 7,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K061",
+      "width": 436,
+      "height": 561.4000244140625,
+      "texts": 8,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K063",
+      "width": 552,
+      "height": 183.60000610351562,
+      "texts": 4,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K064",
+      "width": 552,
+      "height": 267.6000061035156,
+      "texts": 5,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K065",
+      "width": 379.4000244140625,
+      "height": 899.4000244140625,
+      "texts": 10,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K067",
+      "width": 1128,
+      "height": 99.80000305175781,
+      "texts": 6,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K068",
+      "width": 1592,
+      "height": 186,
+      "texts": 11,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K072",
+      "width": 744,
+      "height": 144,
+      "texts": 5,
+      "empty": false,
+      "outOfBounds": []
+    },
+    {
+      "id": "K073",
+      "width": 732.03125,
+      "height": 124,
+      "texts": 6,
+      "empty": false,
+      "outOfBounds": []
+    }
+  ]
+}

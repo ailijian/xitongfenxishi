@@ -1,0 +1,347 @@
+{
+  "app": "ruankao-system-analyst",
+  "schemaVersion": 2,
+  "contentVersion": "2026.10.11.1",
+  "exportedAt": "2026-10-11T16:13:39.255Z",
+  "data": {
+    "settings": [
+      {
+        "id": "settings",
+        "studyStartDate": "2026-10-10",
+        "dayOverrides": {}
+      }
+    ],
+    "cards": [
+      {
+        "cardId": "K001",
+        "status": "initial",
+        "firstPassAt": "2026-10-11T16:13:35.530Z",
+        "reviewDueAt": "2026-10-12T16:13:35.530Z",
+        "validationMethod": "question-and-self-check",
+        "updatedAt": "2026-10-11T16:13:35.530Z"
+      },
+      {
+        "cardId": "K002",
+        "status": "learning",
+        "updatedAt": "2026-10-11T16:13:38.125Z"
+      }
+    ],
+    "cardAttempts": [
+      {
+        "contentVersion": "2026.10.11.1",
+        "id": "2c6ab490-2cb3-4e16-9602-12ae070a3eeb",
+        "cardId": "K001",
+        "recall": "测试输入：功能描述系统做什么；非功能描述性能、安全、可用性等质量约束",
+        "checks": [
+          true,
+          true
+        ],
+        "questionAttemptId": "1fd0bfed-bc37-4548-91ba-4c020f6c31bc",
+        "passed": true,
+        "createdAt": "2026-10-11T16:13:35.531Z",
+        "kind": "first",
+        "order": 1
+      }
+    ],
+    "questionAttempts": [
+      {
+        "contentVersion": "2026.10.11.1",
+        "id": "188e2af8-9b99-44b3-8866-d7b191a29ec2",
+        "questionId": "RK001",
+        "set": "chapter",
+        "selectedOption": "B",
+        "correct": false,
+        "submittedAt": "2026-10-11T16:13:36.050Z",
+        "order": 2
+      },
+      {
+        "contentVersion": "2026.10.11.1",
+        "id": "1fd0bfed-bc37-4548-91ba-4c020f6c31bc",
+        "questionId": "RK025",
+        "set": "chapter",
+        "selectedOption": "C",
+        "correct": true,
+        "submittedAt": "2026-10-11T16:13:35.435Z",
+        "order": 1
+      }
+    ],
+    "learningDrafts": [
+      {
+        "contentVersion": "2026.10.11.1",
+        "cardId": "K002",
+        "phase": "recall",
+        "recall": "旧版尚未提交的闭卷草稿",
+        "checks": [
+          false
+        ],
+        "questionId": "RK001",
+        "updatedAt": "2026-10-11T16:13:38.233Z"
+      }
+    ],
+    "sessions": [
+      {
+        "mockKind": "first-independent",
+        "contentVersion": "2026.10.11.1",
+        "id": "mock:9c2e50ba-7ca1-4474-86a3-f9adf47d4c0d",
+        "set": "mock",
+        "questionIds": [
+          "RK076",
+          "RK077",
+          "RK078",
+          "RK079",
+          "RK080",
+          "RK081",
+          "RK082",
+          "RK083",
+          "RK084",
+          "RK085",
+          "RK086",
+          "RK087",
+          "RK088",
+          "RK089",
+          "RK090",
+          "RK091",
+          "RK092",
+          "RK093",
+          "RK094",
+          "RK095",
+          "RK096",
+          "RK097",
+          "RK098",
+          "RK099",
+          "RK100",
+          "RK101",
+          "RK102",
+          "RK103",
+          "RK104",
+          "RK105",
+          "RK106",
+          "RK107",
+          "RK108",
+          "RK109",
+          "RK110",
+          "RK111",
+          "RK112",
+          "RK113",
+          "RK114",
+          "RK115",
+          "RK116",
+          "RK117",
+          "RK118",
+          "RK119",
+          "RK120",
+          "RK121",
+          "RK122",
+          "RK123",
+          "RK124",
+          "RK125",
+          "RK126",
+          "RK127",
+          "RK128",
+          "RK129",
+          "RK130",
+          "RK131",
+          "RK132",
+          "RK133",
+          "RK134",
+          "RK135",
+          "RK136",
+          "RK137",
+          "RK138",
+          "RK139",
+          "RK140",
+          "RK141",
+          "RK142",
+          "RK143",
+          "RK144",
+          "RK145",
+          "RK146",
+          "RK147",
+          "RK148",
+          "RK149",
+          "RK150"
+        ],
+        "answers": {
+          "RK076": "D"
+        },
+        "submittedQuestionIds": [],
+        "index": 0,
+        "createdAt": "2026-10-11T16:13:38.648Z",
+        "timed": false,
+        "startedAt": "2026-10-11T16:13:38.648Z"
+      },
+      {
+        "contentVersion": "2026.10.11.1",
+        "id": "practice:chapter:",
+        "set": "chapter",
+        "questionIds": [
+          "RK001",
+          "RK002",
+          "RK003",
+          "RK004",
+          "RK005",
+          "RK006",
+          "RK007",
+          "RK008",
+          "RK009",
+          "RK010",
+          "RK011",
+          "RK012",
+          "RK013",
+          "RK014",
+          "RK015",
+          "RK016",
+          "RK017",
+          "RK018",
+          "RK019",
+          "RK020",
+          "RK021",
+          "RK022",
+          "RK023",
+          "RK024",
+          "RK025",
+          "RK026",
+          "RK027",
+          "RK028",
+          "RK029",
+          "RK030",
+          "RK031",
+          "RK032",
+          "RK033",
+          "RK034",
+          "RK035",
+          "RK036",
+          "RK037",
+          "RK038",
+          "RK039",
+          "RK040",
+          "RK041",
+          "RK042",
+          "RK043",
+          "RK044",
+          "RK045",
+          "RK046",
+          "RK047",
+          "RK048",
+          "RK049",
+          "RK050",
+          "RK051",
+          "RK052",
+          "RK053",
+          "RK054",
+          "RK055",
+          "RK056",
+          "RK057",
+          "RK058",
+          "RK059",
+          "RK060",
+          "RK061",
+          "RK062",
+          "RK063",
+          "RK064",
+          "RK065",
+          "RK066",
+          "RK067",
+          "RK068",
+          "RK069",
+          "RK070",
+          "RK071",
+          "RK072",
+          "RK073",
+          "RK074",
+          "RK075"
+        ],
+        "answers": {
+          "RK001": "B"
+        },
+        "submittedQuestionIds": [
+          "RK001"
+        ],
+        "index": 0,
+        "createdAt": "2026-10-11T16:13:35.878Z"
+      }
+    ],
+    "bookmarks": [
+      {
+        "questionId": "RK076",
+        "createdAt": "2026-10-11T16:13:38.748Z"
+      }
+    ],
+    "caseDrafts": [
+      {
+        "caseId": "C01",
+        "id": "1a2e585e-6ffa-4877-a0e9-f5205cc3d63e",
+        "answers": {
+          "C01-Q1": "审计输入 C01-Q1：独立回答草稿",
+          "C01-Q2": "审计输入 C01-Q2：独立回答草稿",
+          "C01-Q3": "审计输入 C01-Q3：独立回答草稿"
+        },
+        "checks": {
+          "C01-Q1-R1": true,
+          "C01-Q2-R1": true,
+          "C01-Q3-R1": true
+        },
+        "revealed": true,
+        "updatedAt": "2026-10-11T16:13:37.517Z"
+      }
+    ],
+    "caseAttempts": [
+      {
+        "caseId": "C01",
+        "id": "752b1a67-cbd4-4226-b87a-493c5c24de7c",
+        "answers": {
+          "C01-Q1": "审计输入 C01-Q1：独立回答草稿",
+          "C01-Q2": "审计输入 C01-Q2：独立回答草稿",
+          "C01-Q3": "审计输入 C01-Q3：独立回答草稿"
+        },
+        "checks": {
+          "C01-Q1-R1": true,
+          "C01-Q2-R1": true,
+          "C01-Q3-R1": true
+        },
+        "revealed": true,
+        "updatedAt": "2026-10-11T16:13:37.517Z",
+        "contentVersion": "2026.10.11.1",
+        "selfScore": 14,
+        "createdAt": "2026-10-11T16:13:37.618Z"
+      }
+    ],
+    "essayDrafts": [
+      {
+        "essayId": "E01",
+        "projectId": "d1b84b6c-6327-4cc6-9f94-4cd2c05496ca",
+        "outline": "上线前提纲不改写",
+        "body": "上线前正文📝保持Unicode和原时间戳",
+        "checks": {},
+        "updatedAt": "2026-10-11T16:13:37.975Z"
+      }
+    ],
+    "projects": [
+      {
+        "id": "d1b84b6c-6327-4cc6-9f94-4cd2c05496ca",
+        "name": "课程上线前的测试项目素材",
+        "background": "",
+        "role": "",
+        "decisions": "",
+        "problems": "",
+        "results": "",
+        "reflection": "",
+        "updatedAt": "2026-10-11T16:13:37.934Z"
+      }
+    ],
+    "exams": [
+      {
+        "id": "9c2e50ba-7ca1-4474-86a3-f9adf47d4c0d",
+        "sessionId": "mock:9c2e50ba-7ca1-4474-86a3-f9adf47d4c0d",
+        "caseIds": [
+          "C01",
+          "C04",
+          "C06"
+        ],
+        "essayId": "E01",
+        "caseAttemptIds": {},
+        "createdAt": "2026-10-11T16:13:38.657Z"
+      }
+    ]
+  }
+}

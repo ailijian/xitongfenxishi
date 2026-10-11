@@ -114,6 +114,7 @@ export function Today() {
           <h2>今天的优先队列</h2>
           <Link to="/learn">全部知识 →</Link>
         </div>
+        <p className="subtle">{beginnerLessons.size} 节完整零基础课程 · 先理解业务案例，再闭卷验收</p>
         <div className="card-list">
           {plan.queue.slice(0, 5).map((k) => (
             <Link className="list-card" key={k.id} to={`/learn/${k.id}`}>
@@ -245,7 +246,7 @@ export function Learn() {
       <PageTitle
         eyebrow="KNOWLEDGE"
         title="知识通关"
-        description="理解、闭卷回忆、要点自检与关联选择题。仅打开卡片不计掌握。"
+        description={`${beginnerLessons.size} 节完整零基础课程。理解、闭卷回忆、要点自检与关联选择题；仅打开卡片不计掌握。`}
       />
       <label>
         <span className="sr-only">搜索知识</span>
