@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:45656) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/audit/mobile-offline.spec.ts:107:1 › 线上资源版本与当前构建文件逐字节一致 (5.4s)
+
+  1 passed (9.3s)

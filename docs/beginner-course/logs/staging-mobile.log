@@ -1,0 +1,38 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:beginner
+> playwright test --config playwright.beginner.config.ts
+
+
+Running 25 tests using 1 worker
+
+(node:45192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/beginner/course.spec.ts:8:1 › K001默认通俗解释/医院案例、循序讲解、带做和闭卷，速记最后折叠 (2.7s)
+  ✓   2 tests/beginner/course.spec.ts:37:34 › K001课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.1s)
+  ✓   3 tests/beginner/course.spec.ts:37:34 › K002课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (5.6s)
+  ✓   4 tests/beginner/course.spec.ts:37:34 › K003课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.8s)
+  ✓   5 tests/beginner/course.spec.ts:37:34 › K004课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.7s)
+  ✓   6 tests/beginner/course.spec.ts:37:34 › K005课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.8s)
+  ✓   7 tests/beginner/course.spec.ts:37:34 › K006课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.7s)
+  ✓   8 tests/beginner/course.spec.ts:37:34 › K007课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.8s)
+  ✓   9 tests/beginner/course.spec.ts:37:34 › K008课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.7s)
+  ✓  10 tests/beginner/course.spec.ts:37:34 › K009课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.9s)
+  ✓  11 tests/beginner/course.spec.ts:37:34 › K010课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.9s)
+  ✓  12 tests/beginner/course.spec.ts:37:34 › K011课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.7s)
+  ✓  13 tests/beginner/course.spec.ts:37:34 › K012课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.5s)
+  ✓  14 tests/beginner/course.spec.ts:37:34 › K013课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.7s)
+  ✓  15 tests/beginner/course.spec.ts:37:34 › K014课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.8s)
+  ✓  16 tests/beginner/course.spec.ts:37:34 › K075课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (1.7s)
+  ✓  17 tests/beginner/course.spec.ts:85:1 › K006 include/extend、K010生命周期、K011非法流向与分层平衡，未提供课程的卡明确标记 (2.1s)
+  ✓  18 tests/beginner/course.spec.ts:105:39 › 320px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (6.3s)
+  ✓  19 tests/beginner/course.spec.ts:105:39 › 375px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (7.5s)
+  ✓  20 tests/beginner/course.spec.ts:105:39 › 390px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (7.2s)
+  ✓  21 tests/beginner/course.spec.ts:105:39 › 430px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (3.5s)
+  ✓  22 tests/beginner/course.spec.ts:134:1 › 12类旧数据逐字段保留、理解练习不污染、JSON清空/恢复及损坏备份无副作用 (9.1s)
+  ✓  23 tests/beginner/course.spec.ts:178:1 › 首次联网后全部15课和8图离线关页重开可用，练习交卷仍隔离掌握 (12.7s)
+(node:45772) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  24 tests/beginner/webkit.spec.ts:9:31 › WebKit 375px移动浏览器：四个重点课程、触摸图示、答案门禁及刷新草稿 (10.0s)
+  ✓  25 tests/beginner/webkit.spec.ts:9:31 › WebKit 390px移动浏览器：四个重点课程、触摸图示、答案门禁及刷新草稿 (6.7s)
+
+  25 passed (1.8m)

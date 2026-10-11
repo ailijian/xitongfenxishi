@@ -2,6 +2,8 @@
 
 基线：`22e3f07aabd9d1aa0cd33831aa3599cbe6d9db97`，main。范围：接入已提供的第1天教学包，不实施 checkpoint v2 迁移、内容包安装器或考场状态机。
 
+验收结论：**PASS**，15课/30理解题/8图已真实集成并发布 [staging](https://ruankao.staging.haaboo.com/learn/K001)。本地63项单元、14项流程、20项审计、2项PWA、25项课程测试全部通过；线上25项课程测试、3项服务测试、资源逐字节校验及旧12类数据升级/恢复全部通过。实体iPhone最终验收由用户执行。
+
 ## 已交付的学习页面
 
 K001 默认展示“功能需求管要做什么，非功能需求管做到什么标准”和社区医院预约案例。课程依次呈现循序讲解、带做示例、概念图示（原包提供时）、易混点、原创理解题、闭卷自述。原卡必会概念和易错点完整保留在最后折叠的“考前速记”。首次只显示一个讲解步骤，支持“懂了，下一步”“上一步”“看全部”，切换后焦点落在讲解标题。
@@ -29,6 +31,24 @@ K001 默认展示“功能需求管要做什么，非功能需求管做到什么
 | 原题库 | 150，章节75/独立模考75 | PASS；原JSON、关联和提交门禁未改 |
 | 原案例 / 论文专题 | 9 / 10 | PASS；原JSON未改，现有流程回归通过 |
 
+| 知识点 | 级别 | 讲解步骤 | 带做步骤 | 理解题 | 图示 |
+|---|---|---:|---:|---:|---|
+| K001 需求类型 | A | 4 | 4 | 2 | 原包未提供 |
+| K002 好需求6项 | A | 4 | 4 | 2 | 原包未提供 |
+| K003 需求获取 | A | 4 | 5 | 2 | 原包未提供 |
+| K004 需求基线/变更 | A | 4 | 5 | 2 | 有 |
+| K005 需求追踪 | A | 4 | 5 | 2 | 有 |
+| K006 用例图 | A | 4 | 4 | 2 | 有 |
+| K007 顺序图 | A | 4 | 4 | 2 | 有 |
+| K008 活动图 | A | 4 | 4 | 2 | 有 |
+| K009 状态图 | A | 4 | 4 | 2 | 有 |
+| K010 类图 | A | 4 | 5 | 2 | 有 |
+| K011 DFD四元素 | A | 4 | 5 | 2 | 有 |
+| K012 业务流程重构 | B | 4 | 4 | 2 | 原包未提供 |
+| K013 开发模型 | A | 4 | 4 | 2 | 原包未提供 |
+| K014 敏捷/Scrum | A | 4 | 4 | 2 | 原包未提供 |
+| K075 BPR/价值链 | B | 4 | 4 | 2 | 原包未提供 |
+
 逐卡字段及题目ID见 [content-integrity.json](beginner-course/content-integrity.json)。K004、K005、K010、K011 原 `self-check-only` 状态未变。该包是原创教学，未标为官方真题、已审定客观题或全新独立模考；原 `reviewStatus` 原样保留，集成验证不替代教学内容的人工审核。
 
 图示直接根据已提供的8个固定关系图明确转录为SVG，不运行 Mermaid，不引入运行时图形库。保留原 Mermaid 源文，记录源文及SVG哈希，检查XML、安全、文字替代和生成文件一致性；已逐图查看渲染截图，修正了K006扩展箭头的可读布局。用例/活动/DFD示意仍展示原包“非正式规范图”的说明；K010图只展示关联和多重性，组合生命周期在原讲解和带做中讲清。图示独立横向滚动，不扩大整页宽度。
@@ -39,7 +59,7 @@ K001 默认展示“功能需求管要做什么，非功能需求管做到什么
 
 16个原内容、数据存储、掌握、时钟和原资料文件已与基线逐字节比对，见 [preserved-baseline.json](beginner-course/preserved-baseline.json)。本地测试生成12类全部非空数据，执行课程作答、刷新、旧自测恢复，导出前后 `data` 深比较一致；清空/恢复后逐字段一致，损坏导入无副作用。原备份单元测试继续覆盖写入中途事务回滚。
 
-线上旧版隔离浏览器已在发布前通过正常UI产生并导出12类数据，备份为 [pre-release-backup.json](beginner-course/pre-release-backup.json)，仅含合成验收输入，不是用户真实资料。发布后会验证Service Worker升级及清空/恢复后的逐字段一致性，结果追加在下方发布部分。
+线上旧版隔离浏览器已在发布前通过正常UI产生并导出12类数据，备份为 [pre-release-backup.json](beginner-course/pre-release-backup.json)，仅含合成验收输入，不是用户真实资料。发布后已经确认Service Worker升级、刷新、旧闭卷草稿恢复后，12类数据逐字段一致；清空/恢复后仍一致，损坏导入不改记录。见 [数据保护报告](beginner-course/data-preservation-report.md) 和 [staging-upgrade.json](beginner-course/staging-upgrade.json)。
 
 ## 实际自动化验证
 
@@ -74,7 +94,27 @@ K001 默认展示“功能需求管要做什么，非功能需求管做到什么
 
 ## 发布验收
 
-本地验证完成后推送GitHub；staging发布结果、提交与回滚信息在完成线上校验后追加。本任务只更新独立 `ruankao-staging` 静态服务，不调整其他项目或共享代理。
+代码已推送GitHub main：[5612c32](https://github.com/ailijian/xitongfenxishi/commit/5612c321d2cc1de9103be98c062a42fd5e4b7645)。本任务只更新独立 `ruankao-staging` 静态服务，共享代理及另外15个容器的ID和启动时间均与发布前一致；主站、judgment页面及bootstrap接口发布前后均返回200。
+
+- 发布：`staging-20261011T124350Z-4bf2db1dc3be`，staging current已指向该版本。
+- 源码归档SHA-256：`4bf2db1dc3be0714a5870b2bfd43df15cc73531c2f0d7c2e10ef5ab68fe2f172`。
+- Linux/amd64镜像：`ruankao-web:staging-20261011T124350Z-4bf2db1dc3be`；image ID `sha256:b14fc23b622d04fc5dfde2f601605d4184b2c33582919a12588bb9c245fd2ba4`。
+- 容器healthy；10001非root、只读文件系统、0.5 CPU、128MiB，未添加宿主机公开端口。
+- 发布包全部27个dist文件与已经测试的本地生产构建逐字节相同；HTTP可访问25个应用资源与本地逐字节相同（另两个为未对外提供的托管配置文件）。
+
+| 发布后实际命令/操作 | 结果与证据 |
+|---|---|
+| `bash ops/staging/bundle.sh` | PASS；干净源码副本npm ci、63项单元、资料检查、TypeScript、Vite、PWA及linux/amd64构建；[release-build.log](beginner-course/logs/release-build.log) |
+| 本地发布镜像 + `STAGING_BASE_URL=http://127.0.0.1:4180 npx playwright test --config playwright.staging.config.ts tests/staging/hosting.spec.ts --reporter=list` | PASS 3项；实际Caddy、8个SVG MIME/缓存、路由、404和手机页面；[image-preflight.log](beginner-course/logs/image-preflight.log) |
+| 上传校验、`bash activate-web.sh` | PASS；仅更新本项目web；[activate.log](beginner-course/logs/activate.log) |
+| `BEGINNER_BASE_URL=https://ruankao.staging.haaboo.com BEGINNER_EVIDENCE_DIR=docs/beginner-course/staging BEGINNER_SCREENSHOTS=docs/beginner-course/screenshots/staging npm run test:beginner` | PASS 25项，包括全部课程、30理解题、8图、WebKit、离线及完整备份；[staging-mobile.log](beginner-course/logs/staging-mobile.log)、[结果JSON](beginner-course/staging/browser-results.json) |
+| `STAGING_BASE_URL=https://ruankao.staging.haaboo.com npx playwright test --config playwright.staging.config.ts tests/staging/hosting.spec.ts --reporter=list` | PASS 3项；在发布源码副本执行；[staging-hosting.log](beginner-course/logs/staging-hosting.log) |
+| `AUDIT_BASE_URL=https://ruankao.staging.haaboo.com AUDIT_EVIDENCE_DIR=docs/beginner-course/staging-assets npx playwright test --config playwright.audit.config.ts --grep '线上资源版本'` | PASS 1项，25资源逐字节一致；[staging-assets.log](beginner-course/logs/staging-assets.log) |
+| `npx tsx scripts/audit-beginner-upgrade.ts seed` / `verify` | PASS；发布前真实旧版备份、发布后更新/恢复/失败无副作用；[staging-upgrade.log](beginner-course/logs/staging-upgrade.log) |
+
+线上新版首屏：[K001](beginner-course/screenshots/staging/initial-K001-390.png)、[K006](beginner-course/screenshots/staging/initial-K006-390.png)、[K010](beginner-course/screenshots/staging/initial-K010-390.png)、[K011](beginner-course/screenshots/staging/initial-K011-390.png)。线上完整375/390px课程截图位于 `beginner-course/screenshots/staging/`。部署记录见 [deployment-result.json](beginner-course/deployment-result.json)、[发布清单](beginner-course/release-manifest.txt)、[文件哈希](beginner-course/release-artifacts.json)。
+
+若已有PWA仍显示旧页面，等待当前输入保存后点击“更新并重新载入”；旧记录升级实测已通过，无需清空浏览器。回滚版本 `staging-20261011T102610Z-ca1338b7ed8b` 保留。按 `ops/staging/README.md`，进入该旧release运行 `activate-web.sh`，通过HTTPS和浏览器检查后再将current指回旧release；仅操作ruankao项目，无数据库迁移需要回退。
 
 ## 修改文件
 
@@ -82,4 +122,6 @@ K001 默认展示“功能需求管要做什么，非功能需求管做到什么
 
 验证/构建：`scripts/{check-beginner-content.ts,build-lesson-diagrams.mjs,check-beginner-preservation.mjs,audit-beginner-upgrade.ts}`、`tests/beginner-content.test.ts`、`tests/beginner/{course.spec.ts,webkit.spec.ts}`、`tests/audit/mobile-offline.spec.ts`、`tests/staging/hosting.spec.ts`、`playwright.beginner.config.ts`、`package.json`、`tsconfig.json`、`ops/staging/{bundle.sh,Caddyfile.web}`。
 
-文档：`README.md`、`.gitignore`、本报告、用户提供的5份原始教学包文件、`docs/beginner-course/`下的内容检查、基线保留证据、合成备份、实际日志、JSON结果与截图。失败trace保留本地且通过`.gitignore`排除，不上传大体积临时录制；失败日志和上下文已交付。
+文档：`README.md`、`.gitignore`、`docs/staging-deployment.md`、本报告、用户提供的5份原始教学包文件、`docs/beginner-course/`下的内容检查、基线保留证据、合成备份、实际日志、JSON结果与截图。失败trace保留本地且通过`.gitignore`排除，不上传大体积临时录制；失败日志和上下文已交付。
+
+包含所有原始资料副本、日志和截图的逐文件清单：[changed-files.txt](beginner-course/changed-files.txt)。

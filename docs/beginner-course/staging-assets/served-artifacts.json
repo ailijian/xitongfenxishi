@@ -1,0 +1,30 @@
+{
+  "baseURL": "https://ruankao.staging.haaboo.com",
+  "compared": [
+    "/assets/index-BpKnxTxe.js",
+    "/assets/rolldown-runtime-CbXtAM7H.js",
+    "/assets/content-CsdUGm58.js",
+    "/assets/storage-BQsmmC3R.js",
+    "/assets/validation-CaOqAvNd.js",
+    "/assets/react-DFrR40fa.js",
+    "/assets/index-C_NS8Cxe.css",
+    "/manifest.webmanifest",
+    "/index.html",
+    "/lesson-diagrams/K011.svg",
+    "/lesson-diagrams/K010.svg",
+    "/lesson-diagrams/K009.svg",
+    "/lesson-diagrams/K008.svg",
+    "/lesson-diagrams/K007.svg",
+    "/lesson-diagrams/K006.svg",
+    "/lesson-diagrams/K005.svg",
+    "/lesson-diagrams/K004.svg",
+    "/icons/maskable-512.png",
+    "/icons/icon.svg",
+    "/icons/icon-512.png",
+    "/icons/icon-192.png",
+    "/icons/apple-touch-icon.png",
+    "/assets/workbox-window.prod.es5-Bd17z0YL.js",
+    "/sw.js",
+    "/workbox-2fbc6a65.js"
+  ]
+}

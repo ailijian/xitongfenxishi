@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-11T12:46:03.953Z",
+  "statuses": [
+    {
+      "url": "https://ruankao.staging.haaboo.com/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/judgment/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/api/judgment/bootstrap",
+      "status": 200
+    }
+  ]
+}

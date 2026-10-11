@@ -3,11 +3,19 @@
 已上线：<https://ruankao.staging.haaboo.com/>。这是无账号的静态 H5/PWA；
 用户进度、错题和草稿保存在当前浏览器 IndexedDB，服务器不保存学习数据。
 
-## 当前发布：第二轮 P1 整改
+## 当前发布：零基础第1天课程升级
+
+正式 release `staging-20261011T124350Z-4bf2db1dc3be`，代码提交 `5612c321d2cc1de9103be98c062a42fd5e4b7645`。15课、30道原创理解题和8张概念图均已真实接入，K001默认展示通俗解释与医院预约案例，原速记折叠保留；理解题不进入原题库或掌握统计。
+
+本地63单元、14流程、20审计、2 PWA及25课程测试通过。线上25课程（包含WebKit手机）、3托管、25资源字节核对、真实旧PWA升级与12类记录清空恢复通过。其他15个容器ID/启动时间和共享代理均保持一致。当前版本、备份格式及原学习历史未改变，实体iPhone由用户最终验收。
+
+current指向 `/opt/azao-staging/projects/ruankao/releases/staging-20261011T124350Z-4bf2db1dc3be`。完整内容检查、新旧截图、实际命令、日志和回滚见[零基础课程验收报告](beginner-course-integration-report.md)，机器结果见 `beginner-course/deployment-result.json`。下面保留各轮历史发布记录。
+
+## 第二轮 P1 整改（历史）
 
 正式 release `staging-20261011T102610Z-ca1338b7ed8b`，代码提交 `4ff9a28899ace2a66203a9c9e557a6bedcbc4dfa`。两个 P1 已修复；56 单元、14 原流程、2 PWA、20 线上专项和3托管检查通过。真实旧 PWA 升级、旧备份清空恢复的12类记录逐字段一致。仅更新本项目 Web，共享代理没有重启。
 
-最新身份、完整测试命令、新旧手机截图、文件清单和边界见[第二轮验收](round2-report.md)。current 指向 `/opt/azao-staging/projects/ruankao/releases/staging-20261011T102610Z-ca1338b7ed8b`，上轮 release 继续保留。contentVersion、IndexedDB version、备份版本分别保持 `2026.10.11.1` /2 /2，原学习记录未补写；新 session 的可选 mockKind 字段需本轮或新客户端读取。
+该轮身份、完整测试命令、新旧手机截图、文件清单和边界见[第二轮验收](round2-report.md)。发布时 current 指向 `/opt/azao-staging/projects/ruankao/releases/staging-20261011T102610Z-ca1338b7ed8b`，上轮 release 继续保留。contentVersion、IndexedDB version、备份版本分别保持 `2026.10.11.1` /2 /2，原学习记录未补写；新 session 的可选 mockKind 字段需该轮或新客户端读取。
 
 第二阶段 checkpoints 与三个独立指标暂以[方案](knowledge-validation-v2.md)交付，尚未接入运行应用。未生成或发布新题库，考场模式仍使用现有自由训练；实体 iPhone 验收仍 NOT TESTED。
 

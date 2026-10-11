@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:43597) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/staging/hosting.spec.ts:3:1 › 静态服务健康、深层路由和PWA入口正确，缺失资源返回404 (573ms)
+  ✓  2 tests/staging/hosting.spec.ts:38:1 › 构建JS和CSS可访问、MIME正确、使用长期不可变缓存 (252ms)
+  ✓  3 tests/staging/hosting.spec.ts:50:1 › 手机端线上页面加载正常，无脚本异常并留存截图 (4.2s)
+
+  3 passed (11.1s)

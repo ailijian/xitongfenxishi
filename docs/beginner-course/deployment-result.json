@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "verifiedAt": "2026-10-11T12:54:53.793Z",
+  "url": "https://ruankao.staging.haaboo.com",
+  "release": "staging-20261011T124350Z-4bf2db1dc3be",
+  "codeCommit": "5612c321d2cc1de9103be98c062a42fd5e4b7645",
+  "sourceArchiveSha256": "4bf2db1dc3be0714a5870b2bfd43df15cc73531c2f0d7c2e10ef5ab68fe2f172",
+  "sharedProxyUnchanged": true,
+  "allOtherContainerIdsAndStartTimesUnchanged": 15,
+  "preserved": [
+    "azao-staging-proxy-1",
+    "ai-judgment-d3-staging-judgment-web-1",
+    "ai-judgment-d3-staging-judgment-api-1",
+    "web-v4-pf-d5-commerce-20260919t200129z-platform-1",
+    "web-v4-pf-d5-commerce-20260919t200129z-postgres-1",
+    "web-v4-pf-d5-provider-20260919t173002z-platform-1",
+    "web-v4-pf-d5-provider-20260919t173002z-postgres-1",
+    "azao-staging-web-1",
+    "ai-builder-platform-staging-platform-worker-1",
+    "ai-builder-platform-staging-platform-1",
+    "ai-judgment-d3-staging-postgres-1",
+    "azao-staging-service-1",
+    "azao-staging-web-postgres-1",
+    "azao-staging-web-redis-1",
+    "azao-staging-service-postgres-1"
+  ],
+  "before": {
+    "id": "14e67d52aabe39d8a061d4db9e1095a8b1c8661f65a84171872a0c3b168e7f8f",
+    "startedAt": "2026-10-11T10:30:14.478139852Z"
+  },
+  "after": {
+    "id": "e02ceac78591c90df9e4cbd3d086ff010c4605897ab249d46546681a086bfe42",
+    "startedAt": "2026-10-11T12:49:21.528509917Z"
+  },
+  "statuses": [
+    {
+      "url": "https://ruankao.staging.haaboo.com/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/judgment/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/api/judgment/bootstrap",
+      "status": 200
+    }
+  ],
+  "stagingCourseTests": 25,
+  "stagingHostingTests": 3,
+  "servedAssetsByteCompared": 25,
+  "rollbackRelease": "staging-20261011T102610Z-ca1338b7ed8b"
+}
