@@ -126,5 +126,53 @@
     "svgSha256": "4951d2a745fd01e227d4060b780683450dd263096bed52a39728ff5593a8de91",
     "renderer": "mermaid@12.1.0",
     "sourceUnmodified": true
+  },
+  "K043": {
+    "src": "lesson-diagrams/K043.svg",
+    "alt": "输入 slot，判断 slot>0：真则扣减成功，假则提示无号，随后返回。复杂条件还需分析子条件组合。",
+    "sourceSha256": "afb955e9bf71376eee4876ed18f172cf996c2d8a4e5eb3a6b5a1d425536da36f",
+    "svgSha256": "11a7fe647d05bc2210932e489ee2b335b70edd61eebf274c40188d4c32b3366a",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K044": {
+    "src": "lesson-diagrams/K044.svg",
+    "alt": "实名未通过则拒绝预约；实名通过后若无号源则提示售罄；有号源但资格不满足则提示资格不符；三项满足才成功。此流程不能替代正式判定表。",
+    "sourceSha256": "27ff5b5ceda8ba63e2559b9eaeeba0a32188795ae0dbd02147ae0d438fe0beb2",
+    "svgSha256": "7d22519c9c734f9f67051c012d86b7e69062ce9cf11c04a81167b186a36d0c4c",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K047": {
+    "src": "lesson-diagrams/K047.svg",
+    "alt": "在指定负载下同时观察 P95/P99 延迟、成功吞吐 TPS、错误率、CPU/连接池/队列饱和，再综合判断。",
+    "sourceSha256": "e1d945528adc98bcd17b092e00e89b18ed337b927d647725307c99f3dacb2462",
+    "svgSha256": "d92cd5551a8bdca9cb7f5f2a6d0d12a0383e17ada7a6afe2245a5057e7b76977",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K050": {
+    "src": "lesson-diagrams/K050.svg",
+    "alt": "数据分类分级→按目的收集与授权→传输和存储保护→审计监测→留存、删除和应急。",
+    "sourceSha256": "7858e7eb2e042e6028b68c05d4335ac72540d2f277f2171cd3621de20fb8eed8",
+    "svgSha256": "bdc70e2ecf91a26fac1edff434b070360a23bedbda5bf877028ac417a3d6cd9c",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K054": {
+    "src": "lesson-diagrams/K054.svg",
+    "alt": "11:45可接受恢复点→12:00故障→14:00前恢复服务。RPO=15分钟（允许丢失的数据时间窗口），RTO=2小时（服务恢复时间目标）。",
+    "sourceSha256": "194bcf0a27af4830380c023963feb566f4e7c4867e6ed92bdfed2ba9f18e680d",
+    "svgSha256": "a21e7906677f6fef76d94bcb52a61cdc97b4ab3e1aff5c47461b7b90b86ba7e9",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K055": {
+    "src": "lesson-diagrams/K055.svg",
+    "alt": "按RPO设计备份→异地隔离或不可变保存→恢复测试→业务一致性校验→故障切换与回切→复盘改进。",
+    "sourceSha256": "f20c977fbfbe2a91f49d6ce91431bc1f41581bf7da2338e5baf79cf00368552c",
+    "svgSha256": "814243d5cd63bc5947a3f52dbb66c66fa141938e33bdf39c6c53749728dcd0fa",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
   }
 }
