@@ -26,7 +26,7 @@ test("静态服务健康、深层路由和PWA入口正确，缺失资源返回40
     expect(response.status(), route).toBe(404);
     expect(await response.text(), route).not.toContain('<div id="root"></div>');
   }
-  for (const id of ["K004", "K005", "K006", "K007", "K008", "K009", "K010", "K011"]) {
+  for (const id of ["K004", "K005", "K006", "K007", "K008", "K009", "K010", "K011", "K015", "K017", "K018", "K019", "K020", "K021", "K024", "K029", "K030", "K035", "K036", "K037", "K040", "K069", "K070", "K071", "K043", "K044", "K047", "K050", "K054", "K055", "K058", "K059", "K060", "K061", "K063", "K064", "K065", "K067", "K068", "K072", "K073"]) {
     const response = await request.get(`/lesson-diagrams/${id}.svg`);
     expect(response.status()).toBe(200);
     expect(response.headers()["content-type"]).toContain("image/svg+xml");

@@ -124,8 +124,8 @@ test("线上资源版本与当前构建文件逐字节一致", async ({ request,
     expect(await remote.body(), path).toEqual(readFileSync(local));
     compared.push(path);
   }
-  expect(compared).toHaveLength(25);
-  expect(compared.filter((path) => path.startsWith("/lesson-diagrams/"))).toHaveLength(8);
+  expect(compared).toHaveLength(58);
+  expect(compared.filter((path) => path.startsWith("/lesson-diagrams/"))).toHaveLength(41);
   await info.attach("served-artifacts", { body: JSON.stringify({ baseURL, compared }, null, 2), contentType: "application/json" });
   if (baseURL?.startsWith("https:")) writeFileSync(`${process.env.AUDIT_EVIDENCE_DIR || "docs/audit/final"}/served-artifacts.json`, JSON.stringify({ baseURL, compared }, null, 2));
 });

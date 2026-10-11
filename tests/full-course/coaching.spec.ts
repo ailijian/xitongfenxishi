@@ -11,6 +11,8 @@ for(const coach of raw.caseWalkthroughs)test(`${coach.caseId} 原题/拆题全�
  await expect(box.getByText(coach.primer,{exact:true})).toBeVisible();await expect(box.locator('.lesson-worked li')).toHaveText(coach.solveSteps);
  for(const text of [coach.commonMistakes,coach.transferPractice,coach.note,...coach.selfCheck])await expect(box.getByText(text,{exact:true})).toBeVisible();
  for(const id of coach.relatedCardIds)await expect(box.getByRole('link',{name:new RegExp(id)})).toHaveAttribute('href',`/learn/${id}`);
+ const links=await box.locator('.coach-related > a').evaluateAll(els=>els.map(el=>{const r=el.getBoundingClientRect();return {y:r.y,height:r.height};}));
+ for(let i=1;i<links.length;i++)expect(links[i].y).toBeGreaterThanOrEqual(links[i-1].y+links[i-1].height-1);
  await expect(box.getByTestId('coach-answer-examples')).toHaveCount(0);
  for(const s of coach.answerPointExamples)await expect(box.getByText(s,{exact:true})).toHaveCount(0);
  expect(await records(page,'caseDrafts')).toEqual(before);expect(await records(page,'caseAttempts')).toEqual([]);
@@ -35,6 +37,8 @@ for(const coach of raw.essayCoaches)test(`${coach.essayId} 写作教练全文/�
  for(const s of [coach.focus,coach.avoid,coach.starterExercise,coach.note,...coach.requiredRealProjectEvidence])await expect(box.getByText(s,{exact:true})).toBeVisible();
  for(const s of coach.sectionOutline){await expect(box.getByText(s.heading,{exact:true})).toBeVisible();await expect(box.getByText(s.prompt,{exact:true})).toBeVisible();}
  for(const id of coach.relatedCardIds)await expect(box.getByRole('link',{name:new RegExp(id)})).toHaveAttribute('href',`/learn/${id}`);
+ const links=await box.locator('.coach-related > a').evaluateAll(els=>els.map(el=>{const r=el.getBoundingClientRect();return {y:r.y,height:r.height};}));
+ for(let i=1;i<links.length;i++)expect(links[i].y).toBeGreaterThanOrEqual(links[i-1].y+links[i-1].height-1);
  expect(await records(page,'essayDrafts')).toEqual(before);expect(await records(page,'projects')).toEqual([]);
  await outline.fill(`${coach.essayId} 真实经历提纲`);await body.fill(`${coach.essayId} 我的正文📝未被教练改写`);
  await expect.poll(async()=>(await records(page,'essayDrafts'))[0]?.body).toBe(`${coach.essayId} 我的正文📝未被教练改写`);

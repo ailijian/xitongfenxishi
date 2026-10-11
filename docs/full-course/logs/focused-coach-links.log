@@ -1,0 +1,32 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:full-course
+> playwright test --config playwright.full-course.config.ts coaching.spec.ts
+
+[WebServer] (node:9281) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 19 tests using 1 worker
+
+(node:9282) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/full-course/coaching.spec.ts:6:41 › C01 原题/拆题全文/答案示例门禁/25分及历史 (1.5s)
+  ✓   2 tests/full-course/coaching.spec.ts:6:41 › C02 原题/拆题全文/答案示例门禁/25分及历史 (1.4s)
+  ✓   3 tests/full-course/coaching.spec.ts:6:41 › C03 原题/拆题全文/答案示例门禁/25分及历史 (1.3s)
+  ✓   4 tests/full-course/coaching.spec.ts:6:41 › C04 原题/拆题全文/答案示例门禁/25分及历史 (1.3s)
+  ✓   5 tests/full-course/coaching.spec.ts:6:41 › C05 原题/拆题全文/答案示例门禁/25分及历史 (1.4s)
+  ✓   6 tests/full-course/coaching.spec.ts:6:41 › C06 原题/拆题全文/答案示例门禁/25分及历史 (1.4s)
+  ✓   7 tests/full-course/coaching.spec.ts:6:41 › C07 原题/拆题全文/答案示例门禁/25分及历史 (1.3s)
+  ✓   8 tests/full-course/coaching.spec.ts:6:41 › C08 原题/拆题全文/答案示例门禁/25分及历史 (1.3s)
+  ✓   9 tests/full-course/coaching.spec.ts:6:41 › C09 原题/拆题全文/答案示例门禁/25分及历史 (1.3s)
+  ✓  10 tests/full-course/coaching.spec.ts:31:37 › E01 写作教练全文/无自动填充/草稿刷新/真实素材 (912ms)
+  ✓  11 tests/full-course/coaching.spec.ts:31:37 › E02 写作教练全文/无自动填充/草稿刷新/真实素材 (884ms)
+  ✓  12 tests/full-course/coaching.spec.ts:31:37 › E03 写作教练全文/无自动填充/草稿刷新/真实素材 (897ms)
+  ✓  13 tests/full-course/coaching.spec.ts:31:37 › E04 写作教练全文/无自动填充/草稿刷新/真实素材 (935ms)
+  ✓  14 tests/full-course/coaching.spec.ts:31:37 › E05 写作教练全文/无自动填充/草稿刷新/真实素材 (1.0s)
+  ✓  15 tests/full-course/coaching.spec.ts:31:37 › E06 写作教练全文/无自动填充/草稿刷新/真实素材 (1.2s)
+  ✓  16 tests/full-course/coaching.spec.ts:31:37 › E07 写作教练全文/无自动填充/草稿刷新/真实素材 (1.2s)
+  ✓  17 tests/full-course/coaching.spec.ts:31:37 › E08 写作教练全文/无自动填充/草稿刷新/真实素材 (974ms)
+  ✓  18 tests/full-course/coaching.spec.ts:31:37 › E09 写作教练全文/无自动填充/草稿刷新/真实素材 (1.2s)
+  ✓  19 tests/full-course/coaching.spec.ts:31:37 › E10 写作教练全文/无自动填充/草稿刷新/真实素材 (1.0s)
+
+  19 passed (24.5s)

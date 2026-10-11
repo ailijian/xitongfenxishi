@@ -1,0 +1,89 @@
+{
+  "result": "PASS",
+  "verifiedAt": "2026-10-11T16:43:45.550818+00:00",
+  "teachingContentVersion": "2026.10.12.beginner.2",
+  "totalLocalTests": 242,
+  "suites": {
+    "unit": {
+      "status": "PASS",
+      "passed": 75,
+      "failed": 0,
+      "log": "logs/final-unit.log",
+      "completedLogTime": "2026-10-11T16:36:15.303578+00:00"
+    },
+    "e2e": {
+      "status": "PASS",
+      "passed": 14,
+      "failed": 0,
+      "log": "logs/final-e2e.log",
+      "completedLogTime": "2026-10-11T16:37:15.903287+00:00"
+    },
+    "beginner": {
+      "status": "PASS",
+      "passed": 36,
+      "failed": 0,
+      "log": "logs/final-beginner.log",
+      "completedLogTime": "2026-10-11T16:39:53.909079+00:00",
+      "stats": {
+        "startTime": "2026-10-11T16:37:17.691Z",
+        "duration": 156217.294,
+        "expected": 36,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "full-course": {
+      "status": "PASS",
+      "passed": 95,
+      "failed": 0,
+      "log": "logs/final-full-course.log",
+      "completedLogTime": "2026-10-11T16:42:58.763310+00:00",
+      "stats": {
+        "startTime": "2026-10-11T16:36:13.182Z",
+        "duration": 405574.49000000005,
+        "expected": 95,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "audit": {
+      "status": "PASS",
+      "passed": 20,
+      "failed": 0,
+      "log": "logs/final-audit.log",
+      "completedLogTime": "2026-10-11T16:42:33.733033+00:00",
+      "stats": {
+        "startTime": "2026-10-11T16:40:00.237Z",
+        "duration": 153491.52300000002,
+        "expected": 20,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "pwa": {
+      "status": "PASS",
+      "passed": 2,
+      "failed": 0,
+      "log": "logs/final-pwa.log",
+      "completedLogTime": "2026-10-11T16:42:55.031463+00:00"
+    }
+  },
+  "typecheck": "PASS",
+  "productionBuild": "PASS",
+  "sourceIntegrity": "PASS with upstream manifest self-entry issue",
+  "mermaidRender": {
+    "passed": 33
+  },
+  "diagramTextBounds": {
+    "passed": 33
+  },
+  "webKitTests": {
+    "passed": 8,
+    "includedInSuiteCounts": true
+  },
+  "physicalIPhone": "NOT TESTED",
+  "deployment": "NOT YET RUN"
+}

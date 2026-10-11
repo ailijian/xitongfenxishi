@@ -1,0 +1,27 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:e2e
+> playwright test --workers=1
+
+[WebServer] (node:2709) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 14 tests using 1 worker
+
+(node:2727) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/e2e/chapter.spec.ts:10:1 › 章节75题跨模块抽样，原文答案解析、收藏和二刷入口可用 (16.0s)
+  ✓   2 tests/e2e/chapter.spec.ts:47:1 › 每日配套只包含可信章节关联，独立模考题不混入 (2.6s)
+  ✓   3 tests/e2e/library.spec.ts:3:1 › RK057补齐前置情形，案例和论文原文可访问 (3.2s)
+  ✓   4 tests/e2e/library.spec.ts:24:3 › 320px关键页面无整页横向滚动 (6.2s)
+  ✓   5 tests/e2e/library.spec.ts:24:3 › 375px关键页面无整页横向滚动 (4.3s)
+  ✓   6 tests/e2e/library.spec.ts:24:3 › 390px关键页面无整页横向滚动 (5.3s)
+  ✓   7 tests/e2e/library.spec.ts:24:3 › 430px关键页面无整页横向滚动 (6.4s)
+  ✓   8 tests/e2e/library.spec.ts:47:1 › 深色模式与最终首页截图 (3.7s)
+  ✓   9 tests/e2e/study.spec.ts:16:1 › 知识首轮到24小时巩固，浏览不增加掌握 (9.7s)
+  ✓  10 tests/e2e/study.spec.ts:36:1 › 错题二刷、未提交答案与页面退出继续 (5.0s)
+  ✓  11 tests/e2e/study.spec.ts:59:1 › 仅自评卡可通关，修改启动日保留记录 (5.2s)
+  ✓  12 tests/e2e/training.spec.ts:36:1 › 案例按原文自评，历史与论文项目素材重启仍保存 (8.7s)
+  ✓  13 tests/e2e/training.spec.ts:86:1 › 75题整卷不泄漏答案，可跳题退出继续，三案例及论文完成一场 (31.4s)
+  ✓  14 tests/e2e/training.spec.ts:176:1 › 收藏入口在整卷交卷前不泄漏模考判分，交卷后可以重练 (2.5s)
+
+  14 passed (2.0m)

@@ -1,0 +1,89 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:beginner
+> playwright test --config playwright.beginner.config.ts
+
+[WebServer] (node:3442) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 36 tests using 1 worker
+
+(node:3492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/beginner/course.spec.ts:8:1 › K001默认通俗解释/医院案例、循序讲解、带做和闭卷，速记最后折叠 (1.9s)
+  ✓   2 tests/beginner/course.spec.ts:37:34 › K001课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.0s)
+  ✓   3 tests/beginner/course.spec.ts:37:34 › K002课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.2s)
+  ✓   4 tests/beginner/course.spec.ts:37:34 › K003课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.6s)
+  ✓   5 tests/beginner/course.spec.ts:37:34 › K004课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (4.6s)
+  ✓   6 tests/beginner/course.spec.ts:37:34 › K005课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.6s)
+  ✓   7 tests/beginner/course.spec.ts:37:34 › K006课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.6s)
+  ✓   8 tests/beginner/course.spec.ts:37:34 › K007课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.7s)
+  ✓   9 tests/beginner/course.spec.ts:37:34 › K008课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.7s)
+  ✓  10 tests/beginner/course.spec.ts:37:34 › K009课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (3.0s)
+  ✓  11 tests/beginner/course.spec.ts:37:34 › K010课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.0s)
+  ✓  12 tests/beginner/course.spec.ts:37:34 › K011课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.4s)
+  ✓  13 tests/beginner/course.spec.ts:37:34 › K012课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (3.4s)
+  ✓  14 tests/beginner/course.spec.ts:37:34 › K013课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.8s)
+  ✓  15 tests/beginner/course.spec.ts:37:34 › K014课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.0s)
+  ✓  16 tests/beginner/course.spec.ts:37:34 › K075课程完整、两道理解题交卷解析/错答/重做、掌握隔离 (2.3s)
+  ✓  17 tests/beginner/course.spec.ts:85:1 › K006 include/extend、K010生命周期、K011非法流向与分层平衡，扩充课程与原D1共存 (2.2s)
+  ✓  18 tests/beginner/course.spec.ts:103:39 › 320px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (2.4s)
+  ✓  19 tests/beginner/course.spec.ts:103:39 › 375px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (3.3s)
+  ✓  20 tests/beginner/course.spec.ts:103:39 › 390px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (3.8s)
+  ✓  21 tests/beginner/course.spec.ts:103:39 › 430px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (2.2s)
+  ✓  22 tests/beginner/course.spec.ts:132:1 › 12类旧数据逐字段保留、理解练习不污染、JSON清空/恢复及损坏备份无副作用 (5.1s)
+  ✓  23 tests/beginner/course.spec.ts:176:1 › 首次联网后全部15课和8图离线关页重开可用，练习交卷仍隔离掌握 (10.0s)
+  ✓  24 tests/beginner/layout.spec.ts:7:3 › 320px课程按钮在首步、中间步、末步及全部讲解中对齐 (3.1s)
+  ✓  25 tests/beginner/layout.spec.ts:11:3 › 320px全站操作区间距、换行、点击区域及确认取消 (10.3s)
+  ✓  26 tests/beginner/layout.spec.ts:7:3 › 375px课程按钮在首步、中间步、末步及全部讲解中对齐 (2.0s)
+  ✓  27 tests/beginner/layout.spec.ts:11:3 › 375px全站操作区间距、换行、点击区域及确认取消 (7.4s)
+  ✓  28 tests/beginner/layout.spec.ts:7:3 › 390px课程按钮在首步、中间步、末步及全部讲解中对齐 (2.2s)
+  ✘  29 tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 (8.4s)
+(node:4368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  30 tests/beginner/layout.spec.ts:7:3 › 430px课程按钮在首步、中间步、末步及全部讲解中对齐 (2.3s)
+  ✓  31 tests/beginner/layout.spec.ts:11:3 › 430px全站操作区间距、换行、点击区域及确认取消 (6.9s)
+  ✓  32 tests/beginner/layout.spec.ts:63:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 (1.8s)
+(node:4432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  33 tests/beginner/webkit.spec.ts:10:31 › WebKit 375px移动浏览器：四个重点课程、触摸图示、答案门禁及刷新草稿 (15.4s)
+  ✓  34 tests/beginner/webkit.spec.ts:10:31 › WebKit 390px移动浏览器：四个重点课程、触摸图示、答案门禁及刷新草稿 (14.5s)
+  ✓  35 tests/beginner/webkit.spec.ts:45:32 › WebKit 375px课程按钮对齐与窄屏切换 (4.3s)
+  ✓  36 tests/beginner/webkit.spec.ts:45:32 › WebKit 390px课程按钮对齐与窄屏切换 (4.2s)
+
+
+  1) tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 ────────────────────────────────
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+       at layout-helpers.ts:15
+
+      13 |     }),
+      14 |   );
+    > 15 |   expect(bounds.length).toBeGreaterThan(0);
+         |                         ^
+      16 |   for (const b of bounds) {
+      17 |     expect(b.height).toBeGreaterThanOrEqual(48);
+      18 |     expect(b.width).toBeGreaterThanOrEqual(44);
+        at aligned (/Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/layout-helpers.ts:15:25)
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/layout.spec.ts:45:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    tmp/full-course/d1-regression/artifacts/layout-390px全站操作区间距、换行、点击区域及确认取消/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: tmp/full-course/d1-regression/artifacts/layout-390px全站操作区间距、换行、点击区域及确认取消/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/full-course/d1-regression/artifacts/layout-390px全站操作区间距、换行、点击区域及确认取消/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/full-course/d1-regression/artifacts/layout-390px全站操作区间距、换行、点击区域及确认取消/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 ─────────────────────────────────
+  35 passed (2.7m)

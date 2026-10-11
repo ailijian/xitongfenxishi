@@ -42,9 +42,9 @@ npm run preview -- --port 4174   # 本机生产预览，http://localhost:4174
 - 默认启动日2026-10-11，可在“我的”修改并保留记录。D1—D5按15/15/15/15/16首轮通关，D6整卷模考，D7复习及论文修订。
 - 到期复习优先，欠账自动顺延，提前通关减少后续任务。首页分别显示原计划、新增、欠账、首轮与巩固指标，可手动重排单卡日期。
 - 阅读不算掌握。先闭卷写要点，再对照自检；有可信章节关联时还需答对一道关联题。首轮通过满24小时后成功闭卷复测才巩固；复测或关联题失败需要复习。
-- K001—K014、K075 提供完整零基础课程：医院预约场景、逐步讲解、带做示例、8个可离线图示、30道原创理解题和闭卷自述，原必背概念收在最后的“考前速记”。理解题交卷后揭示逐项解析，只保留在当前页面，不进入原题库、错题本或掌握统计。其他61张卡标为“考前速记版”。集成验收见 `docs/beginner-course-integration-report.md`。
+- 全部76张卡均有真实零基础课程，保留D1原15课并加入D2—D5的61课：医院预约场景、逐步讲解、带做示例、41个离线SVG图、152道原创理解题和闭卷自述。K037提供可复制、可横滑的完整SQL，公式及复杂图局部滚动。原必背概念仍在最后的“考前速记”。教学题交卷后显示逐项解析，只保留在当前页面，不进入原150题、错题本或客观掌握。课程版本为 `2026.10.12.beginner.2`，原内容/数据库/备份版本不变。验收见 [全课程集成报告](docs/full-course-integration-report.md)。
 - 章节题提交后显示解析；独立75题模考整卷提交后才显示答案与成绩，未答计0分，不伪造作答记录。支持退出续考、题号导航、收藏与错题二刷。
-- 案例三问先作答，再按原文完整采分组自评，显示漏分项并保存多次历史。论文共享真实项目素材库，支持提纲、正文、自查、复制与TXT/Markdown导出。
+- 案例三问先作答，再按原文完整采分组自评，显示漏分项并保存多次历史。新增9套只读拆题辅导，采分要点示例在原答案门禁后才显示。论文新增10个写作教练，提示真实项目证据及分段写法，保留项目素材、提纲、正文、自查、复制与TXT/Markdown导出；教练不会自动填入项目或草稿。
 - 完整模考按75单选→任选3案例→1论文进行，已完成场次的论文快照保留。论文完成由本人确认与六项自查决定，系统不自动评阅技术质量、不预测官方分数。
 - 字数为不含空白的Unicode字符数，正式字数与考试时长以当次题目/机考界面为准。倒计时150分钟是附件提供的训练参考。
 
@@ -99,7 +99,7 @@ npx playwright test --config playwright.audit.config.ts
 AUDIT_BASE_URL=https://ruankao.staging.haaboo.com AUDIT_EVIDENCE_DIR=docs/audit/recheck npx playwright test --config playwright.audit.config.ts
 ```
 
-专项审计保留未整改 P1 的失败断言；完整结果和退出码以审计报告为准。普通单元及原有流程回归仍分别使用 `npm run test`、`npm run test:e2e` 和 `npm run test:pwa`。
+专项审计包含已修复 P1 的日期/复习时钟与同卷复练答案隔离断言；完整结果和退出码以验收报告为准。普通单元及原有流程回归仍分别使用 `npm run test`、`npm run test:e2e` 和 `npm run test:pwa`。
 
 腾讯云 staging 已上线：<https://ruankao.staging.haaboo.com/>。实际发布身份、测试和回滚记录见 [staging 发布记录](docs/staging-deployment.md)，后续更新步骤见 [staging 操作说明](ops/staging/README.md)。
 
@@ -118,3 +118,21 @@ BASE_PATH=/xitongfenxishi/ VITE_ROUTER_MODE=hash npm run build
 将`dist`通过GitHub Pages Actions发布；仓库Settings→Pages选择GitHub Actions。可复制 `docs/github-pages.yml` 到 `.github/workflows/deploy-pages.yml`，手动运行；仓库名不同则调整BASE_PATH。根域名部署使用`BASE_PATH=/`。GitHub/Vercel/Netlify的配置已提供，本次没有执行这些平台的发布。
 
 部署与插件配置参考：[Vite静态部署](https://vite.dev/guide/static-deploy.html)、[Vite PWA React](https://vite-pwa-org.netlify.app/frameworks/react)、[Rolldown代码分块](https://rolldown.rs/reference/OutputOptions.codeSplitting)。样式采用原生响应式CSS，以当前页面规模避免额外Tailwind构建配置。生产缓存使用更新提示，等待草稿“已保存”后再更新，已有IndexedDB记录保留。
+
+## 全课程专项复现
+
+```sh
+npm ci
+npm run test
+npm run build
+npm run test:e2e -- --workers=1
+npm run test:beginner
+npm run test:full-course
+npx playwright test --config playwright.audit.config.ts
+npx playwright test --config playwright.production.config.ts
+npx tsx scripts/check-full-course.ts --source --preserved --write-report
+node scripts/render-expanded-diagrams.mjs --verify
+node scripts/check-rendered-diagram-layout.mjs
+```
+
+Playwright需要安装Chromium与WebKit：`npx playwright install chromium webkit`。图示引擎只用于构建工具，线上与离线应用加载已校验的SVG，不加载Mermaid运行时。首次缓存完成后可离线读取全部课程、图示与案例论文辅导。实体iPhone验收由用户安排，WebKit仿真不等同真机。

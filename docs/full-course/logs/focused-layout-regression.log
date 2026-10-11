@@ -1,0 +1,14 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:beginner
+> playwright test --config playwright.beginner.config.ts layout.spec.ts --grep 390px全站
+
+[WebServer] (node:4893) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:4894) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 (4.3s)
+
+  1 passed (6.3s)

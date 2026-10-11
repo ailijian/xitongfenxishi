@@ -3,7 +3,7 @@ import { chromium, expect } from "@playwright/test";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { answerCase, downloadBackup, records, selfTest } from "../tests/audit/helpers";
 const mode=process.argv[2];
-if(mode!=="seed"&&mode!=="verify") throw new Error("Usage: tsx scripts/audit-beginner-upgrade.ts seed|verify");
+if(mode!=="seed"&&mode!=="verify") throw new Error("Usage: tsx scripts/audit-full-course-upgrade.ts seed|verify");
 const root="tmp/full-course-upgrade", evidence="docs/full-course";
 mkdirSync(root,{recursive:true});
 const context=await chromium.launchPersistentContext(`${root}/profile`,{
@@ -43,6 +43,7 @@ try {
     await page.goto("/sources");
     await expect(page.getByRole("button",{name:"更新并重新载入"})).toBeVisible({timeout:45000});
     await page.getByRole("button",{name:"更新并重新载入"}).click();
+    await expect(page.getByText("课程内容版本 2026.10.12.beginner.2",{exact:true})).toBeVisible({timeout:45000});
     await page.goto("/progress");expect((await downloadBackup(page)).backup.data).toEqual(before.data);
     await page.goto("/learn/K001");await expect(page.locator(".beginner-course")).toBeVisible();
     await page.reload();await expect(page.locator(".beginner-course")).toBeVisible();
@@ -60,7 +61,7 @@ try {
     await expect(page.getByRole("alert")).toContainText("原数据未改动");expect((await downloadBackup(page)).backup.data).toEqual(before.data);
     const result={result:"PASS",verifiedAt:new Date().toISOString(),databaseVersion:2,backupVersion:2,contentVersion:before.contentVersion,
       all12TablesFieldIdenticalAfterServiceWorkerUpgrade:true,all12TablesFieldIdenticalAfterRestore:true,failedImportUnchanged:true,
-      oldRecallDraftResumed:true,oldHistoricalEvidenceUnchanged:true,
+      oldRecallDraftResumed:true,oldHistoricalEvidenceUnchanged:true,teachingContentVersion:"2026.10.12.beginner.2",
       counts:Object.fromEntries(Object.entries(before.data).map(([name,rows])=>[name,(rows as unknown[]).length])),syntheticProfile:true};
     writeFileSync(`${evidence}/staging-upgrade.json`,JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
   }

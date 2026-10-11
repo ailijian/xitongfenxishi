@@ -911,4 +911,4 @@ input[type="file"] {
 .practical-coach { min-width: 0; }
 .practical-coach summary { min-height: 48px; padding: 10px 0; cursor: pointer; }
 .practical-coach li { margin: 14px 0; overflow-wrap: anywhere; }
-.coach-related .text-link { justify-content: flex-start; }
+.coach-related .text-link { display: flex; justify-content: flex-start; }

@@ -6,6 +6,9 @@ const screenshots = process.env.UI_SCREENSHOTS || "tmp/ui-polish/screenshots";
 // Check actual geometry: a visible row must have equal button edges, no overlap,
 // comfortable tap targets and a gap even when a narrow viewport wraps it.
 export async function aligned(row: Locator) {
+  // IndexedDB-backed pages can still be loading immediately after navigation.
+  await expect(row).toBeVisible();
+  await expect(row.locator(":scope > button, :scope > a").first()).toBeVisible();
   const bounds = await row.locator(":scope > button, :scope > a").evaluateAll((els) =>
     els.map((el) => {
       const r = el.getBoundingClientRect(), s = getComputedStyle(el);
