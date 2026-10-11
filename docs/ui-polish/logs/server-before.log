@@ -1,0 +1,22 @@
+/opt/azao-staging/projects/ruankao/releases/staging-20261011T124350Z-4bf2db1dc3be
+/ruankao-staging-web-1 e02ceac78591c90df9e4cbd3d086ff010c4605897ab249d46546681a086bfe42 2026-10-11T12:49:21.528509917Z running
+/azao-staging-proxy-1 30efcd415242a5d18b36582738e40414023cfe75e92e0c1a2614cab893ad4a68 2026-10-11T04:21:14.275293109Z running
+/ai-judgment-d3-staging-judgment-web-1 18264860df0be0d0da578a8d7e767b553adb189227c029ca3dd91a53a6e2ffc5 2026-09-20T15:51:49.724718228Z running
+/ai-judgment-d3-staging-judgment-api-1 5eabf9c6311fbec947d6c9bfeba2c1fe09a4e26752e0367a7afaea307cae3a3c 2026-09-20T15:51:49.725342674Z running
+/web-v4-pf-d5-commerce-20260919t200129z-platform-1 688b9527754edfd974fcb5adc47083290db35966d6e96879af417adcea2125dd 2026-09-19T21:16:50.994982306Z running
+/web-v4-pf-d5-commerce-20260919t200129z-postgres-1 84716ad25d769d014c9aa5f9fb7f8f09d36f2d16c8a66a5333eff6fe616086ab 2026-09-19T20:20:01.461905826Z running
+/web-v4-pf-d5-provider-20260919t173002z-platform-1 1bb9dc742c78d4d9014433fccbdf2cc31c2be70e092b5c7a20b12a4493f2b2df 2026-09-19T17:58:40.947952116Z running
+/web-v4-pf-d5-provider-20260919t173002z-postgres-1 0f03acc76657bdac5e07c18162defcda9b35d6de03de0e7be850592669db4285 2026-09-19T17:37:50.857832409Z running
+/azao-staging-web-1 155a58f39cd73cea8e078229e1883462f0a1fc0d2532e0e9ef5b9f04aa171652 2026-09-14T07:20:29.26518593Z running
+/ai-builder-platform-staging-platform-worker-1 a7ba12a87465e99e7ab2fd5ecaa896c4d01ec1b9d5abca9e803e7f6493308719 2026-09-14T02:16:55.101398401Z running
+/ai-builder-platform-staging-platform-1 130f10dd9315dbaf0645d4df175d9d6efd8e89c4c41287db30c5ddb1ddc1b63f 2026-09-14T02:16:49.383833446Z running
+/ai-judgment-d3-staging-postgres-1 6215cfcdd989969970330cdb279b54e9c6724dbcba4ae0689742d4fc4ff331af 2026-09-12T17:29:56.975126671Z running
+/azao-staging-service-1 0fa0df82f6ebaba52632df26a01281d3c8fc221b98b73fd296d2feb9f1aecfe1 2026-08-29T17:19:38.137016088Z running
+/azao-staging-web-postgres-1 5c4311784a5441b5c8e89803a5605cbc97102b3ee47ea4d439a6c32aa84e353e 2026-08-29T11:17:38.135781496Z running
+/azao-staging-web-redis-1 1e01871602d53a29d0daa9e4ad55323a2a97f7c301a6837ea7e4f7e0ac21f1bd 2026-08-29T11:17:38.136345355Z running
+/azao-staging-service-postgres-1 1ecf5af3c31a26a23625ddb685ab4ce11837303a91c04b1a950184b9391b57b1 2026-08-29T11:17:38.137384437Z running
+               total        used        free      shared  buff/cache   available
+Mem:           3.6Gi       1.6Gi       159Mi        69Mi       2.2Gi       2.0Gi
+Swap:          1.9Gi       279Mi       1.7Gi
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda2        40G   22G   17G  57% /

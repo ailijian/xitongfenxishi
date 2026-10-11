@@ -1,0 +1,264 @@
+
+> ruankao-sprint-system-analyst@1.0.0 build
+> npm run data:check && npm run lessons:check && tsc --noEmit && vite build
+
+
+> ruankao-sprint-system-analyst@1.0.0 data:check
+> tsx scripts/import-content.ts --check
+
+校验通过：76(A57/B19) + 150(75/75) + C01—C09(每套25分) + E01—E10。仅自评卡 29 张。
+
+> ruankao-sprint-system-analyst@1.0.0 lessons:check
+> tsx scripts/check-beginner-content.ts && node scripts/build-lesson-diagrams.mjs --check
+
+{
+  "result": "PASS",
+  "packageId": "ruankao-beginner-d1-20261011-v1",
+  "sourceSha256": "1773cc76a8266b0987caf1b8f4c3f7a46be254c1700ef670d71eafd83854a4ec",
+  "sourceByteIdentical": "not requested",
+  "guideTextFieldsChecked": 0,
+  "originalKnowledge": 76,
+  "originalQuestions": 150,
+  "lessons": 15,
+  "teachingQuestions": 30,
+  "diagrams": 8,
+  "objectiveMasteryWrites": false,
+  "schemaMigration": false,
+  "rows": [
+    {
+      "cardId": "K001",
+      "title": "需求类型",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K001-01",
+        "LQ-D1-K001-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": false
+    },
+    {
+      "cardId": "K002",
+      "title": "好需求6项",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K002-01",
+        "LQ-D1-K002-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": false
+    },
+    {
+      "cardId": "K003",
+      "title": "需求获取",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 5,
+      "questions": [
+        "LQ-D1-K003-01",
+        "LQ-D1-K003-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": false
+    },
+    {
+      "cardId": "K004",
+      "title": "需求基线/变更",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 5,
+      "questions": [
+        "LQ-D1-K004-01",
+        "LQ-D1-K004-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": true
+    },
+    {
+      "cardId": "K005",
+      "title": "需求追踪",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 5,
+      "questions": [
+        "LQ-D1-K005-01",
+        "LQ-D1-K005-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": true
+    },
+    {
+      "cardId": "K006",
+      "title": "用例图",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K006-01",
+        "LQ-D1-K006-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": true
+    },
+    {
+      "cardId": "K007",
+      "title": "顺序图",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K007-01",
+        "LQ-D1-K007-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": true
+    },
+    {
+      "cardId": "K008",
+      "title": "活动图",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K008-01",
+        "LQ-D1-K008-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": true
+    },
+    {
+      "cardId": "K009",
+      "title": "状态图",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K009-01",
+        "LQ-D1-K009-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": true
+    },
+    {
+      "cardId": "K010",
+      "title": "类图",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 5,
+      "questions": [
+        "LQ-D1-K010-01",
+        "LQ-D1-K010-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": true
+    },
+    {
+      "cardId": "K011",
+      "title": "DFD四元素",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 5,
+      "questions": [
+        "LQ-D1-K011-01",
+        "LQ-D1-K011-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": true
+    },
+    {
+      "cardId": "K012",
+      "title": "业务流程重构",
+      "priority": "B",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K012-01",
+        "LQ-D1-K012-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": false
+    },
+    {
+      "cardId": "K013",
+      "title": "开发模型",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K013-01",
+        "LQ-D1-K013-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": false
+    },
+    {
+      "cardId": "K014",
+      "title": "敏捷/Scrum",
+      "priority": "A",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K014-01",
+        "LQ-D1-K014-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": false
+    },
+    {
+      "cardId": "K075",
+      "title": "BPR/价值链",
+      "priority": "B",
+      "explanationSteps": 4,
+      "workedExampleSteps": 4,
+      "questions": [
+        "LQ-D1-K075-01",
+        "LQ-D1-K075-02"
+      ],
+      "optionExplanations": 8,
+      "recallPrompts": 2,
+      "diagram": false
+    }
+  ]
+}
+PASS: 8 safe static SVG diagrams; source/asset hashes and text alternatives verified.
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 155 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.webmanifest                          0.50 kB
+dist/index.html                                    1.33 kB │ gzip:  0.63 kB
+dist/assets/index-CEIyGgM2.css                    13.36 kB │ gzip:  3.51 kB
+dist/assets/rolldown-runtime-CbXtAM7H.js           0.58 kB │ gzip:  0.36 kB
+dist/assets/workbox-window.prod.es5-Bd17z0YL.js    5.65 kB │ gzip:  2.20 kB
+dist/assets/validation-CaOqAvNd.js                89.50 kB │ gzip: 25.28 kB
+dist/assets/index-0vXk0UXT.js                     93.66 kB │ gzip: 28.38 kB
+dist/assets/storage-DzYL0Enu.js                   96.50 kB │ gzip: 31.76 kB
+dist/assets/react-Cfjqey1f.js                    257.18 kB │ gzip: 81.66 kB
+dist/assets/content-CsdUGm58.js                  267.72 kB │ gzip: 66.41 kB
+
+✓ built in 1.13s
+
+PWA v2.0.0
+mode      generateSW
+precache  29 entries (841.34 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-2fbc6a65.js

@@ -3,13 +3,19 @@
 已上线：<https://ruankao.staging.haaboo.com/>。这是无账号的静态 H5/PWA；
 用户进度、错题和草稿保存在当前浏览器 IndexedDB，服务器不保存学习数据。
 
-## 当前发布：零基础第1天课程升级
+## 当前发布：按钮对齐与组件规范化
+
+正式 release `staging-20261011T132846Z-cc902d4a6375`，代码提交 `1d6b3d10df836bd027bf0829f6734885a2ac62e2`。知识课程的“看全部”与“懂了，下一步”已等高对齐，统一按钮组间距、窄屏换行，完善任务设置、案例操作、备份/交卷/PWA确认区和操作链接的点击区域。原内容、学习判定、数据库及备份格式不变。
+
+本地63单元、14流程、36课程与布局（原25＋新增11）、2 PWA通过；线上11布局与3托管测试通过，25资源与候选dist字节一致。只更新本项目Web，其他15个容器和共享代理的ID/启动时间保持一致，已有入口均200。current指向 `/opt/azao-staging/projects/ruankao/releases/staging-20261011T132846Z-cc902d4a6375`。回滚版本为下方零基础课程版本。文件清单、实际日志、新旧手机截图和发布身份见[本轮验收](ui-polish-report.md)。
+
+## 零基础第1天课程升级（历史）
 
 正式 release `staging-20261011T124350Z-4bf2db1dc3be`，代码提交 `5612c321d2cc1de9103be98c062a42fd5e4b7645`。15课、30道原创理解题和8张概念图均已真实接入，K001默认展示通俗解释与医院预约案例，原速记折叠保留；理解题不进入原题库或掌握统计。
 
 本地63单元、14流程、20审计、2 PWA及25课程测试通过。线上25课程（包含WebKit手机）、3托管、25资源字节核对、真实旧PWA升级与12类记录清空恢复通过。其他15个容器ID/启动时间和共享代理均保持一致。当前版本、备份格式及原学习历史未改变，实体iPhone由用户最终验收。
 
-current指向 `/opt/azao-staging/projects/ruankao/releases/staging-20261011T124350Z-4bf2db1dc3be`。完整内容检查、新旧截图、实际命令、日志和回滚见[零基础课程验收报告](beginner-course-integration-report.md)，机器结果见 `beginner-course/deployment-result.json`。下面保留各轮历史发布记录。
+该轮发布时current指向 `/opt/azao-staging/projects/ruankao/releases/staging-20261011T124350Z-4bf2db1dc3be`。完整内容检查、新旧截图、实际命令、日志和回滚见[零基础课程验收报告](beginner-course-integration-report.md)，机器结果见 `beginner-course/deployment-result.json`。下面保留各轮历史发布记录。
 
 ## 第二轮 P1 整改（历史）
 

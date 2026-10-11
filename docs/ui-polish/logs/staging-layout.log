@@ -1,0 +1,20 @@
+
+Running 11 tests using 1 worker
+
+(node:57561) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/beginner/layout.spec.ts:7:3 › 320px课程按钮在首步、中间步、末步及全部讲解中对齐 (2.0s)
+  ✓   2 tests/beginner/layout.spec.ts:11:3 › 320px全站操作区间距、换行、点击区域及确认取消 (5.0s)
+  ✓   3 tests/beginner/layout.spec.ts:7:3 › 375px课程按钮在首步、中间步、末步及全部讲解中对齐 (1.4s)
+  ✓   4 tests/beginner/layout.spec.ts:11:3 › 375px全站操作区间距、换行、点击区域及确认取消 (3.7s)
+  ✓   5 tests/beginner/layout.spec.ts:7:3 › 390px课程按钮在首步、中间步、末步及全部讲解中对齐 (1.4s)
+  ✓   6 tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 (4.0s)
+  ✓   7 tests/beginner/layout.spec.ts:7:3 › 430px课程按钮在首步、中间步、末步及全部讲解中对齐 (1.1s)
+  ✓   8 tests/beginner/layout.spec.ts:11:3 › 430px全站操作区间距、换行、点击区域及确认取消 (3.5s)
+  ✓   9 tests/beginner/layout.spec.ts:63:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 (1.3s)
+(node:57617) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 tests/beginner/webkit.spec.ts:45:32 › WebKit 375px课程按钮对齐与窄屏切换 (3.5s)
+  ✓  11 tests/beginner/webkit.spec.ts:45:32 › WebKit 390px课程按钮对齐与窄屏切换 (3.0s)
+
+  11 passed (33.4s)

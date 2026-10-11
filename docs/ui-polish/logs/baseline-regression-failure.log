@@ -1,0 +1,3 @@
+BASELINE: main a22e300, original stylesheet, 390px
+[{"text":"懂了，下一步","y":1163.265625,"height":51.1875},{"text":"看全部","y":1149.265625,"height":69.1875}]
+FAIL reproduced: top edge difference 14px; height difference 18px (expected <1px).

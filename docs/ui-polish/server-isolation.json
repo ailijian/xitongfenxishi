@@ -1,0 +1,21 @@
+{
+  "otherContainersUnchanged": 15,
+  "httpAfter": [
+    {
+      "url": "https://ruankao.staging.haaboo.com/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/judgment/",
+      "status": 200
+    },
+    {
+      "url": "https://staging.haaboo.com/api/judgment/bootstrap",
+      "status": 200
+    }
+  ]
+}

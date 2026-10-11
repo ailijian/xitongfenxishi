@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:54578) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/beginner/layout.spec.ts:63:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 (4.1s)
+
+  1 passed (7.6s)

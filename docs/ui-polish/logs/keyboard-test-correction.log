@@ -1,0 +1,49 @@
+
+Running 9 tests using 1 worker
+
+(node:54202) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/beginner/layout.spec.ts:7:3 › 320px课程按钮在首步、中间步、末步及全部讲解中对齐 (1.9s)
+  ✓  2 tests/beginner/layout.spec.ts:11:3 › 320px全站操作区间距、换行、点击区域及确认取消 (3.9s)
+  ✓  3 tests/beginner/layout.spec.ts:7:3 › 375px课程按钮在首步、中间步、末步及全部讲解中对齐 (1.5s)
+  ✓  4 tests/beginner/layout.spec.ts:11:3 › 375px全站操作区间距、换行、点击区域及确认取消 (4.5s)
+  ✓  5 tests/beginner/layout.spec.ts:7:3 › 390px课程按钮在首步、中间步、末步及全部讲解中对齐 (1.3s)
+  ✓  6 tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 (5.3s)
+  ✓  7 tests/beginner/layout.spec.ts:7:3 › 430px课程按钮在首步、中间步、末步及全部讲解中对齐 (1.5s)
+  ✓  8 tests/beginner/layout.spec.ts:11:3 › 430px全站操作区间距、换行、点击区域及确认取消 (4.9s)
+  ✘  9 tests/beginner/layout.spec.ts:62:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 (1.7s)
+
+
+  1) tests/beginner/layout.spec.ts:62:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 ─────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "solid"
+    Received: "none"
+
+      66 |   await all.focus();
+      67 |   await expect(all).toBeFocused();
+    > 68 |   expect(await all.evaluate((el) => getComputedStyle(el).outlineStyle)).toBe("solid");
+         |                                                                         ^
+      69 |   await page.keyboard.press("Enter");
+      70 |   await expect(page.locator(".lesson-step")).toHaveCount(4);
+      71 | });
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/layout.spec.ts:68:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    tmp/ui-polish/focused-final/artifacts/layout-暗色外观和桌面宽度保持按钮对齐及键盘焦点/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: tmp/ui-polish/focused-final/artifacts/layout-暗色外观和桌面宽度保持按钮对齐及键盘焦点/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/ui-polish/focused-final/artifacts/layout-暗色外观和桌面宽度保持按钮对齐及键盘焦点/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/ui-polish/focused-final/artifacts/layout-暗色外观和桌面宽度保持按钮对齐及键盘焦点/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/beginner/layout.spec.ts:62:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 ──────────────────────────────────────
+  8 passed (30.2s)

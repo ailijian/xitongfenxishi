@@ -1,0 +1,209 @@
+
+Running 9 tests using 1 worker
+
+(node:53917) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/beginner/layout.spec.ts:7:3 › 320px课程按钮在首步、中间步、末步及全部讲解中对齐 (6.0s)
+  ✘  2 tests/beginner/layout.spec.ts:11:3 › 320px全站操作区间距、换行、点击区域及确认取消 (12.0s)
+(node:53975) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 tests/beginner/layout.spec.ts:7:3 › 375px课程按钮在首步、中间步、末步及全部讲解中对齐 (6.4s)
+  ✘  4 tests/beginner/layout.spec.ts:11:3 › 375px全站操作区间距、换行、点击区域及确认取消 (11.9s)
+(node:54115) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 tests/beginner/layout.spec.ts:7:3 › 390px课程按钮在首步、中间步、末步及全部讲解中对齐 (2.3s)
+  ✘  6 tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 (5.4s)
+(node:54156) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  7 tests/beginner/layout.spec.ts:7:3 › 430px课程按钮在首步、中间步、末步及全部讲解中对齐 (3.9s)
+  ✘  8 tests/beginner/layout.spec.ts:11:3 › 430px全站操作区间距、换行、点击区域及确认取消 (10.2s)
+(node:54166) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  9 tests/beginner/layout.spec.ts:59:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 (1.5s)
+
+
+  1) tests/beginner/layout.spec.ts:11:3 › 320px全站操作区间距、换行、点击区域及确认取消 ────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: '保存本次案例训练' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: '保存本次案例训练' }) with timeout 5000ms
+      - waiting for getByRole('button', { name: '保存本次案例训练' })
+
+
+      34 |     await page.goto("/cases/C01");
+      35 |     await page.getByRole("button", { name: "作答完成，揭示参考答案" }).click();
+    > 36 |     await expect(page.getByRole("button", { name: "保存本次案例训练" })).toBeVisible();
+         |                                                                  ^
+      37 |     await controlsFit(page);
+      38 |
+      39 |     await page.goto("/progress");
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/layout.spec.ts:36:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-320px全站操作区间距、换行、点击区域及确认取消/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: tmp/ui-polish/focused/artifacts/layout-320px全站操作区间距、换行、点击区域及确认取消/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-320px全站操作区间距、换行、点击区域及确认取消/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/ui-polish/focused/artifacts/layout-320px全站操作区间距、换行、点击区域及确认取消/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/beginner/layout.spec.ts:11:3 › 375px全站操作区间距、换行、点击区域及确认取消 ────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: '保存本次案例训练' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: '保存本次案例训练' }) with timeout 5000ms
+      - waiting for getByRole('button', { name: '保存本次案例训练' })
+
+
+      34 |     await page.goto("/cases/C01");
+      35 |     await page.getByRole("button", { name: "作答完成，揭示参考答案" }).click();
+    > 36 |     await expect(page.getByRole("button", { name: "保存本次案例训练" })).toBeVisible();
+         |                                                                  ^
+      37 |     await controlsFit(page);
+      38 |
+      39 |     await page.goto("/progress");
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/layout.spec.ts:36:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-375px全站操作区间距、换行、点击区域及确认取消/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: tmp/ui-polish/focused/artifacts/layout-375px全站操作区间距、换行、点击区域及确认取消/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-375px全站操作区间距、换行、点击区域及确认取消/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/ui-polish/focused/artifacts/layout-375px全站操作区间距、换行、点击区域及确认取消/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 ────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('main h1')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('main h1') with timeout 5000ms
+      - waiting for locator('main h1')
+
+
+      13 |     for (const route of ["/", "/learn", "/learn/K015", "/practice", "/cases", "/essays", "/essays/E01", "/progress", "/mock"]) {
+      14 |       await page.goto(route);
+    > 15 |       await expect(page.locator("main h1")).toBeVisible();
+         |                                             ^
+      16 |       if (route === "/essays/E01") await expect(page.getByRole("button", { name: "导出 Markdown", exact: true })).toBeVisible();
+      17 |       await controlsFit(page);
+      18 |     }
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/layout.spec.ts:15:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-390px全站操作区间距、换行、点击区域及确认取消/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: tmp/ui-polish/focused/artifacts/layout-390px全站操作区间距、换行、点击区域及确认取消/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-390px全站操作区间距、换行、点击区域及确认取消/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/ui-polish/focused/artifacts/layout-390px全站操作区间距、换行、点击区域及确认取消/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) tests/beginner/layout.spec.ts:11:3 › 430px全站操作区间距、换行、点击区域及确认取消 ────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: '保存本次案例训练' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: '保存本次案例训练' }) with timeout 5000ms
+      - waiting for getByRole('button', { name: '保存本次案例训练' })
+
+
+      34 |     await page.goto("/cases/C01");
+      35 |     await page.getByRole("button", { name: "作答完成，揭示参考答案" }).click();
+    > 36 |     await expect(page.getByRole("button", { name: "保存本次案例训练" })).toBeVisible();
+         |                                                                  ^
+      37 |     await controlsFit(page);
+      38 |
+      39 |     await page.goto("/progress");
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/layout.spec.ts:36:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-430px全站操作区间距、换行、点击区域及确认取消/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: tmp/ui-polish/focused/artifacts/layout-430px全站操作区间距、换行、点击区域及确认取消/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-430px全站操作区间距、换行、点击区域及确认取消/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/ui-polish/focused/artifacts/layout-430px全站操作区间距、换行、点击区域及确认取消/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) tests/beginner/layout.spec.ts:59:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 ─────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "solid"
+    Received: "none"
+
+      63 |   await all.focus();
+      64 |   await expect(all).toBeFocused();
+    > 65 |   expect(await all.evaluate((el) => getComputedStyle(el).outlineStyle)).toBe("solid");
+         |                                                                         ^
+      66 |   await page.keyboard.press("Enter");
+      67 |   await expect(page.locator(".lesson-step")).toHaveCount(4);
+      68 | });
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/layout.spec.ts:65:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-暗色外观和桌面宽度保持按钮对齐及键盘焦点/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: tmp/ui-polish/focused/artifacts/layout-暗色外观和桌面宽度保持按钮对齐及键盘焦点/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    tmp/ui-polish/focused/artifacts/layout-暗色外观和桌面宽度保持按钮对齐及键盘焦点/trace.zip
+    Usage:
+
+        npx playwright show-trace tmp/ui-polish/focused/artifacts/layout-暗色外观和桌面宽度保持按钮对齐及键盘焦点/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    tests/beginner/layout.spec.ts:11:3 › 320px全站操作区间距、换行、点击区域及确认取消 ─────────────────────────────────
+    tests/beginner/layout.spec.ts:11:3 › 375px全站操作区间距、换行、点击区域及确认取消 ─────────────────────────────────
+    tests/beginner/layout.spec.ts:11:3 › 390px全站操作区间距、换行、点击区域及确认取消 ─────────────────────────────────
+    tests/beginner/layout.spec.ts:11:3 › 430px全站操作区间距、换行、点击区域及确认取消 ─────────────────────────────────
+    tests/beginner/layout.spec.ts:59:1 › 暗色外观和桌面宽度保持按钮对齐及键盘焦点 ──────────────────────────────────────
+  4 passed (1.3m)

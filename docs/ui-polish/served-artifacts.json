@@ -1,0 +1,177 @@
+[
+  {
+    "path": "assets/content-CsdUGm58.js",
+    "sha256": "5f37e062875b0bfb66c4436f2cf7a441702d244ae63e5009e2bf8a143d257160",
+    "bytes": 267722,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "assets/index-0vXk0UXT.js",
+    "sha256": "9644552f7241dcacd67ec7f336b1eb4c7e74afa6d949f47fcfa20a8272570ca4",
+    "bytes": 93660,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "assets/index-CEIyGgM2.css",
+    "sha256": "89bab20773960e5ddba6160045eb12f994ba2679ded65070b0a5b54778c61f48",
+    "bytes": 13368,
+    "mime": "text/css; charset=utf-8",
+    "cache": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "assets/react-Cfjqey1f.js",
+    "sha256": "fb9dab8a7c17abb2cde7e16458b23029a59732ac82d2f1dbb5e23972bfa8634c",
+    "bytes": 257187,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "assets/rolldown-runtime-CbXtAM7H.js",
+    "sha256": "bbf7c5086ae414dc3f33777e3eebf16ea8631325b8bb4690d25091c03567f31a",
+    "bytes": 589,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "assets/storage-DzYL0Enu.js",
+    "sha256": "99123232ab344ac5848117aa381ab272210b61cff4b1b66e069c928b4f6f7f82",
+    "bytes": 96503,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "assets/validation-CaOqAvNd.js",
+    "sha256": "c4c8c645ccd09ad449dbafb50c5351a7d6301bc5b1d2b502cd37835969b977d4",
+    "bytes": 89501,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "assets/workbox-window.prod.es5-Bd17z0YL.js",
+    "sha256": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+    "bytes": 5653,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "icons/apple-touch-icon.png",
+    "sha256": "8e0a7a7cb7ed897b721fe4453805096de964ef80788ad0620f8de4d19469224c",
+    "bytes": 3901,
+    "mime": "image/png",
+    "cache": "no-cache"
+  },
+  {
+    "path": "icons/icon-192.png",
+    "sha256": "424f820c1c085b157202561aafbc1194cbc5f599ad38ce78a8ae9e78b3feff85",
+    "bytes": 3286,
+    "mime": "image/png",
+    "cache": "no-cache"
+  },
+  {
+    "path": "icons/icon-512.png",
+    "sha256": "7335185b9be8f45818449262a1e456d9118ad4de9b550267ec049a0075495574",
+    "bytes": 2578,
+    "mime": "image/png",
+    "cache": "no-cache"
+  },
+  {
+    "path": "icons/icon.svg",
+    "sha256": "d4b22e007c64429d272a3c982a5f641da40d68fe859f80bfb2c8eecb68eaf895",
+    "bytes": 450,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "icons/maskable-512.png",
+    "sha256": "7335185b9be8f45818449262a1e456d9118ad4de9b550267ec049a0075495574",
+    "bytes": 2578,
+    "mime": "image/png",
+    "cache": "no-cache"
+  },
+  {
+    "path": "index.html",
+    "sha256": "7f62f007b84c9316a9b3a34fa6e6bcedaccda37a2a965e0080659c0b6267f435",
+    "bytes": 1339,
+    "mime": "text/html; charset=utf-8",
+    "cache": "no-cache"
+  },
+  {
+    "path": "lesson-diagrams/K004.svg",
+    "sha256": "f9b9de5138ecf6b208888a894770560cbd2ff754a2ba28d2bab9210639703d2c",
+    "bytes": 2676,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "lesson-diagrams/K005.svg",
+    "sha256": "aaa7a0ad60e401678b6dfba694c779a4c32c6308fc228c7226440732f79e7667",
+    "bytes": 2267,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "lesson-diagrams/K006.svg",
+    "sha256": "4d9837785275f2aab14fad60fc2b3c0f4975e3d9d8a1cce14b70b522eb1100ef",
+    "bytes": 2676,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "lesson-diagrams/K007.svg",
+    "sha256": "017d59f7b7d3e3ca46280e0e80e38c06e783dacd1954a086e56bec42bd4a8ab6",
+    "bytes": 4033,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "lesson-diagrams/K008.svg",
+    "sha256": "b5101e5db4e67174a39b316b8254229035aef8f20ed3dc9b298e820a6d9c92a5",
+    "bytes": 3155,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "lesson-diagrams/K009.svg",
+    "sha256": "7b5b8d16ed799c904d0ab06004ad85198b9f01baf5444a10498ac2994944be18",
+    "bytes": 2628,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "lesson-diagrams/K010.svg",
+    "sha256": "46e404e58318807e3a01fd8683688436e9e1344bdcf04c901c986a3d185cea0c",
+    "bytes": 3000,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "lesson-diagrams/K011.svg",
+    "sha256": "c66537049b356f37c71d7952d4bbfca1ac0fd6a10e29efbca2c3e5b6eed84bc8",
+    "bytes": 2280,
+    "mime": "image/svg+xml",
+    "cache": "no-cache"
+  },
+  {
+    "path": "manifest.webmanifest",
+    "sha256": "fdddcffc9ce16e1a2818f9893022495bd18f431ebaf7e7980a2552a0a2785760",
+    "bytes": 506,
+    "mime": "application/manifest+json",
+    "cache": "no-cache"
+  },
+  {
+    "path": "sw.js",
+    "sha256": "25c77652ff12a50a9d4b76cefc1a2731027619af849cc121842349763089d684",
+    "bytes": 2822,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "no-cache"
+  },
+  {
+    "path": "workbox-2fbc6a65.js",
+    "sha256": "39c2e6ae44c3f29666f6a328b6523bf13a053a1d95c74af8ddea82b1045b0b6e",
+    "bytes": 15026,
+    "mime": "text/javascript; charset=utf-8",
+    "cache": "no-cache"
+  }
+]
