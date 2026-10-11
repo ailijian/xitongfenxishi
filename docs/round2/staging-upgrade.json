@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "verifiedAt": "2026-10-11T10:31:31.775Z",
+  "databaseVersionUnchanged": 2,
+  "backupVersionUnchanged": 2,
+  "contentVersionUnchanged": "2026.10.11.1",
+  "everyTableUnchanged": true,
+  "oldBackupClearedAndRestoredExactly": true,
+  "counts": {
+    "settings": 1,
+    "cards": 2,
+    "cardAttempts": 1,
+    "questionAttempts": 4,
+    "learningDrafts": 1,
+    "sessions": 4,
+    "bookmarks": 1,
+    "caseDrafts": 3,
+    "caseAttempts": 3,
+    "essayDrafts": 1,
+    "projects": 1,
+    "exams": 2
+  },
+  "oldExamEssaySnapshotPreserved": true,
+  "previousPracticeAnswerNowLocked": true,
+  "noHistoricalMockKindFabricated": true
+}

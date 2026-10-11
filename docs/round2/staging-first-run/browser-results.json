@@ -1,0 +1,901 @@
+{
+  "config": {
+    "argv": [
+      "/Users/lijian/.local/share/fnm/node-versions/v24.20.0/installation/bin/node",
+      "/Users/lijian/Documents/projects/xitongfenxishi/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.audit.config.ts"
+    ],
+    "configFile": "/Users/lijian/Documents/projects/xitongfenxishi/playwright.audit.config.ts",
+    "rootDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/lijian/Documents/projects/xitongfenxishi/docs/round2/staging/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/lijian/Documents/projects/xitongfenxishi/docs/round2/staging/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "snapshotDir": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://ruankao.staging.haaboo.com",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "timezoneId": "Asia/Shanghai",
+          "locale": "zh-CN",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/round2/staging/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "exam-backup.spec.ts",
+      "file": "exam-backup.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "重复模考时，正常收藏入口不能在本场交卷前打开同卷答案",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1363,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:25.167Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8bca2855ab238ba1a4f2-6fb535be92bf81492d0d",
+          "file": "exam-backup.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7614,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/模考收藏题在整卷交卷后开放/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/模考收藏题在整卷交卷后开放/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/模考收藏题在整卷交卷后开放/)\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/模考收藏题在整卷交卷后开放/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/模考收藏题在整卷交卷后开放/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/模考收藏题在整卷交卷后开放/)\u001b[22m\n\n    at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts:56:49",
+                    "location": {
+                      "file": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts",
+                      "column": 49,
+                      "line": 56
+                    },
+                    "snippet": "  54 |   await page.getByRole(\"button\", { name: \"收藏本题\", exact: true }).click();\n  55 |   await page.goto(\"/practice?mode=favorites\");\n> 56 |   await expect(page.getByText(/模考收藏题在整卷交卷后开放/)).toBeVisible();\n     |                                                 ^\n  57 |   await expect(page.getByText(/正确答案 [ABCD]/)).toHaveCount(0);\n  58 |   await page.goto(runURL);\n  59 |   const mock = questions.filter((q) => q.set === \"mock\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts",
+                        "column": 49,
+                        "line": 56
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/模考收藏题在整卷交卷后开放/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/模考收藏题在整卷交卷后开放/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/模考收藏题在整卷交卷后开放/)\u001b[22m\n\n\n  54 |   await page.getByRole(\"button\", { name: \"收藏本题\", exact: true }).click();\n  55 |   await page.goto(\"/practice?mode=favorites\");\n> 56 |   await expect(page.getByText(/模考收藏题在整卷交卷后开放/)).toBeVisible();\n     |                                                 ^\n  57 |   await expect(page.getByText(/正确答案 [ABCD]/)).toHaveCount(0);\n  58 |   await page.goto(runURL);\n  59 |   const mock = questions.filter((q) => q.set === \"mock\");\n    at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts:56:49"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:26.882Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/lijian/Documents/projects/xitongfenxishi/docs/round2/staging/artifacts/exam-backup-单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lijian/Documents/projects/xitongfenxishi/docs/round2/staging/artifacts/exam-backup-单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lijian/Documents/projects/xitongfenxishi/docs/round2/staging/artifacts/exam-backup-单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts",
+                    "column": 49,
+                    "line": 56
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8bca2855ab238ba1a4f2-eff442785d20bfa71104",
+          "file": "exam-backup.spec.ts",
+          "line": 31,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "mobile-offline.spec.ts",
+      "file": "mobile-offline.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "320px：长题干换行、点击热区、底部导航和缩小视口输入滚动",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1415,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:35.125Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "touch-targets-320",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc5f45606b2b2037f892-46c6492731565727180e",
+          "file": "mobile-offline.spec.ts",
+          "line": 7,
+          "column": 3
+        },
+        {
+          "title": "375px：长题干换行、点击热区、底部导航和缩小视口输入滚动",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1761,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:36.745Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "touch-targets-375",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc5f45606b2b2037f892-8b1f0bfdb17b19ed8b6b",
+          "file": "mobile-offline.spec.ts",
+          "line": 7,
+          "column": 3
+        },
+        {
+          "title": "390px：长题干换行、点击热区、底部导航和缩小视口输入滚动",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1425,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:38.517Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "touch-targets-390",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc5f45606b2b2037f892-75e54ee653b85dba8d66",
+          "file": "mobile-offline.spec.ts",
+          "line": 7,
+          "column": 3
+        },
+        {
+          "title": "430px：长题干换行、点击热区、底部导航和缩小视口输入滚动",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1337,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:39.952Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "touch-targets-430",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc5f45606b2b2037f892-c71aceb28b8cd9c0e44f",
+          "file": "mobile-offline.spec.ts",
+          "line": 7,
+          "column": 3
+        },
+        {
+          "title": "首次联网缓存后，断网关页重开可学习、答题、案例自评、论文保存与创建模考",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:41.299Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc5f45606b2b2037f892-7f079abfea5eab2ee2d5",
+          "file": "mobile-offline.spec.ts",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "线上资源版本与当前构建文件逐字节一致",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 902,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:43.566Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "served-artifacts",
+                      "contentType": "application/json",
+                      "body": "ewogICJiYXNlVVJMIjogImh0dHBzOi8vcnVhbmthby5zdGFnaW5nLmhhYWJvby5jb20iLAogICJjb21wYXJlZCI6IFsKICAgICIvYXNzZXRzL2luZGV4LUJKcHJuMlBsLmpzIiwKICAgICIvYXNzZXRzL3JvbGxkb3duLXJ1bnRpbWUtQ2JYdEFNN0guanMiLAogICAgIi9hc3NldHMvY29udGVudC1DX2lPZklFdC5qcyIsCiAgICAiL2Fzc2V0cy9zdG9yYWdlLXN2TUxuM1UxLmpzIiwKICAgICIvYXNzZXRzL3ZhbGlkYXRpb24tQ2FPcUF2TmQuanMiLAogICAgIi9hc3NldHMvcmVhY3QtQklSa0lpSDcuanMiLAogICAgIi9hc3NldHMvaW5kZXgtQkJYYVhwdXQuY3NzIiwKICAgICIvbWFuaWZlc3Qud2VibWFuaWZlc3QiLAogICAgIi9pbmRleC5odG1sIiwKICAgICIvaWNvbnMvbWFza2FibGUtNTEyLnBuZyIsCiAgICAiL2ljb25zL2ljb24uc3ZnIiwKICAgICIvaWNvbnMvaWNvbi01MTIucG5nIiwKICAgICIvaWNvbnMvaWNvbi0xOTIucG5nIiwKICAgICIvaWNvbnMvYXBwbGUtdG91Y2gtaWNvbi5wbmciLAogICAgIi9hc3NldHMvd29ya2JveC13aW5kb3cucHJvZC5lczUtQmQxN3owWUwuanMiLAogICAgIi9zdy5qcyIsCiAgICAiL3dvcmtib3gtMmZiYzZhNjUuanMiCiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc5f45606b2b2037f892-5950aa1638fb17de4a38",
+          "file": "mobile-offline.spec.ts",
+          "line": 107,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "round2.spec.ts",
+      "file": "round2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2048,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:44.484Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb0e9d53326224ec4469-593a571807632d1cd387",
+          "file": "round2.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "后台恢复、窗口focus和pageshow都立即重算日期，无需等待周期或写库",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:46.542Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb0e9d53326224ec4469-6b775af0601552bc0763",
+          "file": "round2.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "跨标签创建同卷：已打开的收藏解析及历史卷同步锁定，交本场后恢复",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2594,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:47.075Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb0e9d53326224ec4469-70ad390b056750dd2fe4",
+          "file": "round2.spec.ts",
+          "line": 50,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "state.spec.ts",
+      "file": "state.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "K001：阅读、首轮、24h前边界、24h巩固、失败复测及刷新",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2677,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:49.684Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a6e30a38a18b2ee3fb04-6452b882f243b963d9ff",
+          "file": "state.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "跨日欠账、超前完成和修改启动日保留全部学习记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1448,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:52.370Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a6e30a38a18b2ee3fb04-9f16d0ffef4b9570fcaa",
+          "file": "state.spec.ts",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "亚洲上海午夜：刷新后进入D2并携带15条欠账",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 631,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:53.827Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a6e30a38a18b2ee3fb04-e7180ff6c71115a4d25c",
+          "file": "state.spec.ts",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "亚洲上海午夜：停留首页时任务自动更新",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1340,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:54.469Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a6e30a38a18b2ee3fb04-934a0b658240ccf09be3",
+          "file": "state.spec.ts",
+          "line": 77,
+          "column": 1
+        },
+        {
+          "title": "K014的客观通关题直接验证Scrum职责，而非仅敏捷模块",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:55.818Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a6e30a38a18b2ee3fb04-623c124969ad351eb79b",
+          "file": "state.spec.ts",
+          "line": 87,
+          "column": 1
+        },
+        {
+          "title": "真实关闭并重启Chromium：论文及案例逐字输入后仍可恢复",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3752,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:31:57.333Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a6e30a38a18b2ee3fb04-4c718789e748d39032e3",
+          "file": "state.spec.ts",
+          "line": 96,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "training-content.spec.ts",
+      "file": "training-content.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "论文专题的30段Word提示与元数据一致，并能在正常页面读取",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1117,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:32:01.098Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4808180d620fcff236f7-3b1fec59786807605453",
+          "file": "training-content.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "全部9套案例：三问作答、采分自评、刷新和多次训练历史互不覆盖",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9541,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:32:02.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4808180d620fcff236f7-244e7220941cf89edced",
+          "file": "training-content.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "全部10个论文专题：草稿分别保存，刷新及重开无串题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2883,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T10:32:11.774Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4808180d620fcff236f7-43a24cd6f4a43afa2808",
+          "file": "training-content.spec.ts",
+          "line": 38,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-11T10:31:24.538Z",
+    "duration": 50278.062,
+    "expected": 19,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

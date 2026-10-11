@@ -6,6 +6,7 @@ test("重复模考时，正常收藏入口不能在本场交卷前打开同卷�
   await page.goto("/mock");
   await page.getByRole("button", { name: "开始本场完整模考" }).click();
   await page.getByRole("button", { name: "收藏本题", exact: true }).click();
+  await expect(page.getByRole("button", { name: "取消收藏", exact: true })).toBeVisible();
   await page.getByRole("button", { name: "交整卷，查看成绩" }).click();
   await page.getByRole("button", { name: "确认交卷", exact: true }).click();
   await expect(page.getByText(/正确答案 D/)).toBeVisible();
@@ -52,6 +53,7 @@ test("单选错题全过程，75题计分，案例采分及论文快照，12类J
   const runURL = page.url();
   const run = new URL(runURL).searchParams.get("run")!;
   await page.getByRole("button", { name: "收藏本题", exact: true }).click();
+  await expect(page.getByRole("button", { name: "取消收藏", exact: true })).toBeVisible();
   await page.goto("/practice?mode=favorites");
   await expect(page.getByText(/模考收藏题在整卷交卷后开放/)).toBeVisible();
   await expect(page.getByText(/正确答案 [ABCD]/)).toHaveCount(0);

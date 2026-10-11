@@ -3,7 +3,15 @@
 已上线：<https://ruankao.staging.haaboo.com/>。这是无账号的静态 H5/PWA；
 用户进度、错题和草稿保存在当前浏览器 IndexedDB，服务器不保存学习数据。
 
-## 当前发布：P0 审计整改
+## 当前发布：第二轮 P1 整改
+
+正式 release `staging-20261011T102610Z-ca1338b7ed8b`，代码提交 `4ff9a28899ace2a66203a9c9e557a6bedcbc4dfa`。两个 P1 已修复；56 单元、14 原流程、2 PWA、20 线上专项和3托管检查通过。真实旧 PWA 升级、旧备份清空恢复的12类记录逐字段一致。仅更新本项目 Web，共享代理没有重启。
+
+最新身份、完整测试命令、新旧手机截图、文件清单和边界见[第二轮验收](round2-report.md)。current 指向 `/opt/azao-staging/projects/ruankao/releases/staging-20261011T102610Z-ca1338b7ed8b`，上轮 release 继续保留。contentVersion、IndexedDB version、备份版本分别保持 `2026.10.11.1` /2 /2，原学习记录未补写；新 session 的可选 mockKind 字段需本轮或新客户端读取。
+
+第二阶段 checkpoints 与三个独立指标暂以[方案](knowledge-validation-v2.md)交付，尚未接入运行应用。未生成或发布新题库，考场模式仍使用现有自由训练；实体 iPhone 验收仍 NOT TESTED。
+
+## 上一轮发布：P0 审计整改（历史）
 
 2026-10-11 已更新为内容版本 `2026.10.11.1`，修复 5 组偏宽题卡关联；原始资料与用户记录保持完整。详细验收、失败日志和手机截图见 [audit-report.md](../audit-report.md)。
 

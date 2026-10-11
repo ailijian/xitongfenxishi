@@ -1,0 +1,13 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test
+> vitest run tests/study-clock.test.ts tests/training.test.ts tests/backup.test.ts
+
+
+ RUN  v5.0.3 /Users/lijian/Documents/projects/xitongfenxishi
+
+
+ Test Files  3 passed (3)
+      Tests  20 passed (20)
+   Start at  18:12:07
+   Duration  702ms (tests 38%, transform 36%, import 25%, worker 1%)
+

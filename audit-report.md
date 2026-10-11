@@ -1,6 +1,6 @@
 # 系统分析师 H5 上线功能审计与 P0 整改
 
-这是首轮历史报告。第二轮已针对下面两项 P1 修复，并保留原失败证据；当前代码改动与数据结构提案见 [知识验证 v2 方案](docs/knowledge-validation-v2.md)，最新验收以第二轮发布记录为准。
+这是首轮历史报告。第二轮已针对下面两项 P1 修复，并保留原失败证据；当前结果见 [第二轮验收](docs/round2-report.md)，数据结构提案见 [知识验证 v2 方案](docs/knowledge-validation-v2.md)。
 
 审计日期：2026-10-11（Asia/Shanghai）。依据：[原始开发要求](README-Codex.md)、三份原始资料、当前代码及实际入口 <https://ruankao.staging.haaboo.com/>。本轮只改题卡关联、内容版本及审计管线；没有改知识、题目、答案、案例采分原文，没有扩展功能或重新设计 UI。
 

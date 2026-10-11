@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:71132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/audit/round2.spec.ts:50:1 › 跨标签创建同卷：已打开的收藏解析及历史卷同步锁定，交本场后恢复 (1.7s)
+
+  1 passed (2.6s)

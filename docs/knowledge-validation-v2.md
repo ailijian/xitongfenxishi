@@ -59,7 +59,7 @@ v1 只读兼容适配：将整段 essentials 作为一个 `Kxxx.LEGACY` 对照�
 type ValidationEvidence = {
   method: 'self-check-only' | 'question-and-self-check';
   checkpointResults: { checkpointId: string; checkpointRevision: number; checked: boolean }[];
-  trainingAttemptIds: string[];
+  attemptRefs: { table: 'questionAttempts' | 'trainingAttempts'; id: string }[];
   contentRef: { packId: string; packVersion: string; itemRevision: number; sha256: string };
   questionNovelty: 'unseen-item' | 'same-item-repeat' | 'legacy-unknown' | 'no-question';
 };
@@ -137,7 +137,9 @@ type ContentPack = {
 
 导入前阻断：格式/引用错误、ID 冲突、同一版本 hash 不同、来源缺失、无审核依据、非法池混用、答案或采分标准缺失、unsupported renderer、资源 hash 错误、过大文件。默认限制 JSON 20MB，与现有备份约束一致；上限在评审后固定。新类型渲染/判分器未实现时明确拒绝安装，不能假装已支持。
 
-包安装保留不可变 payload 和 hash；当前 active pointer 可切换。旧版本不能在有历史引用时删除。QuestionAttempt/CardAttempt/CaseAttempt 增加 contentRef，新训练类型另追加 trainingAttempts 表；既有单选 questionAttempts 不迁移或复制，以只读适配器合并分析。新增 contentPacks 表保存完整包/版本与激活状态；备份 v3 包含这些表及历史引用的资源，离线恢复无需网络，也不能只恢复 active 包导致历史失联。
+包安装保留不可变 payload 和 hash；当前 active pointer 可切换。旧版本不能在有历史引用时删除。QuestionAttempt/CardAttempt/CaseAttempt 增加 contentRef，新训练类型另追加 trainingAttempts 表；既有单选 questionAttempts 不迁移或复制，以只读适配器合并分析。attemptRefs 明确表名，避免旧单选和新类型的引用混淆。新增 contentPacks 表保存完整包/版本与激活状态；备份 v3 包含这些表及历史引用的资源，离线恢复无需网络，也不能只恢复 active 包导致历史失联。
+
+trainingAttempts 的最低记录契约：`{id, trainingItemId, familyId, contentRef, role, sessionId?, presentedAt, response?, submittedAt?, grading?}`。response 按 single-choice/text/diagram-text/numeric 判别；grading 保存原判分方式、正确性或自评得分及判分器版本，不由当前题目重算。题目首次显示即记录 presentedAt，未交卷也留下接触证据，只有 submittedAt 存在才计答题/成绩。已有原题的新曝光也可写该表而让已提交单选结果仍写原 questionAttempts；借助 attemptRefs 关联，统计不重复计数。这份接触台账用于判断题族是否 unseen；旧版没有记录的观看行为采用 legacy-unknown，而不是默认未接触。
 
 ## 6. 升级及兼容步骤
 

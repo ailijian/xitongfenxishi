@@ -1,0 +1,105 @@
+npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 389 packages in 5s
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+> ruankao-sprint-system-analyst@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.3 /Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/candidate-20261011T102610Z/source
+
+
+ Test Files  7 passed (7)
+      Tests  56 passed (56)
+   Start at  18:26:18
+   Duration  1.21s (transform 42%, tests 32%, import 23%, worker 2%)
+
+
+> ruankao-sprint-system-analyst@1.0.0 build
+> npm run data:check && tsc --noEmit && vite build
+
+
+> ruankao-sprint-system-analyst@1.0.0 data:check
+> tsx scripts/import-content.ts --check
+
+校验通过：76(A57/B19) + 150(75/75) + C01—C09(每套25分) + E01—E10。仅自评卡 29 张。
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 150 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.webmanifest                          0.50 kB
+dist/index.html                                    1.33 kB │ gzip:  0.62 kB
+dist/assets/index-BBXaXput.css                    11.62 kB │ gzip:  3.14 kB
+dist/assets/rolldown-runtime-CbXtAM7H.js           0.58 kB │ gzip:  0.36 kB
+dist/assets/workbox-window.prod.es5-Bd17z0YL.js    5.65 kB │ gzip:  2.20 kB
+dist/assets/index-BJprn2Pl.js                     83.55 kB │ gzip: 25.08 kB
+dist/assets/validation-CaOqAvNd.js                89.50 kB │ gzip: 25.28 kB
+dist/assets/storage-svMLn3U1.js                   96.50 kB │ gzip: 31.76 kB
+dist/assets/content-C_iOfIEt.js                  198.09 kB │ gzip: 41.52 kB
+dist/assets/react-BIRkIiH7.js                    257.18 kB │ gzip: 81.66 kB
+
+✓ built in 791ms
+
+PWA v2.0.0
+mode      generateSW
+precache  21 entries (739.59 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-2fbc6a65.js
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.web
+#1 transferring dockerfile: 663B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/caddy:2.11.4-alpine@sha256:6aeddd44c3078b0f9a35206472a11420648a79c184603ef95957d0a20044cb2b
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 134B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/caddy:2.11.4-alpine@sha256:6aeddd44c3078b0f9a35206472a11420648a79c184603ef95957d0a20044cb2b
+#5 resolve docker.io/library/caddy:2.11.4-alpine@sha256:6aeddd44c3078b0f9a35206472a11420648a79c184603ef95957d0a20044cb2b 0.0s done
+#5 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 776.78kB 0.0s done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/caddy:2.11.4-alpine@sha256:6aeddd44c3078b0f9a35206472a11420648a79c184603ef95957d0a20044cb2b
+#5 CACHED
+
+#6 [2/4] COPY dist/ /srv/
+#6 DONE 0.0s
+
+#7 [3/4] COPY ops/staging/Caddyfile.web /etc/caddy/Caddyfile
+#7 DONE 0.0s
+
+#8 [4/4] RUN setcap -r /usr/bin/caddy     && rm -f /srv/_headers /srv/_redirects     && chmod -R a+rX /srv /etc/caddy/Caddyfile
+#8 DONE 0.6s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 2.4s done
+#9 exporting manifest sha256:dce224aba0becc2abcf7a202e6d7fc9d2c1177e06d7574a89e253391d89feab3 0.0s done
+#9 exporting config sha256:531a04a4465d4fd35f9e7063dd3fa16eebe0d4f56c71fc4567e6366b8d90d3c2 done
+#9 exporting attestation manifest sha256:dc4729ed05606ddb2531d56575d81d6b18004ab8719872e0a9884dfcd7c088e3 0.0s done
+#9 exporting manifest list sha256:3c7e65e597812f36b9a4276e3f7db63fa89924936243634f7fe7424ecd71488f 0.0s done
+#9 naming to docker.io/library/ruankao-web:staging-20261011T102610Z-ca1338b7ed8b done
+#9 unpacking to docker.io/library/ruankao-web:staging-20261011T102610Z-ca1338b7ed8b
+#9 unpacking to docker.io/library/ruankao-web:staging-20261011T102610Z-ca1338b7ed8b 0.5s done
+#9 DONE 3.0s
+linux/amd64
+Prepared release: staging-20261011T102610Z-ca1338b7ed8b
+Bundle: /Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/releases/staging-20261011T102610Z-ca1338b7ed8b
+Source: /Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/candidate-20261011T102610Z/source

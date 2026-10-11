@@ -1,0 +1,6 @@
+release_id=staging-20261011T102610Z-ca1338b7ed8b
+source_sha256=ca1338b7ed8bfbdec9cf21927a9f5852e3f360e2fd743e80d333d3a119efd4f8
+base_git_commit=4ff9a28899ace2a66203a9c9e557a6bedcbc4dfa
+source_is_uncommitted_snapshot=true
+image_id=sha256:3c7e65e597812f36b9a4276e3f7db63fa89924936243634f7fe7424ecd71488f
+public_url=https://ruankao.staging.haaboo.com

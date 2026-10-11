@@ -1,0 +1,69 @@
+
+Running 20 tests using 1 worker
+
+(node:71042) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/audit/exam-backup.spec.ts:5:1 › 重复模考时，正常收藏入口不能在本场交卷前打开同卷答案 (1.4s)
+  ✘   2 tests/audit/exam-backup.spec.ts:31:1 › 单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致 (7.6s)
+(node:71072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 tests/audit/mobile-offline.spec.ts:7:3 › 320px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.4s)
+  ✓   4 tests/audit/mobile-offline.spec.ts:7:3 › 375px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.8s)
+  ✓   5 tests/audit/mobile-offline.spec.ts:7:3 › 390px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.4s)
+  ✓   6 tests/audit/mobile-offline.spec.ts:7:3 › 430px：长题干换行、点击热区、底部导航和缩小视口输入滚动 (1.3s)
+  ✓   7 tests/audit/mobile-offline.spec.ts:58:1 › 首次联网缓存后，断网关页重开可学习、答题、案例自评、论文保存与创建模考 (2.3s)
+  ✓   8 tests/audit/mobile-offline.spec.ts:107:1 › 线上资源版本与当前构建文件逐字节一致 (902ms)
+  ✓   9 tests/audit/round2.spec.ts:7:1 › 复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握 (2.0s)
+  ✓  10 tests/audit/round2.spec.ts:26:1 › 后台恢复、窗口focus和pageshow都立即重算日期，无需等待周期或写库 (523ms)
+  ✓  11 tests/audit/round2.spec.ts:50:1 › 跨标签创建同卷：已打开的收藏解析及历史卷同步锁定，交本场后恢复 (2.6s)
+  ✓  12 tests/audit/state.spec.ts:7:1 › K001：阅读、首轮、24h前边界、24h巩固、失败复测及刷新 (2.7s)
+  ✓  13 tests/audit/state.spec.ts:41:1 › 跨日欠账、超前完成和修改启动日保留全部学习记录 (1.4s)
+  ✓  14 tests/audit/state.spec.ts:66:1 › 亚洲上海午夜：刷新后进入D2并携带15条欠账 (631ms)
+  ✓  15 tests/audit/state.spec.ts:77:1 › 亚洲上海午夜：停留首页时任务自动更新 (1.3s)
+  ✓  16 tests/audit/state.spec.ts:87:1 › K014的客观通关题直接验证Scrum职责，而非仅敏捷模块 (1.5s)
+  ✓  17 tests/audit/state.spec.ts:96:1 › 真实关闭并重启Chromium：论文及案例逐字输入后仍可恢复 (3.8s)
+  ✓  18 tests/audit/training-content.spec.ts:4:1 › 论文专题的30段Word提示与元数据一致，并能在正常页面读取 (1.1s)
+  ✓  19 tests/audit/training-content.spec.ts:17:1 › 全部9套案例：三问作答、采分自评、刷新和多次训练历史互不覆盖 (9.5s)
+  ✓  20 tests/audit/training-content.spec.ts:38:1 › 全部10个论文专题：草稿分别保存，刷新及重开无串题 (2.9s)
+
+
+  1) tests/audit/exam-backup.spec.ts:31:1 › 单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致 ───────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText(/模考收藏题在整卷交卷后开放/)
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText(/模考收藏题在整卷交卷后开放/) with timeout 5000ms
+      - waiting for getByText(/模考收藏题在整卷交卷后开放/)
+
+
+      54 |   await page.getByRole("button", { name: "收藏本题", exact: true }).click();
+      55 |   await page.goto("/practice?mode=favorites");
+    > 56 |   await expect(page.getByText(/模考收藏题在整卷交卷后开放/)).toBeVisible();
+         |                                                 ^
+      57 |   await expect(page.getByText(/正确答案 [ABCD]/)).toHaveCount(0);
+      58 |   await page.goto(runURL);
+      59 |   const mock = questions.filter((q) => q.set === "mock");
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/exam-backup.spec.ts:56:49
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/round2/staging/artifacts/exam-backup-单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/round2/staging/artifacts/exam-backup-单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/round2/staging/artifacts/exam-backup-单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/round2/staging/artifacts/exam-backup-单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/audit/exam-backup.spec.ts:31:1 › 单选错题全过程，75题计分，案例采分及论文快照，12类JSON清空恢复逐字段一致 ────────────────
+  19 passed (50.3s)

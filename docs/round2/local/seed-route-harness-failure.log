@@ -1,0 +1,129 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+ExpectError: expect(locator).toContainText(expected) failed
+
+Locator: getByRole('status')
+Expected substring: "自评 14 / 25 分"
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toContainText" getByRole('status') with timeout 5000ms
+  - waiting for getByRole('status')
+
+    at captureRawStack (/Users/lijian/Documents/projects/xitongfenxishi/node_modules/playwright-core/lib/coreBundle.js:9282:17)
+    at callMatcherAsStep (/Users/lijian/Documents/projects/xitongfenxishi/node_modules/playwright/lib/matchers/expect.js:13316:57)
+    at Object.toContainText (/Users/lijian/Documents/projects/xitongfenxishi/node_modules/playwright/lib/matchers/expect.js:13308:23)
+    at answerCase (/Users/lijian/Documents/projects/xitongfenxishi/tests/audit/helpers.ts:62:42)
+    at async <anonymous> (/Users/lijian/Documents/projects/xitongfenxishi/scripts/audit-round2-upgrade.ts:39:7) {
+  matcherResult: {
+    name: 'toContainText',
+    expected: '自评 14 / 25 分',
+    message: 'expect(locator).toContainText(expected) failed\n' +
+      '\n' +
+      "Locator: getByRole('status')\n" +
+      'Expected substring: "自评 14 / 25 分"\n' +
+      'Timeout: 5000ms\n' +
+      'Error: element(s) not found\n' +
+      '\n' +
+      'Call log:\n' +
+      `  - Expect "toContainText" getByRole('status') with timeout 5000ms\n` +
+      "  - waiting for getByRole('status')\n",
+    pass: false,
+    actual: undefined,
+    log: [
+      `  - Expect "toContainText" getByRole('status') with timeout 5000ms`,
+      "  - waiting for getByRole('status')"
+    ],
+    timeout: 5000,
+    ariaSnapshot: '- link "跳到主要内容":\n' +
+      '  - /url: "#main"\n' +
+      '- banner:\n' +
+      '  - link "软考冲刺 系统分析师":\n' +
+      '    - /url: /\n' +
+      '  - text: 2026 · 原创资料\n' +
+      '- main:\n' +
+      '  - link "← 返回本场模考":\n' +
+      '    - /url: /mock?run=null\n' +
+      '  - text: C01 / 原创模拟 / 25分\n' +
+      '  - heading "AI线索平台用例与顺序图" [level=1]\n' +
+      '  - paragraph: 需求/UML\n' +
+      '  - alert: 本场模考不包含该案例\n' +
+      '  - heading "题干" [level=2]\n' +
+      '  - paragraph: 某企业建设线索管理平台。访客提交咨询表单形成线索；系统先去重，再按地区和客户经理负荷自动分派。客户经理登录查看分配结果，跟进后将线索状态从“待跟进”变成“已联系/已成交”。若线索重复或客户已拉黑，则拒绝入库。\n' +
+      '  - paragraph: 来源：05｜案例分析专项 > C01｜AI线索平台用例与顺序图（需求/UML / A）\n' +
+      '  - group:\n' +
+      '    - text: 识别3个参与者、5个关键用例；说明“线索入库”和“线索去重”应采用何种用例关系。 · 8分 C01-Q1 我的独立回答\n' +
+      '    - textbox "C01-Q1 我的独立回答": 审计输入 C01-Q1：独立回答草稿\n' +
+      '    - heading "参考答案" [level=3]\n' +
+      '    - paragraph: 参与者：访客、客户经理、管理员（外部CRM/消息服务也可视边界作外部参与者）；关键用例：提交咨询、线索校验/去重、自动分派、查看线索、记录跟进、线索转化。提交咨询必经去重，适合include；重复线索拒收可作条件扩展/替代流。\n' +
+      '    - heading "采分点自评" [level=3]\n' +
+      '    - checkbox "参与者及用例 4 分" [checked]\n' +
+      '    - text: 参与者及用例\n' +
+      '    - strong: 4 分\n' +
+      '    - checkbox "关系 4 分"\n' +
+      '    - text: 关系\n' +
+      '    - strong: 4 分\n' +
+      '    - paragraph: 来源：C01｜AI线索平台用例与顺序图（需求/UML / A）\n' +
+      '  - group:\n' +
+      '    - text: 写出“提交表单→去重→分派→通知”的顺序图文字消息序列，说明失败分支。 · 9分 C01-Q2 我的独立回答\n' +
+      '    - textbox "C01-Q2 我的独立回答": 审计输入 C01-Q2：独立回答草稿\n' +
+      '    - heading "参考答案" [level=3]\n' +
+      '    - paragraph: 消息：访客→API→线索服务：提交；线索服务→去重服务：查询；alt重复/黑名单返回拒绝；else线索服务→数据库保存→分派服务：按规则派单→消息服务：通知→API返回线索编号。补充超时重试与幂等。\n' +
+      '    - heading "采分点自评" [level=3]\n' +
+      '    - checkbox "顺序正常 6 分" [checked]\n' +
+      '    - text: 顺序正常\n' +
+      '    - strong: 6 分\n' +
+      '    - checkbox "异常 3 分"\n' +
+      '    - text: 异常\n' +
+      '    - strong: 3 分\n' +
+      '    - paragraph: 来源：C01｜AI线索平台用例与顺序图（需求/UML / A）\n' +
+      '  - group:\n' +
+      '    - text: 提出4条可测量的非功能需求并说明如何建立需求追踪。 · 8分 C01-Q3 我的独立回答\n' +
+      '    - textbox "C01-Q3 我的独立回答": 审计输入 C01-Q3：独立回答草稿\n' +
+      '    - heading "参考答案" [level=3]\n' +
+      '    - paragraph: 例：P95入库延时<2秒（给定并发前提）；自动分派成功率≥99.5%；权限越权率=0（按测试口径）；故障恢复RTO≤2小时。追踪矩阵：需求编号→设计模块/API→测试用例→上线验收。\n' +
+      '    - heading "采分点自评" [level=3]\n' +
+      '    - checkbox "质量要求 4 分" [checked]\n' +
+      '    - text: 质量要求\n' +
+      '    - strong: 4 分\n' +
+      '    - checkbox "可追踪 4 分"\n' +
+      '    - text: 可追踪\n' +
+      '    - strong: 4 分\n' +
+      '    - paragraph: 来源：C01｜AI线索平台用例与顺序图（需求/UML / A）\n' +
+      '  - heading "本次自评 14 / 25 分" [level=2]\n' +
+      '  - paragraph: 采分组与分值逐字来自原文，整组达到才勾选。此分数是本人自评。\n' +
+      '  - heading "漏掉的采分点" [level=3]\n' +
+      '  - paragraph: 关系 · 4分\n' +
+      '  - paragraph: 异常 · 3分\n' +
+      '  - paragraph: 可追踪 · 4分\n' +
+      '  - button "保存本次案例训练"\n' +
+      '  - button "开始新一次作答"\n' +
+      '  - heading "训练历史 · 0次" [level=2]\n' +
+      '  - paragraph: 草稿自动保存在本设备，保存训练记录后仍可继续修改草稿。\n' +
+      '  - paragraph: 草稿已保存：18:16:34\n' +
+      '  - link "返回本场模考 →":\n' +
+      '    - /url: /mock?run=null\n' +
+      '- region "离线学习状态":\n' +
+      '  - paragraph:\n' +
+      '    - strong: 已联网\n' +
+      '    - text: · 全部核心资料已缓存，可离线学习\n' +
+      '  - button "请求浏览器持久保存本设备数据"\n' +
+      '- contentinfo: 软考冲刺 · 系统分析师 知识点掌握驱动 · 原创模拟训练\n' +
+      '- navigation "主导航":\n' +
+      '  - link "今日":\n' +
+      '    - /url: /\n' +
+      '  - link "知识":\n' +
+      '    - /url: /learn\n' +
+      '  - link "刷题":\n' +
+      '    - /url: /practice\n' +
+      '  - link "实战":\n' +
+      '    - /url: /cases\n' +
+      '  - link "我的":\n' +
+      '    - /url: /progress'
+  }
+}
+
+Node.js v24.20.0

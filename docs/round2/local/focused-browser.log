@@ -1,0 +1,58 @@
+[WebServer] (node:69353) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:69354) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/audit/exam-backup.spec.ts:4:1 › 重复模考时，正常收藏入口不能在本场交卷前打开同卷答案 (1.0s)
+  ✘  2 tests/audit/round2.spec.ts:7:1 › 复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握 (6.1s)
+(node:69362) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 tests/audit/round2.spec.ts:26:1 › 后台恢复、窗口focus和pageshow都立即重算日期，无需等待周期或写库 (485ms)
+  ✓  4 tests/audit/round2.spec.ts:50:1 › 跨标签创建同卷：已打开的收藏解析及历史卷同步锁定，交本场后恢复 (1.5s)
+  ✓  5 tests/audit/state.spec.ts:77:1 › 亚洲上海午夜：停留首页时任务自动更新 (383ms)
+
+
+  1) tests/audit/round2.spec.ts:7:1 › 复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握 ──────────────────────────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.hero .primary')
+    Expected substring: "继续复习：功能与非功能需求"
+    Received string:    "继续复习：需求类型 →"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('.hero .primary') with timeout 5000ms
+      - waiting for locator('.hero .primary')
+        14 × locator resolved to <a href="/learn/K001" data-discover="true" class="primary light">继续复习：需求类型 →</a>
+           - unexpected value "继续复习：需求类型 →"
+
+
+      19 |   await page.clock.runFor(1);
+      20 |   await expect(reviewCount(page)).toHaveText("1");
+    > 21 |   await expect(page.locator(".hero .primary")).toContainText("继续复习：功能与非功能需求");
+         |                                                ^
+      22 |   expect(await records(page, "cards")).toEqual(saved);
+      23 |   await page.screenshot({ path: `${evidence}/after-review-due-390.png` });
+      24 | });
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/audit/round2.spec.ts:21:48
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/round2/local/focused-browser/artifacts/round2-复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/round2/local/focused-browser/artifacts/round2-复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/round2/local/focused-browser/artifacts/round2-复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/round2/local/focused-browser/artifacts/round2-复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/audit/round2.spec.ts:7:1 › 复习精确24h到期：首页无数据库变更仍刷新，且不会自动升级掌握 ───────────────────────────────
+  4 passed (12.3s)

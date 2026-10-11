@@ -77,5 +77,10 @@ test("跨标签创建同卷：已打开的收藏解析及历史卷同步锁定�
   await expect(page.locator(".answer")).toBeVisible();
   await page.goto("/practice?mode=favorites");
   await expect(page.getByText(/正确答案 D/)).toBeVisible();
+  for (const width of [320, 375, 390, 430]) {
+    await page.setViewportSize({ width, height: 844 });
+    const layout = await page.evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth }));
+    expect(layout.scroll, `unlocked mock review at ${width}px`).toBeLessThanOrEqual(layout.width);
+  }
   await next.screenshot({ path: `${evidence}/after-repeat-kind-390.png` });
 });
