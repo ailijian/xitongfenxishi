@@ -236,18 +236,20 @@ export function ProgressPage() {
             ))}
           </select>
         </label>
-        <button onClick={() => void move()}>重排该知识点</button>
-        <button
-          className="secondary"
-          onClick={() =>
-            void db.settings
-              .put({ ...data.settings, dayOverrides: {} })
-              .then(() => setSaved("已恢复原始任务分配，学习记录保留。"))
-              .catch((e) => setError(friendlyError(e)))
-          }
-        >
-          恢复原始任务分配
-        </button>
+        <div className="button-row">
+          <button onClick={() => void move()}>重排该知识点</button>
+          <button
+            className="secondary"
+            onClick={() =>
+              void db.settings
+                .put({ ...data.settings, dayOverrides: {} })
+                .then(() => setSaved("已恢复原始任务分配，学习记录保留。"))
+                .catch((e) => setError(friendlyError(e)))
+            }
+          >
+            恢复原始任务分配
+          </button>
+        </div>
       </section>
       <BackupPanel />
       <section className="paper">

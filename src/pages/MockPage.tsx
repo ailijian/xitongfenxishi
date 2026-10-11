@@ -325,14 +325,16 @@ function Exam({ id }: { id: string }) {
                 已答 {Object.keys(session.answers).length}
                 /75题。未答题计0分，提交后无法改动本场选择答案。
               </p>
-              <button
-                className="primary"
-                disabled={busy}
-                onClick={() => void grade()}
-              >
-                确认交卷
-              </button>
-              <button onClick={() => setConfirm(false)}>返回继续作答</button>
+              <div className="button-row">
+                <button
+                  className="primary"
+                  disabled={busy}
+                  onClick={() => void grade()}
+                >
+                  确认交卷
+                </button>
+                <button onClick={() => setConfirm(false)}>返回继续作答</button>
+              </div>
             </div>
           ))}
         <p className="subtle">

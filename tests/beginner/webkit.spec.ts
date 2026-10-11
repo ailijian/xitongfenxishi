@@ -2,6 +2,7 @@ import { test, expect, devices } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import type { BeginnerLesson } from "../../src/domain/lesson-schema";
 import { records } from "../audit/helpers";
+import { courseSteps } from "./layout-helpers";
 
 const lessons=(JSON.parse(readFileSync(new URL("../../src/data/lessons/day1_beginner_lessons.json",import.meta.url),"utf8")) as {lessons:BeginnerLesson[]}).lessons;
 const {defaultBrowserType: _browser, ...phone}=devices["iPhone 13"];
@@ -39,4 +40,8 @@ for(const width of [375,390]) test(`WebKit ${width}px移动浏览器：四个重
   await expect.poll(async()=> (await records(page,"learningDrafts"))[0]?.recall).toBe("WebKit独立自述刷新保存");
   await page.reload();await expect(page.getByRole("textbox",{name:"闭卷回答"})).toHaveValue("WebKit独立自述刷新保存");
   expect(errors).toEqual([]);
+});
+
+for (const width of [375,390]) test(`WebKit ${width}px课程按钮对齐与窄屏切换`, async ({page}) => {
+  await courseSteps(page, width, "webkit");
 });

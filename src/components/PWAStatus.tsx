@@ -72,10 +72,12 @@ export function PWAStatus() {
       {refresh && (
         <div className="confirm-box">
           <p>新版本已准备好。请等待页面“已保存”提示后更新，学习记录保留。</p>
-          <button onClick={() => void updateServiceWorker(true)}>
-            更新并重新载入
-          </button>
-          <button onClick={() => setRefresh(false)}>稍后更新</button>
+          <div className="button-row">
+            <button onClick={() => void updateServiceWorker(true)}>
+              更新并重新载入
+            </button>
+            <button onClick={() => setRefresh(false)}>稍后更新</button>
+          </div>
         </div>
       )}
       {error && <p role="alert">离线缓存未成功，请联网重试。{error}</p>}

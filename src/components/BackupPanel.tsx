@@ -128,11 +128,11 @@ export function BackupPanel() {
           <p>
             恢复会整体替换本设备当前学习数据。建议先导出当前数据；资料题库不会被替换。
           </p>
-          {!confirm ? (
-            <button onClick={() => setConfirm(true)}>准备恢复此备份</button>
-          ) : (
-            <>
-              <p>再次确认：用此备份替换本设备学习数据？</p>
+          {confirm && <p>再次确认：用此备份替换本设备学习数据？</p>}
+          <div className="button-row">
+            {!confirm ? (
+              <button onClick={() => setConfirm(true)}>准备恢复此备份</button>
+            ) : (
               <button
                 className="primary"
                 disabled={busy}
@@ -147,16 +147,16 @@ export function BackupPanel() {
               >
                 确认替换并恢复
               </button>
-            </>
-          )}
-          <button
-            onClick={() => {
-              setPreview(undefined);
-              setConfirm(false);
-            }}
-          >
-            取消恢复
-          </button>
+            )}
+            <button
+              onClick={() => {
+                setPreview(undefined);
+                setConfirm(false);
+              }}
+            >
+              取消恢复
+            </button>
+          </div>
         </div>
       )}
       <h3>重置本设备记录</h3>
@@ -169,19 +169,21 @@ export function BackupPanel() {
           <p>
             重置会删除本设备全部进度、草稿与历史。请先下载备份。此操作不删除学习资料。
           </p>
-          <button
-            disabled={busy}
-            onClick={() =>
-              void run(async () => {
-                await clearUserData();
-                setReset(false);
-                setStatus("本设备学习数据已重置，学习资料保留。");
-              })
-            }
-          >
-            再次确认，清空全部学习数据
-          </button>
-          <button onClick={() => setReset(false)}>取消重置</button>
+          <div className="button-row">
+            <button
+              disabled={busy}
+              onClick={() =>
+                void run(async () => {
+                  await clearUserData();
+                  setReset(false);
+                  setStatus("本设备学习数据已重置，学习资料保留。");
+                })
+              }
+            >
+              再次确认，清空全部学习数据
+            </button>
+            <button onClick={() => setReset(false)}>取消重置</button>
+          </div>
         </div>
       )}
     </section>

@@ -218,25 +218,27 @@ function CaseEditor({ caseId }: { caseId: string }) {
               </p>
             ))}
           {all.every((r) => draft.checks[r.id]) && <p>全部采分组已覆盖。</p>}
-          <button
-            className="primary"
-            disabled={busy}
-            onClick={() => void submit()}
-          >
-            保存本次案例训练
-          </button>
-          <button
-            className="secondary"
-            onClick={() =>
-              void run(async () => {
-                await db.caseDrafts.delete(caseId);
-                await ensureCase(caseId);
-                setSaved("已新建独立作答，历史记录保留。");
-              })
-            }
-          >
-            开始新一次作答
-          </button>
+          <div className="button-row">
+            <button
+              className="primary"
+              disabled={busy}
+              onClick={() => void submit()}
+            >
+              保存本次案例训练
+            </button>
+            <button
+              className="secondary"
+              onClick={() =>
+                void run(async () => {
+                  await db.caseDrafts.delete(caseId);
+                  await ensureCase(caseId);
+                  setSaved("已新建独立作答，历史记录保留。");
+                })
+              }
+            >
+              开始新一次作答
+            </button>
+          </div>
         </section>
       )}
       <section className="paper">

@@ -96,6 +96,7 @@ button {
   border-radius: 12px;
   min-height: 48px;
   padding: 10px 16px;
+  line-height: 1.5;
 }
 input,
 select {
@@ -502,11 +503,37 @@ section {
 }
 .button-row {
   display: flex;
-  justify-content: space-between;
-  gap: 14px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+  margin: 16px 0;
 }
 .button-row > * {
-  flex: 1;
+  flex: 1 1 120px;
+  min-width: 0;
+  max-width: 100%;
+}
+.button-row > button,
+.button-row > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-height: 48px;
+  margin: 0;
+  padding: 10px 12px;
+  line-height: 1.5;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.button-row > .primary {
+  border: 1px solid transparent;
+}
+.confirm-box .button-row {
+  flex-direction: column;
+}
+.confirm-box .button-row > * {
+  flex-basis: auto;
 }
 .tabs {
   display: grid;
@@ -676,6 +703,16 @@ textarea {
 .secondary {
   margin: 8px 0;
 }
+a.secondary,
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  margin: 8px 0;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 .history-row {
   font-size: 13px;
   border-bottom: 1px solid var(--line);
@@ -793,16 +830,6 @@ textarea {
 .question-grid [aria-current] {
   outline: 2px solid var(--accent);
 }
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 16px 0;
-}
-.button-row button {
-  flex: 1;
-  min-width: 90px;
-}
 .confirm-box {
   padding: 16px;
   border: 1px solid var(--accent);
@@ -853,8 +880,9 @@ textarea {
   border-radius: 16px;
   font-size: 14px;
 }
-.pwa-status button {
-  margin: 6px 4px 6px 0;
+.pwa-status > button {
+  display: flex;
+  margin: 6px 0;
 }
 input[type="file"] {
   width: 100%;
