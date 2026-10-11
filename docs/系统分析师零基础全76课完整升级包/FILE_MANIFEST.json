@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "file": "CODEX_INTEGRATION.md",
+      "sizeBytes": 4770,
+      "sha256": "7d62823ff509c99b99458a5c19d7d96645a68333687325d36ed2fcff18721fee"
+    },
+    {
+      "file": "CONTENT_QA_REPORT.md",
+      "sizeBytes": 2623,
+      "sha256": "06b7b81591e3c44f1e0d6c0dc2fb9ea0908e1c16c9c8e2e8bebb314af0fd434f"
+    },
+    {
+      "file": "FILE_MANIFEST.json",
+      "sizeBytes": 1989,
+      "sha256": "e68fbca173e8df11802813237c1703cc187f02a553a940c98df2b7350777bda2"
+    },
+    {
+      "file": "README_FIRST.md",
+      "sizeBytes": 3842,
+      "sha256": "8f2affbbe8352f26a518bfe819afa8f0cd67e8dad21c193b42811fbfce75870a"
+    },
+    {
+      "file": "all_76_lessons_reference.json",
+      "sizeBytes": 375906,
+      "sha256": "83ebca866b7d927f98cfad0e0b3ec3eae385bcdadce9080df1878af5c455a700"
+    },
+    {
+      "file": "case_paper_beginner_coaching.json",
+      "sizeBytes": 34885,
+      "sha256": "750a692bfdd5623bdf8735d8a4dfc500b494b1115d4931a077ea7af91d1b423c"
+    },
+    {
+      "file": "case_paper_beginner_guide.md",
+      "sizeBytes": 22387,
+      "sha256": "85c247275138899da97327c8301a071da98a180ee029048a4947a260210c4f4b"
+    },
+    {
+      "file": "day1_original_readonly.json",
+      "sizeBytes": 84227,
+      "sha256": "1773cc76a8266b0987caf1b8f4c3f7a46be254c1700ef670d71eafd83854a4ec"
+    },
+    {
+      "file": "day2_beginner_guide.md",
+      "sizeBytes": 41989,
+      "sha256": "1b7c47d896f6d6ebb2d5a384a1ce435bd2c272b08373e43c8c9bc7662abac07d"
+    },
+    {
+      "file": "day2_day5_beginner_lessons.json",
+      "sizeBytes": 292740,
+      "sha256": "61fb7b0211ade1591f05d4eb28bd7ba331c23a1c20fca50273f3ef27b8a178ac"
+    },
+    {
+      "file": "day3_beginner_guide.md",
+      "sizeBytes": 39929,
+      "sha256": "fed1d37ef792fa2dea7cc6e66f8c8e151b3fcef05a2409f4eba7776ba2ad5e67"
+    },
+    {
+      "file": "day4_beginner_guide.md",
+      "sizeBytes": 40389,
+      "sha256": "5c47e5591b895dcb0a7dfe4c4a63da2f81a4dcb01609d4ee609fd407163abad5"
+    },
+    {
+      "file": "day5_beginner_guide.md",
+      "sizeBytes": 42933,
+      "sha256": "7a9e10291595e0f5a74e21a68924f7692d3186e2176db769274d74f8a57dbd87"
+    }
+  ]
+}

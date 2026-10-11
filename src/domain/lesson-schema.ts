@@ -7,7 +7,7 @@ const text = z.string().min(1).refine((s) => !!s.trim() &&
   "课程包含空文本或可执行标记");
 const choices = z.object({ A: text, B: text, C: text, D: text }).strict();
 export const lessonQuestionSchema = z.object({
-  id: z.string().regex(/^LQ-D1-K\d{3}-0[12]$/),
+  id: z.string().regex(/^LQ-D[1-5]-K\d{3}-0[12]$/),
   stem: text, options: choices, answer: z.enum(["A", "B", "C", "D"]),
   optionExplanations: choices, assesses: text,
   status: z.literal("original-teaching-practice"),
@@ -25,7 +25,7 @@ export const beginnerLessonSchema = z.object({
   practiceQuestions: z.array(lessonQuestionSchema).length(2), nextConnection: text,
   provenance: z.object({
     kind: z.literal("independently-authored-explanation"), baseCardId: text,
-    baseCardSource: z.literal("main/src/data/knowledge.json"),
+    baseCardSource: z.enum(["main/src/data/knowledge.json", "src/data/knowledge.json"]),
     originalOfficialQuestion: z.literal(false),
   }).strict(),
   reviewStatus: z.literal("instructional-draft-for-human-and-integration-review"),
@@ -33,6 +33,7 @@ export const beginnerLessonSchema = z.object({
     kind: z.literal("mermaid"), title: text, code: text, note: text,
     rendering: z.literal("safe-static-diagram-with-accessible-text-fallback"),
   }).strict().optional(),
+  supplement: z.object({ copyableSql: text }).strict().optional(),
 }).strict();
 export const beginnerPackageSchema = z.object({
   packageId: z.literal("ruankao-beginner-d1-20261011-v1"), formatVersion: z.literal(1),
@@ -62,7 +63,8 @@ export function validateBeginnerPackage(input: unknown, cards: KnowledgeCard[]) 
   for (const lesson of pack.lessons) {
     const card = cards.find((k) => k.id === lesson.cardId);
     if (!card || card.title !== lesson.title || card.priority !== lesson.priority ||
-        lesson.provenance.baseCardId !== lesson.cardId) {
+        lesson.provenance.baseCardId !== lesson.cardId ||
+        lesson.provenance.baseCardSource !== "main/src/data/knowledge.json" || lesson.supplement) {
       throw new Error(`课程原卡来源、标题或优先级不一致：${lesson.cardId}`);
     }
     lesson.practiceQuestions.forEach((q, i) => {
@@ -76,5 +78,33 @@ export function validateBeginnerPackage(input: unknown, cards: KnowledgeCard[]) 
   if (JSON.stringify(visuals) !== JSON.stringify(dayOneCardIds.slice(3, 11))) {
     throw new Error("8 个概念图示必须对应 K004—K011");
   }
+  return pack;
+}
+
+export const expandedPackageSchema = beginnerPackageSchema.extend({
+  packageId: z.literal("ruankao-beginner-d2-d5-20261011-v1"),
+  targetCardIds: z.array(text).length(61), lessons: z.array(beginnerLessonSchema).length(61),
+});
+
+export function validateExpandedPackage(input: unknown, cards: KnowledgeCard[],
+  plan: { day: number; knowledgeIds: string[] }[]) {
+  const pack = expandedPackageSchema.parse(input);
+  const expected = plan.filter((d) => d.day >= 2 && d.day <= 5).flatMap((d) => d.knowledgeIds);
+  const ids = pack.lessons.map((l) => l.cardId);
+  if (JSON.stringify(ids) !== JSON.stringify(expected) ||
+      JSON.stringify(pack.targetCardIds) !== JSON.stringify(ids)) throw new Error("D2—D5 课程顺序、数量或 ID 不匹配");
+  for (const lesson of pack.lessons) {
+    const card = cards.find((k) => k.id === lesson.cardId);
+    const day = plan.find((d) => d.knowledgeIds.includes(lesson.cardId))!.day;
+    if (!card || card.title !== lesson.title || card.priority !== lesson.priority ||
+      lesson.provenance.baseCardId !== lesson.cardId || lesson.provenance.baseCardSource !== "src/data/knowledge.json") {
+      throw new Error(`扩充课程来源不匹配：${lesson.cardId}`);
+    }
+    lesson.practiceQuestions.forEach((q, i) => {
+      if (q.id !== `LQ-D${day}-${lesson.cardId}-0${i + 1}`) throw new Error(`教学题 ID 不匹配：${q.id}`);
+    });
+    if ((lesson.cardId === "K037") !== !!lesson.supplement) throw new Error("SQL 补充仅对应 K037，且必须完整");
+  }
+  if (pack.lessons.filter((l) => l.conceptVisual).length !== 33) throw new Error("新增图示必须完整包含 33 项");
   return pack;
 }

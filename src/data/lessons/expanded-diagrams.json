@@ -1,0 +1,66 @@
+{
+  "K015": {
+    "src": "lesson-diagrams/K015.svg",
+    "alt": "提交代码→自动构建→单测与契约测试→门禁。未通过则修复重试；通过则形成候选版本，再经审批或自动投产。",
+    "sourceSha256": "ffafd18e5f61ac9f59340ec163685234eb0aa0ab8747b5efb583f57bfce6f4f8",
+    "svgSha256": "564a82e3af5cd637939712161e5583e3ad7213e1ce112d2a03a05c423c12be1f",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K017": {
+    "src": "lesson-diagrams/K017.svg",
+    "alt": "质量场景六要素：患者（刺激源）→发起预约查询（刺激）→高峰负载（环境）→查询服务（制品）→返回号源（响应）→P95≤2秒（度量）。数值仅为示例。",
+    "sourceSha256": "25e1b197299f2436dedd91ae6599b7433b81ac136565fb3af2bc7f5b7df629fa",
+    "svgSha256": "530e0d0862d44b38de1187a4f982c801c225dd25c95327f03eb2473d0be9ccab",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K018": {
+    "src": "lesson-diagrams/K018.svg",
+    "alt": "关键场景（+1）连接四种视图：逻辑描述功能对象，进程描述并发通信，开发描述代码模块，物理描述部署节点。",
+    "sourceSha256": "173dc833bba6e9e276f88c1895c651b170c920e1b430f115a7813d918e7ce099",
+    "svgSha256": "affb06b3b4fe7619695fafffde221b720dd9e41eefe9317ffc9913959bdba77a",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K019": {
+    "src": "lesson-diagrams/K019.svg",
+    "alt": "手机页面（表示层）→预约规则（业务层）→数据库访问（持久层）→预约数据库。业务结果返回页面。",
+    "sourceSha256": "dd2f8635b7b33747af6db2e38b51a86cf6bd69af4bf2b608b28113642cb32096",
+    "svgSha256": "f906d0ea0223ba96fcaacfaf5490ec497e2c32556da990890eed2524b8e2a6a6",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K020": {
+    "src": "lesson-diagrams/K020.svg",
+    "alt": "患者 App 请求预约服务；预约服务协调号源服务，并发布预约成功事件给通知服务。预约和号源分别拥有自己的数据。",
+    "sourceSha256": "83ae6bfc9c7903c88e16441d6b474f9d87b1ef95f401f7598235ce37d73b6d5d",
+    "svgSha256": "8a00b3210a1f49317f9d5f9e094cc61c900e7ac489ad514e4369c2ba0654eca7",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K021": {
+    "src": "lesson-diagrams/K021.svg",
+    "alt": "预约服务把 AppointmentCreated 事件发布到消息系统，通知、统计、审计消费者分别订阅。消息可能重复或延迟。",
+    "sourceSha256": "0af8cf81bbfe97521a0c618639b8d2f9732c03ad07e01d8a7613f7c9635f2539",
+    "svgSha256": "82b977baac7c5b28cd80c8647ca5d995664e90d65ee62f7bde24fd641ee5e647",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K024": {
+    "src": "lesson-diagrams/K024.svg",
+    "alt": "新预约服务 getSlots→LegacyHISAdapter，转换工号和日期后调用旧 HIS queryQueue；旧状态码返回适配器，再转换为统一响应。",
+    "sourceSha256": "d6f001e4a3ffce7510298ff211a858c95bf48fca07d146607d7449782f737075",
+    "svgSha256": "524a808ebf17d34162622f5e5eef51c13fe509334f7f56fcf925b51313a39175",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  },
+  "K029": {
+    "src": "lesson-diagrams/K029.svg",
+    "alt": "量化需求和约束→提出候选架构→比较质量、风险、成本→选择方案并补偿短板→测试验证和持续优化。",
+    "sourceSha256": "49dcdb396f2a92d69099775d42918a59f73a1872204cf4359fe3b6df356410fa",
+    "svgSha256": "f1b1f0bce3cdaa3987a3ace05a6e4add6d1c6e1d93d357be1c3f0aafe825ae78",
+    "renderer": "mermaid@12.1.0",
+    "sourceUnmodified": true
+  }
+}

@@ -1,0 +1,1178 @@
+{
+  "result": "PASS",
+  "teachingContentVersion": "2026.10.11.beginner.2",
+  "originalContentVersion": "2026.10.11.1",
+  "integratedCourseDays": [
+    1,
+    2
+  ],
+  "original": {
+    "knowledge": 76,
+    "questions": 150,
+    "cases": 9,
+    "essays": 10
+  },
+  "supplied": {
+    "lessons": 76,
+    "teachingQuestions": 152,
+    "diagrams": 41,
+    "caseCoaches": 9,
+    "essayCoaches": 10
+  },
+  "integrated": {
+    "lessons": 30,
+    "questions": 60,
+    "diagrams": 16
+  },
+  "newAnswerDistribution": {
+    "A": 31,
+    "B": 31,
+    "C": 30,
+    "D": 30
+  },
+  "sourceHashes": [
+    {
+      "file": "CODEX_INTEGRATION.md",
+      "sha256": "7d62823ff509c99b99458a5c19d7d96645a68333687325d36ed2fcff18721fee"
+    },
+    {
+      "file": "CONTENT_QA_REPORT.md",
+      "sha256": "06b7b81591e3c44f1e0d6c0dc2fb9ea0908e1c16c9c8e2e8bebb314af0fd434f"
+    },
+    {
+      "file": "FILE_MANIFEST.json",
+      "sha256": "3abc9f26633d1fb9f590dd7191c709633bf3bc0035741f8f9eb0dd3f73b2d9e7"
+    },
+    {
+      "file": "README_FIRST.md",
+      "sha256": "8f2affbbe8352f26a518bfe819afa8f0cd67e8dad21c193b42811fbfce75870a"
+    },
+    {
+      "file": "all_76_lessons_reference.json",
+      "sha256": "83ebca866b7d927f98cfad0e0b3ec3eae385bcdadce9080df1878af5c455a700"
+    },
+    {
+      "file": "case_paper_beginner_coaching.json",
+      "sha256": "750a692bfdd5623bdf8735d8a4dfc500b494b1115d4931a077ea7af91d1b423c"
+    },
+    {
+      "file": "case_paper_beginner_guide.md",
+      "sha256": "85c247275138899da97327c8301a071da98a180ee029048a4947a260210c4f4b"
+    },
+    {
+      "file": "day1_original_readonly.json",
+      "sha256": "1773cc76a8266b0987caf1b8f4c3f7a46be254c1700ef670d71eafd83854a4ec"
+    },
+    {
+      "file": "day2_beginner_guide.md",
+      "sha256": "1b7c47d896f6d6ebb2d5a384a1ce435bd2c272b08373e43c8c9bc7662abac07d"
+    },
+    {
+      "file": "day2_day5_beginner_lessons.json",
+      "sha256": "61fb7b0211ade1591f05d4eb28bd7ba331c23a1c20fca50273f3ef27b8a178ac"
+    },
+    {
+      "file": "day3_beginner_guide.md",
+      "sha256": "fed1d37ef792fa2dea7cc6e66f8c8e151b3fcef05a2409f4eba7776ba2ad5e67"
+    },
+    {
+      "file": "day4_beginner_guide.md",
+      "sha256": "5c47e5591b895dcb0a7dfe4c4a63da2f81a4dcb01609d4ee609fd407163abad5"
+    },
+    {
+      "file": "day5_beginner_guide.md",
+      "sha256": "7a9e10291595e0f5a74e21a68924f7692d3186e2176db769274d74f8a57dbd87"
+    }
+  ],
+  "upstreamManifestIssues": [
+    "FILE_MANIFEST.json"
+  ],
+  "guideFields": 2859,
+  "preservedBaseline": "8ecdd0eaea31caefe5e778053d22641f8b7afe49",
+  "preservedFiles": [
+    "src/data/knowledge.json",
+    "src/data/questions.json",
+    "src/data/cases.json",
+    "src/data/essays.json",
+    "src/data/plan.json",
+    "src/data/manifest.json",
+    "src/storage/db.ts",
+    "src/storage/backup.ts",
+    "src/storage/training.ts",
+    "src/domain/study.ts",
+    "src/domain/content-schema.ts",
+    "src/domain/mock-access.ts",
+    "src/domain/study-clock.ts",
+    "src/hooks/useStudyClock.ts",
+    "src/data/lessons/day1_beginner_lessons.json",
+    "src/data/lessons/diagrams.json"
+  ],
+  "databaseMigration": false,
+  "checkpointApprovals": 0,
+  "rows": [
+    {
+      "cardId": "K001",
+      "day": 1,
+      "title": "需求类型",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K001-01",
+        "LQ-D1-K001-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K002",
+      "day": 1,
+      "title": "好需求6项",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K002-01",
+        "LQ-D1-K002-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K003",
+      "day": 1,
+      "title": "需求获取",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 5,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K003-01",
+        "LQ-D1-K003-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K004",
+      "day": 1,
+      "title": "需求基线/变更",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 5,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K004-01",
+        "LQ-D1-K004-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K005",
+      "day": 1,
+      "title": "需求追踪",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 5,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K005-01",
+        "LQ-D1-K005-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K006",
+      "day": 1,
+      "title": "用例图",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K006-01",
+        "LQ-D1-K006-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K007",
+      "day": 1,
+      "title": "顺序图",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K007-01",
+        "LQ-D1-K007-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K008",
+      "day": 1,
+      "title": "活动图",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K008-01",
+        "LQ-D1-K008-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K009",
+      "day": 1,
+      "title": "状态图",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K009-01",
+        "LQ-D1-K009-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K010",
+      "day": 1,
+      "title": "类图",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 5,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K010-01",
+        "LQ-D1-K010-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K011",
+      "day": 1,
+      "title": "DFD四元素",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 5,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K011-01",
+        "LQ-D1-K011-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K012",
+      "day": 1,
+      "title": "业务流程重构",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K012-01",
+        "LQ-D1-K012-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K013",
+      "day": 1,
+      "title": "开发模型",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K013-01",
+        "LQ-D1-K013-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K014",
+      "day": 1,
+      "title": "敏捷/Scrum",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K014-01",
+        "LQ-D1-K014-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K075",
+      "day": 1,
+      "title": "BPR/价值链",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D1-K075-01",
+        "LQ-D1-K075-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K015",
+      "day": 2,
+      "title": "CI/CD",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K015-01",
+        "LQ-D2-K015-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K016",
+      "day": 2,
+      "title": "高内聚低耦合",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K016-01",
+        "LQ-D2-K016-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K017",
+      "day": 2,
+      "title": "质量属性场景",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K017-01",
+        "LQ-D2-K017-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K018",
+      "day": 2,
+      "title": "4+1视图",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K018-01",
+        "LQ-D2-K018-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K019",
+      "day": 2,
+      "title": "分层架构",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K019-01",
+        "LQ-D2-K019-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K020",
+      "day": 2,
+      "title": "微服务边界",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K020-01",
+        "LQ-D2-K020-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K021",
+      "day": 2,
+      "title": "事件驱动",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K021-01",
+        "LQ-D2-K021-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K022",
+      "day": 2,
+      "title": "设计模式-策略",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K022-01",
+        "LQ-D2-K022-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K023",
+      "day": 2,
+      "title": "设计模式-观察者",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K023-01",
+        "LQ-D2-K023-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K024",
+      "day": 2,
+      "title": "设计模式-适配器",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K024-01",
+        "LQ-D2-K024-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K025",
+      "day": 2,
+      "title": "设计模式-备忘录",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K025-01",
+        "LQ-D2-K025-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K026",
+      "day": 2,
+      "title": "设计模式-抽象工厂",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K026-01",
+        "LQ-D2-K026-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K027",
+      "day": 2,
+      "title": "设计模式-装饰器",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K027-01",
+        "LQ-D2-K027-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K028",
+      "day": 2,
+      "title": "设计模式-单例",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K028-01",
+        "LQ-D2-K028-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K029",
+      "day": 2,
+      "title": "架构权衡",
+      "integrated": true,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D2-K029-01",
+        "LQ-D2-K029-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K030",
+      "day": 3,
+      "title": "候选键/主键",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K030-01",
+        "LQ-D3-K030-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K031",
+      "day": 3,
+      "title": "1NF",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K031-01",
+        "LQ-D3-K031-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K032",
+      "day": 3,
+      "title": "2NF",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K032-01",
+        "LQ-D3-K032-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K033",
+      "day": 3,
+      "title": "3NF",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K033-01",
+        "LQ-D3-K033-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K034",
+      "day": 3,
+      "title": "BCNF",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K034-01",
+        "LQ-D3-K034-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K035",
+      "day": 3,
+      "title": "事务ACID",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K035-01",
+        "LQ-D3-K035-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K036",
+      "day": 3,
+      "title": "并发问题",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K036-01",
+        "LQ-D3-K036-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K037",
+      "day": 3,
+      "title": "SQL四招",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K037-01",
+        "LQ-D3-K037-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K038",
+      "day": 3,
+      "title": "索引",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K038-01",
+        "LQ-D3-K038-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K039",
+      "day": 3,
+      "title": "OLTP/OLAP",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K039-01",
+        "LQ-D3-K039-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K040",
+      "day": 3,
+      "title": "缓存旁路模式",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K040-01",
+        "LQ-D3-K040-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K041",
+      "day": 3,
+      "title": "分片",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K041-01",
+        "LQ-D3-K041-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K069",
+      "day": 3,
+      "title": "NPV/PV",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K069-01",
+        "LQ-D3-K069-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K070",
+      "day": 3,
+      "title": "EMV",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K070-01",
+        "LQ-D3-K070-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K071",
+      "day": 3,
+      "title": "EVM",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D3-K071-01",
+        "LQ-D3-K071-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K042",
+      "day": 4,
+      "title": "静态/动态测试",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K042-01",
+        "LQ-D4-K042-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K043",
+      "day": 4,
+      "title": "覆盖层级",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K043-01",
+        "LQ-D4-K043-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K044",
+      "day": 4,
+      "title": "黑盒测试设计",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K044-01",
+        "LQ-D4-K044-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K045",
+      "day": 4,
+      "title": "测试金字塔",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K045-01",
+        "LQ-D4-K045-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K046",
+      "day": 4,
+      "title": "回归测试",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K046-01",
+        "LQ-D4-K046-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K047",
+      "day": 4,
+      "title": "性能指标",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K047-01",
+        "LQ-D4-K047-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K048",
+      "day": 4,
+      "title": "SQA/QC",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K048-01",
+        "LQ-D4-K048-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K049",
+      "day": 4,
+      "title": "LLM辅助测试",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K049-01",
+        "LQ-D4-K049-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K050",
+      "day": 4,
+      "title": "数据安全",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K050-01",
+        "LQ-D4-K050-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K051",
+      "day": 4,
+      "title": "AES/RSA/哈希",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K051-01",
+        "LQ-D4-K051-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K052",
+      "day": 4,
+      "title": "授权RBAC/ABAC",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K052-01",
+        "LQ-D4-K052-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K053",
+      "day": 4,
+      "title": "最小权限",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K053-01",
+        "LQ-D4-K053-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K054",
+      "day": 4,
+      "title": "RPO/RTO",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K054-01",
+        "LQ-D4-K054-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K055",
+      "day": 4,
+      "title": "备份演练",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K055-01",
+        "LQ-D4-K055-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K074",
+      "day": 4,
+      "title": "SLA/MTTR",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D4-K074-01",
+        "LQ-D4-K074-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K056",
+      "day": 5,
+      "title": "TCP/UDP",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K056-01",
+        "LQ-D5-K056-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K057",
+      "day": 5,
+      "title": "TLS/HTTPS",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K057-01",
+        "LQ-D5-K057-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K058",
+      "day": 5,
+      "title": "负载均衡",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K058-01",
+        "LQ-D5-K058-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K059",
+      "day": 5,
+      "title": "熔断/限流/降级",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K059-01",
+        "LQ-D5-K059-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K060",
+      "day": 5,
+      "title": "CAP",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K060-01",
+        "LQ-D5-K060-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K061",
+      "day": 5,
+      "title": "幂等/重复投递",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K061-01",
+        "LQ-D5-K061-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K062",
+      "day": 5,
+      "title": "最终一致性",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K062-01",
+        "LQ-D5-K062-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K063",
+      "day": 5,
+      "title": "可用性计算",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K063-01",
+        "LQ-D5-K063-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K064",
+      "day": 5,
+      "title": "可观测性",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K064-01",
+        "LQ-D5-K064-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K065",
+      "day": 5,
+      "title": "容器与K8s",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K065-01",
+        "LQ-D5-K065-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K066",
+      "day": 5,
+      "title": "蓝绿/灰度",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K066-01",
+        "LQ-D5-K066-02"
+      ],
+      "diagram": false
+    },
+    {
+      "cardId": "K067",
+      "day": 5,
+      "title": "RAG与向量检索",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K067-01",
+        "LQ-D5-K067-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K068",
+      "day": 5,
+      "title": "Agent安全",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K068-01",
+        "LQ-D5-K068-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K072",
+      "day": 5,
+      "title": "关键路径",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K072-01",
+        "LQ-D5-K072-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K073",
+      "day": 5,
+      "title": "Dijkstra/MST",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K073-01",
+        "LQ-D5-K073-02"
+      ],
+      "diagram": true
+    },
+    {
+      "cardId": "K076",
+      "day": 5,
+      "title": "常见工程英语",
+      "integrated": false,
+      "steps": 4,
+      "workedSteps": 4,
+      "recallPrompts": 2,
+      "questionIds": [
+        "LQ-D5-K076-01",
+        "LQ-D5-K076-02"
+      ],
+      "diagram": false
+    }
+  ]
+}

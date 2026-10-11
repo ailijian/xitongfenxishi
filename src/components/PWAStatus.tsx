@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRegisterSW } from "virtual:pwa-register/react";
+import { teachingContentVersion } from "../data/lessons";
 type InstallPrompt = Event & {
   prompt: () => Promise<void>;
   userChoice: Promise<{ outcome: string }>;
@@ -57,6 +58,7 @@ export function PWAStatus() {
               ? "正在准备离线缓存，首次访问需联网"
               : "安装与离线学习需使用HTTPS地址"}
       </p>
+      <small>课程内容版本 {teachingContentVersion}</small>
       {install && (
         <button
           onClick={() =>

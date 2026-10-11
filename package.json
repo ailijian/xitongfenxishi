@@ -10,13 +10,15 @@
     "dev": "vite --host 0.0.0.0",
     "data:import": "tsx scripts/import-content.ts",
     "data:check": "tsx scripts/import-content.ts --check",
-    "lessons:check": "tsx scripts/check-beginner-content.ts && node scripts/build-lesson-diagrams.mjs --check",
+    "lessons:check": "tsx scripts/check-beginner-content.ts && node scripts/build-lesson-diagrams.mjs --check && tsx scripts/check-full-course.ts",
     "build": "npm run data:check && npm run lessons:check && tsc --noEmit && vite build",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "preview": "vite preview --host 0.0.0.0",
     "test:pwa": "npm run build && playwright test --config playwright.production.config.ts",
-    "test:beginner": "playwright test --config playwright.beginner.config.ts"
+    "test:beginner": "playwright test --config playwright.beginner.config.ts",
+    "test:full-course": "playwright test --config playwright.full-course.config.ts",
+    "diagrams:render": "node scripts/render-expanded-diagrams.mjs"
   },
   "dependencies": {
     "dexie": "4.4.6",
@@ -35,6 +37,7 @@
     "fake-indexeddb": "6.2.5",
     "fast-xml-parser": "5.11.2",
     "fflate": "0.8.3",
+    "mermaid": "12.1.0",
     "tsx": "4.23.15",
     "typescript": "7.0.2",
     "vite": "8.3.4",

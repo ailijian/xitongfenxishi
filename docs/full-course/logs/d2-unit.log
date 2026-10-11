@@ -1,0 +1,16 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.3 /Users/lijian/Documents/projects/xitongfenxishi
+
+
+ Test Files  9 passed (9)
+      Tests  71 passed (71)
+   Start at  00:03:05
+   Duration  3.12s (tests 50%, transform 32%, import 17%, worker 1%)
+
+  Transform  transforming modules took 2.84s · 32% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns

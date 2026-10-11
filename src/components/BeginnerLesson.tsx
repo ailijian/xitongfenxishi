@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import type { BeginnerLesson as Lesson, LessonQuestion } from "../domain/lesson-schema";
 import type { KnowledgeCard } from "../domain/content-schema";
-import { beginnerPackage, lessonDiagrams } from "../data/lessons";
+import { courseCardIds, lessonDiagrams, teachingContentVersion } from "../data/lessons";
+import { copyText } from "./download";
 import { Badge, Source } from "./ui";
 
 // Deliberately local teaching practice: no storage, RK submission, or mastery API.
@@ -55,12 +56,12 @@ export function BeginnerLesson({ lesson, card, onRecall }: {
     if (moved.current) stepHeading.current?.focus();
   }, [step, all]);
   const diagram = lessonDiagrams[card.id as keyof typeof lessonDiagrams];
-  const index = beginnerPackage.targetCardIds.indexOf(card.id);
-  const nextId = beginnerPackage.targetCardIds[index + 1];
+  const index = courseCardIds.indexOf(card.id);
+  const nextId = courseCardIds[index + 1];
   return (
     <div className="beginner-course" data-lesson-id={card.id}>
       <section className="paper lesson-intro">
-        <Badge>零基础课程版 · 第 {index + 1} / 15 课</Badge>
+        <Badge>零基础课程版 · 第 {index + 1} / {courseCardIds.length} 课</Badge>
         <h2>这一课要解决什么</h2>
         <p className="lesson-one-sentence">{lesson.oneSentence}</p>
         <div className="lesson-scenario">
@@ -94,6 +95,8 @@ export function BeginnerLesson({ lesson, card, onRecall }: {
         <h3>{lesson.workedExample.prompt}</h3>
         <ol className="lesson-worked">{lesson.workedExample.solutionSteps.map((s) => <li key={s}>{s}</li>)}</ol>
       </section>
+
+      {lesson.supplement && <SqlExample sql={lesson.supplement.copyableSql} />}
 
       {lesson.conceptVisual && diagram && (
         <section className="paper lesson-visual" aria-labelledby="lesson-visual-title">
@@ -129,7 +132,7 @@ export function BeginnerLesson({ lesson, card, onRecall }: {
       <section className="lesson-connection">
         <p>{lesson.nextConnection}</p>
         {nextId && <Link className="text-link" to={`/learn/${nextId}`}>继续零基础课程 · {nextId} →</Link>}
-        <p className="subtle">课程讲解、业务示例与理解题均为原创教学内容。</p>
+        <p className="subtle">课程讲解、业务示例与理解题均为原创教学内容。课程版本 {teachingContentVersion}。</p>
       </section>
       <details className="paper lesson-speed" data-testid="exam-speed-notes">
         <summary>考前速记 · 原始必背概念</summary>
@@ -139,4 +142,16 @@ export function BeginnerLesson({ lesson, card, onRecall }: {
       </details>
     </div>
   );
+}
+
+function SqlExample({ sql }: { sql: string }) {
+  const [notice, setNotice] = useState("");
+  return <section className="paper lesson-sql" aria-labelledby="sql-example-title">
+    <h2 id="sql-example-title">对照 SQL 看查询</h2>
+    <p>先按示例理解筛选与分组，再对照完整语句；代码可以左右滑动。</p>
+    <pre tabIndex={0} role="region" aria-label="完整 SQL，左右滑动"><code>{sql}</code></pre>
+    <button onClick={() => void copyText(sql).then(() => setNotice("SQL 已复制"))
+      .catch(() => setNotice("复制未成功，可在代码区域选中文字复制"))}>复制 SQL</button>
+    {notice && <p role="status">{notice}</p>}
+  </section>;
 }

@@ -82,7 +82,7 @@ for(const lesson of raw.lessons) test(`${lesson.cardId}课程完整、两道理�
   expect(errors).toEqual([]);
 });
 
-test("K006 include/extend、K010生命周期、K011非法流向与分层平衡，未提供课程的卡明确标记", async ({page}) => {
+test("K006 include/extend、K010生命周期、K011非法流向与分层平衡，扩充课程与原D1共存", async ({page}) => {
   const keyText:Record<string,string[]>={
     K006:["include 与 extend","条件可选行为","extend 的箭头指向被扩展用例"],
     K010:["聚合与组合","整体生命周期约束","不把医生作为医院的组合部分"],
@@ -93,13 +93,11 @@ test("K006 include/extend、K010生命周期、K011非法流向与分层平衡�
     for(const text of texts) await expect(page.locator(".beginner-course").getByText(text,{exact:false}).first()).toBeVisible();
   }
   await page.goto("/learn/K015");
-  await expect(page.getByText("考前速记版",{exact:true})).toBeVisible();
-  await expect(page.getByText(/此知识点暂无完整入门课程/)).toBeVisible();
-  await expect(page.locator(".beginner-course")).toHaveCount(0);
-  await expect(page.getByRole("heading",{name:"必会概念",exact:true})).toBeVisible();
+  await expect(page.locator(".beginner-course")).toBeVisible();
+  await expect(page.getByText("考前速记版",{exact:true})).toHaveCount(0);
   await page.goto("/learn");
-  await expect(page.getByText("零基础课程版",{exact:true})).toHaveCount(15);
-  await expect(page.getByText("考前速记版 · 暂无完整入门课程",{exact:true})).toHaveCount(61);
+  await expect(page.getByText("零基础课程版",{exact:true})).toHaveCount(76);
+  await expect(page.getByText("考前速记版 · 暂无完整入门课程",{exact:true})).toHaveCount(76-76);
 });
 
 for(const width of [320,375,390,430]) test(`${width}px课程长文、8图局部滚动、点击区域与闭卷缩小视口`, async ({page})=>{

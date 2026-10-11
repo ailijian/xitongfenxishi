@@ -28,6 +28,7 @@
     "playwright.production.config.ts",
     "playwright.staging.config.ts",
     "playwright.audit.config.ts",
-    "playwright.beginner.config.ts"
+    "playwright.beginner.config.ts",
+    "playwright.full-course.config.ts"
   ]
 }
