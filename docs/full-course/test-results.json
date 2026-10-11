@@ -85,5 +85,38 @@
     "includedInSuiteCounts": true
   },
   "physicalIPhone": "NOT TESTED",
-  "deployment": "NOT YET RUN"
+  "deployment": "PASS",
+  "stagingTests": 17,
+  "stagingChecks": {
+    "course": {
+      "startTime": "2026-10-11T16:48:37.710Z",
+      "duration": 109972.226,
+      "expected": 13,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "hosting": {
+      "startTime": "2026-10-11T16:48:39.747Z",
+      "duration": 35542.671,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "resourceBytes": {
+      "startTime": "2026-10-11T16:49:21.415Z",
+      "duration": 8861.192,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "servedResourceBytes": {
+    "result": "PASS",
+    "resources": 58,
+    "diagrams": 41
+  },
+  "legacyUpgrade": "12 tables field-identical; restore and invalid-import PASS"
 }

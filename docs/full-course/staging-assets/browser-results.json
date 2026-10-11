@@ -1,0 +1,162 @@
+{
+  "config": {
+    "argv": [
+      "/Users/lijian/.local/share/fnm/node-versions/v24.20.0/installation/bin/node",
+      "/Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/candidate-20261011T164428Z/source/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.audit.config.ts",
+      "tests/audit/mobile-offline.spec.ts",
+      "--grep",
+      "线上资源版本"
+    ],
+    "configFile": "/Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/candidate-20261011T164428Z/source/playwright.audit.config.ts",
+    "rootDir": "/Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/candidate-20261011T164428Z/source/tests/audit",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/lijian/Documents/projects/xitongfenxishi/docs/full-course/staging-assets/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/candidate-20261011T164428Z/source/tests/audit",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/lijian/Documents/projects/xitongfenxishi/docs/full-course/staging-assets/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/candidate-20261011T164428Z/source/tests/audit",
+        "snapshotDir": "/Users/lijian/Documents/projects/xitongfenxishi/tmp/staging/candidate-20261011T164428Z/source/tests/audit",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://ruankao.staging.haaboo.com",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "timezoneId": "Asia/Shanghai",
+          "locale": "zh-CN",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/Users/lijian/Documents/projects/xitongfenxishi/docs/full-course/staging-assets/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "mobile-offline.spec.ts",
+      "file": "mobile-offline.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "线上资源版本与当前构建文件逐字节一致",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T16:49:23.712Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "served-artifacts",
+                      "contentType": "application/json",
+                      "body": "ewogICJiYXNlVVJMIjogImh0dHBzOi8vcnVhbmthby5zdGFnaW5nLmhhYWJvby5jb20iLAogICJjb21wYXJlZCI6IFsKICAgICIvYXNzZXRzL2luZGV4LUJ4aFZhT2hPLmpzIiwKICAgICIvYXNzZXRzL3JvbGxkb3duLXJ1bnRpbWUtQ2JYdEFNN0guanMiLAogICAgIi9hc3NldHMvY29udGVudC1CaC14UFlmSS5qcyIsCiAgICAiL2Fzc2V0cy9zdG9yYWdlLTU3VE0wbUF0LmpzIiwKICAgICIvYXNzZXRzL3ZhbGlkYXRpb24tQ2FPcUF2TmQuanMiLAogICAgIi9hc3NldHMvcmVhY3QtRFFKdXQxWVEuanMiLAogICAgIi9hc3NldHMvaW5kZXgtQi10MElsdDkuY3NzIiwKICAgICIvbWFuaWZlc3Qud2VibWFuaWZlc3QiLAogICAgIi9pbmRleC5odG1sIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNzMuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNzIuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNzEuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNzAuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNjkuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNjguc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNjcuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNjUuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNjQuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNjMuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNjEuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNjAuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNTkuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNTguc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNTUuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNTQuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNTAuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNDcuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNDQuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNDMuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swNDAuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMzcuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMzYuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMzUuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMzAuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMjkuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMjQuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMjEuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMjAuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMTkuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMTguc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMTcuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMTUuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMTEuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMTAuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMDkuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMDguc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMDcuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMDYuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMDUuc3ZnIiwKICAgICIvbGVzc29uLWRpYWdyYW1zL0swMDQuc3ZnIiwKICAgICIvaWNvbnMvbWFza2FibGUtNTEyLnBuZyIsCiAgICAiL2ljb25zL2ljb24uc3ZnIiwKICAgICIvaWNvbnMvaWNvbi01MTIucG5nIiwKICAgICIvaWNvbnMvaWNvbi0xOTIucG5nIiwKICAgICIvaWNvbnMvYXBwbGUtdG91Y2gtaWNvbi5wbmciLAogICAgIi9hc3NldHMvd29ya2JveC13aW5kb3cucHJvZC5lczUtQmQxN3owWUwuanMiLAogICAgIi9zdy5qcyIsCiAgICAiL3dvcmtib3gtMmZiYzZhNjUuanMiCiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc5f45606b2b2037f892-5950aa1638fb17de4a38",
+          "file": "mobile-offline.spec.ts",
+          "line": 107,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-11T16:49:21.415Z",
+    "duration": 8861.192,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

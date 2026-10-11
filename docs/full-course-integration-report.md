@@ -1,6 +1,6 @@
 # 全76课零基础内容升级验收
 
-课程内容版本：`2026.10.12.beginner.2`。基线：`8ecdd0e`。完成D2、D3、D4、D5、案例论文五批真实内容集成；最终本地自动化已全部通过，staging发布结果在部署完成后补录。
+课程内容版本：`2026.10.12.beginner.2`。基线：`8ecdd0e`。完成D2、D3、D4、D5、案例论文五批真实内容集成；最终本地242项、线上17项全部通过，已部署[staging](https://ruankao.staging.haaboo.com/)。
 
 ## 数量与来源
 
@@ -34,7 +34,7 @@ K037提供原字符保真的SQL代码块、局部横滑、复制与明确失败�
 
 没有知识验证v2迁移，也没有批准261项待审checkpoint。IndexedDB schema=2、备份schema=2、原正式内容版本`2026.10.11.1`保持不变。独立课程版本显示在页面及离线状态区域；PWA沿用手动更新提示，输入过程中不会强制重载。
 
-原六个核心JSON、数据库、备份、训练写入、掌握判定、模考门禁、时钟、D1课程及图示绑定等16个核心文件与基线逐字节相同。原8图SHA校验通过。只在独立测试浏览器建立升级前备份，不访问或清空用户浏览器。
+原六个核心JSON、数据库、备份、训练写入、掌握判定、模考门禁、时钟、D1课程及图示绑定等16个核心文件与基线逐字节相同。原8图SHA校验通过。只在独立测试浏览器建立升级前备份，不访问或清空用户浏览器。真实旧PWA更新后、JSON二次清空恢复后，12类学习数据逐字段一致；非法导入后原数据不变。见[数据保留及恢复报告](full-course/data-preservation-report.md)。
 
 ## 五批验收与提交
 
@@ -87,6 +87,27 @@ K037提供原字符保真的SQL代码块、局部横滑、复制与明确失败�
 - 原RK150弱干扰项、20张A级卡缺少可信客观题：本轮未扩充正式题库；教学理解题不补造独立客观证据。
 - 构建内容chunk为528.18kB（gzip153.08kB），Vite给出超过500kB的性能提示，构建及离线预缓存均成功；未隐藏提示或改变阈值。
 - 知识验证v2数据库迁移、261项checkpoint批准、全新考场状态机不在本轮发布范围。
+
+## 实际staging发布
+
+|身份|实际值|
+|---|---|
+|教学课程版本|`2026.10.12.beginner.2`|
+|应用package / 原内容 / DB / 备份版本|`1.0.0` / `2026.10.11.1` / `2` / `2`|
+|应用源码提交|[`8889870427ea86af4fe9287579c0679ff9433fc8`](https://github.com/ailijian/xitongfenxishi/commit/8889870427ea86af4fe9287579c0679ff9433fc8)，含上方5批提交|
+|release|`staging-20261011T164428Z-aa95525b727c`（UTC命名；北京时间2026-10-12）|
+|源码归档SHA-256|`aa95525b727cef8160ee3de5e8ea1fd1859f0e369629cc64b5a09884346ec0d9`|
+|镜像ID|`sha256:43257b5f864cf1178ebc499fa40ca73b0ac3fb7e07610622eee1bcd36fcd12f2`，linux/amd64|
+|当前目录|`/opt/azao-staging/projects/ruankao/releases/staging-20261011T164428Z-aa95525b727c`|
+|回滚目录|`/opt/azao-staging/projects/ruankao/releases/staging-20261011T132846Z-cc902d4a6375`|
+
+线上13项：C09/E02全文及答案门禁/历史、SQL复制、76课41图19辅导离线关页重开、7页面375/390截图、320/430辅导布局、76课目录/衔接、4项WebKit；另3项托管与1项资源比对，17/17 PASS。58资源（含全部41SVG、SW及workbox）与本机独立候选dist逐字节相同。升级后[真实HTTPS手机截图](full-course/screenshots/staging/)已保存，未以本地截图冒充线上截图。
+
+独立发布包重复执行npm ci、75单元及生产构建，归档175个源码文件与上述提交逐字节一致。[机器发布结果](full-course/deployment-result.json)、[源码比对](full-course/candidate-source-verification.json)、[发布日志](full-course/logs/staging-activation.log)、[服务器隔离结果](full-course/server-isolation.json)。bundle脚本写入的通用snapshot标志保持原样；本轮额外字节比对证明归档源码来自已提交树。
+
+只重建`ruankao-staging-web-1`，共享代理和其他15容器ID/启动时间/镜像均不变，原主站、judgment页面及bootstrap入口部署前后均200。全部检查通过后才更新current，保留当前与至少2个旧release。回滚时在上述旧目录执行`bash activate-web.sh`，验证后恢复current；不操作共享代理，不执行全局清理或`down -v`。
+
+[完整变更文件](full-course/changed-files.txt)包含代码、33新SVG、原包13文件、日志和手机截图；后续交付提交仅补录报告及README命令说明，不改变已验收应用产物。
 
 ## 本地运行
 

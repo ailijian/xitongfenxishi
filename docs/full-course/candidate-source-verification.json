@@ -1,0 +1,713 @@
+{
+  "result": "PASS",
+  "checkedAt": "2026-10-11T16:46:41.806118+00:00",
+  "release": "staging-20261011T164428Z-aa95525b727c",
+  "baseGitCommit": "8889870427ea86af4fe9287579c0679ff9433fc8",
+  "sourceSha256": "aa95525b727cef8160ee3de5e8ea1fd1859f0e369629cc64b5a09884346ec0d9",
+  "imageId": "sha256:43257b5f864cf1178ebc499fa40ca73b0ac3fb7e07610622eee1bcd36fcd12f2",
+  "allCandidateSourceFilesIdenticalToCommit": true,
+  "filesCompared": 175,
+  "manifestSnapshotFlagExplanation": "bundle.sh uses a working-tree snapshot; every archived source file was separately compared to the committed Git tree.",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "4f9f476431c701c50ce8e6585e2c2c0d698b16717fbf943e525988405d57ef4f"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "d8918ea37515ecd6fc659f1824c11eb4481eda68d6b2b0ea0f4dc08ecbc64c67"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README-Codex.md",
+      "sha256": "79a84ebc0d4577b69b6f0ba8861a03002398abacb38fe5f4753756eb9034c7ae"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8b632fdb81e6f42da178a0cd16895823a3f236394651d494cbca7c544baf7db3"
+    },
+    {
+      "path": "content-import-report.md",
+      "sha256": "c44e821361baba61fa96fcccca3852229a02675a29609317d92314e13454dd70"
+    },
+    {
+      "path": "docs/系统分析师零基础全76课完整升级包/all_76_lessons_reference.json",
+      "sha256": "83ebca866b7d927f98cfad0e0b3ec3eae385bcdadce9080df1878af5c455a700"
+    },
+    {
+      "path": "docs/系统分析师零基础全76课完整升级包/case_paper_beginner_coaching.json",
+      "sha256": "750a692bfdd5623bdf8735d8a4dfc500b494b1115d4931a077ea7af91d1b423c"
+    },
+    {
+      "path": "docs/系统分析师零基础全76课完整升级包/day1_original_readonly.json",
+      "sha256": "1773cc76a8266b0987caf1b8f4c3f7a46be254c1700ef670d71eafd83854a4ec"
+    },
+    {
+      "path": "docs/系统分析师零基础全76课完整升级包/day2_day5_beginner_lessons.json",
+      "sha256": "61fb7b0211ade1591f05d4eb28bd7ba331c23a1c20fca50273f3ef27b8a178ac"
+    },
+    {
+      "path": "docs/零基础学习包/day1_beginner_lessons.json",
+      "sha256": "1773cc76a8266b0987caf1b8f4c3f7a46be254c1700ef670d71eafd83854a4ec"
+    },
+    {
+      "path": "index.html",
+      "sha256": "efd52d4bb0499adf49faf731aecfd5aad36dc34cc28b38ff4704738e901b5956"
+    },
+    {
+      "path": "materials/2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sha256": "4d7741ada57f855ce94c8208d7f7c3d90c15b6eff48f6fd60a9e9834db038897"
+    },
+    {
+      "path": "materials/2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "sha256": "065b6421a89c232bca430ba9b67299d1604aa5a22005f7e2583010093f1bff59"
+    },
+    {
+      "path": "materials/2026上海系统分析师_7天通关冲刺手册_知识点案例论文.pdf",
+      "sha256": "92b0b0c5533330f0470a1a2aeaf902c38d5f3097fdf8e4df800a869a7bba16bf"
+    },
+    {
+      "path": "ops/staging/Caddyfile.proxy-site",
+      "sha256": "62e5d40f7b3e6a3e025528706164a16021ae43419c2ddaa23c926124ff6a02f8"
+    },
+    {
+      "path": "ops/staging/Caddyfile.web",
+      "sha256": "ab2bc94d9b0ddac638cbf1fe5a62d58e40e9a6654fc675eed9148ae91046d511"
+    },
+    {
+      "path": "ops/staging/Dockerfile.web",
+      "sha256": "1872c8178a608d26f7ece915bc8013fd1bcb070d9514151e67cc9bd65fc6396e"
+    },
+    {
+      "path": "ops/staging/README.md",
+      "sha256": "086753c9601b6b1481499607505f211368864c51354b53cfd708e846f7979b60"
+    },
+    {
+      "path": "ops/staging/activate-web.sh",
+      "sha256": "21ab038f76bb5d4d19f7c2a0b3b8a0925c4c0d419d2af257a13778022ab9d12e"
+    },
+    {
+      "path": "ops/staging/bundle.sh",
+      "sha256": "1f4fcb8ee28e80c752df2b4436fcf1489613d338ce67f9ff43aec7a3960ab2f4"
+    },
+    {
+      "path": "ops/staging/compose.yml",
+      "sha256": "555c0e0dd97dd950e0861a47e027596ac8456a3b8d28e826507532d508704d44"
+    },
+    {
+      "path": "ops/staging/connect-proxy.sh",
+      "sha256": "42f71ba7106b864f5f3a77cd7d0d271a3922dff51482be0870d6a9ea5565c9a0"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "0735ab365b38a0c1ece24868df6c8e5595cbd57854c2aba054a80dc1b7f19f6c"
+    },
+    {
+      "path": "package.json",
+      "sha256": "32568a39627707aa4a94a3be8e4270bbdc64ce5a74102e825d19fc0efd7f412e"
+    },
+    {
+      "path": "playwright.audit.config.ts",
+      "sha256": "3fd4b52a141b958bd3c7d7f8af1b80d237da92eb5d2a7e587fa8a28380a120f5"
+    },
+    {
+      "path": "playwright.beginner.config.ts",
+      "sha256": "84dc12773c90c6d31c27329c84fd22f9d69e494e03bb0d03397583047ad68269"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "306e52cf5c708eb4031b20bcd59e06f948c2072fdafee5c19547f9c170fc2fc0"
+    },
+    {
+      "path": "playwright.full-course.config.ts",
+      "sha256": "1521ee0ea2200f2eca31648c62464ebcd9841240fd5f131e40a2fe386e3c9201"
+    },
+    {
+      "path": "playwright.production.config.ts",
+      "sha256": "aa66f980353de14f26a6fa1d2d274b006b7ae1d96c3fd95897d44b184534a73d"
+    },
+    {
+      "path": "playwright.staging.config.ts",
+      "sha256": "26d3014c44843871ae7c3d2233f0081bb40faaae9293df8fc0e0d4e9e2d59dd5"
+    },
+    {
+      "path": "public/_headers",
+      "sha256": "faac2d21a185742c8c628a4e76ecc99a66528a5f42dc1646656e66d16e757a36"
+    },
+    {
+      "path": "public/_redirects",
+      "sha256": "6036983e5fc00f0169c9e939b1816ed771eee00e27f2fcc517b819041460b9ef"
+    },
+    {
+      "path": "public/icons/apple-touch-icon.png",
+      "sha256": "8e0a7a7cb7ed897b721fe4453805096de964ef80788ad0620f8de4d19469224c"
+    },
+    {
+      "path": "public/icons/icon-192.png",
+      "sha256": "424f820c1c085b157202561aafbc1194cbc5f599ad38ce78a8ae9e78b3feff85"
+    },
+    {
+      "path": "public/icons/icon-512.png",
+      "sha256": "7335185b9be8f45818449262a1e456d9118ad4de9b550267ec049a0075495574"
+    },
+    {
+      "path": "public/icons/icon.svg",
+      "sha256": "d4b22e007c64429d272a3c982a5f641da40d68fe859f80bfb2c8eecb68eaf895"
+    },
+    {
+      "path": "public/icons/maskable-512.png",
+      "sha256": "7335185b9be8f45818449262a1e456d9118ad4de9b550267ec049a0075495574"
+    },
+    {
+      "path": "public/lesson-diagrams/K004.svg",
+      "sha256": "f9b9de5138ecf6b208888a894770560cbd2ff754a2ba28d2bab9210639703d2c"
+    },
+    {
+      "path": "public/lesson-diagrams/K005.svg",
+      "sha256": "aaa7a0ad60e401678b6dfba694c779a4c32c6308fc228c7226440732f79e7667"
+    },
+    {
+      "path": "public/lesson-diagrams/K006.svg",
+      "sha256": "4d9837785275f2aab14fad60fc2b3c0f4975e3d9d8a1cce14b70b522eb1100ef"
+    },
+    {
+      "path": "public/lesson-diagrams/K007.svg",
+      "sha256": "017d59f7b7d3e3ca46280e0e80e38c06e783dacd1954a086e56bec42bd4a8ab6"
+    },
+    {
+      "path": "public/lesson-diagrams/K008.svg",
+      "sha256": "b5101e5db4e67174a39b316b8254229035aef8f20ed3dc9b298e820a6d9c92a5"
+    },
+    {
+      "path": "public/lesson-diagrams/K009.svg",
+      "sha256": "7b5b8d16ed799c904d0ab06004ad85198b9f01baf5444a10498ac2994944be18"
+    },
+    {
+      "path": "public/lesson-diagrams/K010.svg",
+      "sha256": "46e404e58318807e3a01fd8683688436e9e1344bdcf04c901c986a3d185cea0c"
+    },
+    {
+      "path": "public/lesson-diagrams/K011.svg",
+      "sha256": "c66537049b356f37c71d7952d4bbfca1ac0fd6a10e29efbca2c3e5b6eed84bc8"
+    },
+    {
+      "path": "public/lesson-diagrams/K015.svg",
+      "sha256": "564a82e3af5cd637939712161e5583e3ad7213e1ce112d2a03a05c423c12be1f"
+    },
+    {
+      "path": "public/lesson-diagrams/K017.svg",
+      "sha256": "530e0d0862d44b38de1187a4f982c801c225dd25c95327f03eb2473d0be9ccab"
+    },
+    {
+      "path": "public/lesson-diagrams/K018.svg",
+      "sha256": "affb06b3b4fe7619695fafffde221b720dd9e41eefe9317ffc9913959bdba77a"
+    },
+    {
+      "path": "public/lesson-diagrams/K019.svg",
+      "sha256": "f906d0ea0223ba96fcaacfaf5490ec497e2c32556da990890eed2524b8e2a6a6"
+    },
+    {
+      "path": "public/lesson-diagrams/K020.svg",
+      "sha256": "8a00b3210a1f49317f9d5f9e094cc61c900e7ac489ad514e4369c2ba0654eca7"
+    },
+    {
+      "path": "public/lesson-diagrams/K021.svg",
+      "sha256": "82b977baac7c5b28cd80c8647ca5d995664e90d65ee62f7bde24fd641ee5e647"
+    },
+    {
+      "path": "public/lesson-diagrams/K024.svg",
+      "sha256": "524a808ebf17d34162622f5e5eef51c13fe509334f7f56fcf925b51313a39175"
+    },
+    {
+      "path": "public/lesson-diagrams/K029.svg",
+      "sha256": "f1b1f0bce3cdaa3987a3ace05a6e4add6d1c6e1d93d357be1c3f0aafe825ae78"
+    },
+    {
+      "path": "public/lesson-diagrams/K030.svg",
+      "sha256": "1243eb26a14bfb0ed4a5fffc47a6c05bca16a26974ac05a1381b671373d22eda"
+    },
+    {
+      "path": "public/lesson-diagrams/K035.svg",
+      "sha256": "5e84fcd2fb46134d71a1b5258765094de1dd8a1dec255a48257f0ed36a6493bc"
+    },
+    {
+      "path": "public/lesson-diagrams/K036.svg",
+      "sha256": "8d6a5c9906a1bd572b3d04f136fefeecbe622f009b810ce366284347dd9a44ae"
+    },
+    {
+      "path": "public/lesson-diagrams/K037.svg",
+      "sha256": "c77150ab6a81c3265bffe4c0102adf490b8e0b97c21e03c3ab14c1dc3dec2615"
+    },
+    {
+      "path": "public/lesson-diagrams/K040.svg",
+      "sha256": "08a376ba8a26839158cb54c81f2fb38ca2e11db5facdbc08fee71b5eb6f32e0b"
+    },
+    {
+      "path": "public/lesson-diagrams/K043.svg",
+      "sha256": "11a7fe647d05bc2210932e489ee2b335b70edd61eebf274c40188d4c32b3366a"
+    },
+    {
+      "path": "public/lesson-diagrams/K044.svg",
+      "sha256": "7d22519c9c734f9f67051c012d86b7e69062ce9cf11c04a81167b186a36d0c4c"
+    },
+    {
+      "path": "public/lesson-diagrams/K047.svg",
+      "sha256": "d92cd5551a8bdca9cb7f5f2a6d0d12a0383e17ada7a6afe2245a5057e7b76977"
+    },
+    {
+      "path": "public/lesson-diagrams/K050.svg",
+      "sha256": "bdc70e2ecf91a26fac1edff434b070360a23bedbda5bf877028ac417a3d6cd9c"
+    },
+    {
+      "path": "public/lesson-diagrams/K054.svg",
+      "sha256": "a21e7906677f6fef76d94bcb52a61cdc97b4ab3e1aff5c47461b7b90b86ba7e9"
+    },
+    {
+      "path": "public/lesson-diagrams/K055.svg",
+      "sha256": "814243d5cd63bc5947a3f52dbb66c66fa141938e33bdf39c6c53749728dcd0fa"
+    },
+    {
+      "path": "public/lesson-diagrams/K058.svg",
+      "sha256": "dc94a8e47910aada1511dd6f37fa3a06635feb056d8010cf8e2cf8325629c188"
+    },
+    {
+      "path": "public/lesson-diagrams/K059.svg",
+      "sha256": "93f7eda527287ea2917d3b7854f4802182a86a725e270f1d8de4cdccddd2e948"
+    },
+    {
+      "path": "public/lesson-diagrams/K060.svg",
+      "sha256": "a61e1edb1244f0595f69db5b68a4bf55cf23ab87e0799481606cd95b31f72a12"
+    },
+    {
+      "path": "public/lesson-diagrams/K061.svg",
+      "sha256": "d1c015f69c80e8d94c995822941ee91065eb77649fb6138fcb505fd586c543ca"
+    },
+    {
+      "path": "public/lesson-diagrams/K063.svg",
+      "sha256": "8554b603823a8017c5b821acc962ac15176d37a05177fd6618c94e05d0724e6e"
+    },
+    {
+      "path": "public/lesson-diagrams/K064.svg",
+      "sha256": "1f702e31513b37cacedfc05f146f6553c38717b284110aae88f788636ad1d3ed"
+    },
+    {
+      "path": "public/lesson-diagrams/K065.svg",
+      "sha256": "d2db22f300b55d627494dd63f5254c7e87ef723973ac6afb815abb83b6884b5f"
+    },
+    {
+      "path": "public/lesson-diagrams/K067.svg",
+      "sha256": "b9892d7055db6d5739a7dc98a5e9caa4b72af840b5b9b8bb8aa27adcb22d9c14"
+    },
+    {
+      "path": "public/lesson-diagrams/K068.svg",
+      "sha256": "1a87ea1d40cafc9ea8a41452f59f17fb394721eb5316be391e0cd7082aacdd49"
+    },
+    {
+      "path": "public/lesson-diagrams/K069.svg",
+      "sha256": "2584ed426ea9449e59358bebc031a072bafaa1869b541feabab59214578f60c0"
+    },
+    {
+      "path": "public/lesson-diagrams/K070.svg",
+      "sha256": "b90e2e8fd2d83b42a93b019ff9e5abcbc65cd3c2f1c992438dad0001e8264258"
+    },
+    {
+      "path": "public/lesson-diagrams/K071.svg",
+      "sha256": "4951d2a745fd01e227d4060b780683450dd263096bed52a39728ff5593a8de91"
+    },
+    {
+      "path": "public/lesson-diagrams/K072.svg",
+      "sha256": "d52cea9ec4ad91a1b47eeff0177cda322236bd4fe794cb48cfd7a08ca0afbaff"
+    },
+    {
+      "path": "public/lesson-diagrams/K073.svg",
+      "sha256": "f6f83ba5c2a236c20fb1d488fc17a9362e8dc0d99b805d74b8674cec6c3c4197"
+    },
+    {
+      "path": "scripts/audit-beginner-upgrade.ts",
+      "sha256": "7b700fb19445eed1ce4940f172684e965c683dbc1f8dce549a11066f3c68a7de"
+    },
+    {
+      "path": "scripts/audit-content.py",
+      "sha256": "eeb791eea92bf755e0453aaafe66a9069769070a3d3acf70f66d58c3a97b73ac"
+    },
+    {
+      "path": "scripts/audit-full-course-upgrade.ts",
+      "sha256": "0b8f4a125d72d505e50bf80c3e27760198dbb2bdea5ee0f8e85a61a71279b73d"
+    },
+    {
+      "path": "scripts/audit-link-review.json",
+      "sha256": "47910be8c50e61c4a214aa08b99253e02fa31ab6a00430c6868c07ccef01e959"
+    },
+    {
+      "path": "scripts/audit-round2-upgrade.ts",
+      "sha256": "960ca20ea3550dba6e4253216a26a35fbde21b8cce5c95aaa026d737b109f05c"
+    },
+    {
+      "path": "scripts/audit-upgrade.ts",
+      "sha256": "985125f4bdc736e53d11a64bdf3a7014ca3591e561a7af8c51a433592d7be048"
+    },
+    {
+      "path": "scripts/build-learning-gap.mjs",
+      "sha256": "7873989db6bcb25def51a437bb9bfe874e5e3e5448c03aacd9cf5bb9f3529f47"
+    },
+    {
+      "path": "scripts/build-lesson-diagrams.mjs",
+      "sha256": "2ce73cdf03faf5f35f980212e700566945a7e9c314826d9d82ef02bb4309a87c"
+    },
+    {
+      "path": "scripts/check-beginner-content.ts",
+      "sha256": "d2a824d035d06f63aa4d9eb4c44c3874f9377fd977d5d800be298c1474741846"
+    },
+    {
+      "path": "scripts/check-beginner-preservation.mjs",
+      "sha256": "adf834da51e24f900bd6725793d92c73226f3650eb1f042e327346b6b7dc689f"
+    },
+    {
+      "path": "scripts/check-full-course.ts",
+      "sha256": "2f05d28062f53a5fbd0690577a023526801dc926ac07419194d1dae54abee1c0"
+    },
+    {
+      "path": "scripts/check-rendered-diagram-layout.mjs",
+      "sha256": "7b5deabb30ed5c720becae9259014a78f76ea1b03f679b069a716938af387a9a"
+    },
+    {
+      "path": "scripts/check-review-scope.mjs",
+      "sha256": "a90019b233dc1bc99fad284ebeddad76700106d9b02f8d80eb2158659b88ba5c"
+    },
+    {
+      "path": "scripts/expanded-diagram-text.json",
+      "sha256": "1b14a4e447410648f062bd2e0de7f6e6b54e3e2a23ecc62915a2615b8bd1b747"
+    },
+    {
+      "path": "scripts/import-content.ts",
+      "sha256": "187a962f6e58a46703e6de6c908a526712964cb1aa85c9d6f0f0d3c9525e0a97"
+    },
+    {
+      "path": "scripts/plan.ts",
+      "sha256": "5365983e9ae1b0a2f63c0316efdee26b0b93388f8781cb435539d8f38d1a62d3"
+    },
+    {
+      "path": "scripts/question-links.ts",
+      "sha256": "04c5d880e34f8fccf64b34ea0a8e464cee11ead5d39ac265b8fd43ad9cf86ac3"
+    },
+    {
+      "path": "scripts/read-materials.py",
+      "sha256": "10451b163e5af2e49c8112921f55630fb40b1b9e16c35f49c340720fc71c975a"
+    },
+    {
+      "path": "scripts/read-office.ts",
+      "sha256": "afee90e3769e9c3e0338fd1a30b23bf27600cbc562007b4538f6f7b2db9311bb"
+    },
+    {
+      "path": "scripts/render-expanded-diagrams.mjs",
+      "sha256": "198da821389db477ad67c1adf6c756ef32de437c6fd7cad456e7f26faad08c7a"
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "f7a0969acaedb1daf9fa45e6e4383832f18cf25f979e7309bada18e2da1c157c"
+    },
+    {
+      "path": "src/components/BackupPanel.tsx",
+      "sha256": "61efe32e198c3dce4a917094ee0041acc46204a4e378945297f67bfde6b91111"
+    },
+    {
+      "path": "src/components/BeginnerLesson.tsx",
+      "sha256": "b828679258c00251898ca86b2e7d8ed688a9f2872bf025e998e2c60da58fe08f"
+    },
+    {
+      "path": "src/components/PWAStatus.tsx",
+      "sha256": "1fe880c910e08c229fbf57d3ec0275903eb4a4a4a5d508a1767c027c9cbbce13"
+    },
+    {
+      "path": "src/components/PracticalCoaching.tsx",
+      "sha256": "1e03d87205327036780bf7e677f704ace992c33b3da720b0d7014daba2235b69"
+    },
+    {
+      "path": "src/components/StorageBoundary.tsx",
+      "sha256": "a0866f18ccec3c6362f55c6695ad2fd0a4d658a4c571a773d44d5ae4910cc7c7"
+    },
+    {
+      "path": "src/components/download.ts",
+      "sha256": "c0cd023e9658a06a99b1cc665bf286c7666fa21ada11ab3f272abf3480764f5d"
+    },
+    {
+      "path": "src/components/ui.tsx",
+      "sha256": "c0bfb86f68124405f8b12965d976eb4a90a5a3ea9e135f0e73d2ca462b617f34"
+    },
+    {
+      "path": "src/data/cases.json",
+      "sha256": "51bb58c5fac8c89d375c503fe143b5c99f4af8784409e62ded70471b284a0cd4"
+    },
+    {
+      "path": "src/data/content.ts",
+      "sha256": "95d9c3ca3fdac146f645c63077b23f22b14c9fb2d5a0da80a1d27520f81e0b10"
+    },
+    {
+      "path": "src/data/essay-guide.json",
+      "sha256": "8799135b5bdb7d1f04216e0c43984feb6a7901724fa8a529ea1b3748078ee0ef"
+    },
+    {
+      "path": "src/data/essays.json",
+      "sha256": "e8ec3a54bd70c46841d91e1e8f23d1d428208fd7fbd9a0f246abe60d9c62b032"
+    },
+    {
+      "path": "src/data/knowledge.json",
+      "sha256": "7ee33ddc866dee66b1b795bbcc6190eb8b21bc5c88240976ff421bfad6f2d9a3"
+    },
+    {
+      "path": "src/data/lessons/case_paper_beginner_coaching.json",
+      "sha256": "750a692bfdd5623bdf8735d8a4dfc500b494b1115d4931a077ea7af91d1b423c"
+    },
+    {
+      "path": "src/data/lessons/coaching.ts",
+      "sha256": "e981d3c1f7d1666e9178cf7f7a89b06454c46f3a35456a173ce0e92555bcd908"
+    },
+    {
+      "path": "src/data/lessons/day1_beginner_lessons.json",
+      "sha256": "1773cc76a8266b0987caf1b8f4c3f7a46be254c1700ef670d71eafd83854a4ec"
+    },
+    {
+      "path": "src/data/lessons/day2_day5_beginner_lessons.json",
+      "sha256": "61fb7b0211ade1591f05d4eb28bd7ba331c23a1c20fca50273f3ef27b8a178ac"
+    },
+    {
+      "path": "src/data/lessons/diagrams.json",
+      "sha256": "9a0527dcf55e85de3438a5efce58e8fa974990b41baae9c89e7085d96cc3ac42"
+    },
+    {
+      "path": "src/data/lessons/expanded-diagrams.json",
+      "sha256": "620b5058dea3bb18a85936866002ddd878221f554f0b2b7bac6dcd8e4f5eef1c"
+    },
+    {
+      "path": "src/data/lessons/index.ts",
+      "sha256": "d8f4c6e3a31db6ec0d6c3b0bba7af6f0d0a708e5080db9724811cb9b4246d268"
+    },
+    {
+      "path": "src/data/manifest.json",
+      "sha256": "42a4cd300bd587b40958bc76d36677fa92e9287773fa251b83fb731be2d8a9ef"
+    },
+    {
+      "path": "src/data/plan.json",
+      "sha256": "80e99819f2325e22ae9150cfa223ba582adc8afc3630c3e93157b7cbb5b7309f"
+    },
+    {
+      "path": "src/data/question-link-audit.json",
+      "sha256": "3bc90f767bef8ff0d7314ef86518fe8e12458386d9bc311541aaac670db87401"
+    },
+    {
+      "path": "src/data/questions.json",
+      "sha256": "82eb20c14dd57210aa00eb4bec01bccbc0023a2b7ee07c706b3acc71c4e567ab"
+    },
+    {
+      "path": "src/data/sources.json",
+      "sha256": "6442caa770114812918f8cb08c3ee3054fa2e1d35361eb69f712c947fef13fbf"
+    },
+    {
+      "path": "src/domain/coaching-schema.ts",
+      "sha256": "ebb361e15a1198ac2935515ba513050ffd6504ed1d7534e114a060e4708aa080"
+    },
+    {
+      "path": "src/domain/content-schema.ts",
+      "sha256": "30cb326c2b982fc1da227ffd6b4ebea368bc1d92776c3f96bb84e14f9d33a5d6"
+    },
+    {
+      "path": "src/domain/lesson-schema.ts",
+      "sha256": "91a1acbb83215245002909d7473b809470b67f708d5de0200095a2ab6c987e4e"
+    },
+    {
+      "path": "src/domain/mock-access.ts",
+      "sha256": "44b858e88f65ea1f12c10a7ea2203b3d1335a39d4e7d3e4001b3aab4b7744daf"
+    },
+    {
+      "path": "src/domain/study-clock.ts",
+      "sha256": "4c747a6d7b7b262648c9677f858bb641f840c1e2a0f2f720c99059c4f4699404"
+    },
+    {
+      "path": "src/domain/study.ts",
+      "sha256": "242979a3f7cb27a2e417f995f143a833d1ff1644beeb9b947b848ec26c3517d4"
+    },
+    {
+      "path": "src/domain/training.ts",
+      "sha256": "cebb6b46f1cd50b6f793a98341b15a5eb383d0a4133433e2a32fea631b1dcfa2"
+    },
+    {
+      "path": "src/hooks/useStudyClock.ts",
+      "sha256": "67b80a0f73b7061844ff1ff8364b0215dada8c626b72b217f29aad68781d977a"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "cab945267dd87e212bc5ea07fdce200d0ff8cee65bbcd7716317a50ecb41310f"
+    },
+    {
+      "path": "src/pages/MockPage.tsx",
+      "sha256": "0518b1c59dea16198f486f4d192b0f62de1df11ff81d93647ad8a453acd040f6"
+    },
+    {
+      "path": "src/pages/ProgressPage.tsx",
+      "sha256": "8c242ec0f3353c36c48089f26e3210807b45764b2fe04acd47c0ac8a43fe1d21"
+    },
+    {
+      "path": "src/pages/StudyPages.tsx",
+      "sha256": "6617be8e299d5a31bb937a9ad437b17f4cd63e1573e084666d86d79785d11884"
+    },
+    {
+      "path": "src/pages/TrainingPages.tsx",
+      "sha256": "04d61ea196b68c8b801119254c499235fc19f9db6777c28d1320cfa8ef08328d"
+    },
+    {
+      "path": "src/storage/backup.ts",
+      "sha256": "0ff5d09eee7248cf2eaeaa9f8febb2097895c5b5dd6a828892bb09e2df0360ff"
+    },
+    {
+      "path": "src/storage/db.ts",
+      "sha256": "5ba9fd88e0cb5f1e1ec441f1af337103fe2d03bbf505af81edf3a545a632d6cf"
+    },
+    {
+      "path": "src/storage/training.ts",
+      "sha256": "b9283553ee613612745e126c8b228d98cb5d50f8c2714f2d83ecab076372cbec"
+    },
+    {
+      "path": "src/styles.css",
+      "sha256": "98ddf1fea277fc930950f659bb39a2f54421cff6d9873ef094e287791f958675"
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "sha256": "8f18daefc83e6fe85f05292aa11b41e3f0e2d646c615e2ba3ee7b45da5fd760e"
+    },
+    {
+      "path": "tests/audit/exam-backup.spec.ts",
+      "sha256": "b8016f389f55b50666d44b6552e149b25f4ccd09afc626ad1a8671f24296ec36"
+    },
+    {
+      "path": "tests/audit/helpers.ts",
+      "sha256": "c7e96620c4d7a6f3e084dc48b92242a51bf4573f3a4b6b9c2d12aa9cd79bef57"
+    },
+    {
+      "path": "tests/audit/mobile-offline.spec.ts",
+      "sha256": "78ef08636d0450189c72bf12cb932d488023b1ade16d118d2d35534ecb970351"
+    },
+    {
+      "path": "tests/audit/round2.spec.ts",
+      "sha256": "4a65f26c10fe92f4fe4aab4f8bc04f673bf517af468ffb1d8ebfdb1bfb15e34d"
+    },
+    {
+      "path": "tests/audit/state.spec.ts",
+      "sha256": "86521a9043aca3b2244603826bd2707f6e54bc32d112675048ed6355d33a6f45"
+    },
+    {
+      "path": "tests/audit/training-content.spec.ts",
+      "sha256": "5d3f1dfcd5d9ff0349ffcadc9dca200ccddb0e47e40990662374e59b75816a0f"
+    },
+    {
+      "path": "tests/audit-content.test.ts",
+      "sha256": "f6e82d9abecdabfe8e09c8ebb8654b958e59ceb7c013b8b105324bd371e7063c"
+    },
+    {
+      "path": "tests/backup.test.ts",
+      "sha256": "4aaa6b9b38b8b3fd82781c74255d5b98db70ec0d2384ca6128fda931d425db62"
+    },
+    {
+      "path": "tests/beginner/course.spec.ts",
+      "sha256": "4444fdcace3f0bcc21513d4fd5c3ad5e7b3360fd94d276507d640df33f0b3384"
+    },
+    {
+      "path": "tests/beginner/layout-helpers.ts",
+      "sha256": "c26d9ba41c9f3c799403745291e53ac0a24678338442648e05876dfa34a765df"
+    },
+    {
+      "path": "tests/beginner/layout.spec.ts",
+      "sha256": "31c6d18f51daba1d409223b491b80c15ea1d7f31a66eb0f0a5707749292c4953"
+    },
+    {
+      "path": "tests/beginner/webkit.spec.ts",
+      "sha256": "bdb9363dceb43a217c6e8a0c4e2110240b0473ab31ae5479522d5d07fbe47c62"
+    },
+    {
+      "path": "tests/beginner-content.test.ts",
+      "sha256": "3a67f7396cdd0e924871f3f02eea46e9c5b14b24a30adc95f534d05452460052"
+    },
+    {
+      "path": "tests/content.test.ts",
+      "sha256": "33aca530dced3858c77a75c930200a1123592aeca135c31010c5e79467011ba3"
+    },
+    {
+      "path": "tests/e2e/chapter.spec.ts",
+      "sha256": "a5c782e4f012b8d178195f09d37f9b92c5f528c6dd9821832e4e83d94b7ca3ea"
+    },
+    {
+      "path": "tests/e2e/library.spec.ts",
+      "sha256": "d3b68a5bf7558f869fbe5538f86ab50d40325894288dec342708e85fd4c1e780"
+    },
+    {
+      "path": "tests/e2e/study.spec.ts",
+      "sha256": "9cbf01cc35a46a32f46651fe47a13b1a8af26881768e231513e5e6a680207202"
+    },
+    {
+      "path": "tests/e2e/training.spec.ts",
+      "sha256": "d6fdd1837877b1b63446a1935744e4bbeae6199fbd3ecb5d0955ee86846881be"
+    },
+    {
+      "path": "tests/full-course/coaching.spec.ts",
+      "sha256": "15324c883b267e33782cd5e0358615c0ee3318896049a137217a7ce3681cae8d"
+    },
+    {
+      "path": "tests/full-course/course.spec.ts",
+      "sha256": "03d4cb44b02cb1abb28d89e2ff3024288889e31465b35976b3c5968593ab1141"
+    },
+    {
+      "path": "tests/full-course/offline.spec.ts",
+      "sha256": "c1d8b1f6fa6a99c9b6f64dc081d80ca3a3c5da8ffbbe911854862d9b384f8bd6"
+    },
+    {
+      "path": "tests/full-course/screenshots.spec.ts",
+      "sha256": "545416325334c0ed4ce635c7e8c64e749d57c2c85435334142d13669012bc465"
+    },
+    {
+      "path": "tests/full-course/webkit.spec.ts",
+      "sha256": "4faa8affc1b5bda69d0e38329968d79a9cb832bdc197659d96b493bdb8b8ad92"
+    },
+    {
+      "path": "tests/full-course-coaching.test.ts",
+      "sha256": "d50b12bd1b6bd8e0b803901bffa1dec9331a640114878a4ba1e9d420976a39af"
+    },
+    {
+      "path": "tests/full-course-content.test.ts",
+      "sha256": "7d9a8874f20d762e385163e94110080553e8ba09d8979a725917ab0ba560ff89"
+    },
+    {
+      "path": "tests/production/offline.spec.ts",
+      "sha256": "464aced4c8a537f534af958b782f3f4d37be6878a92eca9695b4f70d3877e213"
+    },
+    {
+      "path": "tests/staging/hosting.spec.ts",
+      "sha256": "d0b0acdc8de41e1588d84977e994891b94552ea4c10e60f89a8314e38d91fe18"
+    },
+    {
+      "path": "tests/storage.test.ts",
+      "sha256": "c09f80b11dcc7417a41ae9b8ee0cb479a64c06a62ded11105986daa851703d76"
+    },
+    {
+      "path": "tests/study-clock.test.ts",
+      "sha256": "10974205e5a6055480a60f307f82233f37d82a637fc2f2a37dc313c4041aac82"
+    },
+    {
+      "path": "tests/study.test.ts",
+      "sha256": "70074a4b0b4a66a4efb9fadea2d8199164252dcbc2e57c4cfed420ca78bc1766"
+    },
+    {
+      "path": "tests/training.test.ts",
+      "sha256": "e35ee1ac540864e4fa6bd3a8e9a4edf210efba1388683161b96f60daa8e92645"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "cf6195989cfa75ebd70e25632d61dcd89e7ae8e2925362e3b5335c25633bf733"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "bab2a28cc5c71f6ed3e33033764c54e8e445c381911d5088f3cabb23f449b7c1"
+    }
+  ]
+}

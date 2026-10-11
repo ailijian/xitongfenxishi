@@ -16,7 +16,7 @@ npm run dev
 ```sh
 npm run data:import              # 从原始Excel/Word重新导入
 npm run data:check               # 原文、来源指纹、数量及生成文件一致性
-npm run lessons:check            # 零基础15课/30原创理解题/8静态概念图
+npm run lessons:check            # 全76课/152原创理解题/41静态概念图及19份辅导
 npm run test                    # 内容、状态机、计划、评分、存储升级和备份测试
 npx playwright install chromium # 首次浏览器测试前安装
 npx playwright install webkit   # 零基础课程WebKit手机测试

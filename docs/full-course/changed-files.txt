@@ -1,4 +1,4 @@
-Compared against 8ecdd0e; includes supplied source documents and evidence files.
+Compared against 8ecdd0e; includes supplied source documents and actual evidence files.
 .gitignore
 README.md
 docs/full-course-integration-report.md
@@ -7,7 +7,11 @@ docs/full-course/batch-d2.md
 docs/full-course/batch-d3.md
 docs/full-course/batch-d4.md
 docs/full-course/batch-d5.md
+docs/full-course/candidate-source-verification.json
+docs/full-course/changed-files.txt
 docs/full-course/content-integrity.json
+docs/full-course/data-preservation-report.md
+docs/full-course/deployment-result.json
 docs/full-course/diagram-layout.json
 docs/full-course/local/audit-results.json
 docs/full-course/local/beginner-results.json
@@ -42,6 +46,7 @@ docs/full-course/logs/dependency-install.log
 docs/full-course/logs/diagram-layout-final.log
 docs/full-course/logs/diagram-layout-initial.log
 docs/full-course/logs/diagram-layout.log
+docs/full-course/logs/existing-urls-after.log
 docs/full-course/logs/existing-urls-before.log
 docs/full-course/logs/final-audit.log
 docs/full-course/logs/final-beginner-initial.log
@@ -64,9 +69,19 @@ docs/full-course/logs/pre-links-final-e2e.log
 docs/full-course/logs/pre-links-final-full-course.log
 docs/full-course/logs/pre-links-final-pwa.log
 docs/full-course/logs/pre-links-final-unit.log
+docs/full-course/logs/staging-activation.log
+docs/full-course/logs/staging-after.log
+docs/full-course/logs/staging-assets.log
 docs/full-course/logs/staging-before.log
+docs/full-course/logs/staging-bundle.log
+docs/full-course/logs/staging-course.log
+docs/full-course/logs/staging-current.log
+docs/full-course/logs/staging-hosting.log
+docs/full-course/logs/staging-pre-activate.log
 docs/full-course/logs/staging-pre-upgrade.log
+docs/full-course/logs/staging-upgrade.log
 docs/full-course/pre-release-backup.json
+docs/full-course/release-manifest.txt
 docs/full-course/screenshots/after-C09-375.png
 docs/full-course/screenshots/after-C09-390.png
 docs/full-course/screenshots/after-E02-375.png
@@ -88,8 +103,29 @@ docs/full-course/screenshots/before-K054-390.png
 docs/full-course/screenshots/before-K060-390.png
 docs/full-course/screenshots/before-K068-390.png
 docs/full-course/screenshots/before-home-390.png
+docs/full-course/screenshots/staging/after-C09-375.png
+docs/full-course/screenshots/staging/after-C09-390.png
+docs/full-course/screenshots/staging/after-E02-375.png
+docs/full-course/screenshots/staging/after-E02-390.png
+docs/full-course/screenshots/staging/after-K037-375.png
+docs/full-course/screenshots/staging/after-K037-390.png
+docs/full-course/screenshots/staging/after-K054-375.png
+docs/full-course/screenshots/staging/after-K054-390.png
+docs/full-course/screenshots/staging/after-K060-375.png
+docs/full-course/screenshots/staging/after-K060-390.png
+docs/full-course/screenshots/staging/after-K068-375.png
+docs/full-course/screenshots/staging/after-K068-390.png
+docs/full-course/screenshots/staging/after-home-375.png
+docs/full-course/screenshots/staging/after-home-390.png
+docs/full-course/server-isolation.json
+docs/full-course/staging-assets/browser-results.json
+docs/full-course/staging-assets/served-artifacts.json
+docs/full-course/staging-hosting-results.json
+docs/full-course/staging-upgrade.json
+docs/full-course/staging/browser-results.json
 docs/full-course/test-commands.md
 docs/full-course/test-results.json
+docs/staging-deployment.md
 docs/系统分析师零基础全76课完整升级包/CODEX_INTEGRATION.md
 docs/系统分析师零基础全76课完整升级包/CONTENT_QA_REPORT.md
 docs/系统分析师零基础全76课完整升级包/FILE_MANIFEST.json
@@ -170,4 +206,3 @@ tests/full-course/screenshots.spec.ts
 tests/full-course/webkit.spec.ts
 tests/staging/hosting.spec.ts
 tsconfig.json
-docs/full-course/changed-files.txt

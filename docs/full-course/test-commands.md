@@ -33,4 +33,19 @@ node scripts/check-rendered-diagram-layout.mjs
 
 发布完成后执行 `npx tsx scripts/audit-full-course-upgrade.ts verify`，检查旧Service Worker提示手动升级、12类数据逐字段保留、闭卷草稿继续、清空恢复及失败导入不改动；不得重新seed以掩盖升级问题。
 
-部署构建使用 `bash ops/staging/bundle.sh`，隔离源码目录再次npm ci、75单元与生产构建，仅发布本项目静态Web镜像。候选源码与提交逐文件比对；线上定向执行重点课程、WebKit、辅导、PWA、托管及58资源字节比对。实际发布命令与结果在上线后附到本文件。
+部署构建使用 `bash ops/staging/bundle.sh`，隔离源码目录再次npm ci、75单元与生产构建，仅发布本项目静态Web镜像。候选源码与提交逐文件比对；线上定向执行重点课程、WebKit、辅导、PWA、托管及58资源字节比对。实际发布命令与结果见下方。
+
+
+## 已实际执行的线上命令
+
+独立候选目录为 `tmp/staging/candidate-20261011T164428Z/source`，其dist与实际Docker镜像一致；线上命令在该目录执行，证据输出到本仓库绝对路径，以免覆盖历史验收。
+
+```bash
+FULL_COURSE_BASE_URL=https://ruankao.staging.haaboo.com FULL_COURSE_EVIDENCE=/Users/lijian/Documents/projects/xitongfenxishi/docs/full-course/staging FULL_COURSE_SCREENSHOTS=/Users/lijian/Documents/projects/xitongfenxishi/docs/full-course/screenshots/staging npm run test:full-course -- --grep 'WebKit|实际截图|辅导不溢出|全部76|PWA首次联网|C09 原题|E02 写作|K037 SQL复制'
+STAGING_BASE_URL=https://ruankao.staging.haaboo.com npx playwright test --config playwright.staging.config.ts tests/staging/hosting.spec.ts
+AUDIT_BASE_URL=https://ruankao.staging.haaboo.com AUDIT_EVIDENCE_DIR=/Users/lijian/Documents/projects/xitongfenxishi/docs/full-course/staging-assets npx playwright test --config playwright.audit.config.ts tests/audit/mobile-offline.spec.ts --grep '线上资源版本'
+```
+
+结果分别13、3、1通过，共17项；`staging-course.log`、`staging-hosting.log`、`staging-assets.log`及对应JSON包含真实输出。旧profile的verify在主仓库执行，退出码0，12表逐字段一致，见 `staging-upgrade.log`。`staging-bundle.log`及`staging-activation.log`记录生产构建、SHA校验与仅本项目Web的no-deps更新；`staging-current.log`记录检查通过后正式current与previous。
+
+源码/配置diff检查通过；保留的原始构建与单元日志含工具输出的行末空格/末尾空行，未为消除日志空白警告改写原证据。

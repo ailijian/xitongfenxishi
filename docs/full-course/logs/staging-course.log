@@ -1,0 +1,26 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:full-course
+> playwright test --config playwright.full-course.config.ts --grep WebKit|实际截图|辅导不溢出|全部76|PWA首次联网|C09 原题|E02 写作|K037 SQL复制
+
+
+Running 13 tests using 1 worker
+
+(node:13350) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/full-course/coaching.spec.ts:6:41 › C09 原题/拆题全文/答案示例门禁/25分及历史 (10.3s)
+  ✓   2 tests/full-course/coaching.spec.ts:31:37 › E02 写作教练全文/无自动填充/草稿刷新/真实素材 (6.4s)
+  ✓   3 tests/full-course/course.spec.ts:86:18 › K037 SQL复制逐字符一致，不执行查询 (2.8s)
+  ✓   4 tests/full-course/offline.spec.ts:8:1 › PWA首次联网后关页重开，76课/41图/19辅导离线全部可用，SQL/答题与草稿正常 (44.0s)
+  ✓   5 tests/full-course/screenshots.spec.ts:3:30 › 375px 首页/SQL/RPO/CAP/Agent/C09/E02实际截图与布局 (5.5s)
+  ✓   6 tests/full-course/screenshots.spec.ts:3:30 › 390px 首页/SQL/RPO/CAP/Agent/C09/E02实际截图与布局 (6.1s)
+  ✓   7 tests/full-course/screenshots.spec.ts:19:30 › 320px C09/E02辅导不溢出且按钮可点 (1.8s)
+  ✓   8 tests/full-course/screenshots.spec.ts:19:30 › 430px C09/E02辅导不溢出且按钮可点 (1.2s)
+  ✓   9 tests/full-course/screenshots.spec.ts:26:1 › 全部76张卡都有真实课程版，可搜索新内容且序列D1—D5完整 (1.5s)
+(node:13842) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 tests/full-course/webkit.spec.ts:4:30 › WebKit 375px SQL/RPO/CAP/Agent/公式/图示 (7.8s)
+  ✓  11 tests/full-course/webkit.spec.ts:4:30 › WebKit 390px SQL/RPO/CAP/Agent/公式/图示 (6.2s)
+  ✓  12 tests/full-course/webkit.spec.ts:22:30 › WebKit 375px C09/E02辅导与缩小视口草稿刷新 (2.1s)
+  ✓  13 tests/full-course/webkit.spec.ts:22:30 › WebKit 390px C09/E02辅导与缩小视口草稿刷新 (3.9s)
+
+  13 passed (1.8m)

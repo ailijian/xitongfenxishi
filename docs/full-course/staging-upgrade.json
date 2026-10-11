@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "verifiedAt": "2026-10-11T16:48:59.716Z",
+  "databaseVersion": 2,
+  "backupVersion": 2,
+  "contentVersion": "2026.10.11.1",
+  "all12TablesFieldIdenticalAfterServiceWorkerUpgrade": true,
+  "all12TablesFieldIdenticalAfterRestore": true,
+  "failedImportUnchanged": true,
+  "oldRecallDraftResumed": true,
+  "oldHistoricalEvidenceUnchanged": true,
+  "teachingContentVersion": "2026.10.12.beginner.2",
+  "counts": {
+    "settings": 1,
+    "cards": 2,
+    "cardAttempts": 1,
+    "questionAttempts": 2,
+    "learningDrafts": 1,
+    "sessions": 2,
+    "bookmarks": 1,
+    "caseDrafts": 1,
+    "caseAttempts": 1,
+    "essayDrafts": 1,
+    "projects": 1,
+    "exams": 1
+  },
+  "syntheticProfile": true
+}

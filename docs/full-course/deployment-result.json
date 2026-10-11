@@ -1,0 +1,54 @@
+{
+  "result": "PASS",
+  "deployedAt": "2026-10-11T16:52:57.604412+00:00",
+  "publicUrl": "https://ruankao.staging.haaboo.com/",
+  "teachingContentVersion": "2026.10.12.beginner.2",
+  "originalContentVersion": "2026.10.11.1",
+  "applicationPackageVersion": "1.0.0",
+  "indexedDBVersion": 2,
+  "backupVersion": 2,
+  "release": "staging-20261011T164428Z-aa95525b727c",
+  "applicationSourceCommit": "8889870427ea86af4fe9287579c0679ff9433fc8",
+  "sourceSha256": "aa95525b727cef8160ee3de5e8ea1fd1859f0e369629cc64b5a09884346ec0d9",
+  "imageId": "sha256:43257b5f864cf1178ebc499fa40ca73b0ac3fb7e07610622eee1bcd36fcd12f2",
+  "platform": "linux/amd64",
+  "current": "/opt/azao-staging/projects/ruankao/releases/staging-20261011T164428Z-aa95525b727c",
+  "previous": "/opt/azao-staging/projects/ruankao/releases/staging-20261011T132846Z-cc902d4a6375",
+  "retainedSecondRollback": "/opt/azao-staging/projects/ruankao/releases/staging-20261011T124350Z-4bf2db1dc3be",
+  "sourceFilesComparedToCommit": 175,
+  "stagingTests": 17,
+  "checks": {
+    "course": {
+      "startTime": "2026-10-11T16:48:37.710Z",
+      "duration": 109972.226,
+      "expected": 13,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "hosting": {
+      "startTime": "2026-10-11T16:48:39.747Z",
+      "duration": 35542.671,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "resourceBytes": {
+      "startTime": "2026-10-11T16:49:21.415Z",
+      "duration": 8861.192,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "identicalServedResources": 58,
+  "conceptDiagramsVerified": 41,
+  "all12TablesFieldIdentical": true,
+  "backupRestoreAndInvalidImport": "PASS",
+  "otherContainersIdentical": 15,
+  "sharedProxyUnchanged": true,
+  "physicalIPhone": "NOT TESTED",
+  "upstreamManifestSelfEntry": "inconsistent; content source files verified independently"
+}
