@@ -10,11 +10,13 @@
     "dev": "vite --host 0.0.0.0",
     "data:import": "tsx scripts/import-content.ts",
     "data:check": "tsx scripts/import-content.ts --check",
-    "build": "npm run data:check && tsc --noEmit && vite build",
+    "lessons:check": "tsx scripts/check-beginner-content.ts && node scripts/build-lesson-diagrams.mjs --check",
+    "build": "npm run data:check && npm run lessons:check && tsc --noEmit && vite build",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "preview": "vite preview --host 0.0.0.0",
-    "test:pwa": "npm run build && playwright test --config playwright.production.config.ts"
+    "test:pwa": "npm run build && playwright test --config playwright.production.config.ts",
+    "test:beginner": "playwright test --config playwright.beginner.config.ts"
   },
   "dependencies": {
     "dexie": "4.4.6",

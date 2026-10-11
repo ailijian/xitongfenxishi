@@ -1,0 +1,50 @@
+{
+  "K004": {
+    "src": "lesson-diagrams/K004.svg",
+    "alt": "提交变更请求→分析范围、成本、工期、风险→获得批准？否：记录拒绝原因；是：更新需求基线、设计和测试→通知相关方并实施。",
+    "sourceSha256": "7e8036596b8db078a5d1842da85df2d3315a0a0faa0fa2df06a604232cbbd1a3",
+    "svgSha256": "f9b9de5138ecf6b208888a894770560cbd2ff754a2ba28d2bab9210639703d2c"
+  },
+  "K005": {
+    "src": "lesson-diagrams/K005.svg",
+    "alt": "业务来源↔需求 R17↔设计 D05↔实现 cancelAppointment↔测试 T33。每一段都可正向和反向追踪，不是网络调用。",
+    "sourceSha256": "07844cedaa8aa327bbf1444ec56a287baf1476cfe79e04b49813de2928281f4a",
+    "svgSha256": "aaa7a0ad60e401678b6dfba694c779a4c32c6308fc228c7226440732f79e7667"
+  },
+  "K006": {
+    "src": "lesson-diagrams/K006.svg",
+    "alt": "系统边界外：患者、短信平台。边界内：预约门诊、校验号源、获取提醒。患者→预约门诊；预约门诊→校验号源（include，必须执行）；获取提醒→预约门诊（extend，条件性扩展）；短信平台→获取提醒。",
+    "sourceSha256": "e5c90e3e6b202fba6d4645cd897dbe58481bec725d11c88d4018fccfa9d02e04",
+    "svgSha256": "4d9837785275f2aab14fad60fc2b3c0f4975e3d9d8a1cce14b70b522eb1100ef"
+  },
+  "K007": {
+    "src": "lesson-diagrams/K007.svg",
+    "alt": "生命线从左到右为患者、手机 App、预约服务、号源库。依次提交预约、请求预约、检查并占用号源。alt 有可用号源：占用成功→返回预约编号→预约成功；else 无可用号源：占用失败→返回号源不足→提示选择其他时段。虚线为返回消息。",
+    "sourceSha256": "70bfbd3c1ecb0ffae74fbc05abf1a1be00cef71b81ef30d1eaba5e27eadb2390",
+    "svgSha256": "017d59f7b7d3e3ca46280e0e80e38c06e783dacd1954a086e56bec42bd4a8ab6"
+  },
+  "K008": {
+    "src": "lesson-diagrams/K008.svg",
+    "alt": "患者提交预约→并行分叉，同时校验号源、校验资格→两支并行汇合→两项均通过？是：确认预约；否：提示失败原因。并行检查是两件都做，结果分支只走一条。",
+    "sourceSha256": "e0d18fd03e32d335759794331b2db980f9c8988693bb38eb83d66b19a856a160",
+    "svgSha256": "b5101e5db4e67174a39b316b8254229035aef8f20ed3dc9b298e820a6d9c92a5"
+  },
+  "K009": {
+    "src": "lesson-diagrams/K009.svg",
+    "alt": "开始→待确认→通过号源校验→已确认。已确认在满足取消时间条件时迁移到已取消，并释放号源；医生完成接诊后迁移到已就诊；已取消和已就诊均可结束。违规取消不产生迁移。",
+    "sourceSha256": "be4dded0a244b2e8118745e8b51504389a8fc8693114fb51f4da497a7d34ecc1",
+    "svgSha256": "7b5b8d16ed799c904d0ab06004ad85198b9f01baf5444a10498ac2994944be18"
+  },
+  "K010": {
+    "src": "lesson-diagrams/K010.svg",
+    "alt": "Patient 类：name:String、book()；Appointment 类：status:String、cancel()；Doctor 类：name:String、changeSchedule()。Patient 的 1 对应 Appointment 的 0..*（books）；Doctor 的 1 对应 Appointment 的 0..*（receives）。图中是关联、多重性，没有组合或泛化关系。",
+    "sourceSha256": "d3d53fea25e91de40a0bdec03a9bb81fd9b7bf86d6b4aaf49527fa46d196cdd1",
+    "svgSha256": "46e404e58318807e3a01fd8683688436e9e1344bdcf04c901c986a3d185cea0c"
+  },
+  "K011": {
+    "src": "lesson-diagrams/K011.svg",
+    "alt": "患者（外部实体）→预约申请（数据流）→受理预约（加工）。加工↔数据存储：读写号源、预约记录。加工→预约结果（数据流）→患者。患者与存储之间没有直接连线。",
+    "sourceSha256": "1480b4c0f978d5ec21ab4e5f27537cf139376292214b177c650aacb61c2059b5",
+    "svgSha256": "c66537049b356f37c71d7952d4bbfca1ac0fd6a10e29efbca2c3e5b6eed84bc8"
+  }
+}

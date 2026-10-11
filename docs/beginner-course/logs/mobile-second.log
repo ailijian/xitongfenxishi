@@ -1,0 +1,66 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:beginner
+> playwright test --config playwright.beginner.config.ts
+
+[WebServer] (node:29426) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:29437) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/beginner/course.spec.ts:8:1 › K001默认通俗解释/医院案例、循序讲解、带做和闭卷，速记最后折叠 (3.7s)
+  ✘  2 tests/beginner/course.spec.ts:37:1 › 全部15课/30题/8图可学习，逐题交卷解析、错答、重做门禁与练习隔离 (19.2s)
+(node:29592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 tests/beginner/course.spec.ts:83:1 › K006 include/extend、K010生命周期、K011非法流向与分层平衡，未提供课程的卡明确标记 (3.6s)
+  ✓  4 tests/beginner/course.spec.ts:103:39 › 320px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (4.4s)
+  ✓  5 tests/beginner/course.spec.ts:103:39 › 375px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (8.1s)
+  ✓  6 tests/beginner/course.spec.ts:103:39 › 390px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (6.6s)
+  ✓  7 tests/beginner/course.spec.ts:103:39 › 430px课程长文、8图局部滚动、点击区域与闭卷缩小视口 (6.0s)
+  ✓  8 tests/beginner/course.spec.ts:132:1 › 12类旧数据逐字段保留、理解练习不污染、JSON清空/恢复及损坏备份无副作用 (15.7s)
+  ✓  9 tests/beginner/course.spec.ts:176:1 › 首次联网后全部15课和8图离线关页重开可用，练习交卷仍隔离掌握 (9.1s)
+
+
+  1) tests/beginner/course.spec.ts:37:1 › 全部15课/30题/8图可学习，逐题交卷解析、错答、重做门禁与练习隔离 ──────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[data-question-id="LQ-D1-K011-01"]').getByText('是常见合法路径。')
+    Expected: visible
+    Error: strict mode violation: locator('[data-question-id="LQ-D1-K011-01"]').getByText('是常见合法路径。') resolved to 3 elements:
+        1) <p>…</p> aka getByText('B（干扰项）：是常见合法路径。')
+        2) <p>…</p> aka getByText('C（干扰项）：是常见合法路径。')
+        3) <p>…</p> aka getByText('D（干扰项）：是常见合法路径。')
+
+    Call log:
+      - Expect "toBeVisible" locator('[data-question-id="LQ-D1-K011-01"]').getByText('是常见合法路径。') with timeout 5000ms
+      - waiting for locator('[data-question-id="LQ-D1-K011-01"]').getByText('是常见合法路径。')
+
+
+      64 |       await expect(question.getByRole("status")).toContainText(i===0?"理解题答对了":"再对照解析想一想");
+      65 |       await expect(question.getByRole("status")).toContainText(`正确答案 ${q.answer}`);
+    > 66 |       for(const reason of Object.values(q.optionExplanations)) await expect(question.getByText(reason,{exact:false})).toBeVisible();
+         |                                                                                                                       ^
+      67 |       await expect(question.locator(".option-button:disabled")).toHaveCount(4);
+      68 |       await question.getByRole("button",{name:`重做理解题 ${i+1}`} ).click();
+      69 |       await expect(question.locator(".lesson-explanations")).toHaveCount(0);
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/beginner/course.spec.ts:66:119
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/beginner-course/local/artifacts/course-全部15课-30题-8图可学习，逐题交卷解析、错答、重做门禁与练习隔离/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/beginner-course/local/artifacts/course-全部15课-30题-8图可学习，逐题交卷解析、错答、重做门禁与练习隔离/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/beginner-course/local/artifacts/course-全部15课-30题-8图可学习，逐题交卷解析、错答、重做门禁与练习隔离/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/beginner-course/local/artifacts/course-全部15课-30题-8图可学习，逐题交卷解析、错答、重做门禁与练习隔离/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/beginner/course.spec.ts:37:1 › 全部15课/30题/8图可学习，逐题交卷解析、错答、重做门禁与练习隔离 ───────────────────────
+  8 passed (1.5m)

@@ -30,6 +30,8 @@ import {
 import type { KnowledgeCard } from "../domain/content-schema";
 import { useStudyClock } from "../hooks/useStudyClock";
 import { mockQuestionAccess } from "../domain/mock-access";
+import { beginnerLessons } from "../data/lessons";
+import { BeginnerLesson } from "../components/BeginnerLesson";
 
 export function Today() {
   const data = useStudyData();
@@ -301,6 +303,7 @@ export function Learn() {
             </div>
             <h2>{k.title}</h2>
             <p>{k.module}</p>
+            <p className="subtle">{beginnerLessons.has(k.id) ? "零基础课程版" : "考前速记版 · 暂无完整入门课程"}</p>
             <span className="subtle">
               {k.relatedQuestionIds.length
                 ? `${k.relatedQuestionIds.length} 道章节关联题`
@@ -354,6 +357,16 @@ function LearningCard({ card: k }: { card: KnowledgeCard }) {
   const phase = draft?.phase ?? "read",
     points = recallPoints(k),
     next = content.knowledge[content.knowledge.indexOf(k) + 1];
+  const lesson = beginnerLessons.get(k.id);
+  function startRecall() {
+    setResult("");
+    void patch({
+      phase: "recall", contentVersion: content.contentVersion, recall: "",
+      checks: points.map(() => false), questionId: k.relatedQuestionIds[0],
+      questionAttemptId: undefined, selectedOption: undefined,
+    });
+    window.scrollTo(0, 0);
+  }
   async function grade() {
     if (!question || !draft?.selectedOption) return;
     setBusy(true);
@@ -402,8 +415,11 @@ function LearningCard({ card: k }: { card: KnowledgeCard }) {
           {result}
         </p>
       )}
-      {phase === "read" && (
+      {phase === "read" && lesson && <BeginnerLesson lesson={lesson} card={k} onRecall={startRecall} />}
+      {phase === "read" && !lesson && (
         <section className="paper">
+          <Badge>考前速记版</Badge>
+          <p className="subtle">此知识点暂无完整入门课程，以下为原始速记资料。</p>
           <h2>必会概念</h2>
           <p className="reading">{k.essentials}</p>
           <h2>易错点</h2>
@@ -411,18 +427,7 @@ function LearningCard({ card: k }: { card: KnowledgeCard }) {
           <Source source={k.sourceRef} />
           <button
             className="primary"
-            onClick={() => {
-              setResult("");
-              void patch({
-                phase: "recall",
-                contentVersion: content.contentVersion,
-                recall: "",
-                checks: points.map(() => false),
-                questionId: k.relatedQuestionIds[0],
-                questionAttemptId: undefined,
-                selectedOption: undefined,
-              });
-            }}
+            onClick={startRecall}
           >
             开始闭卷自测 →
           </button>
@@ -435,6 +440,7 @@ function LearningCard({ card: k }: { card: KnowledgeCard }) {
           </Badge>
           <h2>先独立回答</h2>
           <p>不看资料，解释“{k.title}”，写出关键要点和容易混淆的地方。</p>
+          {lesson && <ol className="lesson-recall-prompts">{lesson.recallPrompts.map((p) => <li key={p}>{p}</li>)}</ol>}
           <label className="field-label">
             闭卷回答
             <textarea

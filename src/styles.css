@@ -822,6 +822,24 @@ textarea {
   color: var(--muted);
   margin-top: 6px;
 }
+.beginner-course { display: grid; gap: 20px; min-width: 0; }
+.beginner-course > .paper { min-width: 0; }
+.lesson-one-sentence { font-size: 19px; font-weight: 600; color: var(--accent); }
+.lesson-scenario { border-left: 3px solid var(--accent); padding: 2px 14px; margin: 20px 0; background: var(--soft); border-radius: 0 10px 10px 0; }
+.beginner-course summary { min-height: 48px; padding: 10px 0; }
+.lesson-step h3:focus, .lesson-feedback:focus { outline: 3px solid #c69b38; outline-offset: 4px; }
+.lesson-worked, .lesson-recall-prompts, .beginner-course ol { padding-left: 24px; }
+.lesson-worked li, .lesson-recall-prompts li, .beginner-course ol li { padding-left: 3px; margin: 14px 0; overflow-wrap: anywhere; }
+.lesson-visual figure { margin: 0; min-width: 0; }
+.lesson-visual figcaption { font-weight: 600; overflow-wrap: anywhere; }
+.lesson-diagram-scroll { overflow-x: auto; overscroll-behavior-x: contain; border: 1px solid var(--line); border-radius: 12px; background: #f5f9f6; }
+.lesson-diagram-scroll img { display: block; max-width: none; }
+.lesson-diagram-scroll:focus-visible { outline: 3px solid #c69b38; }
+.lesson-question { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 20px; }
+.lesson-feedback { background: var(--soft); border-radius: 12px; padding: 14px; margin: 16px 0; }
+.lesson-explanations { margin-bottom: 16px; }
+.lesson-connection { padding: 0 4px; }
+.lesson-speed > summary { font-weight: 600; }
 .essay-body {
   height: 45vh;
   min-height: 320px;

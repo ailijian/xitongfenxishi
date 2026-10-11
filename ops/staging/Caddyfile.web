@@ -20,7 +20,7 @@
 		file_server
 	}
 
-	@files path /icons/* /*.* /_headers /_redirects
+	@files path /icons/* /lesson-diagrams/* /*.* /_headers /_redirects
 	handle @files {
 		header Cache-Control no-cache
 		file_server

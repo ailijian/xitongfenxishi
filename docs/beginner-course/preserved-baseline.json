@@ -1,0 +1,86 @@
+{
+  "result": "PASS",
+  "baseline": "22e3f07aabd9d1aa0cd33831aa3599cbe6d9db97",
+  "files": [
+    {
+      "file": "src/data/knowledge.json",
+      "sha256": "7ee33ddc866dee66b1b795bbcc6190eb8b21bc5c88240976ff421bfad6f2d9a3",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/data/questions.json",
+      "sha256": "82eb20c14dd57210aa00eb4bec01bccbc0023a2b7ee07c706b3acc71c4e567ab",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/data/cases.json",
+      "sha256": "51bb58c5fac8c89d375c503fe143b5c99f4af8784409e62ded70471b284a0cd4",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/data/essays.json",
+      "sha256": "e8ec3a54bd70c46841d91e1e8f23d1d428208fd7fbd9a0f246abe60d9c62b032",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/data/plan.json",
+      "sha256": "80e99819f2325e22ae9150cfa223ba582adc8afc3630c3e93157b7cbb5b7309f",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/data/manifest.json",
+      "sha256": "42a4cd300bd587b40958bc76d36677fa92e9287773fa251b83fb731be2d8a9ef",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/storage/db.ts",
+      "sha256": "5ba9fd88e0cb5f1e1ec441f1af337103fe2d03bbf505af81edf3a545a632d6cf",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/storage/backup.ts",
+      "sha256": "0ff5d09eee7248cf2eaeaa9f8febb2097895c5b5dd6a828892bb09e2df0360ff",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/domain/study.ts",
+      "sha256": "242979a3f7cb27a2e417f995f143a833d1ff1644beeb9b947b848ec26c3517d4",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/domain/content-schema.ts",
+      "sha256": "30cb326c2b982fc1da227ffd6b4ebea368bc1d92776c3f96bb84e14f9d33a5d6",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/domain/mock-access.ts",
+      "sha256": "44b858e88f65ea1f12c10a7ea2203b3d1335a39d4e7d3e4001b3aab4b7744daf",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/domain/study-clock.ts",
+      "sha256": "4c747a6d7b7b262648c9677f858bb641f840c1e2a0f2f720c99059c4f4699404",
+      "byteIdentical": true
+    },
+    {
+      "file": "src/hooks/useStudyClock.ts",
+      "sha256": "67b80a0f73b7061844ff1ff8364b0215dada8c626b72b217f29aad68781d977a",
+      "byteIdentical": true
+    },
+    {
+      "file": "materials/2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sha256": "4d7741ada57f855ce94c8208d7f7c3d90c15b6eff48f6fd60a9e9834db038897",
+      "byteIdentical": true
+    },
+    {
+      "file": "materials/2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "sha256": "065b6421a89c232bca430ba9b67299d1604aa5a22005f7e2583010093f1bff59",
+      "byteIdentical": true
+    },
+    {
+      "file": "materials/2026上海系统分析师_7天通关冲刺手册_知识点案例论文.pdf",
+      "sha256": "92b0b0c5533330f0470a1a2aeaf902c38d5f3097fdf8e4df800a869a7bba16bf",
+      "byteIdentical": true
+    }
+  ]
+}

@@ -13,10 +13,13 @@ mkdir -p "$source_dir"
 for path in .gitignore .dockerignore LICENSE README.md README-Codex.md \
   content-import-report.md package.json package-lock.json tsconfig.json index.html \
   vite.config.ts playwright.config.ts playwright.production.config.ts \
-  playwright.staging.config.ts playwright.audit.config.ts src public scripts materials ops tests; do
+  playwright.staging.config.ts playwright.audit.config.ts playwright.beginner.config.ts src public scripts materials ops tests; do
   cp -R "$repo_root/$path" "$source_dir/$path"
 done
 mkdir -p "$source_dir/docs/screenshots"
+# Source-byte integrity unit test needs the supplied JSON, not every review document.
+mkdir -p "$source_dir/docs/零基础学习包"
+cp "$repo_root/docs/零基础学习包/day1_beginner_lessons.json" "$source_dir/docs/零基础学习包/"
 tar -czf "$candidate_dir/source.tar.gz" -C "$source_dir" .
 source_sha256=$(shasum -a 256 "$candidate_dir/source.tar.gz" | awk '{print $1}')
 release_id="staging-$build_stamp-${source_sha256:0:12}"

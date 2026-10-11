@@ -1,0 +1,105 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:30665) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 14 tests using 4 workers
+
+(node:30820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30821) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30822) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30823) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 tests/e2e/training.spec.ts:36:1 › 案例按原文自评，历史与论文项目素材重启仍保存 (33.2s)
+  ✘   4 tests/e2e/library.spec.ts:3:1 › RK057补齐前置情形，案例和论文原文可访问 (34.8s)
+  ✘   2 tests/e2e/study.spec.ts:16:1 › 知识首轮到24小时巩固，浏览不增加掌握 (34.0s)
+(node:31115) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 tests/e2e/chapter.spec.ts:10:1 › 章节75题跨模块抽样，原文答案解析、收藏和二刷入口可用 (1.1m)
+(node:31114) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31117) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 tests/e2e/chapter.spec.ts:47:1 › 每日配套只包含可信章节关联，独立模考题不混入 (7.5s)
+  ✓   6 tests/e2e/study.spec.ts:36:1 › 错题二刷、未提交答案与页面退出继续 (16.6s)
+  ✓   7 tests/e2e/library.spec.ts:24:3 › 320px关键页面无整页横向滚动 (21.2s)
+  ✓   9 tests/e2e/study.spec.ts:59:1 › 仅自评卡可通关，修改启动日保留记录 (10.1s)
+  ✓  10 tests/e2e/library.spec.ts:24:3 › 375px关键页面无整页横向滚动 (11.7s)
+  ✓  11 tests/e2e/library.spec.ts:24:3 › 390px关键页面无整页横向滚动 (12.7s)
+  ✓  12 tests/e2e/library.spec.ts:24:3 › 430px关键页面无整页横向滚动 (12.2s)
+  ✓   8 tests/e2e/training.spec.ts:86:1 › 75题整卷不泄漏答案，可跳题退出继续，三案例及论文完成一场 (1.1m)
+  ✓  13 tests/e2e/library.spec.ts:47:1 › 深色模式与最终首页截图 (7.9s)
+  ✓  14 tests/e2e/training.spec.ts:176:1 › 收藏入口在整卷交卷前不泄漏模考判分，交卷后可以重练 (9.0s)
+
+
+  1) tests/e2e/library.spec.ts:3:1 › RK057补齐前置情形，案例和论文原文可访问 ────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "http://127.0.0.1:4173/cases/C09", waiting until "load"
+
+
+      4 |   await page.goto("/practice?question=RK057");
+      5 |   await expect(page.getByText(/EV=80、AC=100、PV=90/)).toBeVisible();
+    > 6 |   await page.goto("/cases/C09");
+        |              ^
+      7 |   await expect(page.getByText(/编造产品价格/)).toBeVisible();
+      8 |   await expect(page.getByRole("textbox")).toHaveCount(3);
+      9 |   for (const box of await page.getByRole("textbox").all())
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/e2e/library.spec.ts:6:14
+
+    Error Context: test-results/library-RK057补齐前置情形，案例和论文原文可访问/error-context.md
+
+  2) tests/e2e/study.spec.ts:16:1 › 知识首轮到24小时巩固，浏览不增加掌握 ────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      19 |   await page.goto("/learn/K001");
+      20 |   await expect(page.getByText(/K001 \/ A 级 \/ 学习中/)).toBeVisible();
+    > 21 |   await page.goto("/");
+         |              ^
+      22 |   await expect(page.getByText("首轮通过 / 76")).toBeVisible();
+      23 |   await expect(page.getByText("原计划 15 个")).toBeVisible();
+      24 |   await page.goto("/learn/K001");
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/e2e/study.spec.ts:21:14
+
+    Error Context: test-results/study-知识首轮到24小时巩固，浏览不增加掌握/error-context.md
+
+  3) tests/e2e/training.spec.ts:36:1 › 案例按原文自评，历史与论文项目素材重启仍保存 ──────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('textbox', { name: 'C01-Q1 我的独立回答' })
+
+
+      18 |     await page
+      19 |       .getByRole("textbox", { name: `${q.id} 我的独立回答` })
+    > 20 |       .fill("自动化验收输入：这是独立作答草稿，仅用于验证保存和自评交互。");
+         |        ^
+      21 |   await page.getByRole("button", { name: "作答完成，揭示参考答案" }).click();
+      22 |   await expect(
+      23 |     page.getByRole("heading", { name: "参考答案", exact: true }),
+        at answerCase (/Users/lijian/Documents/projects/xitongfenxishi/tests/e2e/training.spec.ts:20:8)
+        at /Users/lijian/Documents/projects/xitongfenxishi/tests/e2e/training.spec.ts:41:9
+
+    Error Context: test-results/training-案例按原文自评，历史与论文项目素材重启仍保存/error-context.md
+
+  3 failed
+    tests/e2e/library.spec.ts:3:1 › RK057补齐前置情形，案例和论文原文可访问 ─────────────────────────────────────────
+    tests/e2e/study.spec.ts:16:1 › 知识首轮到24小时巩固，浏览不增加掌握 ─────────────────────────────────────────────
+    tests/e2e/training.spec.ts:36:1 › 案例按原文自评，历史与论文项目素材重启仍保存 ───────────────────────────────────────
+  11 passed (3.0m)

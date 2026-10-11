@@ -1,0 +1,10 @@
+
+> ruankao-sprint-system-analyst@1.0.0 test:beginner
+> playwright test --config playwright.beginner.config.ts
+
+[WebServer] (node:29045) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+TypeError: Module "file:///Users/lijian/Documents/projects/xitongfenxishi/src/data/lessons/day1_beginner_lessons.json" needs an import attribute of "type: json"
+    at eval (<anonymous>:1:1)
+Error: No tests found
+

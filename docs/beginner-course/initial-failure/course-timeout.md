@@ -1,0 +1,170 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: course.spec.ts >> 全部15课/30题/8图可学习，逐题交卷解析、错答、重做门禁与练习隔离
+- Location: tests/beginner/course.spec.ts:37:1
+
+# Error details
+
+```
+Test timeout of 120000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f14e2]:
+  - link "跳到主要内容" [ref=f14e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f14e4]:
+    - banner [ref=f14e5]:
+      - link "软考冲刺 系统分析师" [ref=f14e6] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f14e7]: 析
+        - generic [ref=f14e8]:
+          - text: 软考冲刺
+          - generic [ref=f14e9]: 系统分析师
+      - generic [ref=f14e10]: 2026 · 原创资料
+    - main [ref=f14e11]:
+      - link "← 知识通关" [ref=f14e12] [cursor=pointer]:
+        - /url: /learn
+      - generic [ref=f14e13]:
+        - text: K075 / B 级 / 学习中
+        - heading "BPR/价值链" [level=1] [ref=f14e14]
+        - paragraph [ref=f14e15]: 工程管理/计算/英语
+      - generic [ref=f14e16]:
+        - generic [ref=f14e17]:
+          - generic [ref=f14e18]: 零基础课程版 · 第 15 / 15 课
+          - heading "这一课要解决什么" [level=2] [ref=f14e19]
+          - paragraph [ref=f14e20]: BPR 解决“流程怎么重新设计”；价值链帮助判断“哪些活动最能创造客户价值和竞争优势”。
+          - generic [ref=f14e21]:
+            - heading "业务场景 · 社区医院预约系统" [level=3] [ref=f14e22]
+            - paragraph [ref=f14e23]: 医院发现大量患者因退改号手续复杂而爽约，造成号源浪费。比起先做漂亮的宣传页面，提升预约、候诊、取消和补位流程可能更有价值。
+          - group [ref=f14e24]:
+            - generic "为什么要学这一课" [ref=f14e25] [cursor=pointer]
+            - paragraph [ref=f14e26]: 系统分析师不能所有功能平均用力，要把资源投入最影响患者体验、成本或服务质量的业务活动。
+          - link "已理解，跳到闭卷自述 ↓" [ref=f14e27] [cursor=pointer]:
+            - /url: "#closed-book"
+        - region [ref=f14e28]:
+          - heading "循序讲解" [level=2] [ref=f14e29]
+          - paragraph [ref=f14e30]: 全部 4 步 · 阅读不会自动计入掌握
+          - generic [ref=f14e31]:
+            - heading "先分清两个概念" [level=3] [ref=f14e32]
+            - paragraph [ref=f14e33]: BPR（Business Process Reengineering）是跨部门、端到端重新思考并设计流程；价值链分析是把组织活动拆开，识别成本、差异化和价值贡献。
+          - generic [ref=f14e34]:
+            - heading "价值链的直观理解" [level=3] [ref=f14e35]
+            - paragraph [ref=f14e36]: 不是所有活动对用户体验贡献相同。医院预约相关的获客咨询、号源安排、就诊接待和售后服务，都可能影响患者获得服务的体验。
+          - generic [ref=f14e37]:
+            - heading "分析步骤" [level=3] [ref=f14e38]
+            - paragraph [ref=f14e39]: 先找顾客重视的结果→列出创造结果的主要活动及支撑活动→分析瓶颈和成本→优先改造关键活动→用业务指标评价收益。
+          - generic [ref=f14e40]:
+            - heading "不是所有工作都必须自动化" [level=3] [ref=f14e41]
+            - paragraph [ref=f14e42]: 有些高风险步骤需要医生人工判断；流程再造是重新安排价值活动、职责和控制点，不是把人全部替换为程序。
+          - button "逐步看" [ref=f14e44] [cursor=pointer]
+        - region [ref=f14e45]:
+          - heading "一步步做示例" [level=2] [ref=f14e46]
+          - heading "医院优先改哪条流程？" [level=3] [ref=f14e47]
+          - list [ref=f14e48]:
+            - listitem [ref=f14e49]: 核心问题：号源爽约率高、候诊时间长。
+            - listitem [ref=f14e50]: 价值链分析：预约分配与取消补位对患者体验和号源利用率影响很大。
+            - listitem [ref=f14e51]: BPR 方案：统一号源池、支持规则化取消、自动释放号源并按规则候补。
+            - listitem [ref=f14e52]: 设定指标：爽约率、号源利用率、平均预约完成时长；上线后与基线比较。
+        - generic [ref=f14e53]:
+          - heading "容易混淆" [level=2] [ref=f14e54]
+          - paragraph [ref=f14e55]: BPR 不是把旧流程照搬进软件；价值链不是单纯画组织架构，而是识别哪些活动真正创造价值。
+          - heading "在考试中怎么用" [level=3] [ref=f14e56]
+          - paragraph [ref=f14e57]: 考题可能要求选择优先改造的业务环节或解释数字化转型的实际价值。
+          - heading "记忆线索" [level=3] [ref=f14e58]
+          - paragraph [ref=f14e59]: 价值链帮你找重点，BPR 帮你重做流程。
+        - region [ref=f14e60]:
+          - heading "原创课后理解练习" [level=2] [ref=f14e61]
+          - paragraph [ref=f14e62]: 原创教学题 · 非官方真题 · 不进入原 150 道题库，不计客观掌握。作答只保留在当前页面，重做会收起答案。
+          - article [ref=f14e63]:
+            - heading "理解题 1 · 价值链目标" [level=3] [ref=f14e64]
+            - paragraph [ref=f14e65]: 医院希望优先投资最能提升患者体验的数字化环节。价值链分析首先帮助识别什么？
+            - generic "理解题 1 选项" [ref=f14e66]:
+              - button "A 所有业务必须先拆成多个微服务" [ref=f14e67] [cursor=pointer]:
+                - generic [ref=f14e68]: A
+                - text: 所有业务必须先拆成多个微服务
+              - button "B 所有临床审批环节可以一律删除" [ref=f14e69] [cursor=pointer]:
+                - generic [ref=f14e70]: B
+                - text: 所有临床审批环节可以一律删除
+              - button "C 最适合的 UML 继承箭头方向" [ref=f14e71] [cursor=pointer]:
+                - generic [ref=f14e72]: C
+                - text: 最适合的 UML 继承箭头方向
+              - button "D 预约分配、诊前提醒、就诊服务等活动各自的价值贡献与成本" [ref=f14e73] [cursor=pointer]:
+                - generic [ref=f14e74]: D
+                - text: 预约分配、诊前提醒、就诊服务等活动各自的价值贡献与成本
+            - button "提交理解题 1" [disabled] [ref=f14e75]
+          - article [ref=f14e76]:
+            - heading "理解题 2 · BPR与自动化" [level=3] [ref=f14e77]
+            - paragraph [ref=f14e78]: 医院将繁琐的退号流程完整搬上网页。对照真正的 BPR，它最缺少什么？
+            - generic "理解题 2 选项" [ref=f14e79]:
+              - button "A 把纸质单据扫描并归档到更多文件夹" [ref=f14e80] [cursor=pointer]:
+                - generic [ref=f14e81]: A
+                - text: 把纸质单据扫描并归档到更多文件夹
+              - button "B 增加线下人工审批以减少系统复杂度" [ref=f14e82] [cursor=pointer]:
+                - generic [ref=f14e83]: B
+                - text: 增加线下人工审批以减少系统复杂度
+              - button "C 跨部门重新审视等待、交接与释放号源环节，形成更好的端到端流程" [ref=f14e84] [cursor=pointer]:
+                - generic [ref=f14e85]: C
+                - text: 跨部门重新审视等待、交接与释放号源环节，形成更好的端到端流程
+              - button "D 流程改进前后有相同数量的系统页面" [ref=f14e86] [cursor=pointer]:
+                - generic [ref=f14e87]: D
+                - text: 流程改进前后有相同数量的系统页面
+            - button "提交理解题 2" [disabled] [ref=f14e88]
+        - generic [ref=f14e89]:
+          - heading "闭卷自述" [level=2] [ref=f14e90]
+          - paragraph [ref=f14e91]: 离开讲解，试着用自己的话回答。进入自测后会隐藏课程资料，沿用原知识卡的验收规则。
+          - list [ref=f14e92]:
+            - listitem [ref=f14e93]: 用预约系统举出一项高价值活动，说明它为什么值得优先优化。
+            - listitem [ref=f14e94]: 阐述“电子审批”与“BPR”本质上的差异。
+          - button "开始闭卷自测 →" [ref=f14e95] [cursor=pointer]
+        - generic [ref=f14e96]:
+          - paragraph [ref=f14e97]: 今日完成后，把前五张需求卡与几张 UML 图串起来，尝试向一位不了解软件的人解释“一个预约系统是怎样从需求走到设计”的过程。
+          - paragraph [ref=f14e98]: 课程讲解、业务示例与理解题均为原创教学内容。
+        - group [ref=f14e99]:
+          - generic "考前速记 · 原始必背概念" [active] [ref=f14e100] [cursor=pointer]
+          - heading "必会概念" [level=2] [ref=f14e101]
+          - paragraph [ref=f14e102]: BPR重构端到端流程；价值链找竞争优势活动
+          - heading "易错点" [level=2] [ref=f14e103]
+          - paragraph [ref=f14e104]: 流程自动化不等于流程再造
+          - paragraph [ref=f14e105]: 来源：必背清单76 · 第 79 行
+      - generic [ref=f14e106]:
+        - heading "掌握记录" [level=2] [ref=f14e107]
+        - paragraph [ref=f14e108]: 0 次闭卷尝试。有客观关联题验证。
+      - link "下一知识：常见工程英语 →" [ref=f14e109] [cursor=pointer]:
+        - /url: /learn/K076
+    - region "离线学习状态" [ref=f14e110]:
+      - paragraph [ref=f14e111]:
+        - strong [ref=f14e112]: 已联网
+        - text: · 全部核心资料已缓存，可离线学习
+      - button "请求浏览器持久保存本设备数据" [ref=f14e113] [cursor=pointer]
+    - contentinfo [ref=f14e114]: 软考冲刺 · 系统分析师知识点掌握驱动 · 原创模拟训练
+  - navigation "主导航" [ref=f14e115]:
+    - link "今日" [ref=f14e116] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f14e117]: ⌂
+      - text: 今日
+    - link "知识" [ref=f14e118] [cursor=pointer]:
+      - /url: /learn
+      - generic [aria-hidden] [ref=f14e119]: ▤
+      - text: 知识
+    - link "刷题" [ref=f14e120] [cursor=pointer]:
+      - /url: /practice
+      - generic [aria-hidden] [ref=f14e121]: ✓
+      - text: 刷题
+    - link "实战" [ref=f14e122] [cursor=pointer]:
+      - /url: /cases
+      - generic [aria-hidden] [ref=f14e123]: ◇
+      - text: 实战
+    - link "我的" [ref=f14e124] [cursor=pointer]:
+      - /url: /progress
+      - generic [aria-hidden] [ref=f14e125]: ◎
+      - text: 我的
+```

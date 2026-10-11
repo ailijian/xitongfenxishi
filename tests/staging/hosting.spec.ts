@@ -21,10 +21,17 @@ test("静态服务健康、深层路由和PWA入口正确，缺失资源返回40
   expect(sw.status()).toBe(200);
   expect(sw.headers()["content-type"]).toMatch(/javascript/);
   expect(sw.headers()["cache-control"]).toBe("no-cache");
-  for (const route of ["/assets/missing.js", "/missing.js", "/icons/missing.png", "/_headers", "/_redirects"]) {
+  for (const route of ["/assets/missing.js", "/missing.js", "/icons/missing.png", "/lesson-diagrams/missing.svg", "/_headers", "/_redirects"]) {
     const response = await request.get(route);
     expect(response.status(), route).toBe(404);
     expect(await response.text(), route).not.toContain('<div id="root"></div>');
+  }
+  for (const id of ["K004", "K005", "K006", "K007", "K008", "K009", "K010", "K011"]) {
+    const response = await request.get(`/lesson-diagrams/${id}.svg`);
+    expect(response.status()).toBe(200);
+    expect(response.headers()["content-type"]).toContain("image/svg+xml");
+    expect(response.headers()["cache-control"]).toBe("no-cache");
+    expect(await response.text()).toContain("<svg");
   }
 });
 

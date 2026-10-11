@@ -16,10 +16,13 @@ npm run dev
 ```sh
 npm run data:import              # 从原始Excel/Word重新导入
 npm run data:check               # 原文、来源指纹、数量及生成文件一致性
+npm run lessons:check            # 零基础15课/30原创理解题/8静态概念图
 npm run test                    # 内容、状态机、计划、评分、存储升级和备份测试
 npx playwright install chromium # 首次浏览器测试前安装
+npx playwright install webkit   # 零基础课程WebKit手机测试
 npm run test:e2e                # 手机学习、75题模考、案例、论文及四种宽度
-npm run build                   # data:check → TypeScript → Vite → Service Worker
+npm run test:beginner           # 全部课程、理解练习门禁、备份、离线与WebKit
+npm run build                   # data:check → lessons:check → TypeScript → Vite → Service Worker
 npm run test:pwa                # 重新构建并验证真实Service Worker断网和备份流程
 npm run preview -- --port 4174   # 本机生产预览，http://localhost:4174
 ```
@@ -39,6 +42,7 @@ npm run preview -- --port 4174   # 本机生产预览，http://localhost:4174
 - 默认启动日2026-10-11，可在“我的”修改并保留记录。D1—D5按15/15/15/15/16首轮通关，D6整卷模考，D7复习及论文修订。
 - 到期复习优先，欠账自动顺延，提前通关减少后续任务。首页分别显示原计划、新增、欠账、首轮与巩固指标，可手动重排单卡日期。
 - 阅读不算掌握。先闭卷写要点，再对照自检；有可信章节关联时还需答对一道关联题。首轮通过满24小时后成功闭卷复测才巩固；复测或关联题失败需要复习。
+- K001—K014、K075 提供完整零基础课程：医院预约场景、逐步讲解、带做示例、8个可离线图示、30道原创理解题和闭卷自述，原必背概念收在最后的“考前速记”。理解题交卷后揭示逐项解析，只保留在当前页面，不进入原题库、错题本或掌握统计。其他61张卡标为“考前速记版”。集成验收见 `docs/beginner-course-integration-report.md`。
 - 章节题提交后显示解析；独立75题模考整卷提交后才显示答案与成绩，未答计0分，不伪造作答记录。支持退出续考、题号导航、收藏与错题二刷。
 - 案例三问先作答，再按原文完整采分组自评，显示漏分项并保存多次历史。论文共享真实项目素材库，支持提纲、正文、自查、复制与TXT/Markdown导出。
 - 完整模考按75单选→任选3案例→1论文进行，已完成场次的论文快照保留。论文完成由本人确认与六项自查决定，系统不自动评阅技术质量、不预测官方分数。
