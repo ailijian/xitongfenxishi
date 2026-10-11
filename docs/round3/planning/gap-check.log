@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "mode": "read-only-check",
+  "knowledgeCards": 76,
+  "priorityA": 57,
+  "priorityB": 19,
+  "chapterQuestions": 75,
+  "mockQuestions": 75,
+  "proposedCheckpoints": 261,
+  "runtimeExplicitCheckpoints": 0,
+  "currentApprovedCheckpointMappings": 0,
+  "cardsWithCredibleChapterQuestions": 47,
+  "missingCredibleChapterCards": 29,
+  "missingACards": 20,
+  "missingBCards": 9,
+  "cardsWithoutAnyPoolQuestion": [
+    "K010",
+    "K020",
+    "K028",
+    "K039",
+    "K045"
+  ],
+  "linkedChapterQuestions": 60,
+  "linkedMockQuestions": 44,
+  "unlinkedQuestions": 46,
+  "revokedAssociations": 8,
+  "weakDistractorQuestions": 53,
+  "transferGapQuestions": 9,
+  "minimumRequestedDraftQuestions": 40
+}

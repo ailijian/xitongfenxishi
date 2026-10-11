@@ -1,0 +1,33 @@
+
+> ruankao-sprint-system-analyst@1.0.0 build
+> npm run data:check && tsc --noEmit && vite build
+
+
+> ruankao-sprint-system-analyst@1.0.0 data:check
+> tsx scripts/import-content.ts --check
+
+校验通过：76(A57/B19) + 150(75/75) + C01—C09(每套25分) + E01—E10。仅自评卡 29 张。
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 150 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.webmanifest                          0.50 kB
+dist/index.html                                    1.33 kB │ gzip:  0.62 kB
+dist/assets/index-BBXaXput.css                    11.62 kB │ gzip:  3.14 kB
+dist/assets/rolldown-runtime-CbXtAM7H.js           0.58 kB │ gzip:  0.36 kB
+dist/assets/workbox-window.prod.es5-Bd17z0YL.js    5.65 kB │ gzip:  2.20 kB
+dist/assets/index-BJprn2Pl.js                     83.55 kB │ gzip: 25.08 kB
+dist/assets/validation-CaOqAvNd.js                89.50 kB │ gzip: 25.28 kB
+dist/assets/storage-svMLn3U1.js                   96.50 kB │ gzip: 31.76 kB
+dist/assets/content-C_iOfIEt.js                  198.09 kB │ gzip: 41.52 kB
+dist/assets/react-BIRkIiH7.js                    257.18 kB │ gzip: 81.66 kB
+
+✓ built in 975ms
+
+PWA v2.0.0
+mode      generateSW
+precache  21 entries (739.59 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-2fbc6a65.js

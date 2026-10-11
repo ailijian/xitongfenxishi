@@ -1,0 +1,8 @@
+Scope-check first attempt: FAIL (verification command path parsing, not an app failure).
+The ad hoc command split git ls-tree output on newlines. Git C-quoted a Chinese
+filename, so git show reported that the quoted path did not exist in fc087c0.
+Correction: scripts/check-review-scope.mjs uses git ls-tree -r -z --name-only and
+NUL-delimited paths. The complete check was rerun; see scope-check.log.
+No repository baseline file was changed by this failed check.
+Git whitespace check initially reported a trailing blank line in captured Vitest output.
+Only that EOF blank line was removed; command output and test results are otherwise intact.

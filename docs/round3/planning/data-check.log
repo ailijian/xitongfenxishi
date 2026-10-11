@@ -1,0 +1,5 @@
+
+> ruankao-sprint-system-analyst@1.0.0 data:check
+> tsx scripts/import-content.ts --check
+
+校验通过：76(A57/B19) + 150(75/75) + C01—C09(每套25分) + E01—E10。仅自评卡 29 张。

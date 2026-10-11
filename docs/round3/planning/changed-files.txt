@@ -1,0 +1,17 @@
+docs/knowledge-v2-migration-plan.md
+docs/learning-content-gap.json
+docs/learning-content-gap.md
+docs/review/knowledge-checkpoint-proposals.json
+docs/review/question-coverage-proposals.json
+docs/review/question-quality-findings.json
+docs/round3-planning-report.md
+docs/round3/planning/build.log
+docs/round3/planning/changed-files.txt
+docs/round3/planning/data-check.log
+docs/round3/planning/gap-check.log
+docs/round3/planning/scope-check.log
+docs/round3/planning/source-fields.log
+docs/round3/planning/unit-baseline.log
+docs/round3/planning/verification-notes.log
+scripts/build-learning-gap.mjs
+scripts/check-review-scope.mjs
