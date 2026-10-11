@@ -1,0 +1,145 @@
+[
+  {
+    "id": "S01",
+    "priority": "最高",
+    "title": "上海市2026下半年正式考务通知",
+    "category": "官方",
+    "url": "https://rsj.sh.gov.cn/tkwap_17826/20260811/t0035_1443017.html",
+    "notice": "考试日期、打印准考证、机考、三科合格规则",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 5
+    }
+  },
+  {
+    "id": "S02",
+    "priority": "最高",
+    "title": "中国计算机技术职业资格网",
+    "category": "考试官方网站",
+    "url": "https://www.ruankao.org.cn/",
+    "notice": "报名、准考证、官方考试用书和公告",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 6
+    }
+  },
+  {
+    "id": "S03",
+    "priority": "最高",
+    "title": "系统分析师考试大纲（2024版）",
+    "category": "清华大学出版社",
+    "url": "https://www.tup.tsinghua.edu.cn/bookscenter/book_09190201.html",
+    "notice": "新版大纲的版权、版本和考试范围",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 7
+    }
+  },
+  {
+    "id": "S04",
+    "priority": "高",
+    "title": "系统分析师教程第2版",
+    "category": "清华大学出版社",
+    "url": "https://www.tup.tsinghua.edu.cn/booksCenter/book_09190501.html",
+    "notice": "22章新版参考教程，按需查漏，不要求7天通读",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 8
+    }
+  },
+  {
+    "id": "S05",
+    "priority": "高",
+    "title": "2026下半年系统分析师考试介绍",
+    "category": "希赛第三方",
+    "url": "https://www.educity.cn/rk/5529723.html",
+    "notice": "题量、选做规则、考试领域（以准考证及官方最新要求为准）",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 9
+    }
+  },
+  {
+    "id": "S06",
+    "priority": "高",
+    "title": "2026年5月系统分析师案例回忆版",
+    "category": "希赛第三方",
+    "url": "https://www.educity.cn/rk/5523030.html",
+    "notice": "研究新版命题场景，非官方完整试卷",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 10
+    }
+  },
+  {
+    "id": "S07",
+    "priority": "高",
+    "title": "2026年5月系统分析师论文回忆版",
+    "category": "希赛第三方",
+    "url": "https://www.educity.cn/rk/5523031.html",
+    "notice": "近次论文主题方向，非官方原卷",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 11
+    }
+  },
+  {
+    "id": "S08",
+    "priority": "高",
+    "title": "2026年5月系统分析师综合回忆版",
+    "category": "希赛第三方",
+    "url": "https://www.educity.cn/rk/5523029.html",
+    "notice": "用来查缺补漏，回忆版答案可能有误",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 12
+    }
+  },
+  {
+    "id": "S09",
+    "priority": "中",
+    "title": "历年真题列表",
+    "category": "51CTO题库",
+    "url": "https://t.51cto.com/list/years/sub-241",
+    "notice": "2024—2026题目索引；部分内容可能需要登录/付费",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 13
+    }
+  },
+  {
+    "id": "S10",
+    "priority": "中",
+    "title": "系统分析师历年题库",
+    "category": "软题库",
+    "url": "https://www.ruantiku.com/course/5.html",
+    "notice": "章节题、历年题入口；优先近两年新版大纲",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 14
+    }
+  },
+  {
+    "id": "S11",
+    "priority": "中",
+    "title": "系统分析师题库与学习资料",
+    "category": "希赛",
+    "url": "https://www.educity.cn/rk/rjsp/index.html",
+    "notice": "近期模考和回忆真题，注意商业推广",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "资料来源",
+      "row": 15
+    }
+  }
+]

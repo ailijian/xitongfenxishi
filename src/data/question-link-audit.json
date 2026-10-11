@@ -1,0 +1,2343 @@
+[
+  {
+    "questionId": "RK001",
+    "knowledgeIds": [
+      "K002"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：好需求6项",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 5
+    }
+  },
+  {
+    "questionId": "RK002",
+    "knowledgeIds": [
+      "K069"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K069"
+    ],
+    "reason": "题干/正确选项/解析直接考查：NPV/PV",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 6
+    }
+  },
+  {
+    "questionId": "RK003",
+    "knowledgeIds": [
+      "K013"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：开发模型",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 7
+    }
+  },
+  {
+    "questionId": "RK004",
+    "knowledgeIds": [
+      "K018"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：4+1视图",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 8
+    }
+  },
+  {
+    "questionId": "RK005",
+    "knowledgeIds": [
+      "K030"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K030"
+    ],
+    "reason": "题干/正确选项/解析直接考查：候选键/主键",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 9
+    }
+  },
+  {
+    "questionId": "RK006",
+    "knowledgeIds": [
+      "K042"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K042"
+    ],
+    "reason": "题干/正确选项/解析直接考查：静态/动态测试",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 10
+    }
+  },
+  {
+    "questionId": "RK007",
+    "knowledgeIds": [
+      "K056"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K056"
+    ],
+    "reason": "题干/正确选项/解析直接考查：TCP/UDP",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 11
+    }
+  },
+  {
+    "questionId": "RK008",
+    "knowledgeIds": [
+      "K051"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K051"
+    ],
+    "reason": "题干/正确选项/解析直接考查：AES/RSA/哈希",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 12
+    }
+  },
+  {
+    "questionId": "RK009",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 13
+    }
+  },
+  {
+    "questionId": "RK010",
+    "knowledgeIds": [
+      "K069"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K069"
+    ],
+    "reason": "题干/正确选项/解析直接考查：NPV/PV",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 14
+    }
+  },
+  {
+    "questionId": "RK011",
+    "knowledgeIds": [
+      "K065"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K065"
+    ],
+    "reason": "题干/正确选项/解析直接考查：容器与K8s",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 15
+    }
+  },
+  {
+    "questionId": "RK012",
+    "knowledgeIds": [
+      "K074"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K074"
+    ],
+    "reason": "题干/正确选项/解析直接考查：SLA/MTTR",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 16
+    }
+  },
+  {
+    "questionId": "RK013",
+    "knowledgeIds": [
+      "K003"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K003"
+    ],
+    "reason": "题干/正确选项/解析直接考查：需求获取",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 17
+    }
+  },
+  {
+    "questionId": "RK014",
+    "knowledgeIds": [
+      "K012",
+      "K075"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K075"
+    ],
+    "reason": "题干/正确选项/解析直接考查：业务流程重构、BPR/价值链",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 18
+    }
+  },
+  {
+    "questionId": "RK015",
+    "knowledgeIds": [
+      "K013"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：开发模型",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 19
+    }
+  },
+  {
+    "questionId": "RK016",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 20
+    }
+  },
+  {
+    "questionId": "RK017",
+    "knowledgeIds": [
+      "K031"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K031"
+    ],
+    "reason": "题干/正确选项/解析直接考查：1NF",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 21
+    }
+  },
+  {
+    "questionId": "RK018",
+    "knowledgeIds": [
+      "K043"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：覆盖层级",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 22
+    }
+  },
+  {
+    "questionId": "RK019",
+    "knowledgeIds": [
+      "K057"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K057"
+    ],
+    "reason": "题干/正确选项/解析直接考查：TLS/HTTPS",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 23
+    }
+  },
+  {
+    "questionId": "RK020",
+    "knowledgeIds": [
+      "K051"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K051"
+    ],
+    "reason": "题干/正确选项/解析直接考查：AES/RSA/哈希",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 24
+    }
+  },
+  {
+    "questionId": "RK021",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 25
+    }
+  },
+  {
+    "questionId": "RK022",
+    "knowledgeIds": [
+      "K070"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：EMV",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 26
+    }
+  },
+  {
+    "questionId": "RK023",
+    "knowledgeIds": [
+      "K065"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：容器与K8s",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 27
+    }
+  },
+  {
+    "questionId": "RK024",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K050",
+      "K064",
+      "K066"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 28
+    }
+  },
+  {
+    "questionId": "RK025",
+    "knowledgeIds": [
+      "K001"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：需求类型",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 29
+    }
+  },
+  {
+    "questionId": "RK026",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 30
+    }
+  },
+  {
+    "questionId": "RK027",
+    "knowledgeIds": [
+      "K014"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K014"
+    ],
+    "reason": "题干/正确选项/解析直接考查：敏捷/Scrum",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 31
+    }
+  },
+  {
+    "questionId": "RK028",
+    "knowledgeIds": [
+      "K021"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K021"
+    ],
+    "reason": "题干/正确选项/解析直接考查：事件驱动",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 32
+    }
+  },
+  {
+    "questionId": "RK029",
+    "knowledgeIds": [
+      "K032"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K030",
+      "K032"
+    ],
+    "reason": "题干/正确选项/解析直接考查：2NF",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 33
+    }
+  },
+  {
+    "questionId": "RK030",
+    "knowledgeIds": [
+      "K043"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：覆盖层级",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 34
+    }
+  },
+  {
+    "questionId": "RK031",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 35
+    }
+  },
+  {
+    "questionId": "RK032",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 36
+    }
+  },
+  {
+    "questionId": "RK033",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 37
+    }
+  },
+  {
+    "questionId": "RK034",
+    "knowledgeIds": [
+      "K072"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：关键路径",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 38
+    }
+  },
+  {
+    "questionId": "RK035",
+    "knowledgeIds": [
+      "K065"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：容器与K8s",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 39
+    }
+  },
+  {
+    "questionId": "RK036",
+    "knowledgeIds": [
+      "K074"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K074"
+    ],
+    "reason": "题干/正确选项/解析直接考查：SLA/MTTR",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 40
+    }
+  },
+  {
+    "questionId": "RK037",
+    "knowledgeIds": [
+      "K006"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K006"
+    ],
+    "reason": "题干/正确选项/解析直接考查：用例图",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 41
+    }
+  },
+  {
+    "questionId": "RK038",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 42
+    }
+  },
+  {
+    "questionId": "RK039",
+    "knowledgeIds": [
+      "K014"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K014"
+    ],
+    "reason": "题干/正确选项/解析直接考查：敏捷/Scrum",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 43
+    }
+  },
+  {
+    "questionId": "RK040",
+    "knowledgeIds": [
+      "K019"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K004",
+      "K019"
+    ],
+    "reason": "题干/正确选项/解析直接考查：分层架构",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 44
+    }
+  },
+  {
+    "questionId": "RK041",
+    "knowledgeIds": [
+      "K033"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K030",
+      "K033"
+    ],
+    "reason": "题干/正确选项/解析直接考查：3NF",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 45
+    }
+  },
+  {
+    "questionId": "RK042",
+    "knowledgeIds": [
+      "K044"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：黑盒测试设计",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 46
+    }
+  },
+  {
+    "questionId": "RK043",
+    "knowledgeIds": [
+      "K059"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K059"
+    ],
+    "reason": "题干/正确选项/解析直接考查：熔断/限流/降级",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 47
+    }
+  },
+  {
+    "questionId": "RK044",
+    "knowledgeIds": [
+      "K052"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：授权RBAC/ABAC",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 48
+    }
+  },
+  {
+    "questionId": "RK045",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 49
+    }
+  },
+  {
+    "questionId": "RK046",
+    "knowledgeIds": [
+      "K071"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K069"
+    ],
+    "reason": "题干/正确选项/解析直接考查：EVM",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 50
+    }
+  },
+  {
+    "questionId": "RK047",
+    "knowledgeIds": [
+      "K066"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K059",
+      "K066"
+    ],
+    "reason": "题干/正确选项/解析直接考查：蓝绿/灰度",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 51
+    }
+  },
+  {
+    "questionId": "RK048",
+    "knowledgeIds": [
+      "K006"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K006"
+    ],
+    "reason": "题干/正确选项/解析直接考查：用例图",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 52
+    }
+  },
+  {
+    "questionId": "RK049",
+    "knowledgeIds": [
+      "K075"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K075"
+    ],
+    "reason": "题干/正确选项/解析直接考查：BPR/价值链",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 53
+    }
+  },
+  {
+    "questionId": "RK050",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K004"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 54
+    }
+  },
+  {
+    "questionId": "RK051",
+    "knowledgeIds": [
+      "K024"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K024"
+    ],
+    "reason": "题干/正确选项/解析直接考查：设计模式-适配器",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 55
+    }
+  },
+  {
+    "questionId": "RK052",
+    "knowledgeIds": [
+      "K034"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K033",
+      "K034"
+    ],
+    "reason": "题干/正确选项/解析直接考查：BCNF",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 56
+    }
+  },
+  {
+    "questionId": "RK053",
+    "knowledgeIds": [
+      "K044"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：黑盒测试设计",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 57
+    }
+  },
+  {
+    "questionId": "RK054",
+    "knowledgeIds": [
+      "K061"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K061"
+    ],
+    "reason": "题干/正确选项/解析直接考查：幂等/重复投递",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 58
+    }
+  },
+  {
+    "questionId": "RK055",
+    "knowledgeIds": [
+      "K052"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K022",
+      "K052"
+    ],
+    "reason": "题干/正确选项/解析直接考查：授权RBAC/ABAC",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 59
+    }
+  },
+  {
+    "questionId": "RK056",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 60
+    }
+  },
+  {
+    "questionId": "RK057",
+    "knowledgeIds": [
+      "K071"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K069"
+    ],
+    "reason": "题干/正确选项/解析直接考查：EVM",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 61
+    }
+  },
+  {
+    "questionId": "RK058",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 62
+    }
+  },
+  {
+    "questionId": "RK059",
+    "knowledgeIds": [
+      "K007"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K007"
+    ],
+    "reason": "题干/正确选项/解析直接考查：顺序图",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 63
+    }
+  },
+  {
+    "questionId": "RK060",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 64
+    }
+  },
+  {
+    "questionId": "RK061",
+    "knowledgeIds": [
+      "K016"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K004",
+      "K016"
+    ],
+    "reason": "题干/正确选项/解析直接考查：高内聚低耦合",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 65
+    }
+  },
+  {
+    "questionId": "RK062",
+    "knowledgeIds": [
+      "K023"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K023"
+    ],
+    "reason": "题干/正确选项/解析直接考查：设计模式-观察者",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 66
+    }
+  },
+  {
+    "questionId": "RK063",
+    "knowledgeIds": [
+      "K035"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K015"
+    ],
+    "reason": "题干/正确选项/解析直接考查：事务ACID",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 67
+    }
+  },
+  {
+    "questionId": "RK064",
+    "knowledgeIds": [
+      "K046"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K004",
+      "K046"
+    ],
+    "reason": "题干/正确选项/解析直接考查：回归测试",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 68
+    }
+  },
+  {
+    "questionId": "RK065",
+    "knowledgeIds": [
+      "K061"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K022",
+      "K061"
+    ],
+    "reason": "题干/正确选项/解析直接考查：幂等/重复投递",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 69
+    }
+  },
+  {
+    "questionId": "RK066",
+    "knowledgeIds": [
+      "K053"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K053"
+    ],
+    "reason": "题干/正确选项/解析直接考查：最小权限",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 70
+    }
+  },
+  {
+    "questionId": "RK067",
+    "knowledgeIds": [
+      "K067"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K067"
+    ],
+    "reason": "题干/正确选项/解析直接考查：RAG与向量检索",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 71
+    }
+  },
+  {
+    "questionId": "RK068",
+    "knowledgeIds": [
+      "K009"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K009"
+    ],
+    "reason": "题干/正确选项/解析直接考查：状态图",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 72
+    }
+  },
+  {
+    "questionId": "RK069",
+    "knowledgeIds": [
+      "K022"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K022"
+    ],
+    "reason": "题干/正确选项/解析直接考查：设计模式-策略",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 73
+    }
+  },
+  {
+    "questionId": "RK070",
+    "knowledgeIds": [
+      "K035"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：事务ACID",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 74
+    }
+  },
+  {
+    "questionId": "RK071",
+    "knowledgeIds": [
+      "K047"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：性能指标",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 75
+    }
+  },
+  {
+    "questionId": "RK072",
+    "knowledgeIds": [
+      "K060"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K060"
+    ],
+    "reason": "题干/正确选项/解析直接考查：CAP",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 76
+    }
+  },
+  {
+    "questionId": "RK073",
+    "knowledgeIds": [
+      "K008"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K008"
+    ],
+    "reason": "题干/正确选项/解析直接考查：活动图",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 77
+    }
+  },
+  {
+    "questionId": "RK074",
+    "knowledgeIds": [
+      "K025"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K025"
+    ],
+    "reason": "题干/正确选项/解析直接考查：设计模式-备忘录",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 78
+    }
+  },
+  {
+    "questionId": "RK075",
+    "knowledgeIds": [
+      "K036"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：并发问题",
+    "practiceEligible": true,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 79
+    }
+  },
+  {
+    "questionId": "RK076",
+    "knowledgeIds": [
+      "K011"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：DFD四元素",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 5
+    }
+  },
+  {
+    "questionId": "RK077",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 6
+    }
+  },
+  {
+    "questionId": "RK078",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K022",
+      "K061"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 7
+    }
+  },
+  {
+    "questionId": "RK079",
+    "knowledgeIds": [
+      "K026"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K026"
+    ],
+    "reason": "题干/正确选项/解析直接考查：设计模式-抽象工厂",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 8
+    }
+  },
+  {
+    "questionId": "RK080",
+    "knowledgeIds": [
+      "K038"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K038"
+    ],
+    "reason": "题干/正确选项/解析直接考查：索引",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 9
+    }
+  },
+  {
+    "questionId": "RK081",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 10
+    }
+  },
+  {
+    "questionId": "RK082",
+    "knowledgeIds": [
+      "K062"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K062"
+    ],
+    "reason": "题干/正确选项/解析直接考查：最终一致性",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 11
+    }
+  },
+  {
+    "questionId": "RK083",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K051"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 12
+    }
+  },
+  {
+    "questionId": "RK084",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 13
+    }
+  },
+  {
+    "questionId": "RK085",
+    "knowledgeIds": [
+      "K073"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：Dijkstra/MST",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 14
+    }
+  },
+  {
+    "questionId": "RK086",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 15
+    }
+  },
+  {
+    "questionId": "RK087",
+    "knowledgeIds": [
+      "K064"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K064"
+    ],
+    "reason": "题干/正确选项/解析直接考查：可观测性",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 16
+    }
+  },
+  {
+    "questionId": "RK088",
+    "knowledgeIds": [
+      "K011"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K038"
+    ],
+    "reason": "题干/正确选项/解析直接考查：DFD四元素",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 17
+    }
+  },
+  {
+    "questionId": "RK089",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 18
+    }
+  },
+  {
+    "questionId": "RK090",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K004",
+      "K015",
+      "K022"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 19
+    }
+  },
+  {
+    "questionId": "RK091",
+    "knowledgeIds": [
+      "K027"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K027"
+    ],
+    "reason": "题干/正确选项/解析直接考查：设计模式-装饰器",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 20
+    }
+  },
+  {
+    "questionId": "RK092",
+    "knowledgeIds": [
+      "K039"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：OLTP/OLAP",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 21
+    }
+  },
+  {
+    "questionId": "RK093",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 22
+    }
+  },
+  {
+    "questionId": "RK094",
+    "knowledgeIds": [
+      "K063"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：可用性计算",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 23
+    }
+  },
+  {
+    "questionId": "RK095",
+    "knowledgeIds": [
+      "K050"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：数据安全",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 24
+    }
+  },
+  {
+    "questionId": "RK096",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 25
+    }
+  },
+  {
+    "questionId": "RK097",
+    "knowledgeIds": [
+      "K073"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K073"
+    ],
+    "reason": "题干/正确选项/解析直接考查：Dijkstra/MST",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 26
+    }
+  },
+  {
+    "questionId": "RK098",
+    "knowledgeIds": [
+      "K053",
+      "K068"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K053"
+    ],
+    "reason": "题干/正确选项/解析直接考查：最小权限、Agent安全",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 27
+    }
+  },
+  {
+    "questionId": "RK099",
+    "knowledgeIds": [
+      "K076"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：常见工程英语",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 28
+    }
+  },
+  {
+    "questionId": "RK100",
+    "knowledgeIds": [
+      "K005"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K004",
+      "K005"
+    ],
+    "reason": "题干/正确选项/解析直接考查：需求追踪",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 29
+    }
+  },
+  {
+    "questionId": "RK101",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 30
+    }
+  },
+  {
+    "questionId": "RK102",
+    "knowledgeIds": [
+      "K015"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K015"
+    ],
+    "reason": "题干/正确选项/解析直接考查：CI/CD",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 31
+    }
+  },
+  {
+    "questionId": "RK103",
+    "knowledgeIds": [
+      "K020",
+      "K029"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：微服务边界、架构权衡",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 32
+    }
+  },
+  {
+    "questionId": "RK104",
+    "knowledgeIds": [
+      "K037"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：SQL四招",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 33
+    }
+  },
+  {
+    "questionId": "RK105",
+    "knowledgeIds": [
+      "K048"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K048"
+    ],
+    "reason": "题干/正确选项/解析直接考查：SQA/QC",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 34
+    }
+  },
+  {
+    "questionId": "RK106",
+    "knowledgeIds": [
+      "K058"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K058"
+    ],
+    "reason": "题干/正确选项/解析直接考查：负载均衡",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 35
+    }
+  },
+  {
+    "questionId": "RK107",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 36
+    }
+  },
+  {
+    "questionId": "RK108",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 37
+    }
+  },
+  {
+    "questionId": "RK109",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 38
+    }
+  },
+  {
+    "questionId": "RK110",
+    "knowledgeIds": [
+      "K067"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K038",
+      "K067"
+    ],
+    "reason": "题干/正确选项/解析直接考查：RAG与向量检索",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 39
+    }
+  },
+  {
+    "questionId": "RK111",
+    "knowledgeIds": [
+      "K029",
+      "K076"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：架构权衡、常见工程英语",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 40
+    }
+  },
+  {
+    "questionId": "RK112",
+    "knowledgeIds": [
+      "K003",
+      "K013"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：需求获取、开发模型",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 41
+    }
+  },
+  {
+    "questionId": "RK113",
+    "knowledgeIds": [
+      "K002"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：好需求6项",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 42
+    }
+  },
+  {
+    "questionId": "RK114",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 43
+    }
+  },
+  {
+    "questionId": "RK115",
+    "knowledgeIds": [
+      "K062"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：最终一致性",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 44
+    }
+  },
+  {
+    "questionId": "RK116",
+    "knowledgeIds": [
+      "K037"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：SQL四招",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 45
+    }
+  },
+  {
+    "questionId": "RK117",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 46
+    }
+  },
+  {
+    "questionId": "RK118",
+    "knowledgeIds": [
+      "K054"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K054"
+    ],
+    "reason": "题干/正确选项/解析直接考查：RPO/RTO",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 47
+    }
+  },
+  {
+    "questionId": "RK119",
+    "knowledgeIds": [
+      "K052"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：授权RBAC/ABAC",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 48
+    }
+  },
+  {
+    "questionId": "RK120",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 49
+    }
+  },
+  {
+    "questionId": "RK121",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K015"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 50
+    }
+  },
+  {
+    "questionId": "RK122",
+    "knowledgeIds": [
+      "K068"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：Agent安全",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 51
+    }
+  },
+  {
+    "questionId": "RK123",
+    "knowledgeIds": [
+      "K076"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：常见工程英语",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 52
+    }
+  },
+  {
+    "questionId": "RK124",
+    "knowledgeIds": [
+      "K004"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K004"
+    ],
+    "reason": "题干/正确选项/解析直接考查：需求基线/变更",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 53
+    }
+  },
+  {
+    "questionId": "RK125",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 54
+    }
+  },
+  {
+    "questionId": "RK126",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K004"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 55
+    }
+  },
+  {
+    "questionId": "RK127",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K059"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 56
+    }
+  },
+  {
+    "questionId": "RK128",
+    "knowledgeIds": [
+      "K040"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K022"
+    ],
+    "reason": "题干/正确选项/解析直接考查：缓存旁路模式",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 57
+    }
+  },
+  {
+    "questionId": "RK129",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 58
+    }
+  },
+  {
+    "questionId": "RK130",
+    "knowledgeIds": [
+      "K054"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K054"
+    ],
+    "reason": "题干/正确选项/解析直接考查：RPO/RTO",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 59
+    }
+  },
+  {
+    "questionId": "RK131",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K053"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 60
+    }
+  },
+  {
+    "questionId": "RK132",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 61
+    }
+  },
+  {
+    "questionId": "RK133",
+    "knowledgeIds": [
+      "K070"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K070"
+    ],
+    "reason": "题干/正确选项/解析直接考查：EMV",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 62
+    }
+  },
+  {
+    "questionId": "RK134",
+    "knowledgeIds": [
+      "K049"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：LLM辅助测试",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 63
+    }
+  },
+  {
+    "questionId": "RK135",
+    "knowledgeIds": [
+      "K001"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：需求类型",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 64
+    }
+  },
+  {
+    "questionId": "RK136",
+    "knowledgeIds": [
+      "K012",
+      "K075"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：业务流程重构、BPR/价值链",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 65
+    }
+  },
+  {
+    "questionId": "RK137",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 66
+    }
+  },
+  {
+    "questionId": "RK138",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 67
+    }
+  },
+  {
+    "questionId": "RK139",
+    "knowledgeIds": [
+      "K041"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K041"
+    ],
+    "reason": "题干/正确选项/解析直接考查：分片",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 68
+    }
+  },
+  {
+    "questionId": "RK140",
+    "knowledgeIds": [
+      "K049"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：LLM辅助测试",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 69
+    }
+  },
+  {
+    "questionId": "RK141",
+    "knowledgeIds": [
+      "K040"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K022"
+    ],
+    "reason": "题干/正确选项/解析直接考查：缓存旁路模式",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 70
+    }
+  },
+  {
+    "questionId": "RK142",
+    "knowledgeIds": [
+      "K055"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：备份演练",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 71
+    }
+  },
+  {
+    "questionId": "RK143",
+    "knowledgeIds": [
+      "K066"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K066"
+    ],
+    "reason": "题干/正确选项/解析直接考查：蓝绿/灰度",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 72
+    }
+  },
+  {
+    "questionId": "RK144",
+    "knowledgeIds": [
+      "K006"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：用例图",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 73
+    }
+  },
+  {
+    "questionId": "RK145",
+    "knowledgeIds": [
+      "K058"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：负载均衡",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 74
+    }
+  },
+  {
+    "questionId": "RK146",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 75
+    }
+  },
+  {
+    "questionId": "RK147",
+    "knowledgeIds": [],
+    "decision": "unlinked",
+    "keywordCandidates": [
+      "K059"
+    ],
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 76
+    }
+  },
+  {
+    "questionId": "RK148",
+    "knowledgeIds": [
+      "K064"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：可观测性",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 77
+    }
+  },
+  {
+    "questionId": "RK149",
+    "knowledgeIds": [
+      "K002",
+      "K047"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [],
+    "reason": "题干/正确选项/解析直接考查：好需求6项、性能指标",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 78
+    }
+  },
+  {
+    "questionId": "RK150",
+    "knowledgeIds": [
+      "K017"
+    ],
+    "decision": "confirmed",
+    "keywordCandidates": [
+      "K017"
+    ],
+    "reason": "题干/正确选项/解析直接考查：质量属性场景",
+    "practiceEligible": false,
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 79
+    }
+  }
+]

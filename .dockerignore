@@ -1,0 +1,7 @@
+**
+!dist/
+!dist/**
+!ops/
+!ops/staging/
+!ops/staging/Caddyfile.web
+!ops/staging/Dockerfile.web

@@ -1,0 +1,30 @@
+services:
+  web:
+    image: ${STAGING_WEB_IMAGE:?STAGING_WEB_IMAGE must identify an existing release image}
+    restart: unless-stopped
+    expose:
+      - "8080"
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=8m,uid=10001,gid=10001,mode=0700
+      - /config:size=8m,uid=10001,gid=10001,mode=0700
+      - /data:size=8m,uid=10001,gid=10001,mode=0700
+    cpus: 0.5
+    mem_limit: 128m
+    pids_limit: 128
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+    networks:
+      edge:
+        aliases:
+          - ruankao-staging-web
+networks:
+  edge:
+    name: ruankao-staging_edge

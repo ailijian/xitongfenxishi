@@ -1,0 +1,108 @@
+{
+  "status": "succeeded",
+  "verifiedAt": "2026-10-11T04:24:44.052Z",
+  "url": "https://ruankao.staging.haaboo.com",
+  "manifest": {
+    "release_id": "staging-20261011T041333Z-a7b9ec9f3fb6",
+    "source_sha256": "a7b9ec9f3fb65fb03c62e251fb6aaafc5d0f44eb189f2c428d97d14465f44433",
+    "base_git_commit": "1a3ffc111a67a2eb699fb51280c367292b91c3a2",
+    "source_is_uncommitted_snapshot": "true",
+    "image_id": "sha256:59f9c85883b60c0781d21176e11fd1a2749b912aa38d305e777437375795265e",
+    "public_url": "https://ruankao.staging.haaboo.com"
+  },
+  "server": {
+    "releasePath": "/opt/azao-staging/projects/ruankao/releases/staging-20261011T041333Z-a7b9ec9f3fb6",
+    "health": "healthy",
+    "imageId": "sha256:59f9c85883b60c0781d21176e11fd1a2749b912aa38d305e777437375795265e",
+    "user": "10001:10001",
+    "readOnly": true,
+    "publishedPorts": {},
+    "memoryLimitBytes": 134217728,
+    "nanoCpus": 500000000,
+    "appNetworks": [
+      "ruankao-staging_edge"
+    ],
+    "proxyContainerId": "30efcd415242a5d18b36582738e40414023cfe75e92e0c1a2614cab893ad4a68",
+    "proxyNetworks": [
+      "ai-judgment-d3-staging_edge",
+      "azao-staging_edge",
+      "ruankao-staging_edge"
+    ],
+    "proxyConfigSource": "/opt/azao-staging/releases/20260829-v3-d10-ee7987c-af0155c/staging/Caddyfile",
+    "proxyBackupPath": "/opt/azao-staging/projects/ruankao/shared/proxy-backups/Caddyfile.20261011T042113Z.before",
+    "proxyBackupSha256": "18b1edfb0db4cc06735c65f66a171252b9119ecca15c197322a1050e12d8fd4b",
+    "proxyCandidateSha256": "272dfbf8d0246514ce0a13e12fb080d8185e434d2093e23bd40e2aeab2f00c7d",
+    "proxyHostSha256": "272dfbf8d0246514ce0a13e12fb080d8185e434d2093e23bd40e2aeab2f00c7d",
+    "proxyContainerSha256": "272dfbf8d0246514ce0a13e12fb080d8185e434d2093e23bd40e2aeab2f00c7d",
+    "previousRelease": "FIRST_DEPLOYMENT"
+  },
+  "tls": {
+    "checkedAt": "2026-10-11T04:22:11.847Z",
+    "status": 200,
+    "authorized": true,
+    "subject": {
+      "CN": "ruankao.staging.haaboo.com"
+    },
+    "issuer": {
+      "C": "US",
+      "O": "Let's Encrypt",
+      "CN": "YE2"
+    },
+    "validFrom": "Oct 11 03:22:52 2026 GMT",
+    "validTo": "Jan  9 03:22:51 2027 GMT",
+    "subjectAltName": "DNS:ruankao.staging.haaboo.com",
+    "fingerprint256": "61:15:ED:99:7A:58:47:38:21:05:D9:30:4E:C5:D0:1D:BA:6C:A4:52:0D:65:91:7B:65:AC:22:C4:C5:C6:E2:BF"
+  },
+  "sourceVerification": {
+    "checkedAt": "2026-10-11T04:22:34.185Z",
+    "filesCompared": 73,
+    "differences": []
+  },
+  "checks": {
+    "dataImport": "passed: 76 knowledge / 150 questions / 9 cases / 10 essays",
+    "unitTests": {
+      "passed": 45,
+      "failed": 0
+    },
+    "localContainer": {
+      "startTime": "2026-10-11T04:19:15.811Z",
+      "duration": 23780.477,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "liveBrowser": {
+      "startTime": "2026-10-11T04:22:17.541Z",
+      "duration": 61399.573,
+      "expected": 19,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "httpRedirectStatus": 308,
+    "existingRoutes": [
+      {
+        "url": "https://staging.haaboo.com/",
+        "before": 200,
+        "after": 200
+      },
+      {
+        "url": "https://staging.haaboo.com/judgment/",
+        "before": 200,
+        "after": 200
+      },
+      {
+        "url": "https://staging.haaboo.com/api/judgment/bootstrap",
+        "before": 200,
+        "after": 200
+      }
+    ]
+  },
+  "limits": [
+    "没有进行实体手机安装和系统存储回收验收",
+    "学习记录按浏览器及域名隔离，旧域名须导出JSON后在新域名恢复",
+    "首次发布，没有旧应用release；撤销入口使用完整代理配置备份",
+    "共享代理重建前需保留或恢复ruankao-staging_edge连接"
+  ]
+}

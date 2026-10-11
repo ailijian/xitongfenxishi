@@ -1,0 +1,75 @@
+# Staging 发布记录 · 2026-10-11
+
+已上线：<https://ruankao.staging.haaboo.com/>。这是无账号的静态 H5/PWA；
+用户进度、错题和草稿保存在当前浏览器 IndexedDB，服务器不保存学习数据。
+
+## 发布身份
+
+| 项目 | 实际值 |
+| --- | --- |
+| release | `staging-20261011T041333Z-a7b9ec9f3fb6` |
+| 源码快照 SHA-256 | `a7b9ec9f3fb65fb03c62e251fb6aaafc5d0f44eb189f2c428d97d14465f44433` |
+| 镜像 | `ruankao-web:staging-20261011T041333Z-a7b9ec9f3fb6`，`linux/amd64` |
+| 镜像 ID | `sha256:59f9c85883b60c0781d21176e11fd1a2749b912aa38d305e777437375795265e` |
+| Compose project | `ruankao-staging` |
+| 当前发布链接 | `/opt/azao-staging/projects/ruankao/current` |
+| 实际发布目录 | `/opt/azao-staging/projects/ruankao/releases/staging-20261011T041333Z-a7b9ec9f3fb6` |
+| Web alias / 网络 | `ruankao-staging-web:8080` / `ruankao-staging_edge` |
+
+源代码使用显式清单复制到独立目录并以归档 SHA-256 固定，未提交或推送原仓库。
+原 Git HEAD `1a3ffc111a67a2eb699fb51280c367292b91c3a2` 仅为 base commit，
+不能视为应用源版本。部署前比对 73 个代码、配置及资料文件，无差异。
+全部构建在本机完成；镜像只包含网页产物和静态服务配置。服务器上传包全部校验通过。
+
+## 实际验证
+
+| 检查 | 结果 |
+| --- | --- |
+| 资料及生产构建 | 76 知识点、150 单选、9 案例、10 论文；TypeScript 与构建通过 |
+| 单元测试 | 45 / 45 通过 |
+| 本地生产容器 | 5 / 5 通过，含离线重开、作答写作及备份恢复 |
+| 真实 HTTPS 浏览器测试 | 19 / 19 通过，含 75 题整卷、三案例和论文完整模考流程 |
+| 移动视口 | 320 / 375 / 390 / 430px，8 个关键页面无整页横向滚动 |
+| 路由及资源 | 深层路径刷新成功；JS/CSS MIME 正确；缺失资源真实返回 404 |
+| 缓存 | 首页、SW、manifest 为 `no-cache`；带哈希资源为一年 `immutable` |
+| PWA | 预缓存 21 项、735.94 KiB；真实域名断网关页重开通过 |
+| HTTPS | Let’s Encrypt YE2；客户端证书验证通过；HTTP 308 跳转 HTTPS |
+| 容器健康和隔离 | healthy；非 root `10001:10001`、只读根文件系统、无公网端口映射 |
+| 资源 | 限制 128 MiB / 0.5 CPU；验收时约 18.68 MiB 内存 |
+| 既有入口 | 主站、`/judgment/`、`/api/judgment/bootstrap` 部署前后均 200 |
+
+机器记录：`staging-deployment-result.json`、`staging-server-state.json`。
+详细浏览器结果：`staging-browser-tests.json`、`staging-local-tests.json`。
+线上截图：`screenshots/staging-today.png`、`screenshots/staging-knowledge.png`。
+
+## 共享代理及回滚
+
+本次只在原完整 Caddyfile 后追加独立域名站点；原有规则保持逐字一致。
+候选配置及实际挂载配置校验通过，宿主机和容器哈希一致后重启同一代理容器。
+代理配置实际来源：
+`/opt/azao-staging/releases/20260829-v3-d10-ee7987c-af0155c/staging/Caddyfile`。
+
+本次完整回滚备份：
+`/opt/azao-staging/projects/ruankao/shared/proxy-backups/Caddyfile.20261011T042113Z.before`。
+原配置 SHA-256：`18b1edfb0db4cc06735c65f66a171252b9119ecca15c197322a1050e12d8fd4b`。
+上线配置 SHA-256：`272dfbf8d0246514ce0a13e12fb080d8185e434d2093e23bd40e2aeab2f00c7d`。
+
+首次发布没有旧应用版本。撤销本次上线需恢复经过核对的完整代理配置，
+原位写入保留 bind mount inode，校验后定向重启代理并检查既有入口，
+再定向停止本项目 Web。若之后已有其他项目修改共享配置，应在最新完整
+配置中撤销本站规则，不能直接用旧备份覆盖后续变更。
+
+已将共享代理连接到 `ruankao-staging_edge`；此连接在同一容器 restart 后保留，
+代理重新创建前必须由维护者把网络纳入正式 Compose 配置，或按记录恢复连接。
+后续应用更新使用同一 project 和 alias，无需重启共享代理。
+构建、上传及更新步骤见 `../ops/staging/README.md`（仓库内实际路径为 `ops/staging/README.md`）。
+
+## 手机使用和数据迁移
+
+手机打开 HTTPS 地址，等待“全部核心资料已缓存”。Android 在浏览器安装菜单
+安装；iPhone 使用 Safari 分享菜单“添加到主屏幕”。本次验证使用浏览器移动视口，
+未进行实体手机安装、软键盘及系统存储回收验收。
+
+旧 Sites 域名、本地地址和新 staging 域名拥有独立 IndexedDB。
+在旧地址“我的”导出完整 JSON 备份，再到新地址“我的”校验并恢复。
+应用无账号或云同步，不会自动迁移或同步记录。

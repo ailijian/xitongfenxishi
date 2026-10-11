@@ -1,0 +1,26 @@
+{
+  "releasePath": "/opt/azao-staging/projects/ruankao/releases/staging-20261011T041333Z-a7b9ec9f3fb6",
+  "health": "healthy",
+  "imageId": "sha256:59f9c85883b60c0781d21176e11fd1a2749b912aa38d305e777437375795265e",
+  "user": "10001:10001",
+  "readOnly": true,
+  "publishedPorts": {},
+  "memoryLimitBytes": 134217728,
+  "nanoCpus": 500000000,
+  "appNetworks": [
+    "ruankao-staging_edge"
+  ],
+  "proxyContainerId": "30efcd415242a5d18b36582738e40414023cfe75e92e0c1a2614cab893ad4a68",
+  "proxyNetworks": [
+    "ai-judgment-d3-staging_edge",
+    "azao-staging_edge",
+    "ruankao-staging_edge"
+  ],
+  "proxyConfigSource": "/opt/azao-staging/releases/20260829-v3-d10-ee7987c-af0155c/staging/Caddyfile",
+  "proxyBackupPath": "/opt/azao-staging/projects/ruankao/shared/proxy-backups/Caddyfile.20261011T042113Z.before",
+  "proxyBackupSha256": "18b1edfb0db4cc06735c65f66a171252b9119ecca15c197322a1050e12d8fd4b",
+  "proxyCandidateSha256": "272dfbf8d0246514ce0a13e12fb080d8185e434d2093e23bd40e2aeab2f00c7d",
+  "proxyHostSha256": "272dfbf8d0246514ce0a13e12fb080d8185e434d2093e23bd40e2aeab2f00c7d",
+  "proxyContainerSha256": "272dfbf8d0246514ce0a13e12fb080d8185e434d2093e23bd40e2aeab2f00c7d",
+  "previousRelease": "FIRST_DEPLOYMENT"
+}

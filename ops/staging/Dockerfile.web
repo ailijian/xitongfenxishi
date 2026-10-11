@@ -1,0 +1,12 @@
+# Build dist locally with npm ci && npm run build before building this image.
+FROM caddy:2.11.4-alpine@sha256:6aeddd44c3078b0f9a35206472a11420648a79c184603ef95957d0a20044cb2b
+COPY dist/ /srv/
+COPY ops/staging/Caddyfile.web /etc/caddy/Caddyfile
+RUN setcap -r /usr/bin/caddy \
+    && rm -f /srv/_headers /srv/_redirects \
+    && chmod -R a+rX /srv /etc/caddy/Caddyfile
+USER 10001:10001
+EXPOSE 8080
+HEALTHCHECK --interval=15s --timeout=3s --start-period=5s --retries=3 \
+    CMD wget -q -O /dev/null http://127.0.0.1:8080/healthz || exit 1
+CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]

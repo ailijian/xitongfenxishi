@@ -1,0 +1,28 @@
+{
+  "id": "appgdep_6acb0857c3588191901b5f3c3f07ab3b",
+  "project_id": "appgprj_6acb03edea588191b293111a12c595f3",
+  "title": "软考冲刺 · 系统分析师",
+  "version_id": "appgprj_6acb03edea588191b293111a12c595f3~appgver_b5a49503aa648191bb8b253616e5f0ab",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://ruankao-system-analyst-20261011-lijian.mightylynx8.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6acb03edea588191b293111a12c595f3",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-11T03:54:09.846292+00:00",
+  "source_commit": "accb0df91d435abeb133b61d25d36e4394f4dbb2",
+  "source_checkout": "/Users/lijian/Documents/projects/xitongfenxishi/tmp/site-deploy",
+  "verification": {
+    "unitTests": "45/45",
+    "mobileTests": "14/14",
+    "productionPwaTests": "2/2",
+    "sourceFieldChecks": 2551,
+    "productionPwaTestOrigin": "http://127.0.0.1:4174"
+  },
+  "limits": [
+    "实体手机安装未验证",
+    "上线私有入口的登录及离线流程未另行联测"
+  ]
+}

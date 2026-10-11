@@ -1,0 +1,113 @@
+{
+  "contentVersion": "2026.10.10.1",
+  "origin": "原创模拟",
+  "sourceFiles": [
+    {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sha256": "4d7741ada57f855ce94c8208d7f7c3d90c15b6eff48f6fd60a9e9834db038897"
+    },
+    {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "sha256": "065b6421a89c232bca430ba9b67299d1604aa5a22005f7e2583010093f1bff59"
+    },
+    {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.pdf",
+      "sha256": "92b0b0c5533330f0470a1a2aeaf902c38d5f3097fdf8e4df800a869a7bba16bf"
+    }
+  ],
+  "workbookSheets": [
+    {
+      "name": "冲刺总览",
+      "rows": 20,
+      "columns": 8
+    },
+    {
+      "name": "7天计划",
+      "rows": 19,
+      "columns": 9
+    },
+    {
+      "name": "章节训练75",
+      "rows": 79,
+      "columns": 12
+    },
+    {
+      "name": "综合模考75",
+      "rows": 79,
+      "columns": 12
+    },
+    {
+      "name": "答案与解析",
+      "rows": 154,
+      "columns": 5
+    },
+    {
+      "name": "必背清单76",
+      "rows": 80,
+      "columns": 6
+    },
+    {
+      "name": "案例训练9套",
+      "rows": 13,
+      "columns": 8
+    },
+    {
+      "name": "论文训练10题",
+      "rows": 14,
+      "columns": 9
+    },
+    {
+      "name": "资料来源",
+      "rows": 15,
+      "columns": 5
+    }
+  ],
+  "counts": {
+    "knowledge": 76,
+    "priorityA": 57,
+    "priorityB": 19,
+    "chapter": 75,
+    "mock": 75,
+    "cases": 9,
+    "essays": 10,
+    "sources": 11
+  },
+  "selfCheckOnlyIds": [
+    "K004",
+    "K005",
+    "K010",
+    "K011",
+    "K015",
+    "K017",
+    "K020",
+    "K026",
+    "K027",
+    "K028",
+    "K029",
+    "K037",
+    "K038",
+    "K039",
+    "K040",
+    "K041",
+    "K045",
+    "K048",
+    "K049",
+    "K050",
+    "K054",
+    "K055",
+    "K058",
+    "K062",
+    "K063",
+    "K064",
+    "K068",
+    "K073",
+    "K076"
+  ],
+  "sourceIssues": [
+    {
+      "id": "RK057",
+      "description": "题干“同一情形下”省略数值。原文保持不变，通过 contextQuestionId 引用 RK046 原题干。"
+    }
+  ],
+  "wordWarnings": []
+}

@@ -1,0 +1,4276 @@
+[
+  {
+    "id": "RK001",
+    "set": "chapter",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "某需求写成“系统要方便易用”，其首要问题是？",
+    "options": {
+      "A": "无法直接验证是否满足",
+      "B": "包含过多接口细节",
+      "C": "与业务目标无关",
+      "D": "必然属于功能需求"
+    },
+    "answer": "A",
+    "explanation": "缺少可度量的验收标准；应转换为任务成功率、操作步数等可测试要求。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K002"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 5
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 5
+    }
+  },
+  {
+    "id": "RK002",
+    "set": "chapter",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "可行性分析中，既比较投入与收益又考虑现金流时间价值的常用方法是？",
+    "options": {
+      "A": "代码覆盖率",
+      "B": "净现值NPV",
+      "C": "循环复杂度",
+      "D": "进程调度"
+    },
+    "answer": "B",
+    "explanation": "NPV将未来现金流折现后减去初始投资，用于经济可行性评估。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K069"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 6
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 6
+    }
+  },
+  {
+    "id": "RK003",
+    "set": "chapter",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "瀑布模型最适宜的项目特征是？",
+    "options": {
+      "A": "需求高度不确定且频繁试错",
+      "B": "需求相对稳定、阶段交付物清晰",
+      "C": "每日上线且无审批需求",
+      "D": "只有探索性研究"
+    },
+    "answer": "B",
+    "explanation": "阶段式开发较适合需求清晰稳定且过程可控的场景。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K013"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 7
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 7
+    }
+  },
+  {
+    "id": "RK004",
+    "set": "chapter",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "在4+1架构视图中，最关注并发、进程和通信的是？",
+    "options": {
+      "A": "逻辑视图",
+      "B": "进程视图",
+      "C": "开发视图",
+      "D": "场景视图"
+    },
+    "answer": "B",
+    "explanation": "进程视图描述运行时并发及通信与同步相关结构。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K018"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 8
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 8
+    }
+  },
+  {
+    "id": "RK005",
+    "set": "chapter",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "候选键是指？",
+    "options": {
+      "A": "任意允许重复的列",
+      "B": "能够唯一标识元组且不含冗余属性的属性集",
+      "C": "总是自增整数",
+      "D": "外表的外键"
+    },
+    "answer": "B",
+    "explanation": "候选键是最小超键，具有唯一性与最小性。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K030"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 9
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 9
+    }
+  },
+  {
+    "id": "RK006",
+    "set": "chapter",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "不运行程序、通过人工审查或静态分析工具发现问题属于？",
+    "options": {
+      "A": "静态测试",
+      "B": "性能测试",
+      "C": "冒烟测试",
+      "D": "回归测试"
+    },
+    "answer": "A",
+    "explanation": "静态测试不实际执行被测程序，可检查规范、代码和设计问题。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K042"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 10
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 10
+    }
+  },
+  {
+    "id": "RK007",
+    "set": "chapter",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "TCP相比UDP最典型的特性是？",
+    "options": {
+      "A": "总是时延更低",
+      "B": "面向连接、可靠有序字节流",
+      "C": "没有拥塞控制",
+      "D": "报文天然保持边界"
+    },
+    "answer": "B",
+    "explanation": "TCP提供可靠有序字节流与流量/拥塞控制，UDP保留数据报边界。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K056"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 11
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 11
+    }
+  },
+  {
+    "id": "RK008",
+    "set": "chapter",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "对大量业务数据进行高效加密，优先选用？",
+    "options": {
+      "A": "AES等对称加密算法",
+      "B": "RSA逐字节直接加密所有数据",
+      "C": "明文Base64编码",
+      "D": "只做压缩"
+    },
+    "answer": "A",
+    "explanation": "AES适于大数据量加密，非对称密码常用于密钥交换或数字签名。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K051"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 12
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 12
+    }
+  },
+  {
+    "id": "RK009",
+    "set": "chapter",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "CPU缓存Cache命中率越高，通常意味着？",
+    "options": {
+      "A": "平均访存延迟趋于下降",
+      "B": "磁盘容量增加",
+      "C": "进程数量必然减半",
+      "D": "程序代码自动无缺陷"
+    },
+    "answer": "A",
+    "explanation": "缓存命中降低慢速存储访问需求，改善平均访存效率。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 13
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 13
+    }
+  },
+  {
+    "id": "RK010",
+    "set": "chapter",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "一项目两年后收入121万元，折现率10%，折现到当前价值约多少万元？",
+    "options": {
+      "A": "90",
+      "B": "100",
+      "C": "110",
+      "D": "121"
+    },
+    "answer": "B",
+    "explanation": "PV=121÷(1.1)^2=100万元。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K069"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 14
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 14
+    }
+  },
+  {
+    "id": "RK011",
+    "set": "chapter",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "容器与虚拟机的典型差异是？",
+    "options": {
+      "A": "容器通常共享宿主机内核，虚拟机模拟/虚拟硬件与完整客户机环境",
+      "B": "容器必然比虚拟机安全",
+      "C": "虚拟机无法隔离资源",
+      "D": "容器只能在一台服务器运行"
+    },
+    "answer": "A",
+    "explanation": "容器进程隔离通常共享内核；虚拟机一般通过虚拟化运行客户机操作系统。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K065"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 15
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 15
+    }
+  },
+  {
+    "id": "RK012",
+    "set": "chapter",
+    "module": "系统实施运维与英语",
+    "priority": "B",
+    "stem": "SLA中可用性目标应与哪个要素联动定义？",
+    "options": {
+      "A": "测量窗口、排除条件和违约处理",
+      "B": "开发语言排名",
+      "C": "UI颜色",
+      "D": "工程师工号"
+    },
+    "answer": "A",
+    "explanation": "SLA需明确指标定义、采集方式、观察期、例外和处置机制。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K074"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 16
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 16
+    }
+  },
+  {
+    "id": "RK013",
+    "set": "chapter",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "在需求获取阶段，为了解不同角色之间相互冲突的业务规则，最适合先采用？",
+    "options": {
+      "A": "压力测试",
+      "B": "联合需求研讨会",
+      "C": "代码审查",
+      "D": "数据库备份"
+    },
+    "answer": "B",
+    "explanation": "联合需求研讨会能让各方共同澄清冲突、协商优先级与验收规则。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K003"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 17
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 17
+    }
+  },
+  {
+    "id": "RK014",
+    "set": "chapter",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "业务流程再造BPR最强调？",
+    "options": {
+      "A": "仅把纸质表单扫描成PDF",
+      "B": "增加审批层级",
+      "C": "围绕业务价值对流程作根本性重新设计",
+      "D": "维持原部门边界不变"
+    },
+    "answer": "C",
+    "explanation": "BPR不是简单的自动化，而是面向绩效跃升的流程重构。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K012",
+      "K075"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 18
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 18
+    }
+  },
+  {
+    "id": "RK015",
+    "set": "chapter",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "增量开发相较一次性交付的显著优势是？",
+    "options": {
+      "A": "不需要架构设计",
+      "B": "无需集成测试",
+      "C": "可逐批提供业务价值并吸收反馈",
+      "D": "一定没有返工"
+    },
+    "answer": "C",
+    "explanation": "按增量发布，促进及早价值验证，但仍需总体设计和测试。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K013"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 19
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 19
+    }
+  },
+  {
+    "id": "RK016",
+    "set": "chapter",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "部署图更适合表达？",
+    "options": {
+      "A": "用户的业务目标",
+      "B": "需求优先级",
+      "C": "软件制品在硬件节点上的部署关系",
+      "D": "类之间的继承关系"
+    },
+    "answer": "C",
+    "explanation": "部署图表达节点、通信路径与制品分配。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 20
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 20
+    }
+  },
+  {
+    "id": "RK017",
+    "set": "chapter",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "第一范式1NF要求？",
+    "options": {
+      "A": "所有字段加密",
+      "B": "有且仅有一个主键",
+      "C": "属性值不可再分为关系模型中的重复组",
+      "D": "必须达到BCNF"
+    },
+    "answer": "C",
+    "explanation": "1NF强调每个属性为原子值，具体原子性与设计语境有关。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K031"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 21
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 21
+    }
+  },
+  {
+    "id": "RK018",
+    "set": "chapter",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "白盒测试的语句覆盖100%意味着？",
+    "options": {
+      "A": "判定覆盖必然100%",
+      "B": "至少每条可执行语句被执行一次",
+      "C": "路径覆盖必然100%",
+      "D": "软件无缺陷"
+    },
+    "answer": "B",
+    "explanation": "语句覆盖不能保证全部分支、条件和路径被覆盖。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K043"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 22
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 22
+    }
+  },
+  {
+    "id": "RK019",
+    "set": "chapter",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "HTTPS中TLS的核心作用是？",
+    "options": {
+      "A": "规定页面布局",
+      "B": "实现域名注册",
+      "C": "提供传输加密、完整性和身份认证能力",
+      "D": "代替应用层鉴权"
+    },
+    "answer": "C",
+    "explanation": "TLS保护传输通道，但业务仍需身份授权及输入校验。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K057"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 23
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 23
+    }
+  },
+  {
+    "id": "RK020",
+    "set": "chapter",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "哈希摘要与加密的本质区别是？",
+    "options": {
+      "A": "哈希必须用密钥解密",
+      "B": "密码学哈希通常是单向摘要而非可逆加密",
+      "C": "哈希天然保证保密性",
+      "D": "哈希不存在碰撞可能"
+    },
+    "answer": "B",
+    "explanation": "哈希可用于完整性校验，保密需求需加密；安全哈希也不代表数学上无碰撞。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K051"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 24
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 24
+    }
+  },
+  {
+    "id": "RK021",
+    "set": "chapter",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "虚拟内存页表主要用于？",
+    "options": {
+      "A": "保存明文账户密码",
+      "B": "虚拟地址到物理页框映射及相关控制",
+      "C": "路由器选路",
+      "D": "替代应用数据库"
+    },
+    "answer": "B",
+    "explanation": "页表参与地址翻译，配合TLB加速映射。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 25
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 25
+    }
+  },
+  {
+    "id": "RK022",
+    "set": "chapter",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "三项独立风险的期望损失分别为0.2×20、0.1×50、0.3×10（万元），总期望损失是？",
+    "options": {
+      "A": "8万元",
+      "B": "10万元",
+      "C": "12万元",
+      "D": "15万元"
+    },
+    "answer": "C",
+    "explanation": "期望损失相加=4+5+3=12万元。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K070"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 26
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 26
+    }
+  },
+  {
+    "id": "RK023",
+    "set": "chapter",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "Kubernetes中Deployment最典型的用途是？",
+    "options": {
+      "A": "替代所有持久化存储",
+      "B": "声明式管理无状态应用副本与滚动更新",
+      "C": "实现SQL查询",
+      "D": "管理公司财务凭证"
+    },
+    "answer": "B",
+    "explanation": "Deployment通过控制器管理ReplicaSet和Pod期望状态。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K065"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 27
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 27
+    }
+  },
+  {
+    "id": "RK024",
+    "set": "chapter",
+    "module": "系统实施运维与英语",
+    "priority": "B",
+    "stem": "生产系统上线前最有价值的活动组合是？",
+    "options": {
+      "A": "只发布营销海报",
+      "B": "灰度/回滚演练、监控告警与数据备份验证",
+      "C": "删去错误日志",
+      "D": "省略权限核查"
+    },
+    "answer": "B",
+    "explanation": "上线准备要覆盖故障回退、可观测性与数据安全。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 28
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 28
+    }
+  },
+  {
+    "id": "RK025",
+    "set": "chapter",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "“订单支付成功后5秒内返回确认”属于？",
+    "options": {
+      "A": "业务目标而非需求",
+      "B": "功能需求",
+      "C": "性能类非功能需求",
+      "D": "数据库完整性约束"
+    },
+    "answer": "C",
+    "explanation": "这是可度量的响应时间质量属性，属于非功能需求。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K001"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 29
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 29
+    }
+  },
+  {
+    "id": "RK026",
+    "set": "chapter",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "在信息系统总体规划中，先明确企业战略与业务目标，是因为？",
+    "options": {
+      "A": "能避免使用数据库",
+      "B": "只考虑开发工具即可",
+      "C": "减少所有需求评审",
+      "D": "信息化投资需要与业务价值对齐"
+    },
+    "answer": "D",
+    "explanation": "战略和业务价值决定信息系统建设的优先级与约束条件。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 30
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 30
+    }
+  },
+  {
+    "id": "RK027",
+    "set": "chapter",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "敏捷宣言所倡导的更接近？",
+    "options": {
+      "A": "遵循计划高于响应变化",
+      "B": "文档高于可运行软件",
+      "C": "合同谈判高于客户合作",
+      "D": "响应变化高于遵循计划"
+    },
+    "answer": "D",
+    "explanation": "敏捷重视反馈与适应性，但不意味着不做计划和文档。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K014"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 31
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 31
+    }
+  },
+  {
+    "id": "RK028",
+    "set": "chapter",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "系统需要各子系统通过事件解耦，比较适合的架构风格是？",
+    "options": {
+      "A": "严格共享数据库",
+      "B": "单一巨型事务",
+      "C": "纯管道无事件",
+      "D": "事件驱动架构"
+    },
+    "answer": "D",
+    "explanation": "事件驱动通过发布订阅减少直接调用耦合。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K021"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 32
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 32
+    }
+  },
+  {
+    "id": "RK029",
+    "set": "chapter",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "在关系R(A,B,C)中，主键为(A,B)，而A→C，则它最可能违反？",
+    "options": {
+      "A": "1NF",
+      "B": "4NF",
+      "C": "BCNF才会违反",
+      "D": "2NF"
+    },
+    "answer": "D",
+    "explanation": "非主属性C部分依赖于复合候选键的一部分A，违反2NF。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K032"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 33
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 33
+    }
+  },
+  {
+    "id": "RK030",
+    "set": "chapter",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "100%判定覆盖主要意味着？",
+    "options": {
+      "A": "所有变量值都曾枚举",
+      "B": "所有路径都执行",
+      "C": "每个判定的真、假结果至少出现一次",
+      "D": "系统已安全"
+    },
+    "answer": "C",
+    "explanation": "判定覆盖要求每个分支结果都覆盖，不等同于条件组合覆盖。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K043"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 34
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 34
+    }
+  },
+  {
+    "id": "RK031",
+    "set": "chapter",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "DNS主要负责？",
+    "options": {
+      "A": "文件校验",
+      "B": "会话保持",
+      "C": "缓存事务日志",
+      "D": "域名到资源记录（如IP地址）的解析"
+    },
+    "answer": "D",
+    "explanation": "DNS解析域名相关资源记录，并不直接代替应用负载治理。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 35
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 35
+    }
+  },
+  {
+    "id": "RK032",
+    "set": "chapter",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "数字签名主要提供？",
+    "options": {
+      "A": "机密性但不验证身份",
+      "B": "无限制访问",
+      "C": "完整性、来源认证及一定的不可否认性",
+      "D": "压缩比提升"
+    },
+    "answer": "C",
+    "explanation": "数字签名通过私钥签名、公钥验证，传输加密需额外机制。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 36
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 36
+    }
+  },
+  {
+    "id": "RK033",
+    "set": "chapter",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "缺页中断意味着？",
+    "options": {
+      "A": "CPU硬件必然损坏",
+      "B": "线程永久阻塞",
+      "C": "访问页不在当前物理内存或映射需进一步处理",
+      "D": "进程一定非法"
+    },
+    "answer": "C",
+    "explanation": "缺页可能由按需调页产生，也可能是非法访问等异常。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 37
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 37
+    }
+  },
+  {
+    "id": "RK034",
+    "set": "chapter",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "活动A耗时3天，B耗时5天，两者并行且C在A、B都完工后开始，C耗时2天，最短工期为？",
+    "options": {
+      "A": "5天",
+      "B": "7天",
+      "C": "8天",
+      "D": "10天"
+    },
+    "answer": "B",
+    "explanation": "并行段取最大5天，再接C 2天，总7天。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K072"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 38
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 38
+    }
+  },
+  {
+    "id": "RK035",
+    "set": "chapter",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "Kubernetes readiness probe失败时通常意味着？",
+    "options": {
+      "A": "容器镜像删除",
+      "B": "所在机器立刻关机",
+      "C": "Pod暂时不应接收服务流量",
+      "D": "数据库已被恢复"
+    },
+    "answer": "C",
+    "explanation": "就绪探针控制是否作为Service后端，区别于存活探针。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K065"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 39
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 39
+    }
+  },
+  {
+    "id": "RK036",
+    "set": "chapter",
+    "module": "系统实施运维与英语",
+    "priority": "B",
+    "stem": "运维中的MTTR通常表示？",
+    "options": {
+      "A": "平均系统无故障时间",
+      "B": "平均发布周期",
+      "C": "平均修复/恢复时间",
+      "D": "最大请求量"
+    },
+    "answer": "C",
+    "explanation": "MTTR一般指平均修复或恢复时间，具体定义应在组织中统一。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K074"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 40
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 40
+    }
+  },
+  {
+    "id": "RK037",
+    "set": "chapter",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "用例图中，只有满足条件时才触发的附加行为通常适合表示为？",
+    "options": {
+      "A": "继承",
+      "B": "组合",
+      "C": "include关系",
+      "D": "extend关系"
+    },
+    "answer": "D",
+    "explanation": "extend代表可选或条件触发的扩展，include代表必需复用的公共行为。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K006"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 41
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 41
+    }
+  },
+  {
+    "id": "RK038",
+    "set": "chapter",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "SWOT分析中的T表示？",
+    "options": {
+      "A": "Threat外部威胁",
+      "B": "Technology技术",
+      "C": "Time时间",
+      "D": "Test测试"
+    },
+    "answer": "A",
+    "explanation": "SWOT对应优势、劣势、机会、威胁。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 42
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 42
+    }
+  },
+  {
+    "id": "RK039",
+    "set": "chapter",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "Scrum中负责管理产品待办列表优先级的角色通常是？",
+    "options": {
+      "A": "产品负责人PO",
+      "B": "测试经理",
+      "C": "数据库管理员",
+      "D": "网络工程师"
+    },
+    "answer": "A",
+    "explanation": "PO对产品价值和待办项排序负责。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K014"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 43
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 43
+    }
+  },
+  {
+    "id": "RK040",
+    "set": "chapter",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "分层架构中，上层绕过服务层直接访问数据库的主要风险是？",
+    "options": {
+      "A": "破坏分层隔离、增加耦合",
+      "B": "自动提升安全性",
+      "C": "提升数据库范式",
+      "D": "减少所有测试用例"
+    },
+    "answer": "A",
+    "explanation": "跨层访问破坏职责边界并使变更影响难控制。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K019"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 44
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 44
+    }
+  },
+  {
+    "id": "RK041",
+    "set": "chapter",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "若候选键A，且A→B、B→C，B不是超键，C为非主属性，通常违反？",
+    "options": {
+      "A": "3NF",
+      "B": "1NF",
+      "C": "候选键定义",
+      "D": "索引唯一性"
+    },
+    "answer": "A",
+    "explanation": "非主属性经非键属性传递依赖于键，违反3NF。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K033"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 45
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 45
+    }
+  },
+  {
+    "id": "RK042",
+    "set": "chapter",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "输入年龄有效区间18~60岁，最典型的边界测试集是？",
+    "options": {
+      "A": "25、30、35",
+      "B": "0、10、100",
+      "C": "18、20、22",
+      "D": "17、18、19、59、60、61"
+    },
+    "answer": "D",
+    "explanation": "边界值法选边界及其紧邻值，常更易发现比较运算缺陷。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K044"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 46
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 46
+    }
+  },
+  {
+    "id": "RK043",
+    "set": "chapter",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "服务调用频繁超时，断路器模式的主要目标是？",
+    "options": {
+      "A": "快速失败并限制故障扩散",
+      "B": "确保永远不失败",
+      "C": "取消降级",
+      "D": "消除全部网络延迟"
+    },
+    "answer": "A",
+    "explanation": "熔断在失败率等达阈值后减少无效调用，配合恢复探测。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K059"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 47
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 47
+    }
+  },
+  {
+    "id": "RK044",
+    "set": "chapter",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "RBAC权限模型依据？",
+    "options": {
+      "A": "实时位置",
+      "B": "网络速度",
+      "C": "操作系统内核",
+      "D": "角色与角色绑定的权限进行授权"
+    },
+    "answer": "D",
+    "explanation": "基于角色的访问控制将用户与权限经角色关联。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K052"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 48
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 48
+    }
+  },
+  {
+    "id": "RK045",
+    "set": "chapter",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "死锁产生的四个必要条件不包括？",
+    "options": {
+      "A": "互斥",
+      "B": "请求并保持",
+      "C": "不可抢占",
+      "D": "请求到来先服务"
+    },
+    "answer": "D",
+    "explanation": "死锁四必要条件：互斥、请求保持、不可剥夺、循环等待。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 49
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 49
+    }
+  },
+  {
+    "id": "RK046",
+    "set": "chapter",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "挣值管理中，EV=80、AC=100、PV=90（万元），成本偏差CV是多少？",
+    "options": {
+      "A": "20万元",
+      "B": "-10万元",
+      "C": "10万元",
+      "D": "-20万元"
+    },
+    "answer": "D",
+    "explanation": "CV=EV-AC=80-100=-20，成本超支。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K071"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 50
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 50
+    }
+  },
+  {
+    "id": "RK047",
+    "set": "chapter",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "灰度发布的主要作用是？",
+    "options": {
+      "A": "一次性覆盖所有用户",
+      "B": "免去监控",
+      "C": "将版本号隐藏",
+      "D": "让有限流量先验证新版本并可回滚"
+    },
+    "answer": "D",
+    "explanation": "灰度按人群或比例逐步扩大发布范围，降低全量发布风险。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K066"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 51
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 51
+    }
+  },
+  {
+    "id": "RK048",
+    "set": "chapter",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "用例图中，多种业务流程都必须执行的“校验身份”可建模为？",
+    "options": {
+      "A": "include关系",
+      "B": "extend关系",
+      "C": "依赖倒置",
+      "D": "多重继承"
+    },
+    "answer": "A",
+    "explanation": "多个用例必经的公用功能可用include提取以避免重复。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K006"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 52
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 52
+    }
+  },
+  {
+    "id": "RK049",
+    "set": "chapter",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "价值链分析主要用于？",
+    "options": {
+      "A": "精确估算CPU主频",
+      "B": "识别创造价值的业务活动及竞争优势来源",
+      "C": "给网段分配IP",
+      "D": "安排线程锁"
+    },
+    "answer": "B",
+    "explanation": "区分基本活动和支持活动，发现降本、差异化机会。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K075"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 53
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 53
+    }
+  },
+  {
+    "id": "RK050",
+    "set": "chapter",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "技术债务通常是指？",
+    "options": {
+      "A": "所有硬件购置费用",
+      "B": "为了短期速度牺牲设计质量而形成的后续维护成本",
+      "C": "仅与会计有关",
+      "D": "只代表业务贷款"
+    },
+    "answer": "B",
+    "explanation": "技术债务会增加变更成本和故障风险，应持续偿还。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 54
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 54
+    }
+  },
+  {
+    "id": "RK051",
+    "set": "chapter",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "需要给旧系统提供统一的新接口，常用哪种模式？",
+    "options": {
+      "A": "观察者",
+      "B": "适配器",
+      "C": "备忘录",
+      "D": "迭代器"
+    },
+    "answer": "B",
+    "explanation": "适配器将现有接口转换成客户端期望接口。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K024"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 55
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 55
+    }
+  },
+  {
+    "id": "RK052",
+    "set": "chapter",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "BCNF较3NF更严格的主要条件是？",
+    "options": {
+      "A": "每个表必须只有2列",
+      "B": "每个非平凡函数依赖X→Y的X都是超键",
+      "C": "所有字段必须为整数",
+      "D": "禁止任何外键"
+    },
+    "answer": "B",
+    "explanation": "BCNF要求每个非平凡函数依赖的决定因素为超键。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K034"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 56
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 56
+    }
+  },
+  {
+    "id": "RK053",
+    "set": "chapter",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "“用户等级”和“是否实名”组合决定优惠规则，适合？",
+    "options": {
+      "A": "判定表法",
+      "B": "循环展开",
+      "C": "最短路径",
+      "D": "内存分页"
+    },
+    "answer": "A",
+    "explanation": "判定表用于多条件组合与动作映射。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K044"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 57
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 57
+    }
+  },
+  {
+    "id": "RK054",
+    "set": "chapter",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "幂等接口是指？",
+    "options": {
+      "A": "只能被调用一次",
+      "B": "同样请求执行多次的业务效果与执行一次相同",
+      "C": "必须使用GET",
+      "D": "结果永不变化"
+    },
+    "answer": "B",
+    "explanation": "幂等关键是重复调用副作用受控，如支付使用业务唯一键去重。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K061"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 58
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 58
+    }
+  },
+  {
+    "id": "RK055",
+    "set": "chapter",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "ABAC相对RBAC的主要增强是？",
+    "options": {
+      "A": "能结合主体、资源、动作和环境属性进行细粒度授权",
+      "B": "只能按岗位角色判断",
+      "C": "无需制定策略",
+      "D": "不支持时间和位置"
+    },
+    "answer": "A",
+    "explanation": "属性访问控制适于多维上下文的授权策略。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K052"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 59
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 59
+    }
+  },
+  {
+    "id": "RK056",
+    "set": "chapter",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "进程和线程通常的关系是？",
+    "options": {
+      "A": "同一进程内线程共享部分进程资源但各有执行上下文",
+      "B": "线程一定有独立虚拟地址空间",
+      "C": "进程之间直接共享全部内存",
+      "D": "线程不能并发"
+    },
+    "answer": "A",
+    "explanation": "同进程线程共享地址空间等资源，但各自有栈及寄存器执行状态。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 60
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 60
+    }
+  },
+  {
+    "id": "RK057",
+    "set": "chapter",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "同一情形下进度绩效指数SPI约为？",
+    "options": {
+      "A": "0.89",
+      "B": "1.25",
+      "C": "1.11",
+      "D": "0.80"
+    },
+    "answer": "A",
+    "explanation": "SPI=EV/PV=80/90≈0.889，小于1表示落后于计划。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K071"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 61
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 61
+    },
+    "contextQuestionId": "RK046"
+  },
+  {
+    "id": "RK058",
+    "set": "chapter",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "基础设施即代码IaC主要优势是？",
+    "options": {
+      "A": "可版本控制、复现和审计环境配置",
+      "B": "不需要任何权限治理",
+      "C": "永久杜绝配置错误",
+      "D": "只适用于桌面软件"
+    },
+    "answer": "A",
+    "explanation": "IaC以声明或脚本管理基础设施，支持审计和一致性。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 62
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 62
+    }
+  },
+  {
+    "id": "RK059",
+    "set": "chapter",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "顺序图最关注？",
+    "options": {
+      "A": "对象交互消息的先后次序",
+      "B": "数据表的主外键",
+      "C": "代码函数的复杂度",
+      "D": "部署节点的地理位置"
+    },
+    "answer": "A",
+    "explanation": "顺序图以生命线和消息序列体现交互的时间顺序。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K007"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 63
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 63
+    }
+  },
+  {
+    "id": "RK060",
+    "set": "chapter",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "企业架构中，描述业务能力、流程和组织的通常是？",
+    "options": {
+      "A": "技术架构",
+      "B": "物理架构",
+      "C": "业务架构",
+      "D": "存储架构"
+    },
+    "answer": "C",
+    "explanation": "业务架构关注组织如何创造价值，不等同于应用/数据/技术架构。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 64
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 64
+    }
+  },
+  {
+    "id": "RK061",
+    "set": "chapter",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "高内聚低耦合的核心意义是？",
+    "options": {
+      "A": "所有模块共享全局变量",
+      "B": "让系统只剩一个模块",
+      "C": "降低变更传播并改善维护性",
+      "D": "消除任何接口"
+    },
+    "answer": "C",
+    "explanation": "职责集中、依赖清晰使测试、替换和独立演进更容易。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K016"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 65
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 65
+    }
+  },
+  {
+    "id": "RK062",
+    "set": "chapter",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "对象状态改变后需要自动通知多个订阅者，使用？",
+    "options": {
+      "A": "单例",
+      "B": "抽象工厂",
+      "C": "观察者模式",
+      "D": "代理模式"
+    },
+    "answer": "C",
+    "explanation": "观察者用于一对多依赖的事件通知。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K023"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 66
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 66
+    }
+  },
+  {
+    "id": "RK063",
+    "set": "chapter",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "ACID中隔离性Isolation的核心含义是？",
+    "options": {
+      "A": "数据库自动压缩",
+      "B": "只加密机密字段",
+      "C": "并发事务相互隔离，避免不当干扰",
+      "D": "断电后必然丢数据"
+    },
+    "answer": "C",
+    "explanation": "隔离性与并发读写异常及隔离级别有关。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K035"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 67
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 67
+    }
+  },
+  {
+    "id": "RK064",
+    "set": "chapter",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "对程序修改后，验证原本正常的功能未被破坏，叫？",
+    "options": {
+      "A": "验收测试",
+      "B": "回归测试",
+      "C": "压力测试",
+      "D": "安装测试"
+    },
+    "answer": "B",
+    "explanation": "回归测试针对变更可能影响的既有行为。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K046"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 68
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 68
+    }
+  },
+  {
+    "id": "RK065",
+    "set": "chapter",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "消息队列“至少一次投递”要求消费者特别注意？",
+    "options": {
+      "A": "消息不会重复",
+      "B": "无需持久化",
+      "C": "重复消息处理与幂等性",
+      "D": "直接取消监控"
+    },
+    "answer": "C",
+    "explanation": "至少一次可能重投，消费者需去重、事务和幂等策略。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K061"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 69
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 69
+    }
+  },
+  {
+    "id": "RK066",
+    "set": "chapter",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "最小权限原则强调？",
+    "options": {
+      "A": "所有员工都使用管理员账户",
+      "B": "仅赋予完成工作所需的最低权限",
+      "C": "长期保留离职账户权限",
+      "D": "避免记录安全日志"
+    },
+    "answer": "B",
+    "explanation": "最小权限限制攻击面，应配合权限回收与定期复核。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K053"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 70
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 70
+    }
+  },
+  {
+    "id": "RK067",
+    "set": "chapter",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "RAG（检索增强生成）主要通过什么改善大模型回答？",
+    "options": {
+      "A": "增加随机性",
+      "B": "检索外部知识后作为生成上下文",
+      "C": "将所有数据写入模型权重",
+      "D": "取消事实校验"
+    },
+    "answer": "B",
+    "explanation": "RAG利用可更新知识源提升回答依据，但仍需评估检索与生成质量。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K067"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 71
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 71
+    }
+  },
+  {
+    "id": "RK068",
+    "set": "chapter",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "状态图更适合描述下列哪个对象？",
+    "options": {
+      "A": "静态菜单目录",
+      "B": "订单在待支付、已付款、已退款间的变化",
+      "C": "开发人员组织架构",
+      "D": "机房网络布线"
+    },
+    "answer": "B",
+    "explanation": "状态图表现事件触发的状态迁移及守卫条件。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K009"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 72
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 72
+    }
+  },
+  {
+    "id": "RK069",
+    "set": "chapter",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "需要在不修改已有核心算法的前提下切换计费算法，适合？",
+    "options": {
+      "A": "外观模式",
+      "B": "备忘录模式",
+      "C": "原型模式",
+      "D": "策略模式"
+    },
+    "answer": "D",
+    "explanation": "策略将算法族封装成可替换实现，符合开闭原则。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K022"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 73
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 73
+    }
+  },
+  {
+    "id": "RK070",
+    "set": "chapter",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "事务提交后数据应能持久保存，对应？",
+    "options": {
+      "A": "Atomicity",
+      "B": "Consistency",
+      "C": "Isolation",
+      "D": "Durability"
+    },
+    "answer": "D",
+    "explanation": "持久性指已提交事务的结果在规定故障条件下可恢复保留。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K035"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 74
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 74
+    }
+  },
+  {
+    "id": "RK071",
+    "set": "chapter",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "性能测试中P95=800ms通常表示？",
+    "options": {
+      "A": "所有请求都少于800ms",
+      "B": "只有5%请求小于800ms",
+      "C": "约95%的请求耗时不超过800ms",
+      "D": "平均时延必定是800ms"
+    },
+    "answer": "C",
+    "explanation": "P95是第95百分位时延，不是平均值也不是最大值。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K047"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 75
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 75
+    }
+  },
+  {
+    "id": "RK072",
+    "set": "chapter",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "CAP中网络分区出现时，系统必须在什么之间权衡？",
+    "options": {
+      "A": "成本与进度",
+      "B": "吞吐与能耗",
+      "C": "CPU和内存",
+      "D": "一致性与可用性"
+    },
+    "answer": "D",
+    "explanation": "在分区容忍的前提下，强一致与持续可用难以同时保证。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K060"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 76
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 76
+    }
+  },
+  {
+    "id": "RK073",
+    "set": "chapter",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "活动图中，菱形决策节点的主要含义是？",
+    "options": {
+      "A": "对象创建",
+      "B": "类继承",
+      "C": "按守卫条件分支",
+      "D": "跨设备部署"
+    },
+    "answer": "C",
+    "explanation": "活动图中决策与合并节点常用菱形，分支条件须互斥且尽量覆盖。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K008"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 77
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 77
+    }
+  },
+  {
+    "id": "RK074",
+    "set": "chapter",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "需支持操作撤销/恢复且保存对象某时刻内部状态，适合？",
+    "options": {
+      "A": "备忘录模式",
+      "B": "装饰器模式",
+      "C": "桥接模式",
+      "D": "适配器模式"
+    },
+    "answer": "A",
+    "explanation": "备忘录用于捕获、保存、恢复状态而不破坏封装。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K025"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 78
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 78
+    }
+  },
+  {
+    "id": "RK075",
+    "set": "chapter",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "高并发下两个事务读取相同库存后各扣减而导致超卖，优先考虑？",
+    "options": {
+      "A": "行锁/乐观锁和原子条件更新",
+      "B": "在前端刷新按钮",
+      "C": "增加网页动画",
+      "D": "删除主键"
+    },
+    "answer": "A",
+    "explanation": "通过数据库原子扣减、版本号或适当锁机制控制竞态。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K036"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "章节训练75",
+      "row": 79
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 79
+    }
+  },
+  {
+    "id": "RK076",
+    "set": "mock",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "在结构化分析中，0层DFD与其下一层分解图的关系应满足？",
+    "options": {
+      "A": "存储名称一样即可",
+      "B": "所有加工数相同",
+      "C": "图形布局一致",
+      "D": "输入输出数据流平衡"
+    },
+    "answer": "D",
+    "explanation": "父加工对外输入输出与子图整体对外输入输出应保持平衡。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K011"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 5
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 80
+    }
+  },
+  {
+    "id": "RK077",
+    "set": "mock",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "ERP的典型目标是？",
+    "options": {
+      "A": "只管理邮件",
+      "B": "只用于图像识别",
+      "C": "只实现网页展示",
+      "D": "跨部门集成采购、库存、生产、财务等资源信息"
+    },
+    "answer": "D",
+    "explanation": "ERP聚焦企业资源计划与流程数据集成。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 6
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 81
+    }
+  },
+  {
+    "id": "RK078",
+    "set": "mock",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "接口契约应明确？",
+    "options": {
+      "A": "开发人员生日",
+      "B": "UI配色",
+      "C": "服务器采购品牌",
+      "D": "输入输出、错误码、幂等语义与版本策略"
+    },
+    "answer": "D",
+    "explanation": "接口契约是跨团队协作与集成测试的依据。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 7
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 82
+    }
+  },
+  {
+    "id": "RK079",
+    "set": "mock",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "创建一组有关联的产品对象且隐藏具体类，适合？",
+    "options": {
+      "A": "命令模式",
+      "B": "抽象工厂",
+      "C": "迭代器",
+      "D": "解释器"
+    },
+    "answer": "B",
+    "explanation": "抽象工厂提供一族相互关联对象的创建接口。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K026"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 8
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 83
+    }
+  },
+  {
+    "id": "RK080",
+    "set": "mock",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "数据库索引在加快查询的同时常带来？",
+    "options": {
+      "A": "减少所有存储空间",
+      "B": "写入维护开销和额外存储",
+      "C": "自动消除所有死锁",
+      "D": "消除主外键需求"
+    },
+    "answer": "B",
+    "explanation": "索引加速查询，但INSERT/UPDATE/DELETE需维护索引。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K038"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 9
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 84
+    }
+  },
+  {
+    "id": "RK081",
+    "set": "mock",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "在系统容量上限之外持续施压以观察稳定性与恢复，常称？",
+    "options": {
+      "A": "单元测试",
+      "B": "可用性测试",
+      "C": "冒烟测试",
+      "D": "压力测试"
+    },
+    "answer": "D",
+    "explanation": "压力测试探索超载时系统表现与故障恢复，负载测试聚焦典型/目标负载。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 10
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 85
+    }
+  },
+  {
+    "id": "RK082",
+    "set": "mock",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "最终一致性更准确的说法是？",
+    "options": {
+      "A": "无新更新且满足条件时，各副本最终收敛一致",
+      "B": "任意时刻所有副本完全相同",
+      "C": "永不发生数据冲突",
+      "D": "事务必然串行化"
+    },
+    "answer": "A",
+    "explanation": "最终一致允许短期不同步，但要求在更新停止后最终收敛。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K062"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 11
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 86
+    }
+  },
+  {
+    "id": "RK083",
+    "set": "mock",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "密码存储的推荐方式通常是？",
+    "options": {
+      "A": "AES加密后在程序中写死密钥",
+      "B": "不加盐MD5",
+      "C": "专门的慢速密码哈希/密钥派生算法配合独立盐",
+      "D": "使用Base64存储"
+    },
+    "answer": "C",
+    "explanation": "Argon2id、bcrypt等密码哈希方案适于抵御离线猜测。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 12
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 87
+    }
+  },
+  {
+    "id": "RK084",
+    "set": "mock",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "时间片轮转调度更关注？",
+    "options": {
+      "A": "提高单个批处理任务吞吐至极限",
+      "B": "交互公平性与响应",
+      "C": "完全杜绝上下文切换",
+      "D": "保证所有任务截止时间"
+    },
+    "answer": "B",
+    "explanation": "轮转调度在时间片上交替执行，公平但存在切换成本。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 13
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 88
+    }
+  },
+  {
+    "id": "RK085",
+    "set": "mock",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "图中求所有节点互连且总边权最小，应使用？",
+    "options": {
+      "A": "哈希算法",
+      "B": "最小生成树算法",
+      "C": "拓扑排序直接求最短路径",
+      "D": "归并排序"
+    },
+    "answer": "B",
+    "explanation": "最小生成树如Kruskal/Prim连接所有节点且使总权值最小。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K073"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 14
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 89
+    }
+  },
+  {
+    "id": "RK086",
+    "set": "mock",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "大模型“幻觉”最恰当的描述是？",
+    "options": {
+      "A": "输出速度过快",
+      "B": "训练数据全部错误",
+      "C": "生成流畅但缺乏事实依据或与证据矛盾的内容",
+      "D": "上下文窗口太长"
+    },
+    "answer": "C",
+    "explanation": "幻觉可以由生成、检索或提示等因素引发，需引用验证和约束。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 15
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 90
+    }
+  },
+  {
+    "id": "RK087",
+    "set": "mock",
+    "module": "系统实施运维与英语",
+    "priority": "B",
+    "stem": "日志、指标与追踪三者组合的名称通常是？",
+    "options": {
+      "A": "负载均衡",
+      "B": "数据库范式",
+      "C": "接口幂等",
+      "D": "可观测性三支柱"
+    },
+    "answer": "D",
+    "explanation": "Logs、Metrics、Traces互补支持诊断运行问题。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K064"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 16
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 91
+    }
+  },
+  {
+    "id": "RK088",
+    "set": "mock",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "下面哪一个不是数据流图中的基本元素？",
+    "options": {
+      "A": "数据库索引",
+      "B": "加工",
+      "C": "数据流",
+      "D": "外部实体"
+    },
+    "answer": "A",
+    "explanation": "DFD基本元素为外部实体、加工、数据流、数据存储；索引为数据库实现细节。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K011"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 17
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 92
+    }
+  },
+  {
+    "id": "RK089",
+    "set": "mock",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "CRM系统最直接支持的目标是？",
+    "options": {
+      "A": "客户获取、服务与关系管理",
+      "B": "虚拟内存管理",
+      "C": "芯片功耗优化",
+      "D": "网络路由收敛"
+    },
+    "answer": "A",
+    "explanation": "CRM面向客户全生命周期管理。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 18
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 93
+    }
+  },
+  {
+    "id": "RK090",
+    "set": "mock",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "使用版本控制的分支策略最重要的目标是？",
+    "options": {
+      "A": "控制变更、支持并行开发和可靠合并",
+      "B": "取消代码评审",
+      "C": "永久禁止发布",
+      "D": "代替需求管理"
+    },
+    "answer": "A",
+    "explanation": "分支管理支持协作和追溯，但仍需审查和CI。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 19
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 94
+    }
+  },
+  {
+    "id": "RK091",
+    "set": "mock",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "希望为既有对象动态追加缓存或审计等职责，适合？",
+    "options": {
+      "A": "访问者",
+      "B": "状态模式",
+      "C": "装饰器模式",
+      "D": "中介者"
+    },
+    "answer": "C",
+    "explanation": "装饰器以组合包装对象，动态附加职责。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K027"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 20
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 95
+    }
+  },
+  {
+    "id": "RK092",
+    "set": "mock",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "数据仓库维度建模中，记录销售金额/数量等数值指标的通常是？",
+    "options": {
+      "A": "维度表",
+      "B": "审计表",
+      "C": "事实表",
+      "D": "字典表"
+    },
+    "answer": "C",
+    "explanation": "事实表记录业务事件和度量，维度表描述分析切片。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K039"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 21
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 96
+    }
+  },
+  {
+    "id": "RK093",
+    "set": "mock",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "测试左移主要主张？",
+    "options": {
+      "A": "尽早开展评审、单测和自动化验证",
+      "B": "把所有测试放在上线后",
+      "C": "减少需求沟通",
+      "D": "取消验收"
+    },
+    "answer": "A",
+    "explanation": "左移测试通过尽早识别缺陷降低返工成本。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 22
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 97
+    }
+  },
+  {
+    "id": "RK094",
+    "set": "mock",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "可用性为99.9%的服务，在30天（720小时）内理论不可用时长约是？",
+    "options": {
+      "A": "7.2小时",
+      "B": "43.2分钟",
+      "C": "4.32分钟",
+      "D": "72小时"
+    },
+    "answer": "B",
+    "explanation": "720×(1-0.999)=0.72小时=43.2分钟。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K063"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 23
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 98
+    }
+  },
+  {
+    "id": "RK095",
+    "set": "mock",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "业务日志包含完整身份证号，最恰当的改进是？",
+    "options": {
+      "A": "公开共享日志",
+      "B": "只增加日志量",
+      "C": "永久保留",
+      "D": "按需脱敏、控制访问并设置保留期限"
+    },
+    "answer": "D",
+    "explanation": "日志也属于数据处理，应遵循最小必要及保留与访问控制要求。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K050"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 24
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 99
+    }
+  },
+  {
+    "id": "RK096",
+    "set": "mock",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "RAID1主要提供？",
+    "options": {
+      "A": "条带化但没有冗余",
+      "B": "仅提升CPU性能",
+      "C": "磁盘镜像冗余",
+      "D": "自动跨地区容灾"
+    },
+    "answer": "C",
+    "explanation": "RAID1镜像可容忍部分单盘故障，但不替代备份与异地灾备。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 25
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 100
+    }
+  },
+  {
+    "id": "RK097",
+    "set": "mock",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "非负权有向图中求指定起点到其他节点最短路，经典算法是？",
+    "options": {
+      "A": "KMP",
+      "B": "动态规划背包",
+      "C": "Dijkstra",
+      "D": "快速排序"
+    },
+    "answer": "C",
+    "explanation": "Dijkstra适用非负权边；有负权边时不宜直接使用。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K073"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 26
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 101
+    }
+  },
+  {
+    "id": "RK098",
+    "set": "mock",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "AI智能体调用业务工具时首要安全控制之一是？",
+    "options": {
+      "A": "把所有工具赋予超级管理员权限",
+      "B": "允许任意SQL在生产运行",
+      "C": "默认相信外部提示",
+      "D": "为工具设最小权限、人工审批高风险操作与审计"
+    },
+    "answer": "D",
+    "explanation": "工具调用放大权限与提示注入风险，应作权限隔离、确认与可追踪。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K053",
+      "K068"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 27
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 102
+    }
+  },
+  {
+    "id": "RK099",
+    "set": "mock",
+    "module": "系统实施运维与英语",
+    "priority": "B",
+    "stem": "英语术语stakeholder在需求工程中通常指？",
+    "options": {
+      "A": "利益相关方",
+      "B": "缓存页",
+      "C": "数据包",
+      "D": "负载均衡器"
+    },
+    "answer": "A",
+    "explanation": "包括用户、客户、运维、监管等受系统影响或影响系统的主体。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K076"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 28
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 103
+    }
+  },
+  {
+    "id": "RK100",
+    "set": "mock",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "需求追踪矩阵主要建立什么关联？",
+    "options": {
+      "A": "只关联设计文档与部署设备",
+      "B": "需求与来源、设计、测试等制品的双向关系",
+      "C": "只记录需求编写人的姓名",
+      "D": "维护许可证费用"
+    },
+    "answer": "B",
+    "explanation": "双向可追溯使变更影响分析、覆盖检验和缺陷回溯可操作。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K005"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 29
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 104
+    }
+  },
+  {
+    "id": "RK101",
+    "set": "mock",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "信息系统建设排序时，用“价值高且实施难度低”优先的做法属于？",
+    "options": {
+      "A": "完全随机安排",
+      "B": "价值与复杂度二维优先级评估",
+      "C": "加密密钥生成",
+      "D": "软件复用度计算"
+    },
+    "answer": "B",
+    "explanation": "价值与成本/风险结合，能筛选快速见效项目。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 30
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 105
+    }
+  },
+  {
+    "id": "RK102",
+    "set": "mock",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "持续集成CI强调？",
+    "options": {
+      "A": "每月人工拼接一次代码",
+      "B": "频繁集成并通过自动构建与测试快速反馈",
+      "C": "把测试全部延后到验收",
+      "D": "所有功能使用同一大文件"
+    },
+    "answer": "B",
+    "explanation": "CI通过及时集成减少冲突和集成风险。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K015"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 31
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 106
+    }
+  },
+  {
+    "id": "RK103",
+    "set": "mock",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "单体系统拆分微服务最容易被忽视的代价是？",
+    "options": {
+      "A": "完全没有网络开销",
+      "B": "所有服务天然强一致",
+      "C": "无需监控",
+      "D": "分布式调用、数据一致性与运维复杂度上升"
+    },
+    "answer": "D",
+    "explanation": "拆分服务增大了网络失败、服务治理与跨服务事务成本。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K020",
+      "K029"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 32
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 107
+    }
+  },
+  {
+    "id": "RK104",
+    "set": "mock",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "SQL中筛选分组后SUM结果应使用？",
+    "options": {
+      "A": "WHERE作用于分组汇总",
+      "B": "ORDER BY只能用于过滤",
+      "C": "LIMIT代替筛选",
+      "D": "HAVING"
+    },
+    "answer": "D",
+    "explanation": "HAVING过滤聚合后的组，WHERE过滤分组前的明细行。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K037"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 33
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 108
+    }
+  },
+  {
+    "id": "RK105",
+    "set": "mock",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "软件质量保证SQA与质量控制QC的关系更恰当的是？",
+    "options": {
+      "A": "完全同义",
+      "B": "SQA偏过程预防，QC偏产品检验与验证",
+      "C": "SQA只适用于运维",
+      "D": "QC只关注财务"
+    },
+    "answer": "B",
+    "explanation": "SQA关注质量活动和过程体系，QC通过检测与验证控制产品质量。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K048"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 34
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 109
+    }
+  },
+  {
+    "id": "RK106",
+    "set": "mock",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "负载均衡的健康检查主要避免？",
+    "options": {
+      "A": "明文密码存储",
+      "B": "数据库规范化",
+      "C": "把流量继续发送给故障实例",
+      "D": "所有CPU缓存未命中"
+    },
+    "answer": "C",
+    "explanation": "健康探测可剔除失效实例，降低请求错误率。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K058"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 35
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 110
+    }
+  },
+  {
+    "id": "RK107",
+    "set": "mock",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "GB/T通常对应我国哪类标准代号？",
+    "options": {
+      "A": "推荐性国家标准",
+      "B": "强制性国家标准",
+      "C": "地方标准",
+      "D": "企业内部编号"
+    },
+    "answer": "A",
+    "explanation": "GB/T通常用于推荐性国家标准，GB通常用于强制性国家标准。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 36
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 111
+    }
+  },
+  {
+    "id": "RK108",
+    "set": "mock",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "CPU利用率接近100%，但请求延迟暴增时，合理首步是？",
+    "options": {
+      "A": "立刻重写前端样式",
+      "B": "删除日志",
+      "C": "禁用监控",
+      "D": "结合负载、CPU剖析、队列和线程指标定位瓶颈"
+    },
+    "answer": "D",
+    "explanation": "性能问题需从指标与剖析数据验证，不能只凭CPU指标下结论。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 37
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 112
+    }
+  },
+  {
+    "id": "RK109",
+    "set": "mock",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "工程决策中敏感性分析的主要作用是？",
+    "options": {
+      "A": "自动批准项目",
+      "B": "自动消除风险",
+      "C": "用于画流程图",
+      "D": "观察关键假设变化对评价结果的影响"
+    },
+    "answer": "D",
+    "explanation": "敏感性分析帮助识别对成本、收益、利率等变量最敏感的结论。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 38
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 113
+    }
+  },
+  {
+    "id": "RK110",
+    "set": "mock",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "向量数据库在RAG中通常承担？",
+    "options": {
+      "A": "向量表示的近似相似检索",
+      "B": "替代所有事务型数据库",
+      "C": "提供消息队列消费语义",
+      "D": "绘制网络拓扑"
+    },
+    "answer": "A",
+    "explanation": "向量索引可帮助基于语义召回相关文本，仍需处理权限和更新。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K067"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 39
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 114
+    }
+  },
+  {
+    "id": "RK111",
+    "set": "mock",
+    "module": "系统实施运维与英语",
+    "priority": "B",
+    "stem": "英语术语trade-off用于架构分析时指？",
+    "options": {
+      "A": "流程自动化",
+      "B": "不同质量属性或约束之间的权衡",
+      "C": "二级缓存",
+      "D": "数据库事务提交"
+    },
+    "answer": "B",
+    "explanation": "架构决策常权衡性能、一致性、成本、安全与交付时间。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K029",
+      "K076"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 40
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 115
+    }
+  },
+  {
+    "id": "RK112",
+    "set": "mock",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "原型法特别适合？",
+    "options": {
+      "A": "需求完全稳定且无需验证界面的系统",
+      "B": "硬件微码开发",
+      "C": "业务流程不清晰、界面交互需要快速确认的场景",
+      "D": "通过原型代替所有安全测试"
+    },
+    "answer": "C",
+    "explanation": "快速原型有助澄清不确定的交互需求，但不替代工程质量活动。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K003",
+      "K013"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 41
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 116
+    }
+  },
+  {
+    "id": "RK113",
+    "set": "mock",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "业务部门提“必须实时”，分析师应优先？",
+    "options": {
+      "A": "接受模糊描述",
+      "B": "拒绝处理",
+      "C": "定义实时场景、时延阈值与业务影响",
+      "D": "改用区块链"
+    },
+    "answer": "C",
+    "explanation": "转为可衡量服务级别（如95分位延迟），便于方案选型。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K002"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 42
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 117
+    }
+  },
+  {
+    "id": "RK114",
+    "set": "mock",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "DevOps的重要理念是？",
+    "options": {
+      "A": "开发与运维相互隔离",
+      "B": "上线后不再监控",
+      "C": "开发、测试、运维协作及交付自动化",
+      "D": "只采购云服务器"
+    },
+    "answer": "C",
+    "explanation": "以跨职能合作、持续交付、监测反馈提升交付质量与效率。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 43
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 118
+    }
+  },
+  {
+    "id": "RK115",
+    "set": "mock",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "SAGA模式主要解决？",
+    "options": {
+      "A": "多服务长事务的最终一致协调",
+      "B": "单表排序",
+      "C": "CSS样式共享",
+      "D": "密码哈希加盐"
+    },
+    "answer": "A",
+    "explanation": "Saga通过本地事务及补偿操作处理跨服务业务流程。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K062"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 44
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 119
+    }
+  },
+  {
+    "id": "RK116",
+    "set": "mock",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "需要保留左表全部客户，哪怕没有订单，应使用？",
+    "options": {
+      "A": "LEFT JOIN",
+      "B": "INNER JOIN",
+      "C": "CROSS JOIN",
+      "D": "NATURAL JOIN只保留匹配"
+    },
+    "answer": "A",
+    "explanation": "左外连接保留左表所有行，右表没有匹配则为空值。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K037"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 45
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 120
+    }
+  },
+  {
+    "id": "RK117",
+    "set": "mock",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "缺陷漏出率较高往往意味着？",
+    "options": {
+      "A": "上线后不会出缺陷",
+      "B": "文档太多",
+      "C": "前期验证能力或覆盖存在不足",
+      "D": "系统性能必然提高"
+    },
+    "answer": "C",
+    "explanation": "漏出率可衡量缺陷在后续阶段或生产被发现的程度。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 46
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 121
+    }
+  },
+  {
+    "id": "RK118",
+    "set": "mock",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "RPO=15分钟表示业务通常愿意接受？",
+    "options": {
+      "A": "恢复系统最多耗时15分钟",
+      "B": "日均宕机15分钟",
+      "C": "备份每天只能做一次",
+      "D": "恢复时最大可容忍的数据损失时间窗口约15分钟"
+    },
+    "answer": "D",
+    "explanation": "RPO指恢复点目标，约束数据损失窗口；RTO指恢复时间目标。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K054"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 47
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 122
+    }
+  },
+  {
+    "id": "RK119",
+    "set": "mock",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "OAuth 2.0主要解决什么问题？",
+    "options": {
+      "A": "业务数据压缩",
+      "B": "受控的第三方授权访问",
+      "C": "网络二层寻址",
+      "D": "硬盘镜像复制"
+    },
+    "answer": "B",
+    "explanation": "OAuth2是授权框架，不应等同于用户身份认证协议本身。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K052"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 48
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 123
+    }
+  },
+  {
+    "id": "RK120",
+    "set": "mock",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "软硬件物理节点之间通信的UML图通常是？",
+    "options": {
+      "A": "部署图",
+      "B": "类图",
+      "C": "用例图",
+      "D": "状态图"
+    },
+    "answer": "A",
+    "explanation": "部署图用于节点、制品与通信链路建模。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 49
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 124
+    }
+  },
+  {
+    "id": "RK121",
+    "set": "mock",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "RACI矩阵中A通常表示？",
+    "options": {
+      "A": "对最终结果负责并拥有批准/问责权的角色",
+      "B": "参与协作的所有人",
+      "C": "被咨询的角色",
+      "D": "需要被告知的角色"
+    },
+    "answer": "A",
+    "explanation": "Responsible执行，Accountable对结果负责，Consulted咨询，Informed知情。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 50
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 125
+    }
+  },
+  {
+    "id": "RK122",
+    "set": "mock",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "模型服务存在提示注入风险，较恰当的方法是？",
+    "options": {
+      "A": "把检索网页当作最高级指令",
+      "B": "将外部文本视为不可信输入并限制工具权限",
+      "C": "允许外部内容覆盖系统指令",
+      "D": "禁用全部日志"
+    },
+    "answer": "B",
+    "explanation": "外部数据不应被提升为高优先级指令，工具需做二次授权。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K068"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 51
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 126
+    }
+  },
+  {
+    "id": "RK123",
+    "set": "mock",
+    "module": "系统实施运维与英语",
+    "priority": "B",
+    "stem": "英语术语acceptance criteria的含义是？",
+    "options": {
+      "A": "代码仓库",
+      "B": "容量规划",
+      "C": "验收标准",
+      "D": "需求变更委员会"
+    },
+    "answer": "C",
+    "explanation": "验收标准应为可验证的业务或质量条件。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K076"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 52
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 127
+    }
+  },
+  {
+    "id": "RK124",
+    "set": "mock",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "需求基线确立后发现监管要求变化，正确的处理是？",
+    "options": {
+      "A": "悄悄更改代码",
+      "B": "拒绝所有变化",
+      "C": "直接让测试人员口头知晓",
+      "D": "提交变更、分析影响、批准后更新基线"
+    },
+    "answer": "D",
+    "explanation": "受控变更包括提出、影响评估、审批、更新追踪与通知相关方。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K004"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 53
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 128
+    }
+  },
+  {
+    "id": "RK125",
+    "set": "mock",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "跨组织系统集成前最重要的基础是？",
+    "options": {
+      "A": "统一所有开发语言",
+      "B": "先购买最大服务器",
+      "C": "先写前端页面",
+      "D": "明确主数据、数据定义和接口契约"
+    },
+    "answer": "D",
+    "explanation": "缺少一致业务语义会造成接口虽通但数据不一致。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 54
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 129
+    }
+  },
+  {
+    "id": "RK126",
+    "set": "mock",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "软件配置管理基线的作用是？",
+    "options": {
+      "A": "存放临时聊天记录",
+      "B": "绕过审批",
+      "C": "替代代码质量检查",
+      "D": "提供受控可复现的参考版本"
+    },
+    "answer": "D",
+    "explanation": "基线用于变更控制、可追溯与版本一致性。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 55
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 130
+    }
+  },
+  {
+    "id": "RK127",
+    "set": "mock",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "为外部客户端统一提供鉴权、限流与路由的入口一般是？",
+    "options": {
+      "A": "数据仓库",
+      "B": "API网关",
+      "C": "缓存淘汰器",
+      "D": "构建服务器"
+    },
+    "answer": "B",
+    "explanation": "API网关适合统一治理，但要评估单点风险与性能。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 56
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 131
+    }
+  },
+  {
+    "id": "RK128",
+    "set": "mock",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "常见缓存一致性方案中，写数据库后删除缓存的策略称为？",
+    "options": {
+      "A": "永久缓存",
+      "B": "Cache Aside中常见的写路径",
+      "C": "二阶段锁",
+      "D": "视图更新"
+    },
+    "answer": "B",
+    "explanation": "旁路缓存常使用读缓存未命中后回源、更新DB后失效缓存；仍需处理并发窗口。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K040"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 57
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 132
+    }
+  },
+  {
+    "id": "RK129",
+    "set": "mock",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "用户验收测试UAT主要用于？",
+    "options": {
+      "A": "验证编译器正确性",
+      "B": "替代安全合规评估",
+      "C": "调试网络驱动",
+      "D": "由业务方验证业务流程及验收标准"
+    },
+    "answer": "D",
+    "explanation": "UAT侧重业务接受度与可用性，不替代其他测试层级。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 58
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 133
+    }
+  },
+  {
+    "id": "RK130",
+    "set": "mock",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "RTO=2小时意味着？",
+    "options": {
+      "A": "故障后目标在2小时内恢复所需服务",
+      "B": "保留两小时日志",
+      "C": "最大可丢失两小时数据",
+      "D": "每两小时做一次全量备份"
+    },
+    "answer": "A",
+    "explanation": "RTO约束业务恢复时间，不等于RPO。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K054"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 59
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 134
+    }
+  },
+  {
+    "id": "RK131",
+    "set": "mock",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "零信任架构更接近哪种理念？",
+    "options": {
+      "A": "内网流量全部无需检查",
+      "B": "一次登录后永久信任",
+      "C": "持续验证、最小权限且不因网络位置默认信任",
+      "D": "禁用身份认证"
+    },
+    "answer": "C",
+    "explanation": "零信任强调身份、设备与上下文持续评估。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 60
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 135
+    }
+  },
+  {
+    "id": "RK132",
+    "set": "mock",
+    "module": "计算机系统与操作系统",
+    "priority": "B",
+    "stem": "对嵌入式硬实时控制，最重要的操作系统性质是？",
+    "options": {
+      "A": "丰富桌面主题",
+      "B": "可预测的最坏情况响应时间",
+      "C": "应用商店数量",
+      "D": "每次升级最新内核"
+    },
+    "answer": "B",
+    "explanation": "硬实时需证明满足截止期，关注调度确定性和中断延迟上界。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 61
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 136
+    }
+  },
+  {
+    "id": "RK133",
+    "set": "mock",
+    "module": "工程数学与项目管理",
+    "priority": "B",
+    "stem": "项目风险“发生概率30%，损失100万元”，其期望货币价值是？",
+    "options": {
+      "A": "70万元",
+      "B": "30万元",
+      "C": "100万元",
+      "D": "3万元"
+    },
+    "answer": "B",
+    "explanation": "EMV=0.3×100=30万元的期望损失。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K070"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 62
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 137
+    }
+  },
+  {
+    "id": "RK134",
+    "set": "mock",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "AI生成测试用例质量评估不能只看题数，还要看？",
+    "options": {
+      "A": "模型宣传价格",
+      "B": "代码行数越多越好",
+      "C": "需求覆盖、边界覆盖、缺陷检出和误报情况",
+      "D": "是否使用最多表情"
+    },
+    "answer": "C",
+    "explanation": "面向效果的质量指标比单纯产量更能反映有效性。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K049"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 63
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 138
+    }
+  },
+  {
+    "id": "RK135",
+    "set": "mock",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "“用户可导出当月销售清单”为何类需求？",
+    "options": {
+      "A": "功能需求",
+      "B": "可靠性要求",
+      "C": "可维护性要求",
+      "D": "保密性要求"
+    },
+    "answer": "A",
+    "explanation": "描述系统对外提供的可观察业务能力。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K001"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 64
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 139
+    }
+  },
+  {
+    "id": "RK136",
+    "set": "mock",
+    "module": "系统规划与企业信息化",
+    "priority": "B",
+    "stem": "信息化收益中“审批平均周期由5天降到2天”更接近？",
+    "options": {
+      "A": "可衡量的业务流程效益",
+      "B": "软件编译优化",
+      "C": "外键约束",
+      "D": "代码静态类型"
+    },
+    "answer": "A",
+    "explanation": "属于流程效率提升的业务效益，可用于前后对比评估。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K012",
+      "K075"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 65
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 140
+    }
+  },
+  {
+    "id": "RK137",
+    "set": "mock",
+    "module": "软件工程与开发方法",
+    "priority": "B",
+    "stem": "系统迭代回顾会议的主要目的？",
+    "options": {
+      "A": "总结可改进事项并跟踪行动",
+      "B": "决定数据库字段类型",
+      "C": "计算路由最短路径",
+      "D": "核对发票税率"
+    },
+    "answer": "A",
+    "explanation": "迭代回顾是过程持续改进，不只是进展汇报。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 66
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 141
+    }
+  },
+  {
+    "id": "RK138",
+    "set": "mock",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "使用CQRS的典型原因是？",
+    "options": {
+      "A": "所有读写模型都必须一致",
+      "B": "只为了减少代码量",
+      "C": "读写负载和模型差异大，需要分别优化",
+      "D": "确保零运维成本"
+    },
+    "answer": "C",
+    "explanation": "CQRS把查询与命令职责分离，但引入数据同步复杂度。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 67
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 142
+    }
+  },
+  {
+    "id": "RK139",
+    "set": "mock",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "分库分表的分片键选择，最需要综合考虑？",
+    "options": {
+      "A": "只考虑表名好听",
+      "B": "只考虑每表字段数",
+      "C": "查询路径、数据分布、热点与扩容需求",
+      "D": "一律用当前日期"
+    },
+    "answer": "C",
+    "explanation": "分片键决定数据分布及跨分片查询成本，需平衡倾斜与访问模式。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K041"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 68
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 143
+    }
+  },
+  {
+    "id": "RK140",
+    "set": "mock",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "针对LLM生成的测试用例，最应增加的控制是？",
+    "options": {
+      "A": "人工复核、覆盖度检查与可复现执行验证",
+      "B": "直接视为充分正确",
+      "C": "彻底取消人工测试",
+      "D": "只检查自然语言流畅度"
+    },
+    "answer": "A",
+    "explanation": "大模型可能遗漏边界/产生错误断言，需审查、执行和度量。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K049"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 69
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 144
+    }
+  },
+  {
+    "id": "RK141",
+    "set": "mock",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "系统要求“读多写少、接受短期旧数据”，应优先考虑？",
+    "options": {
+      "A": "关闭读缓存",
+      "B": "只读副本与缓存加速并设置失效策略",
+      "C": "把所有读取变为分布式事务",
+      "D": "禁用CDN"
+    },
+    "answer": "B",
+    "explanation": "读副本/缓存提高读吞吐，但需明确一致性与更新策略。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K040"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 70
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 145
+    }
+  },
+  {
+    "id": "RK142",
+    "set": "mock",
+    "module": "安全合规与标准",
+    "priority": "A",
+    "stem": "发生勒索软件事件时，仅有备份还不够，必须关注？",
+    "options": {
+      "A": "网页字体",
+      "B": "自动刷新频率",
+      "C": "数据库表名字数",
+      "D": "离线或不可变备份及定期恢复演练"
+    },
+    "answer": "D",
+    "explanation": "备份能否隔离勒索范围且成功恢复，需要演练验证。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K055"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 71
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 146
+    }
+  },
+  {
+    "id": "RK143",
+    "set": "mock",
+    "module": "云原生微服务与AI",
+    "priority": "B",
+    "stem": "蓝绿部署与金丝雀发布的主要区别之一是？",
+    "options": {
+      "A": "两者都必须中断服务",
+      "B": "金丝雀只能人工部署",
+      "C": "蓝绿不能回滚",
+      "D": "蓝绿切换完整环境，金丝雀逐步放量给部分流量"
+    },
+    "answer": "D",
+    "explanation": "蓝绿通过两套环境切换，金丝雀按流量/用户逐步推出版本。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K066"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 72
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 147
+    }
+  },
+  {
+    "id": "RK144",
+    "set": "mock",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "识别系统边界与外部参与者时，首先应明确？",
+    "options": {
+      "A": "显示器型号",
+      "B": "业务目标、职责边界与交互对象",
+      "C": "编译优化级别",
+      "D": "代码分支命名规范"
+    },
+    "answer": "B",
+    "explanation": "边界、利益相关方和接口先明确，才能合理抽取用例。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K006"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 73
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 148
+    }
+  },
+  {
+    "id": "RK145",
+    "set": "mock",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "当业务需要不停机扩容时，服务设计应优先满足？",
+    "options": {
+      "A": "将会话永久存于单实例内存",
+      "B": "只部署一台服务器",
+      "C": "禁用负载均衡",
+      "D": "尽可能无状态并外置共享会话/状态"
+    },
+    "answer": "D",
+    "explanation": "无状态服务便于水平扩缩容与故障替换。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K058"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 74
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 149
+    }
+  },
+  {
+    "id": "RK146",
+    "set": "mock",
+    "module": "数据库与数据建模",
+    "priority": "A",
+    "stem": "关系表中外键约束主要保证？",
+    "options": {
+      "A": "降低所有查询时延",
+      "B": "用户界面一致",
+      "C": "完整日志追踪",
+      "D": "引用完整性"
+    },
+    "answer": "D",
+    "explanation": "外键用于约束引用关系是否存在，与性能及UI无直接关系。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 75
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 150
+    }
+  },
+  {
+    "id": "RK147",
+    "set": "mock",
+    "module": "软件测试与质量",
+    "priority": "A",
+    "stem": "混沌工程的合理目标是？",
+    "options": {
+      "A": "让生产环境长期不可用",
+      "B": "在受控条件下注入故障验证系统韧性",
+      "C": "替代数据库备份",
+      "D": "使日志不可追踪"
+    },
+    "answer": "B",
+    "explanation": "通过受控故障演练验证熔断、回退与恢复，但须设置保护栏。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 76
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 151
+    }
+  },
+  {
+    "id": "RK148",
+    "set": "mock",
+    "module": "网络分布式与高可用",
+    "priority": "A",
+    "stem": "分布式链路追踪中trace ID主要用于？",
+    "options": {
+      "A": "生成数据库主键",
+      "B": "替代访问授权",
+      "C": "关联跨服务调用链中的事件和Span",
+      "D": "缓存所有日志"
+    },
+    "answer": "C",
+    "explanation": "统一trace ID有助于诊断跨服务时延与错误传播。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K064"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 77
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 152
+    }
+  },
+  {
+    "id": "RK149",
+    "set": "mock",
+    "module": "需求工程与UML",
+    "priority": "A",
+    "stem": "验收标准最好的表述是？",
+    "options": {
+      "A": "页面看起来专业",
+      "B": "接口性能应该很好",
+      "C": "1000并发用户下95%请求在2秒内完成",
+      "D": "尽量少出现错误"
+    },
+    "answer": "C",
+    "explanation": "含条件、测量方法和阈值，具备客观可验证性。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K002",
+      "K047"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 78
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 153
+    }
+  },
+  {
+    "id": "RK150",
+    "set": "mock",
+    "module": "架构与设计模式",
+    "priority": "A",
+    "stem": "评估架构是否满足质量属性，最有效的是？",
+    "options": {
+      "A": "用具体场景、刺激、响应和度量衡量",
+      "B": "只画出漂亮架构图",
+      "C": "只统计类数量",
+      "D": "只问开发人员喜好"
+    },
+    "answer": "A",
+    "explanation": "质量属性场景应包含环境、刺激、系统响应及可测量指标。",
+    "origin": "原创模拟",
+    "relatedKnowledgeIds": [
+      "K017"
+    ],
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "综合模考75",
+      "row": 79
+    },
+    "answerSourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "答案与解析",
+      "row": 154
+    }
+  }
+]

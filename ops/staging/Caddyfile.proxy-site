@@ -1,0 +1,10 @@
+# Append this site to the complete existing shared proxy Caddyfile.
+ruankao.staging.haaboo.com {
+	encode zstd gzip
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy no-referrer
+		-Server
+	}
+	reverse_proxy ruankao-staging-web:8080
+}

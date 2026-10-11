@@ -1,0 +1,1631 @@
+[
+  {
+    "id": "K001",
+    "module": "需求/UML/建模",
+    "title": "需求类型",
+    "essentials": "功能描述系统做什么；非功能描述性能、安全、可用性等质量约束",
+    "pitfalls": "“响应2秒”是性能NFR而非业务功能",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK025"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 5
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 152
+    }
+  },
+  {
+    "id": "K002",
+    "module": "需求/UML/建模",
+    "title": "好需求6项",
+    "essentials": "正确、无歧义、完整、一致、可验证、可追溯，并评估可行性与必要性",
+    "pitfalls": "形容词“高效、好用”没有阈值就不能验收",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK001"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 6
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 153
+    }
+  },
+  {
+    "id": "K003",
+    "module": "需求/UML/建模",
+    "title": "需求获取",
+    "essentials": "访谈、问卷、观察、工作坊、原型、文档分析",
+    "pitfalls": "争议多时用联合研讨澄清边界",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK013"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 7
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 154
+    }
+  },
+  {
+    "id": "K004",
+    "module": "需求/UML/建模",
+    "title": "需求基线/变更",
+    "essentials": "提交请求→影响分析→评审批准→更新基线/测试→通知各方",
+    "pitfalls": "批准前不得直接改基线",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 8
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 155
+    }
+  },
+  {
+    "id": "K005",
+    "module": "需求/UML/建模",
+    "title": "需求追踪",
+    "essentials": "需求↔来源↔设计↔代码↔测试的双向追踪矩阵",
+    "pitfalls": "追踪不是只有编号",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 9
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 156
+    }
+  },
+  {
+    "id": "K006",
+    "module": "需求/UML/建模",
+    "title": "用例图",
+    "essentials": "参与者、系统边界、用例；include必经复用，extend可选扩展",
+    "pitfalls": "客户经理和外部支付网关都可以是参与者",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK037",
+      "RK048"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 10
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 157
+    }
+  },
+  {
+    "id": "K007",
+    "module": "需求/UML/建模",
+    "title": "顺序图",
+    "essentials": "生命线、消息、激活、alt/opt/loop，强调交互顺序",
+    "pitfalls": "不是类的静态关系图",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK059"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 11
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 158
+    }
+  },
+  {
+    "id": "K008",
+    "module": "需求/UML/建模",
+    "title": "活动图",
+    "essentials": "动作、分支/合并、并行分叉/汇合、泳道",
+    "pitfalls": "分支不是并发",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK073"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 12
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 159
+    }
+  },
+  {
+    "id": "K009",
+    "module": "需求/UML/建模",
+    "title": "状态图",
+    "essentials": "状态、事件、守卫、动作；订单生命周期最典型",
+    "pitfalls": "适合状态复杂对象",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK068"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 13
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 160
+    }
+  },
+  {
+    "id": "K010",
+    "module": "需求/UML/建模",
+    "title": "类图",
+    "essentials": "属性/操作；关联、聚合、组合、泛化、依赖",
+    "pitfalls": "组合关系更强调生命周期依存",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 14
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 161
+    }
+  },
+  {
+    "id": "K011",
+    "module": "需求/UML/建模",
+    "title": "DFD四元素",
+    "essentials": "外部实体、数据流、加工、数据存储；分解前后保持数据流平衡",
+    "pitfalls": "不能数据直接“实体→数据存储”而无加工",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 15
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 162
+    }
+  },
+  {
+    "id": "K012",
+    "module": "需求/UML/建模",
+    "title": "业务流程重构",
+    "essentials": "先识别瓶颈、冗余审批及价值活动，再重设计流程与数字化指标",
+    "pitfalls": "BPR不是简单扫描纸张",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK014"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 16
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 163
+    }
+  },
+  {
+    "id": "K013",
+    "module": "软件工程/架构",
+    "title": "开发模型",
+    "essentials": "瀑布：稳定需求；原型：模糊需求；增量：逐批交付；敏捷：短周期反馈",
+    "pitfalls": "任何模型都不能取消风险管理和测试",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK003",
+      "RK015"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 17
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 165
+    }
+  },
+  {
+    "id": "K014",
+    "module": "软件工程/架构",
+    "title": "敏捷/Scrum",
+    "essentials": "PO管待办优先级；Scrum Master促进流程；团队交付增量",
+    "pitfalls": "敏捷不等于零文档零计划",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK027",
+      "RK039"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 18
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 166
+    }
+  },
+  {
+    "id": "K015",
+    "module": "软件工程/架构",
+    "title": "CI/CD",
+    "essentials": "持续集成：频繁构建测试；持续交付：随时可发；持续部署：自动投产",
+    "pitfalls": "三个术语不要互换",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 19
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 167
+    }
+  },
+  {
+    "id": "K016",
+    "module": "软件工程/架构",
+    "title": "高内聚低耦合",
+    "essentials": "模块职责集中、依赖少；变化局部化",
+    "pitfalls": "不要把所有服务做成超级类",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK061"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 20
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 168
+    }
+  },
+  {
+    "id": "K017",
+    "module": "软件工程/架构",
+    "title": "质量属性场景",
+    "essentials": "刺激源/刺激/环境/制品/响应/响应度量",
+    "pitfalls": "“性能好”不是质量场景",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 21
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 169
+    }
+  },
+  {
+    "id": "K018",
+    "module": "软件工程/架构",
+    "title": "4+1视图",
+    "essentials": "逻辑：功能对象；进程：并发通信；开发：模块组织；物理：部署；场景：用例验证",
+    "pitfalls": "运行态并发是进程视图",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK004"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 22
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 170
+    }
+  },
+  {
+    "id": "K019",
+    "module": "软件工程/架构",
+    "title": "分层架构",
+    "essentials": "表示层→业务层→持久层；层间职责明确",
+    "pitfalls": "跨层直接访问存储破坏分层",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK040"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 23
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 171
+    }
+  },
+  {
+    "id": "K020",
+    "module": "软件工程/架构",
+    "title": "微服务边界",
+    "essentials": "按领域能力/有界上下文划分；独立部署和数据所有权",
+    "pitfalls": "拆过细会放大分布式复杂度",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 24
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 172
+    }
+  },
+  {
+    "id": "K021",
+    "module": "软件工程/架构",
+    "title": "事件驱动",
+    "essentials": "发布/订阅异步解耦；要考虑重试、积压和最终一致",
+    "pitfalls": "消息重复通常是正常边界条件",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK028"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 25
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 173
+    }
+  },
+  {
+    "id": "K022",
+    "module": "软件工程/架构",
+    "title": "设计模式-策略",
+    "essentials": "封装算法族，运行时切换计费/推荐规则",
+    "pitfalls": "不要与状态模式混淆",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK069"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 26
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 174
+    }
+  },
+  {
+    "id": "K023",
+    "module": "软件工程/架构",
+    "title": "设计模式-观察者",
+    "essentials": "对象状态变化通知多个订阅者",
+    "pitfalls": "一般关联事件通知",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK062"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 27
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 175
+    }
+  },
+  {
+    "id": "K024",
+    "module": "软件工程/架构",
+    "title": "设计模式-适配器",
+    "essentials": "将旧接口转换为新接口，兼容遗留系统",
+    "pitfalls": "不同于外观：外观简化子系统接口",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK051"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 28
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 176
+    }
+  },
+  {
+    "id": "K025",
+    "module": "软件工程/架构",
+    "title": "设计模式-备忘录",
+    "essentials": "保存并恢复状态；撤销/回滚场景",
+    "pitfalls": "原型模式是复制对象",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK074"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 29
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 177
+    }
+  },
+  {
+    "id": "K026",
+    "module": "软件工程/架构",
+    "title": "设计模式-抽象工厂",
+    "essentials": "创建关联的产品族，无需指定具体类",
+    "pitfalls": "工厂方法一般单一产品层次",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 30
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 178
+    }
+  },
+  {
+    "id": "K027",
+    "module": "软件工程/架构",
+    "title": "设计模式-装饰器",
+    "essentials": "动态为对象增加职责（审计/缓存）",
+    "pitfalls": "与继承不同：组合包装",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 31
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 179
+    }
+  },
+  {
+    "id": "K028",
+    "module": "软件工程/架构",
+    "title": "设计模式-单例",
+    "essentials": "保证特定上下文唯一实例，但须防共享状态与测试问题",
+    "pitfalls": "不要滥用全局单例",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 32
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 180
+    }
+  },
+  {
+    "id": "K029",
+    "module": "软件工程/架构",
+    "title": "架构权衡",
+    "essentials": "性能↔一致性、成本↔容灾、安全↔易用、交付↔演进",
+    "pitfalls": "写论文必须交代为什么选而不只是选什么",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 33
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 181
+    }
+  },
+  {
+    "id": "K030",
+    "module": "数据库/数据治理",
+    "title": "候选键/主键",
+    "essentials": "候选键最小唯一标识；一个候选键可选作主键",
+    "pitfalls": "主键不等于一定自增",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK005"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 34
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 183
+    }
+  },
+  {
+    "id": "K031",
+    "module": "数据库/数据治理",
+    "title": "1NF",
+    "essentials": "属性原子化，无重复组",
+    "pitfalls": "不能把数组硬塞单字段替代规范化而不论场景",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK017"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 35
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 184
+    }
+  },
+  {
+    "id": "K032",
+    "module": "数据库/数据治理",
+    "title": "2NF",
+    "essentials": "在1NF上消除非主属性对候选键的部分函数依赖",
+    "pitfalls": "复合键场景尤其注意",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK029"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 36
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 185
+    }
+  },
+  {
+    "id": "K033",
+    "module": "数据库/数据治理",
+    "title": "3NF",
+    "essentials": "在2NF基础上消除非主属性经非键属性的传递依赖（简化记忆）",
+    "pitfalls": "形式化判定需看候选键及主属性",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK041"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 37
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 186
+    }
+  },
+  {
+    "id": "K034",
+    "module": "数据库/数据治理",
+    "title": "BCNF",
+    "essentials": "每个非平凡函数依赖的决定因素都是超键",
+    "pitfalls": "比3NF强，分解时关注无损与依赖保持",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK052"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 38
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 187
+    }
+  },
+  {
+    "id": "K035",
+    "module": "数据库/数据治理",
+    "title": "事务ACID",
+    "essentials": "原子性、一致性、隔离性、持久性",
+    "pitfalls": "I解决并发互扰，D解决提交持久",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK063",
+      "RK070"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 39
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 188
+    }
+  },
+  {
+    "id": "K036",
+    "module": "数据库/数据治理",
+    "title": "并发问题",
+    "essentials": "脏读、不可重复读、幻读；锁/版本/隔离级别权衡",
+    "pitfalls": "隔离级别越高通常并发成本越大",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK075"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 40
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 189
+    }
+  },
+  {
+    "id": "K037",
+    "module": "数据库/数据治理",
+    "title": "SQL四招",
+    "essentials": "JOIN联表；GROUP BY分组；HAVING筛组；WHERE先筛明细",
+    "pitfalls": "HAVING与WHERE不混用",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 41
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 190
+    }
+  },
+  {
+    "id": "K038",
+    "module": "数据库/数据治理",
+    "title": "索引",
+    "essentials": "B+树常用；复合索引选择性/最左前缀；回表/覆盖索引",
+    "pitfalls": "越多索引写开销越大",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 42
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 191
+    }
+  },
+  {
+    "id": "K039",
+    "module": "数据库/数据治理",
+    "title": "OLTP/OLAP",
+    "essentials": "OLTP交易低延迟与一致性；OLAP统计分析与多维聚合",
+    "pitfalls": "事实表记录度量，维表存维度信息",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 43
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 192
+    }
+  },
+  {
+    "id": "K040",
+    "module": "数据库/数据治理",
+    "title": "缓存旁路模式",
+    "essentials": "读未命中回源并写缓存；修改DB后删除缓存",
+    "pitfalls": "仍可能有并发旧值回填，需要策略",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 44
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 193
+    }
+  },
+  {
+    "id": "K041",
+    "module": "数据库/数据治理",
+    "title": "分片",
+    "essentials": "选分片键时平衡查询路径、热点、跨分片事务与扩容",
+    "pitfalls": "不是按表大小平均分就足够",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 45
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 194
+    }
+  },
+  {
+    "id": "K042",
+    "module": "测试/质量/安全",
+    "title": "静态/动态测试",
+    "essentials": "静态：评审/静态扫描不执行；动态：执行被测软件",
+    "pitfalls": "走查/正式评审属于静态活动",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK006"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 46
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 196
+    }
+  },
+  {
+    "id": "K043",
+    "module": "测试/质量/安全",
+    "title": "覆盖层级",
+    "essentials": "语句＜判定（通常更强）等层级，条件/判定组合需分别满足",
+    "pitfalls": "100%语句覆盖不意味着无缺陷",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK018",
+      "RK030"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 47
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 197
+    }
+  },
+  {
+    "id": "K044",
+    "module": "测试/质量/安全",
+    "title": "黑盒测试设计",
+    "essentials": "等价类、边界值、判定表、因果图、状态迁移",
+    "pitfalls": "业务规则条件组合用判定表",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK042",
+      "RK053"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 48
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 198
+    }
+  },
+  {
+    "id": "K045",
+    "module": "测试/质量/安全",
+    "title": "测试金字塔",
+    "essentials": "以稳定单测为基础，适量集成/端到端；按项目权衡",
+    "pitfalls": "不是绝对比例法则",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 49
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 199
+    }
+  },
+  {
+    "id": "K046",
+    "module": "测试/质量/安全",
+    "title": "回归测试",
+    "essentials": "每次修复/变更后复核原有业务是否被破坏",
+    "pitfalls": "最好选风险驱动的自动化回归集",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK064"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 50
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 200
+    }
+  },
+  {
+    "id": "K047",
+    "module": "测试/质量/安全",
+    "title": "性能指标",
+    "essentials": "吞吐、P95/P99延迟、错误率、资源利用、饱和度",
+    "pitfalls": "P95不是平均值",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK071"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 51
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 201
+    }
+  },
+  {
+    "id": "K048",
+    "module": "测试/质量/安全",
+    "title": "SQA/QC",
+    "essentials": "SQA强调过程与预防；QC侧重结果检查和验证",
+    "pitfalls": "质量控制不等于只有测试",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 52
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 202
+    }
+  },
+  {
+    "id": "K049",
+    "module": "测试/质量/安全",
+    "title": "LLM辅助测试",
+    "essentials": "自动生成用例/断言草案/数据变种；加人工审核与执行验证",
+    "pitfalls": "注意幻觉、隐私泄露和不可重复",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 53
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 203
+    }
+  },
+  {
+    "id": "K050",
+    "module": "测试/质量/安全",
+    "title": "数据安全",
+    "essentials": "分类分级、最小必要、脱敏、加密、授权、审计和删除策略",
+    "pitfalls": "不能只靠HTTPS解决存储安全",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 54
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 204
+    }
+  },
+  {
+    "id": "K051",
+    "module": "测试/质量/安全",
+    "title": "AES/RSA/哈希",
+    "essentials": "AES对称数据加密；RSA/ECC非对称；哈希不可逆摘要",
+    "pitfalls": "Base64不是加密",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK008",
+      "RK020"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 55
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 205
+    }
+  },
+  {
+    "id": "K052",
+    "module": "测试/质量/安全",
+    "title": "授权RBAC/ABAC",
+    "essentials": "RBAC按角色授予；ABAC按主体/资源/环境属性判断",
+    "pitfalls": "OAuth2主要是授权框架",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK044",
+      "RK055"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 56
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 206
+    }
+  },
+  {
+    "id": "K053",
+    "module": "测试/质量/安全",
+    "title": "最小权限",
+    "essentials": "最小角色和工具范围、按需授权、到期回收",
+    "pitfalls": "AI Agent调用工具也需鉴权",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK066"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 57
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 207
+    }
+  },
+  {
+    "id": "K054",
+    "module": "测试/质量/安全",
+    "title": "RPO/RTO",
+    "essentials": "RPO容忍数据损失时间窗口；RTO容忍恢复耗时",
+    "pitfalls": "背公式不如举“15分钟/2小时”例子",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 58
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 208
+    }
+  },
+  {
+    "id": "K055",
+    "module": "测试/质量/安全",
+    "title": "备份演练",
+    "essentials": "不可变/隔离备份、恢复测试、切换回切步骤",
+    "pitfalls": "备份成功不代表恢复成功",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 59
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 209
+    }
+  },
+  {
+    "id": "K056",
+    "module": "网络/分布式/云原生",
+    "title": "TCP/UDP",
+    "essentials": "TCP可靠有序字节流；UDP报文无内建可靠性",
+    "pitfalls": "UDP并非一定“低延迟”到应用整体",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK007"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 60
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 211
+    }
+  },
+  {
+    "id": "K057",
+    "module": "网络/分布式/云原生",
+    "title": "TLS/HTTPS",
+    "essentials": "提供传输加密、完整性、服务端认证等",
+    "pitfalls": "不代替应用权限管理",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK019"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 61
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 212
+    }
+  },
+  {
+    "id": "K058",
+    "module": "网络/分布式/云原生",
+    "title": "负载均衡",
+    "essentials": "健康检查、无状态实例、连接策略与故障转移",
+    "pitfalls": "只加负载均衡不能解决数据库瓶颈",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 62
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 213
+    }
+  },
+  {
+    "id": "K059",
+    "module": "网络/分布式/云原生",
+    "title": "熔断/限流/降级",
+    "essentials": "熔断阻止故障蔓延，限流保护容量，降级保核心功能",
+    "pitfalls": "重试要设置次数/退避并避免重试风暴",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK043"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 63
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 214
+    }
+  },
+  {
+    "id": "K060",
+    "module": "网络/分布式/云原生",
+    "title": "CAP",
+    "essentials": "网络分区存在时对强一致性和可用性做权衡",
+    "pitfalls": "不是任何时刻只能选两种属性",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK072"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 64
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 215
+    }
+  },
+  {
+    "id": "K061",
+    "module": "网络/分布式/云原生",
+    "title": "幂等/重复投递",
+    "essentials": "业务唯一键、幂等记录、原子状态转移；消息重复可安全处理",
+    "pitfalls": "付款不能因重试重复扣费",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK054",
+      "RK065"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 65
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 216
+    }
+  },
+  {
+    "id": "K062",
+    "module": "网络/分布式/云原生",
+    "title": "最终一致性",
+    "essentials": "可暂时不一致，最终各副本收敛；补偿事务处理跨服务业务",
+    "pitfalls": "写论文需讲一致性范围和时效",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 66
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 217
+    }
+  },
+  {
+    "id": "K063",
+    "module": "网络/分布式/云原生",
+    "title": "可用性计算",
+    "essentials": "月中断≈时长×(1-可用性)；30天99.9%≈43.2分钟",
+    "pitfalls": "小数点位置容易错",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 67
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 218
+    }
+  },
+  {
+    "id": "K064",
+    "module": "网络/分布式/云原生",
+    "title": "可观测性",
+    "essentials": "日志、指标、链路追踪；指标关注四个黄金信号",
+    "pitfalls": "只写“加监控”不构成方案",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 68
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 219
+    }
+  },
+  {
+    "id": "K065",
+    "module": "网络/分布式/云原生",
+    "title": "容器与K8s",
+    "essentials": "容器共享内核隔离，K8s Deployment管理副本，探针管理状态",
+    "pitfalls": "就绪探针不同于存活探针",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK011",
+      "RK023",
+      "RK035"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 69
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 220
+    }
+  },
+  {
+    "id": "K066",
+    "module": "网络/分布式/云原生",
+    "title": "蓝绿/灰度",
+    "essentials": "蓝绿切换环境；灰度分批放量；配合监控与自动回滚",
+    "pitfalls": "两者都要确认数据库兼容",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK047"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 70
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 221
+    }
+  },
+  {
+    "id": "K067",
+    "module": "网络/分布式/云原生",
+    "title": "RAG与向量检索",
+    "essentials": "先检索有权限的知识，再作为上下文生成；评估召回率和准确率",
+    "pitfalls": "RAG不能保证零幻觉",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK067"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 71
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 222
+    }
+  },
+  {
+    "id": "K068",
+    "module": "网络/分布式/云原生",
+    "title": "Agent安全",
+    "essentials": "工具白名单、最小权限、敏感操作确认、审计，防提示注入",
+    "pitfalls": "外部文档不能直接视为指令",
+    "priority": "A",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 72
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 223
+    }
+  },
+  {
+    "id": "K069",
+    "module": "工程管理/计算/英语",
+    "title": "NPV/PV",
+    "essentials": "PV=FV/(1+r)^n；NPV=折现流入现值-初始/后续投入现值",
+    "pitfalls": "正NPV只是经济可行的一个条件",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK002",
+      "RK010"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 73
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 225
+    }
+  },
+  {
+    "id": "K070",
+    "module": "工程管理/计算/英语",
+    "title": "EMV",
+    "essentials": "期望货币价值=概率×结果金额，独立风险合计",
+    "pitfalls": "算完要区分正收益与负损失",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK022"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 74
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 226
+    }
+  },
+  {
+    "id": "K071",
+    "module": "工程管理/计算/英语",
+    "title": "EVM",
+    "essentials": "CV=EV-AC；SV=EV-PV；CPI=EV/AC；SPI=EV/PV",
+    "pitfalls": "CV<0超成本，SPI<1进度落后",
+    "priority": "A",
+    "relatedQuestionIds": [
+      "RK046",
+      "RK057"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 75
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 227
+    }
+  },
+  {
+    "id": "K072",
+    "module": "工程管理/计算/英语",
+    "title": "关键路径",
+    "essentials": "活动网络最长持续路径决定最短工期；关键路径活动总时差通常为0",
+    "pitfalls": "求时间不是求边权最短路",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK034"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 76
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 228
+    }
+  },
+  {
+    "id": "K073",
+    "module": "工程管理/计算/英语",
+    "title": "Dijkstra/MST",
+    "essentials": "Dijkstra非负权单源最短路；Prim/Kruskal连通全网边权和最小",
+    "pitfalls": "图论文字题先识别需求",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 77
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 229
+    }
+  },
+  {
+    "id": "K074",
+    "module": "工程管理/计算/英语",
+    "title": "SLA/MTTR",
+    "essentials": "SLA定义服务等级；MTTR平均修复/恢复时间",
+    "pitfalls": "指标需定义测量期和计算口径",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK012",
+      "RK036"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 78
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 230
+    }
+  },
+  {
+    "id": "K075",
+    "module": "工程管理/计算/英语",
+    "title": "BPR/价值链",
+    "essentials": "BPR重构端到端流程；价值链找竞争优势活动",
+    "pitfalls": "流程自动化不等于流程再造",
+    "priority": "B",
+    "relatedQuestionIds": [
+      "RK014",
+      "RK049"
+    ],
+    "validationMethod": "question-and-self-check",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 79
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 231
+    }
+  },
+  {
+    "id": "K076",
+    "module": "工程管理/计算/英语",
+    "title": "常见工程英语",
+    "essentials": "stakeholder利益相关方；trade-off权衡；acceptance criteria验收标准；baseline基线",
+    "pitfalls": "英文题优先定位关键词再看选项",
+    "priority": "B",
+    "relatedQuestionIds": [],
+    "validationMethod": "self-check-only",
+    "sourceRef": {
+      "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
+      "sheet": "必背清单76",
+      "row": 80
+    },
+    "wordSourceRef": {
+      "file": "2026上海系统分析师_7天通关冲刺手册_知识点案例论文.docx",
+      "section": "04｜76条必背知识卡",
+      "textBlock": 232
+    }
+  }
+]
