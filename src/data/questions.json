@@ -759,9 +759,7 @@
     "answer": "D",
     "explanation": "敏捷重视反馈与适应性，但不意味着不做计划和文档。",
     "origin": "原创模拟",
-    "relatedKnowledgeIds": [
-      "K014"
-    ],
+    "relatedKnowledgeIds": [],
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
       "sheet": "章节训练75",
@@ -2611,9 +2609,7 @@
     "answer": "C",
     "explanation": "事实表记录业务事件和度量，维度表描述分析切片。",
     "origin": "原创模拟",
-    "relatedKnowledgeIds": [
-      "K039"
-    ],
+    "relatedKnowledgeIds": [],
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
       "sheet": "综合模考75",
@@ -2926,7 +2922,6 @@
     "explanation": "拆分服务增大了网络失败、服务治理与跨服务事务成本。",
     "origin": "原创模拟",
     "relatedKnowledgeIds": [
-      "K020",
       "K029"
     ],
     "sourceRef": {
@@ -3382,9 +3377,7 @@
     "answer": "B",
     "explanation": "OAuth2是授权框架，不应等同于用户身份认证协议本身。",
     "origin": "原创模拟",
-    "relatedKnowledgeIds": [
-      "K052"
-    ],
+    "relatedKnowledgeIds": [],
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
       "sheet": "综合模考75",
@@ -4001,9 +3994,7 @@
     "answer": "B",
     "explanation": "读副本/缓存提高读吞吐，但需明确一致性与更新策略。",
     "origin": "原创模拟",
-    "relatedKnowledgeIds": [
-      "K040"
-    ],
+    "relatedKnowledgeIds": [],
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
       "sheet": "综合模考75",

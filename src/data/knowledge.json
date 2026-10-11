@@ -287,7 +287,6 @@
     "pitfalls": "敏捷不等于零文档零计划",
     "priority": "A",
     "relatedQuestionIds": [
-      "RK027",
       "RK039"
     ],
     "validationMethod": "question-and-self-check",

@@ -104,6 +104,30 @@ it("导出→清空→JSON恢复全部12类数据、尝试、草稿和模考快�
   const after = await exportBackup();
   expect(JSON.parse(JSON.stringify(after.data))).toEqual(JSON.parse(json).data);
 });
+it("题卡关联升级后，旧版K014/RK027历史仍可备份恢复且不重判成绩", async () => {
+  await seed();
+  const backup = await exportBackup();
+  const previousVersion = "2026.10.10.1";
+  backup.contentVersion = previousVersion;
+  backup.data.questionAttempts.push({
+    id: "previous-agile-question", questionId: "RK027", set: "chapter",
+    selectedOption: "D", correct: true, submittedAt: "2026-10-11T02:00:00.000Z",
+    order: 1000, contentVersion: previousVersion,
+  });
+  backup.data.cards.push({
+    cardId: "K014", status: "initial", firstPassAt: "2026-10-11T02:00:00.000Z",
+    reviewDueAt: "2026-10-12T02:00:00.000Z", updatedAt: "2026-10-11T02:00:00.000Z",
+    validationMethod: "question-and-self-check",
+  });
+  backup.data.cardAttempts.push({
+    id: "previous-scrum-attempt", cardId: "K014", recall: "此前闭卷回答",
+    checks: [true, true, true], questionAttemptId: "previous-agile-question", passed: true,
+    createdAt: "2026-10-11T02:00:00.000Z", kind: "first", order: 1000, contentVersion: previousVersion,
+  });
+  await restoreBackup(backup);
+  expect(JSON.parse(JSON.stringify((await exportBackup()).data))).toEqual(JSON.parse(JSON.stringify(backup.data)));
+  expect(content.knowledge.find((k) => k.id === "K014")!.relatedQuestionIds).toEqual(["RK039"]);
+});
 it("损坏JSON、未来版本、重复ID和错误引用均不改动现有记录", async () => {
   await seed();
   const b = await exportBackup(),

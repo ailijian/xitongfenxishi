@@ -412,14 +412,12 @@
   },
   {
     "questionId": "RK027",
-    "knowledgeIds": [
-      "K014"
-    ],
-    "decision": "confirmed",
+    "knowledgeIds": [],
+    "decision": "unlinked",
     "keywordCandidates": [
       "K014"
     ],
-    "reason": "题干/正确选项/解析直接考查：敏捷/Scrum",
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
     "practiceEligible": true,
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
@@ -1447,12 +1445,10 @@
   },
   {
     "questionId": "RK092",
-    "knowledgeIds": [
-      "K039"
-    ],
-    "decision": "confirmed",
+    "knowledgeIds": [],
+    "decision": "unlinked",
     "keywordCandidates": [],
-    "reason": "题干/正确选项/解析直接考查：OLTP/OLAP",
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
     "practiceEligible": false,
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
@@ -1617,12 +1613,11 @@
   {
     "questionId": "RK103",
     "knowledgeIds": [
-      "K020",
       "K029"
     ],
     "decision": "confirmed",
     "keywordCandidates": [],
-    "reason": "题干/正确选项/解析直接考查：微服务边界、架构权衡",
+    "reason": "题干/正确选项/解析直接考查：架构权衡",
     "practiceEligible": false,
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
@@ -1858,12 +1853,10 @@
   },
   {
     "questionId": "RK119",
-    "knowledgeIds": [
-      "K052"
-    ],
-    "decision": "confirmed",
+    "knowledgeIds": [],
+    "decision": "unlinked",
     "keywordCandidates": [],
-    "reason": "题干/正确选项/解析直接考查：授权RBAC/ABAC",
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
     "practiceEligible": false,
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",
@@ -2187,14 +2180,12 @@
   },
   {
     "questionId": "RK141",
-    "knowledgeIds": [
-      "K040"
-    ],
-    "decision": "confirmed",
+    "knowledgeIds": [],
+    "decision": "unlinked",
     "keywordCandidates": [
       "K022"
     ],
-    "reason": "题干/正确选项/解析直接考查：缓存旁路模式",
+    "reason": "未直接验证76卡中的具体关键知识；保留为全范围单选题",
     "practiceEligible": false,
     "sourceRef": {
       "file": "2026上海系统分析师_7天冲刺题库与学习打卡.xlsx",

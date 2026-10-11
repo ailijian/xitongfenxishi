@@ -13,7 +13,7 @@ mkdir -p "$source_dir"
 for path in .gitignore .dockerignore LICENSE README.md README-Codex.md \
   content-import-report.md package.json package-lock.json tsconfig.json index.html \
   vite.config.ts playwright.config.ts playwright.production.config.ts \
-  playwright.staging.config.ts src public scripts materials ops tests; do
+  playwright.staging.config.ts playwright.audit.config.ts src public scripts materials ops tests; do
   cp -R "$repo_root/$path" "$source_dir/$path"
 done
 mkdir -p "$source_dir/docs/screenshots"

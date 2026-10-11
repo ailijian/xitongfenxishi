@@ -42,6 +42,23 @@ describe("IndexedDB持久化与错题", () => {
       consolidatedAt: undefined,
     });
   });
+  it("OAuth错题不会误将RBAC/ABAC知识改成需复习，直接RBAC错题仍会", async () => {
+    await db.cards.put({
+      cardId: "K052", status: "consolidated",
+      firstPassAt: "2026-10-01T00:00:00Z", consolidatedAt: "2026-10-02T00:00:00Z",
+      updatedAt: "2026-10-02T00:00:00Z",
+    });
+    const oauth = content.questions.find((q) => q.id === "RK119")!;
+    await db.sessions.put({
+      id: "submitted-mock", set: "mock", questionIds: content.questions.filter((q) => q.set === "mock").map((q) => q.id),
+      answers: {}, submittedQuestionIds: [], index: 0, createdAt: "2026-10-01T00:00:00Z", submittedAt: "2026-10-02T00:00:00Z",
+    });
+    await submitQuestion(oauth, oauth.answer === "A" ? "B" : "A");
+    expect((await db.cards.get("K052"))?.status).toBe("consolidated");
+    const rbac = content.questions.find((q) => q.id === "RK044")!;
+    await submitQuestion(rbac, rbac.answer === "A" ? "B" : "A");
+    expect((await db.cards.get("K052"))?.status).toBe("needs-review");
+  });
   it("闭卷自检与当前可信题答案同时通过才保存首轮和尝试", async () => {
     const q = content.questions.find((q) => q.id === "RK025")!;
     const a = await submitQuestion(q, "C");

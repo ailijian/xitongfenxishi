@@ -25,6 +25,8 @@
     "tests",
     "vite.config.ts",
     "playwright.config.ts",
-    "playwright.production.config.ts"
+    "playwright.production.config.ts",
+    "playwright.staging.config.ts",
+    "playwright.audit.config.ts"
   ]
 }

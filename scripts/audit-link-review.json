@@ -1,0 +1,43 @@
+{
+  "reviewedAt": "2026-10-11",
+  "basis": "人工逐项比较知识卡原文要点与原始题干、正确选项和解析；同模块或仅同大主题不构成可信验证。样本不代表整张卡所有细节均被一道题覆盖。",
+  "samples": [
+    {"questionId":"RK001","knowledgeId":"K002","cardConcept":"可验证","questionConcept":"验收标准","rationale":"模糊需求缺少可测试验收标准，直接检验好需求的可验证性。"},
+    {"questionId":"RK002","knowledgeId":"K069","cardConcept":"NPV","questionConcept":"NPV","rationale":"识别考虑时间价值的净现值方法，与NPV定义直接一致。"},
+    {"questionId":"RK003","knowledgeId":"K013","cardConcept":"瀑布","questionConcept":"瀑布","rationale":"需求稳定时选择瀑布模型，直接检验模型适用条件。"},
+    {"questionId":"RK004","knowledgeId":"K018","cardConcept":"进程","questionConcept":"进程","rationale":"并发通信对应进程视图，直接检验4+1视图分工。"},
+    {"questionId":"RK005","knowledgeId":"K030","cardConcept":"候选键","questionConcept":"候选键","rationale":"最小唯一属性集对应候选键定义。"},
+    {"questionId":"RK006","knowledgeId":"K042","cardConcept":"静态","questionConcept":"静态","rationale":"不运行程序的审查属于静态测试，直接检验静态与动态区别。"},
+    {"questionId":"RK007","knowledgeId":"K056","cardConcept":"可靠有序字节流","questionConcept":"可靠有序字节流","rationale":"TCP可靠有序字节流与UDP报文区别直接对应。"},
+    {"questionId":"RK008","knowledgeId":"K051","cardConcept":"AES","questionConcept":"AES","rationale":"大量数据高效加密选AES，直接检验对称加密用途。"},
+    {"questionId":"RK011","knowledgeId":"K065","cardConcept":"共享内核","questionConcept":"共享内核","rationale":"容器共享宿主机内核，与虚拟机区别直接对应。"},
+    {"questionId":"RK013","knowledgeId":"K003","cardConcept":"工作坊","questionConcept":"联合需求研讨会","rationale":"通过联合研讨澄清多角色冲突，是需求获取工作坊的具体应用。"},
+    {"questionId":"RK014","knowledgeId":"K012","cardConcept":"重设计流程","questionConcept":"流程重构","rationale":"围绕价值根本重设计流程，对应业务流程重构核心。"},
+    {"questionId":"RK014","knowledgeId":"K075","cardConcept":"BPR","questionConcept":"BPR","rationale":"直接检验BPR端到端流程重构，未据此声称验证了价值链全部知识。"},
+    {"questionId":"RK017","knowledgeId":"K031","cardConcept":"无重复组","questionConcept":"重复组","rationale":"原子属性、无重复组直接验证1NF。"},
+    {"questionId":"RK018","knowledgeId":"K043","cardConcept":"语句","questionConcept":"语句覆盖","rationale":"每条语句执行一次对应语句覆盖，解析同时指出其覆盖边界。"},
+    {"questionId":"RK019","knowledgeId":"K057","cardConcept":"传输加密","questionConcept":"传输加密","rationale":"TLS的加密、完整性和认证能力与卡片要点直接一致。"},
+    {"questionId":"RK022","knowledgeId":"K070","cardConcept":"概率×结果金额","questionConcept":"4+5+3=12","rationale":"三项概率损失相加，是EMV公式的直接数值应用。"},
+    {"questionId":"RK025","knowledgeId":"K001","cardConcept":"非功能","questionConcept":"非功能","rationale":"支付确认5秒响应是性能质量约束，直接区分功能和非功能需求。"},
+    {"questionId":"RK028","knowledgeId":"K021","cardConcept":"发布/订阅","questionConcept":"发布订阅","rationale":"子系统通过发布订阅事件解耦，直接检验事件驱动架构。"},
+    {"questionId":"RK029","knowledgeId":"K032","cardConcept":"部分函数依赖","questionConcept":"部分依赖","rationale":"C依赖复合键的一部分A，是违反2NF的具体实例。"},
+    {"questionId":"RK034","knowledgeId":"K072","cardConcept":"最长持续路径","questionConcept":"并行段取最大5天","rationale":"并行取最长分支再接后续活动，直接检验关键路径和最短工期。"},
+    {"questionId":"RK037","knowledgeId":"K006","cardConcept":"extend","questionConcept":"extend","rationale":"有条件的可选附加行为属于extend，直接检验include/extend区别。"},
+    {"questionId":"RK039","knowledgeId":"K014","cardConcept":"PO管待办优先级","questionConcept":"PO对产品价值和待办项排序负责","rationale":"明确检验产品负责人管理待办优先级，直接对应Scrum职责要点。"},
+    {"questionId":"RK040","knowledgeId":"K019","cardConcept":"层间职责明确","questionConcept":"跨层访问破坏职责边界","rationale":"绕过服务层会破坏职责边界并增加耦合，直接检验分层约束。"},
+    {"questionId":"RK041","knowledgeId":"K033","cardConcept":"传递依赖","questionConcept":"传递依赖","rationale":"A→B→C且B非超键，是3NF非主属性传递依赖案例。"},
+    {"questionId":"RK042","knowledgeId":"K044","cardConcept":"边界值","questionConcept":"边界值","rationale":"年龄区间两端及紧邻值，直接验证黑盒边界值设计。"},
+    {"questionId":"RK046","knowledgeId":"K071","cardConcept":"CV=EV-AC","questionConcept":"CV=EV-AC=80-100=-20","rationale":"计算成本偏差直接应用EVM公式，数值来源完整。"},
+    {"questionId":"RK047","knowledgeId":"K066","cardConcept":"灰度分批放量","questionConcept":"逐步扩大发布范围","rationale":"有限流量验证和回滚直接检验灰度发布。"},
+    {"questionId":"RK052","knowledgeId":"K034","cardConcept":"决定因素都是超键","questionConcept":"决定因素为超键","rationale":"每个非平凡依赖的决定因素为超键，直接对应BCNF条件。"},
+    {"questionId":"RK057","knowledgeId":"K071","cardConcept":"SPI=EV/PV","questionConcept":"SPI=EV/PV=80/90","rationale":"使用RK046的原题数值计算SPI；附前置题干后可独立作答。"},
+    {"questionId":"RK067","knowledgeId":"K067","cardConcept":"上下文生成","questionConcept":"生成上下文","rationale":"检索外部知识作为生成上下文，直接对应RAG核心机制。"}
+  ],
+  "rejected": [
+    {"questionId":"RK027","knowledgeId":"K014","rationale":"题目只检验敏捷宣言响应变化，不检验PO、Scrum Master或团队职责。卡片另有直接可信章节题RK039。"},
+    {"questionId":"RK092","knowledgeId":"K039","rationale":"题目识别维度建模的事实表，不能直接验证OLTP与OLAP的负载和事务差异。"},
+    {"questionId":"RK103","knowledgeId":"K020","rationale":"题目检验拆分服务的成本权衡，未检验有界上下文、领域边界或数据所有权；保留直接匹配的K029。"},
+    {"questionId":"RK119","knowledgeId":"K052","rationale":"OAuth第三方授权框架不等于RBAC角色模型或ABAC属性策略，不用授权大主题作为精准关联。"},
+    {"questionId":"RK141","knowledgeId":"K040","rationale":"只读副本与缓存加速的选型不检验Cache Aside读未命中回源、写DB后删缓存；另有直接匹配的RK128。"}
+  ]
+}

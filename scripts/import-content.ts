@@ -15,8 +15,9 @@ import {
 } from "../src/domain/content-schema";
 import { initialPlan } from "./plan";
 import { keywordCandidates, reviewedQuestionLinks } from "./question-links";
+import linkReview from "./audit-link-review.json";
 
-export const CONTENT_VERSION = "2026.10.10.1";
+export const CONTENT_VERSION = "2026.10.11.1";
 const ROOT = fileURLToPath(new URL("../", import.meta.url));
 const nonempty = (value: string, location: string) => {
   if (!value.trim()) throw new Error(`缺失字段：${location}`);
@@ -379,8 +380,9 @@ export function buildReport(result: Awaited<ReturnType<typeof importContent>>) {
       ? `${r.sheet}!第${r.row}行`
       : `${r.section}（文本块${r.textBlock}）`;
   const self = c.knowledge.filter((k) => !k.relatedQuestionIds.length);
+  const md = (value: string) => value.replace(/\|/g, "\\|").replace(/\n/g, " ");
   const lines = [
-    "# 阶段 A 内容导入校验报告",
+    "# 内容导入与上线审计校验报告",
     "",
     `内容版本：${c.contentVersion}。结论：所有构建阻断项通过。`,
     "",
@@ -414,6 +416,36 @@ export function buildReport(result: Awaited<ReturnType<typeof importContent>>) {
     "- keywordCandidates只是候选；question-links.ts中的逐题确认决定实际关联。详见src/data/question-link-audit.json。",
     "- 卡片日常关联只使用章节卷。独立模考题虽保留知识关联供交卷后分析，但不进入日常卡片练习，防止模考提前泄题。",
     "",
+    "### 缺少可信章节关联题的完整清单",
+    "",
+    "下列卡片不能使用独立模考题完成日常客观通关。存在模考关联也仍标记为仅自评。",
+    "",
+    "| 知识卡 | 级别 | 可用章节题 | 仅供交卷后分析的模考题 | 日常验证 |",
+    "|---|---|---|---|---|",
+    ...self.map((k) => `| ${k.id} ${k.title} | ${k.priority} | 无 | ${c.questions.filter((q) => q.set === "mock" && q.relatedKnowledgeIds.includes(k.id)).map((q) => q.id).join("、") || "无"} | 仅自评验证 |`),
+    "",
+    `两卷合计仍没有任何可信关联题的卡：${c.knowledge.filter((k) => !c.questions.some((q) => q.relatedKnowledgeIds.includes(k.id))).map((k) => `${k.id} ${k.title}`).join("；")}。补题属于未来教学内容优化，不在本次生成新题。`,
+    "",
+    `## 上线关联抽样复核（${linkReview.reviewedAt}，${linkReview.samples.length}组）`,
+    "",
+    linkReview.basis,
+    "",
+    "| 题卡 | 卡片原文要点 | 题干 / 正确选项 | 可信依据 | 来源 | 结果 |",
+    "|---|---|---|---|---|---|",
+    ...linkReview.samples.map((s) => {
+      const k = c.knowledge.find((k) => k.id === s.knowledgeId)!;
+      const q = c.questions.find((q) => q.id === s.questionId)!;
+      return `| ${q.id} → ${k.id} | ${md(k.essentials)} | ${md(q.stem)} / ${q.answer}：${md(q.options[q.answer])} | ${s.rationale} | ${ref(q.sourceRef)}；${ref(k.sourceRef)} | PASS |`;
+    }),
+    "",
+    "### 不可信关联整改记录",
+    "",
+    "| 移除关系 | 复核依据 | 原记录处理 |",
+    "|---|---|---|",
+    ...linkReview.rejected.map((r) => `| ${r.questionId} → ${r.knowledgeId} | ${r.rationale} | 保留旧版本作答与掌握记录；新自测使用修正关联 |`),
+    "",
+    "关联整改只修改映射，不改写任何题干、选项、答案、解析或知识原文。版本升级为2026.10.11.1，旧版备份和历史记录保持可恢复。完整逐题决策见 src/data/question-link-audit.json，抽样复核原始记录见 scripts/audit-link-review.json。",
+    "",
     "## 案例分值核对",
     "",
     "| 案例 | 各问分值 | 原文采分点合计 | Word定位 |",
@@ -446,7 +478,7 @@ export function buildReport(result: Awaited<ReturnType<typeof importContent>>) {
     "",
     "- 已完成：指定抽查、全部案例采分组与分值、题卡语义关联、原文一致性。结构校验不等同于官方命题或学科审定。",
     "- 无核心内容缺失等待补齐。考试安排与第三方资料可用性仍应以现行公告/准考证核对。",
-    "- 阶段A交付资料阅览与导入管线；掌握状态、IndexedDB、动态重排、作答历史、完整模考和PWA由B—D实现，当前不计算任何掌握成绩。",
+    "- 本报告验证静态内容及题卡映射；学习状态、应试交互、持久化、离线、移动端和已知缺陷的运行证据见 audit-report.md。",
     "",
     "## 来源文件指纹",
     "",

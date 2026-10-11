@@ -122,6 +122,14 @@ delete confirmed[127];
 delete confirmed[131];
 delete confirmed[147];
 
+// 2026-10-11 functional audit: a shared topic is insufficient evidence of the
+// narrower essentials. See audit-link-review.json for the source-based review.
+delete confirmed[27]; // Agile manifesto does not validate Scrum roles (K014).
+delete confirmed[92]; // Fact-table identification does not validate OLTP/OLAP (K039).
+confirmed[103] = [29]; // Service-splitting costs validate trade-offs, not boundaries (K020).
+delete confirmed[119]; // OAuth third-party authorization is not RBAC/ABAC (K052).
+delete confirmed[141]; // Replica/cache selection is not Cache Aside (K040).
+
 export const reviewedQuestionLinks = Array.from({ length: 150 }, (_, i) => ({
   questionId: `RK${String(i + 1).padStart(3, "0")}`,
   knowledgeIds: (confirmed[i + 1] ?? []).map(
